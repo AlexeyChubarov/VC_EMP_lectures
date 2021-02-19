@@ -275,7 +275,7 @@
 Мы должны минимизировать функционал $l[\Gamma]$ в классе допустимых функций описанных выше. Кривые дающие решение задачи на $\min\,l[\Gamma]$, называются геодезическими, и сама задача --- задача о геодезических.
 
 \item \textbf{Изопериметрическая задача}.\\
-Словестная формулировка: имеется проволока заданной длины; надо на плоскости огородить наибольшую площадь. Определим класс $\mc{K}$ допустимых кривых.
+Словесная формулировка: имеется проволока заданной длины; надо на плоскости огородить наибольшую площадь. Определим класс $\mc{K}$ допустимых кривых.
 \label{l1:eq:Isoperimetr} 
 \begin{equation*}
 	\mc{K}=\left\{\Gamma|\Gamma=(x(t),y(t),z(t))\in\Cfn[{[t_0,t_1]}]{1}, x(t_0)=x(t_1), y(t_0)=y(t_1)\footnotemark{}, (*)\int\limits_{t_0}^{t_1}\sqrt{x^{\prime 2}(t)+y^{\prime 2}(t)}\,dt=l_0\footnotemark{}\right\}
@@ -410,13 +410,13 @@ $\max\limits_{x\in{[a,b]}}\,|y(x)+t\cdot\eta(x)|\leqslant M_2+|t|\cdot M_1\stack
 \end{equation}
 Подставляя это выражение в \eqref{l1:eq:8} мы получим выражение первой вариации при $y\in\Cfn[{[a,b]}]{2}$, $\eta\in\Cfn[{[a,b]}]{1}$ не зависимо от граничных условий
 \begin{equation*}
-	\hfill \delta\J=t\left\{\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b\right\}\hfill\tag{A}
+	\hfill \delta\J=t\left\{\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b\right\}\hfill\tag{A}
 \end{equation*}
 
 Если $y$ --- минимайзер и $\eta$ --- допустимое изменение, то $\eta(a)=\eta(b)=0$ и в силу \eqref{l1:eq:7} для минимайзера $y$ и $\forall\eta$ --- допустимого
 \begin{equation}
 	\label{l1:eq:10}
-	\hfill t\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\,dx=0\hfill
+	\hfill t\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx=0\hfill
 \end{equation}
 Отсюда в силу произвольности допустимого изменения замечаем, что 
 \begin{equation}
