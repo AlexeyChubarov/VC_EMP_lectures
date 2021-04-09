@@ -1,0 +1,349 @@
+\chapter{}
+\label{lecture6}
+На прошлой лекции мы доказали принцип минимакса. Он редко используется на практике, но с его помощью мы сейчас получим результат, имеющий как теоретическое, так и практическое значение.
+\section{Теорема сравнения.}
+\label{lecture6section1}
+\begin{equation*}
+	\text{Пусть}\quad Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y\quad\text{и}\quad  \widetilde{L}y=-\der{}{x}\Big(\widetilde{Q}\cdot y'\Big)+\widetilde{P}\cdot y
+\end{equation*}
+--- операторы Штурма с областью определения 
+\begin{equation*}
+	\hfill\mc{D}_L=\mc{D}_{\widetilde{L}}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}\hfill
+\end{equation*}
+Обозначим через $\lambda_k$ и $\widetilde{\lambda}_k$ их собственные значения, $k=1,2,\ldots$
+\begin{_teor}[теорема сравнения]
+	Если $Q\geqslant\widetilde{Q}$ и $P\geqslant\widetilde{P}$, то $\lambda_k\geqslant\widetilde{\lambda}_k$, то есть б\'{о}льшим коэффициентам отвечают б\'{о}льшие собственные значения
+\end{_teor}
+\begin{proof}
+	Пусть $\phi_1,\ldots,\phi_k$ --- произвольный набор функций из \fL, $y\in\K$, $y\perp\phi_1,\ldots,\phi_k$. В силу неравенств для коэффициентов 
+	\begin{equation}
+		\label{l6:eq:1}
+		\hfill \mathop{\J[y]}\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\phi_1,\ldots,\phi_{k}}}}=\int\limits_a^b\big(Q\cdot y'^2+P\cdot y^2\big)\,dx\geqslant\int\limits_a^b\big(\widetilde{Q}\cdot y'^2+\widetilde{P}\cdot y^2\big)\,dx=\mathop{\widetilde{\J}[y]}\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\phi_1,\ldots,\phi_{k}}}}.\hfill
+	\end{equation}
+	Фиксируем слева $y$, а справа возьмём минимум по всем $\tilde{y}$, $\tilde{y}\in\K$, $\tilde{y}\perp \phi_1,\ldots,\phi_k$
+	\begin{equation}
+		\label{l6:eq:2}
+		\hfill\mathop{\J[y]}\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\phi_1,\ldots,\phi_{k}}}}\quad\geqslant\quad\min\limits_{\substack{\tilde{y}\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}\tilde{y}\perp\phi_1,\ldots,\phi_{k}}}}\,\widetilde{\J}[\tilde{y}].\hfill
+	\end{equation}
+	Так как правая часть не зависит от $y$, то неравенство сохранится при взятии слева минимума по $y$:
+	\begin{equation}
+		\label{l6:eq:3}
+		\hfill\min\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\phi_1,\ldots,\phi_{k}}}}\,\J[y]\geqslant\min\limits_{\substack{\tilde{y}\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}\tilde{y}\perp\phi_1,\ldots,\phi_{k}}}}\,\widetilde{\J}[\tilde{y}].\hfill
+	\end{equation}
+	Фиксируем набор $\phi_1,\ldots,\phi_k$ справа в~\eqref{l6:eq:3}, а слева возьмём максимум по всем наборам
+	\begin{equation}
+		\label{l6:eq:4}
+		\hfill\max\limits_{\widetilde{\phi}_1,\ldots,\widetilde{\phi}_k}\quad\min\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\widetilde{\phi}_1,\ldots,\widetilde{\phi}_{k}}}}\,\J[y]\geqslant\min\limits_{\substack{\tilde{y}\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}\tilde{y}\perp\phi_1,\ldots,\phi_{k}}}}\,\widetilde{\J}[\tilde{y}].\hfill
+	\end{equation}
+	Так как левая часть не зависит от $\phi_1,\ldots,\phi_k$ (то есть~\eqref{l6:eq:4} верно при $\forall\phi_1,\ldots,\phi_k$) возьмём в~\eqref{l6:eq:4} справа максимум по $\phi_1,\ldots,\phi_k$
+	\begin{equation}
+		\label{l6:eq:5}
+		\hfill\max\limits_{\widetilde{\phi}_1,\ldots,\widetilde{\phi}_k}\quad\min\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\widetilde{\phi}_1,\ldots,\widetilde{\phi}_k}}}\,\J[y]\geqslant\max\limits_{{\phi}_1,\ldots,{\phi}_k}\quad\min\limits_{\substack{\tilde{y}\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}\tilde{y}\perp\phi_1,\ldots,\phi_{k}}}}\,\widetilde{\J}[\tilde{y}].\hfill
+	\end{equation}
+	В силу принципа минимакса слева в~\eqref{l6:eq:5} $\lambda_{k+1}$, справа $\widetilde{\lambda}_{k+1}$, то есть~\eqref{l6:eq:5} это 
+	\begin{equation}
+		\label{l6:eq:6}
+		\hfill\lambda_{k+1}\geqslant\widetilde{\lambda}_{k+1}.\hfill
+	\end{equation}
+	\emph{Теорема доказана.}
+\end{proof}
+
+Данная теорема позволяет получить двусторонние оценки для собственных значений оператора Штурма с переменными коэффициентами. Пусть $\widetilde{C}_1\eqdef\min\limits_{x\in[a,b]}Q(x)$, $\widetilde{C}_2\eqdef\min\limits_{x\in[a,b]}P(x)$. Собственные значения оператора Штурма $\widetilde{L}y=-\der{}{x}\Big(\widetilde{Q}\cdot y'\Big)+\widetilde{P}\cdot y\quad$с$\quad\widetilde{Q}=\widetilde{C}_1$, $\widetilde{P}=\widetilde{C}_2$ известны 
+\begin{equation*}
+	\hfill\widetilde{\lambda}_k=\widetilde{C}_1\cdot\frac{(\pi\cdot k)^2}{(b-a)^2}+\widetilde{C}_2.\hfill
+\end{equation*}
+В силу теоремы сравнения
+\begin{equation}
+	\label{l6:eq:7}
+	\hfill\lambda_k\geqslant\widetilde{C}_1\cdot\left(\frac{\pi\cdot k}{b-a}\right)+\widetilde{C}_2.\hfill
+\end{equation}
+С другой стороны, если положить $\widehat{C}_1\eqdef\max\limits_{x\in[a,b]}Q(x)$, $\widehat{C}_2\eqdef\max\limits_{x\in[a,b]}P(x)$ и рассмотреть оператор Штурма $\widehat{L}y=-\der{}{x}\Big(\widehat{Q}\cdot y'\Big)+\widehat{P}\cdot y\quad$с$\quad\widehat{Q}=\widehat{C}_1$, $\widehat{P}=\widehat{C}_2$, то поскольку $\widehat{Q}\geqslant Q$, $\widehat{P}\geqslant P$, то для собственных значений $\widehat{\lambda}_k$ оператора $\widehat{L}$ будет верно неравенство
+\begin{equation}
+	\label{l6:eq:8}
+	\hfill \widehat{\lambda}_k\geqslant\lambda_k,\hfill
+\end{equation}
+но 
+\begin{equation*}
+	\hfill\widehat{\lambda}_k=\widehat{C}_1\cdot \left(\frac{\pi\cdot k}{b-a}\right)^2+\widehat{C}_2,\hfill
+\end{equation*}
+поэтому в силу~\eqref{l6:eq:7},~\eqref{l6:eq:8} мы получаем
+\begin{equation}
+	\label{l6:eq:9}
+	\hfill\widehat{C}_1\cdot\left(\frac{\pi\cdot k}{b-a}\right)^2+\widehat{C}_2\geqslant\lambda_k\geqslant\widetilde{C}_1\cdot\left(\frac{\pi\cdot k}{b-a}\right)^2+\widetilde{C}_2.\hfill
+\end{equation}
+Разумеется, здесь мы рассматриваем случай, когда $\widetilde{C}_1>0$, $\widetilde{C}_2$ и $\widehat{C}_2$ --- конечны. 
+
+Из~\eqref{l6:eq:9} следует, что для $k\gg1$ и некоторой константы $d>0$ 
+\begin{equation}
+	\label{l6:eq:10}
+	\hfill\lambda_k\geqslant d\cdot k^2.\hfill
+\end{equation} 
+\section[Разложение по собственным функциям оператора Штурма.]{Разложение по собственным функциям оператора Штурма. Неравенство Бесселя, равенство Парсеваля. Теорема Стеклова.}
+\label{lecture6section2}
+Пусть $y_1,y_2,\ldots,y_n,\ldots$ --- бесконечная ортонормированная система $\big(y_i,y_j\big)=\delta_{ij}$ и $y\in\fL$. Составим так называемые обобщённые коэффициенты Фурье 
+\begin{equation}
+	\label{l6:eq:11}
+	\hfill C_k=\big(y,y_k\big)=\int\limits_a^b y\cdot\overline{y}_k\,dx\hfill
+\end{equation}
+и обобщённый ряд Фурье, отвечающий функции $y(x)$:
+\begin{equation}
+	\label{l6:eq:12}
+	\hfill y(x)\sim\sum\limits_{k=1}^{\infty}C_k\cdot y_k.\hfill
+\end{equation}
+Естественные вопросы о ряде~\eqref{l6:eq:12}
+\begin{enumerate1}
+	\item сходится ли?
+	\item если да --- в каком смысле?
+	\item к какой функции сходится?
+\end{enumerate1}
+
+Как и при исследовании обычных рядов для ответа на эти вопросы надо исследовать поведение частичной суммы ряда
+\begin{equation*}
+	\hfill S_n(x)=\sum\limits_{k=1}^n C_k\cdot y_k,\quad\text{при}\quad n\to \infty.\hfill
+\end{equation*}
+Возможны следующие варианты 
+\begin{enumerate1}
+	\item $\exists\tilde{y}(x)$ такая, что $|\tilde{y}(x)-S_n(x)|\to0$ при $n\to\infty$, $\forall x\in[a,b]$. Этот случай означает поточечную сходимость обобщённого ряда Фурье к $\tilde{y}(x)$.
+	\item$\exists\tilde{\tilde{y}}$ такая, что $\sup\limits_{x\in[a,b]}\left|\tilde{\tilde{y}}-S_n(x)\right|\to0$ при $n\to\infty$. Этот случай означает равномерную сходимость обобщённого ряда Фурье к функции $\tilde{\tilde{y}}$.
+	\item $\exists\hat{y}(x)$ такая, что $\norm{\hat{y}-S_n(x)}\to0$ при $n\to\infty$. В этом случае говорят, что обобщённый ряд Фурье сходится к функции $\hat{y}$ в среднем.
+\end{enumerate1} 
+
+А к какой функции ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ может сходиться? Хотя коэффициенты $C_k$ мы считали для функции $y(x)$, сам ряд не обязан к ней сходиться. Пример такой ситуации легко привести. Допустим $\norm{y-S_n}\to0$ при $n\to\infty$ и $C_1\neq0$. Положим
+\begin{equation*}
+	\hfill \tilde{y}_1=y_2,\ \tilde{y}_2=y_3,\ldots,\tilde{y}_k=y_{k+1},\ \widehat{C}_k=\big(y,\tilde{y}_k\big)=C_{k+1}.\hfill
+\end{equation*}
+\begin{equation*}
+	\text{Тогда}\quad\widetilde{S}_n=\sum\limits_{k=1}^n \widetilde{C}_k\cdot \tilde{y}_k=\sum\limits_{k=2}^{n+1}C_k\cdot y_k=S_{n+1}-C_1\cdot y_1\quad\text{и}\quad\norm{y-S_{n+1}}=\norm{(y-C_1\cdot y_1)-\widetilde{S}_n}\to0,
+\end{equation*}
+то есть нет сходимости к $y(x)$ для системы $\tilde{y}_1,\ldots,\tilde{y}_k\ldots$
+
+\begin{_def}
+	Пусть задан некоторый класс функций $\mathscr{K}\subseteq\fL$. Будем говорить, что ортонормированная система $y_1,\ldots,y_n,\ldots$ \textbf{полна} в $\mathscr{K}$ в среднем \{в смысле равномерной сходимости\}, если для $\forall y\in\mathscr{K}$ её обобщённый ряд Фурье $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится к ней в среднем \{равномерно\}. Полная система играет роль базиса в $\mathscr{K}$.
+\end{_def}
+
+К вопросу о полноте мы вернёмся, а пока исследуем некоторые свойства $S_n(x)=\sum\limits_{k=1}^n C_k\cdot y_k$. Пусть $R_n\eqdef y-S_n$. Свойства $R_n$:
+\begin{enumerateBr}
+	\item\label{l6:s2:enum:1} $\big(R_n,y_j\big)=0$, $j=\overline{1,n}$. Действительно,
+	\begin{equation*}
+		\big(R_n,y_j\big)=\big(y-\sum\limits_{k=1}^n C_k\cdot y_k,y_j\big)=\big(y,y_j\big)-\sum\limits_{k=1}^n C_k\cdot\big(y_k,y_j\big)=C_j-\sum\limits_{k=1}^n C_k\cdot\delta_{kj}=C_j-C_j=0.
+	\end{equation*} 
+	\item\label{l6:s2:enum:2} $\big(R_n,S_n\big)=0$. Это следует из~\ref{l6:s2:enum:1}, ибо $\big(R_n,S_n\big)=\sum\limits_{j=1}^n\big(R_n,C_j\cdot y_j\big)=0$.
+	\item\label{l6:s2:enum:3} ${\norm{y}}^2={\norm{R_n}}^2+{\norm{S_n}}^2$. Следует из~\ref{l6:s2:enum:2}, ибо 
+	\begin{equation*}
+		\hfill\big(y,y\big)=\big(R_n+S_n,R_n+S_n\big)={\norm{R_n}}^2+{\norm{S_n}}^2+\underbrace{\big(R_n,S_n\big)}_{=0\text{ из}~\ref{l6:s2:enum:2}}+\underbrace{\big(S_n,R_n\big)}_{=0\text{ из}~\ref{l6:s2:enum:2}}={\norm{R_n}}^2+{\norm{S_n}}^2.
+	\end{equation*} 
+	\item\label{l6:s2:enum:4}${\norm{S_n}}^2=\sum\limits_{k=1}^n|C_k|^2$, так как 
+	\begin{equation*}
+		\hfill\big(S_n,S_n\big)=\big(\sum\limits_{i=1}^n C_i\cdot y_i,\sum\limits_{k=1}^n C_k\cdot y_k\big)=\sum\limits_{k,i=1}^n C_i\cdot \overline{C}_k\cdot\underbrace{\big(y_i,y_k\big)}_{=\delta_{ik}}=\sum\limits_{k=1}^n|C_k|^2.\hfill
+	\end{equation*} 
+\end{enumerateBr}
+Из свойств~\ref{l6:s2:enum:3}~и~\ref{l6:s2:enum:4} следует неравенство Бесселя
+\begin{equation}
+	\label{l6:eq:13}
+	\hfill\sum\limits_{k=1}^{\infty}|C_k|^2\leqslant{\norm{y}}^2.\hfill
+\end{equation}
+Действительно, в силу~\ref{l6:s2:enum:3},~\ref{l6:s2:enum:4} ${\norm{y}}^2\geqslant\sum\limits_{k=1}^{n}|C_k|^2$. В пределе при $n\to\infty$ получаем~\eqref{l6:eq:13}. Если в~\eqref{l6:eq:13} имеет место равенство 
+\begin{equation}
+	\label{l6:eq:14}
+	\hfill\sum\limits_{k=1}^{\infty}|C_k|^2={\norm{y}}^2,\hfill
+\end{equation}  
+то~\eqref{l6:eq:14} называется равенством Парсеваля. \emph{Оно является необходимым и достаточным условием сходимости в среднем обобщённого ряда Фурье к раскладываемой функции.}
+\begin{proof}
+	\underline{Достаточность.} Пусть~\eqref{l6:eq:14} выполняется. Докажем, что $\norm{R_n}\to0$. В силу свойства~\ref{l6:s2:enum:3} 
+	\begin{equation}
+		\label{l6:eq:15}
+		\hfill{\norm{R_n}}^2={\norm{y}}^2-{\norm{S_n}}^2={\norm{y}}^2-\sum\limits_{k=1}^n|C_k|^2\to0,\quad\text{при}\quad n\to\infty\hfill
+	\end{equation} 
+	если равенство Парсеваля верно. \emph{Достаточность доказана.}
+	\vspace{0,2cm}
+	
+	\underline{Необходимость.} Если $\norm{R_n}\to0$ то в силу~\eqref{l6:eq:15} 
+	\begin{equation*}
+		\hfill\lim\limits_{n\to\infty}\sum\limits_{k=1}^n|C_k|^2-{\norm{y}}^2=0,\hfill
+	\end{equation*}
+	то есть~\eqref{l6:eq:14} верно. 
+	
+	Таким образом, если для рассматриваемой ортонормированной системы $y_1,y_2,\ldots,y_n,\ldots$ и $\forall y\in\mathscr{K}\subseteq\fL$ выполняется~\eqref{l6:eq:14}, то система $y_1,\ldots,y_n,\ldots$ полна в $\mathscr{K}$ в среднем.
+\end{proof}
+
+В заключение отметим, что обобщённый ряд Фурье всегда сходится в среднем. Действительно, мы без доказательства говорили, что пространство \fL\ --- полное, то есть любая фундаментальная последовательность из \fL[]\ сходится в среднем к какой-то функции из \fL. Покажем, что последовательность $S_n(x)$ --- фундаментальна. Имеем (пусть $n>m$) 
+\begin{equation*}
+	\hfill{\norm{S_n-S_m}}^2={\norm{\sum\limits_{k=m+1}^n C_k\cdot y_k}}^2=\sum\limits_{k=m+1}^n |C_k|^2\to0,\quad\text{при}\quad m,\,n\to\infty,\hfill
+\end{equation*}
+так как ряд $\sum\limits_{k=1}^{\infty} |C_k|^2$ сходится в силу неравенства Бесселя~\eqref{l6:eq:13}. Значит $\exists\hat{y}\in\fL$ так, что $\norm{\hat{y}-S_n}\to0$ при $n\to\infty$\footnote{Разумеется в общем случае $\hat{y}$ может не совпадать с $y$.}.
+\newpage
+
+\begin{_teor}[Стеклова]
+	Ортонормированная система собственных функций $y_1,\ldots,y_n,\ldots$ отвечающая всем собственным значениям $\lambda_1<\lambda_2<\ldots<\lambda_n<\ldots$ оператора Штурма является \emph{полной}
+	\begin{enumerate1}
+		\item в $\mc{D}_{L}$ --- в смысле равномерной сходимости.
+		\item в $\fL$ --- в смысле сходимости в среднем.
+	\end{enumerate1}
+\end{_teor}
+\begin{proof}
+	Оно сложное, поэтому проведём его поэтапно.
+	
+	Рассмотрим сначала $y\in\mc{D}_{L}$. Пусть $C_k\eqdef\big(y,y_k\big)$, $S_n(x)\eqdef\sum\limits_{k=1}^n C_k\cdot y_k$. Идея доказательства состоит в следующем. Сначала докажем, что 
+	\begin{equation}
+		\label{l6:eq:16}
+		\hfill\norm{y-S_n(x)}\to0\quad\text{при}\quad n\to\infty.\hfill
+	\end{equation}
+	Потом покажем, что ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ равномерно сходится к некоторой (пока неизвестно какой!) непрерывной функции $\hat{y}$, то есть
+	\begin{equation}
+		\label{l6:eq:17}
+		\hfill\lim\limits_{n\to\infty}\max\limits_{x\in[a,b]}\big|\hat{y}-S_n(x)\big|=0.\hfill
+	\end{equation}
+	Но из равномерной сходимости следует сходимость в среднем, так как 
+	\begin{equation*}
+		\hfill{\norm{\hat{y}-S_n}}^2=\int\limits_{a}^b|\hat{y}-S_n(x)|^2\,dx\leqslant\max\limits_{x\in[a,b]}|\hat{y}-S_n(x)|^2\cdot(b-a)\to0\quad\text{в силу~\eqref{l6:eq:17}}.\hfill
+	\end{equation*}
+	Таким образом, мы получаем, что последовательность $S_n(x)$ сходится в среднем к $y(x)$ --- в силу~\eqref{l6:eq:16} и к $\hat{y}$ --- только что показано. Поэтому 
+	\begin{equation*}
+		\hfill \norm{y-\hat{y}}=\norm{y-S_n+S_n-\hat{y}}\leqslant\norm{y-S_n}+\norm{S_n-\hat{y}}\to0,\quad\text{при}\quad n\to\infty.\hfill
+	\end{equation*}
+	Значит $\hat{y}=y$ и~\eqref{l6:eq:17} даёт первое утверждение теоремы Стеклова.
+	
+	Переходим к выполнению программы. Пусть $y\in\mc{D}_{L}$, $R_n=y-S_n$. Доказываем, что
+	\begin{equation}
+		\label{l6:eq:18}
+		\hfill\norm{R_n}=\norm{y-S_n}\to0\quad\text{при}\quad n\to\infty.\hfill
+	\end{equation}
+	Рассмотрим функцию $\widetilde{R}_n\eqdef R_n\bigm/\norm{R_n}$, $\norm{\widetilde{R}_n}=1$\footnote{Если $\norm{R_n}=0$, то~\eqref{l6:eq:18} --- очевидно и тогда вводить $\widetilde{R}_n$ не надо, поэтому мы считаем $\norm{R_n}\neq0$.}
+	
+	Кроме того в силу свойств $R_n$ выполняются равенства $\big(\widetilde{R}_n,y_j\big)=0$, $j=\overline{1,n}$. Наконец $\widetilde{R}_n(a)=\widetilde{R}_n(b)=0$, так как $y_j(a)=y_j(b)=0$. Из этих рассуждений следует, что $\widetilde{R}_n(x)\in\K_{n+1}$ и значит 
+	\begin{equation*}
+		\hfill\J[\widetilde{R}_n]\equiv\frac{\J[R_n]}{{\norm{R_n}}^2}\geqslant\lambda_{n+1},\hfill
+	\end{equation*} 
+	то есть
+	\begin{equation}
+		\label{l6:eq:19}
+		\hfill\frac{\J[R_n]}{\lambda_{n+1}}\geq{\norm{R_n}}^2\quad n\gg1\hfill
+	\end{equation}
+	Здесь мы берём столь большое $n$, что $\lambda_{n+1}>0$ (при $\lambda_{n+1}<0$ надо было бы изменить знак неравенства на противоположный). Покажем, что
+	\begin{equation}
+		\label{l6:eq:20}
+		\hfill\sup\limits_{n}\J[R_n]<+\infty.\hfill
+	\end{equation}
+	Тогда поскольку $\lambda_{n+1}\to+\infty$ при $n\to\infty$ мы получим из~\eqref{l6:eq:19}, что 
+	\begin{equation}
+		\label{l6:eq:21}
+		\hfill\lim\limits_{n\to\infty}{\norm{R_n}}^2=0,\hfill
+	\end{equation}
+	то есть доказано равенство~\eqref{l6:eq:18}. Оценим $\J[R_n]$. Имеем 
+	\begin{equation}
+		\label{l6:eq:22}
+		\J[R_n]=\J[y-S_n]=\big(L(y-S_n),y-S_n\big)=\big(Ly,y\big)-\big(LS_n,y\big)-\big(Ly,S_n\big)+\big(LS_n,S_n\big).
+	\end{equation}
+	Очевидно
+	\begin{gather*}
+		\big(LS_n,y\big)=\sum\limits_{k=1}^n C_k\cdot\big(Ly_k,y\big)=\sum\limits_{k=1}^n C_k\cdot\lambda_k\cdot\big(y_k,y\big)=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}},\\			\big(Ly,S_n\big)=\big(y,LS_n\big)=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}},\\
+		\big(LS_n,S_n\big)=\left(\sum\limits_{k=1}^n C_k\cdot\lambda_k\cdot y_k,\sum\limits_{j=1}^n C_j\cdot y_j\right)=\sum\limits_{k,j=1}^n C_k\cdot \overline{C}_j\cdot\lambda_k\cdot\underbrace{\big(y_k,y_j\big)}_{\delta_{kj}}=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}}.
+	\end{gather*}
+	Подставляя в~\eqref{l6:eq:22} получим 
+	\begin{equation*}
+		\hfill\J[R_n]=\J[y]-\sum\limits_{k=1}^n|C_k|^2\cdot\lambda_k.\hfill
+	\end{equation*}
+	
+	\noindent Пусть $N$ таково, что $\lambda_n>0$ при $n>N$. Тогда при $n>N$ видим, что 
+	\begin{equation*}
+		\hfill\J[R_n]=\J[y]-\sum\limits_{k=1}^{N}|C_k|^2\cdot\lambda_k-\sum\limits_{k=N+1}^{n}|C_k|^2\cdot\lambda_k\leqslant\J[y]-\sum\limits_{k=1}^{N}|C_k|^2\cdot\lambda_k\equiv\J[R_N]\hfill
+	\end{equation*} 
+	Значит при $n>N$ $\J[R_n]\leqslant\J[R_N]$, то есть~\eqref{l6:eq:20} доказано.
+	
+	Нам осталось провести самую сложную часть доказательства. Заметим, что мы нигде не будем использовать тот факт, что функции из $\mc{D}_L$ равны нулю на концах отрезка. Это делается специально для того, чтобы приведённое ниже доказательство можно было использовать для оператора Штурма с другими граничными условиями. 
+	
+	Итак, $y\in\mc{D}_L$, $C_k=\big(y,y_k\big)$. Мы хотим доказать равномерную сходимость ряда $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$. Для этого построим сходящийся числовой ряд	с членами, мажорирующими по модулю члены $C_k\cdot y_k$ рассматриваемого функционального ряда. Имеем
+	\begin{equation}
+		\label{l6:eq:23}
+		\hfill\big|C_k\cdot y_k\big|\leqslant\big|\big(y,y_k\big)\big|\cdot\big|y_k\big|\leqslant\left|\left(y,\frac{Ly}{\lambda_k}\right)\right|\cdot|y_k|=\frac{\big|\big(Ly,y_k\big)\big|}{|\lambda_k|}\cdot|y_k|=\frac{|d_k|}{|\lambda_k|}\cdot|y_k|,\hfill
+	\end{equation}
+	где $d_k=\big(Ly,y_k\big)$ --- обобщённые коэффициенты Фурье функции $Ly$ и поэтому в силу неравенства Бесселя $\left(\scriptstyle\sum\limits_{k=1}^{\infty}\textstyle|d_k|^2\leqslant{\norm{Ly}}^2\right)$ $d_k\to0$ при $k\to \infty$. Переходим к оценке $|y_k(x)|$. Пусть $x,\,x'\in[a,b]$. Имеем
+	\begin{equation}
+		\label{l6:eq:24}
+		\big|\big(y_k^2(x)-y_k^2(x')\big)\big|=\left|\int\limits_{x'}^{x}\der{}{s}y_k^2(s)\,ds\right|\leqslant2\cdot\int\limits_a^b|y_k(s)|\cdot|y'_k(s)|\,ds\leqslant2\cdot\sqrt{\int\limits_a^b y_k^2(s)\,ds}\cdot\sqrt{\int\limits_a^b |y'_k(s)|^2\,ds},
+	\end{equation} 
+	где $\int\limits_a^b y_k^2\,ds=1$. Оценим $\int\limits_a^b y_k^{\prime2}(s)\,ds$. Имеем 
+	\begin{equation}
+		\label{l6:eq:25}
+		\big(Ly_k,y_k\big)=\lambda_k=\J[y_k]=\int\limits_a^b\left(P\cdot y_k^2+Q\cdot y_k^{\prime2}\right)\,ds\geqslant P_0+Q_0\cdot\int\limits_a^b y_k^{\prime2}(s)\,ds,
+	\end{equation}
+	где $P_0=\min\limits_{s\in[a,b]}P(s)$, $Q_0=\min\limits_{s\in[a,b]}Q(s)>0$. Отметим, что при \emph{$Q_0=0$ наше доказательство не проходит}. Из~\eqref{l6:eq:25} следует, что 
+	\begin{equation}
+		\label{l6:eq:26}
+		\hfill\int\limits_a^b y_k^{\prime2}\,ds\geqslant(\lambda_k-P_0)\bigm/Q_0\leqslant\beta_1\cdot\lambda_k,\quad k\gg1\hfill
+	\end{equation}  
+	для некоторой константы $\beta_1>0$. Подставляя~\eqref{l6:eq:26} в~\eqref{l6:eq:24} мы получим 
+	\begin{equation}
+		\label{l6:eq:26a}
+		\hfill y_k^2(x)\leqslant\beta_2\cdot\sqrt{\lambda_k}+y_k^2(x').\tag{\theequation a}\hfill
+	\end{equation}
+	Интегрируя здесь по $x'$ от $a$ до $b$ получим 
+	\begin{equation*}
+		\hfill(b-a)\cdot y_k^2(x)\leqslant\beta_2\cdot\sqrt{\lambda_k}\cdot(b-a)+1.\hfill
+	\end{equation*}
+	Откуда 
+	\begin{equation*}
+		\hfill y_k^2(x)\leqslant\beta_3\cdot\sqrt{\lambda_k},\hfill
+	\end{equation*}
+	где $\beta_3>0$ --- некоторое число. Следовательно
+	\begin{equation}
+		\label{l6:eq:27}
+		\hfill|y_k(x)|\leqslant\beta_4\cdot\lambda_k^{1/4},\quad k\gg1,\hfill
+	\end{equation}
+	где $\beta_4>0$ --- фиксированное число.
+	
+	\noindent Подставим в~\eqref{l6:eq:25} оценку~\eqref{l6:eq:27}. Имеем 
+	\begin{equation}
+		\label{l6:eq:28}
+		\hfill\big|C_k\cdot y_k\big|\leqslant\frac{|d_k|}{|\lambda_k|}\cdot|y_k|\leqslant\frac{\beta_5}{|\lambda_k|^{3/4}},\quad\beta_5>0.\hfill
+	\end{equation}
+	
+	С помощью теоремы сравнения мы ранее установили, что скорость роста собственных значений $\lambda_k$ есть $k^2$, или точнее, $\lambda_k\geqslant\beta_6\cdot k^2$ для некоторого $\beta_6>0$. Подставляя в~\eqref{l6:eq:28} окончательно получаем 
+	\begin{equation}
+		\hfill\big|C_k\cdot y_k\big|\leqslant\frac{\beta_5}{\beta_6\cdot k^{3/2}}\leqslant\beta_7\cdot\frac{1}{k^{3/2}}.\hfill
+	\end{equation}
+	
+	Числовой ряд $\sum\limits_{k=1}^{\infty}\frac{\textstyle1}{\textstyle k^{3/2}}$ сходится, значит ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится равномерно к некоторой непрерывной функции $\hat{y}(x)$. А как мы доказали ранее, $\hat{y}(x)\equiv y(x)$ и тем самым мы доказали первое утверждение теоремы Стеклова --- о равномерной сходимости обобщённого ряда Фурье для функции из $\mc{D}_L$.
+	\vspace{0,2cm}
+	
+	Пусть теперь $y(x)\in\fL$, $C_k=\big(y,y_k\big)$. Составляем обобщённый ряд Фурье $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$. Мы уже говорили, что поскольку последовательность частных сумм фундаментальна, то есть
+	\begin{equation*}
+		\hfill{\norm{S_n-S_m}}^2=\sum\limits_{k=m+1}^n|C_k|^2\to0,\quad m,\,n\to\infty,\ n>m,\hfill
+	\end{equation*}
+	и поэтому ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится в среднем к некоторой функции $\tilde{y}\in\fL[(a,b)]$, то есть
+	\begin{equation}
+		\label{l6:eq:30}
+		\hfill \tilde{y}(x)=\sum\limits_{k=1}^{\infty}C_k\cdot y_k,\hfill
+	\end{equation}
+	где $C_j=\big(\tilde{y},y_j\big)$, ибо $\big(\tilde{y},y_j\big)=\sum\limits_{k=1}^{\infty}C_k\cdot\underbrace{\big(y_k,y_j\big)}_{\delta_{kj}}=C_j$.
+	
+	\noindent Следовательно, обобщённые коэффициенты Фурье одинаковы у функций $\tilde{y}$ и $y$
+	\begin{equation}
+		\label{l6:eq:31}
+		\hfill\big(\tilde{y},y_j\big)=\big(y,y_j\big)\quad\Rightarrow\quad\big(\tilde{y}-y,y_j\big)=0.\hfill
+	\end{equation}
+	Таким образом функция $z\eqdef\tilde{y}-y$ ортогональна к любой собственной функции оператора Штурма и значит $z\perp S_n$. Отсюда следует, что $z(x)$ ортогональна к $\forall f(x)\in\mc{D}_L$. Докажем это. Пусть $\eps>0$, так как обобщённый ряд Фурье для функции $f(x)$ сходится к ней равномерно --- согласно первой части теоремы Стеклова --- то 
+	\begin{equation*}
+		\hfill\text{по }\eps>0\ \exists n,\text{ что }\left|f(x)-\sum\limits_{k=1}^n\alpha_k\cdot y_k(x)\right|<\eps,\text{ где }\alpha_k=\big(f,y_k\big).\hfill
+	\end{equation*} 
+	Имеем, полагая $S_n=\sum\limits_{k=1}^n\alpha_k\cdot y_k$
+	\begin{equation}
+		\label{l6:eq:32}
+		\hfill\left|\big(z,f\big)\right|=\left|\big(z,f-S_n\big)\right|\leqslant\norm{z}\cdot\norm{f-S_n}\leqslant\eps\cdot\sqrt{b-a}\cdot\norm{z}.\hfill
+	\end{equation}
+	Так как $\norm{f-S_n}=\sqrt{\smallint\limits_a^b|f-S_n|^2\,dx}\leqslant\eps\cdot\sqrt{b-a}$. Так как $\eps>0$ --- любое число, то из~\eqref{l6:eq:32} следует, что
+	\begin{equation}
+		\label{l6:eq:33}
+		\hfill\big(z,f\big)=0,\quad\forall f\in\mc{D}_L.\hfill
+	\end{equation}  
+	Можно доказать, что любую функцию из $\fL$ можно аппроксимировать с заданной точностью $\eps>0$ по норме \fL[] функцией из $\mc{D}_L$\footnote{Этот факт --- без доказательства.}. Пусть $f_{\eps}(x)\in\mc{D}_L$ и 
+	\begin{equation}
+		\label{l6:eq:34}
+		\hfill{\norm{z-f_{\eps}}}^2<\eps\quad\Rightarrow\quad\big(z-f_{\eps},z-f_{\eps}\big)={\norm{z}}^2-\big(f_{\eps},z\big)-\big(z,f_{\eps}\big)+{\norm{f_{\eps}}}^2<\eps.\hfill
+	\end{equation}
+	Но в силу~\eqref{l6:eq:33} $\big(f_{\eps},z\big)=\big(z,f_{\eps}\big)=0$. Так как $f_{\eps}\in\mc{D}_L$. Поэтому из~\eqref{l6:eq:34} следует, что ${\norm{z}}^2<\eps$, то есть
+	\begin{equation*}
+		\hfill\norm{z}=0\quad\Rightarrow\quad\norm{y-\tilde{y}}=0.\hfill
+	\end{equation*}
+	Значит, сумма $\tilde{y}$ обобщённого ряда Фурье, написанного для функции $y(x)$, есть $y(x)$. Таким образом второе утверждение теоремы Стеклова доказано.
+\end{proof}

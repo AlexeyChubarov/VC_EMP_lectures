@@ -1,0 +1,41 @@
+\babel@toc {russian}{}
+\contentsline {part}{Часть~\CYRA \hspace {1em}Вариационное исчисление.}{4}{part.1}%
+\contentsline {chapter}{\numberline {Лекция~1}}{5}{chapter.1}%
+\contentsline {section}{\numberline {1}Определение функционала. Примеры вариационных задач.}{5}{section.1.1}%
+\contentsline {section}{\numberline {2}Задачи с неподвижными концами.}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {Лекция~2}}{13}{chapter.2}%
+\contentsline {section}{\numberline {1}Примеры решения уравнения Эйлера-Лагранжа.}{13}{section.2.1}%
+\contentsline {section}{\numberline {2}Задачи для функционалов, зависящих от вектор-функций.}{14}{section.2.2}%
+\contentsline {section}{\numberline {3}Примеры решения системы Эйлера--Лагранжа.}{16}{section.2.3}%
+\contentsline {section}{\numberline {4}Принцип Гамильтона.}{17}{section.2.4}%
+\contentsline {section}{\numberline {5}Задачи для функционалов, зависящих от старших производных.}{18}{section.2.5}%
+\contentsline {chapter}{\numberline {Лекция~3}}{20}{chapter.3}%
+\contentsline {section}{\numberline {1}Задачи для функционалов, зависящих от старших производных (продолжение).}{20}{section.3.1}%
+\contentsline {section}{\numberline {2}Задачи со свободными концами.}{22}{section.3.2}%
+\contentsline {section}{\numberline {3}Задачи с <<подвижными концами>>.}{25}{section.3.3}%
+\contentsline {chapter}{\numberline {Лекция~4}}{28}{chapter.4}%
+\contentsline {section}{\numberline {1}Изопериметрические задачи.}{28}{section.4.1}%
+\contentsline {section}{\numberline {2}Квадратичный функционал. Оператор Штурма.}{34}{section.4.2}%
+\contentsline {chapter}{\numberline {Лекция~5}}{37}{chapter.5}%
+\contentsline {section}{\numberline {1}Теорема сравнения.}{37}{section.5.1}%
+\contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{38}{section.5.2}%
+\contentsline {chapter}{\numberline {Лекция~6}}{45}{chapter.6}%
+\contentsline {section}{\numberline {1}Теорема сравнения.}{45}{section.6.1}%
+\contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{46}{section.6.2}%
+\contentsline {chapter}{\numberline {Лекция~7}}{53}{chapter.7}%
+\contentsline {section}{\numberline {1}Оператор Штурма с другими граничными условиями.}{53}{section.7.1}%
+\contentsline {chapter}{\numberline {Лекция~8}}{60}{chapter.8}%
+\contentsline {section}{\numberline {1}Обобщённая задача Штурма.}{60}{section.8.1}%
+\contentsline {section}{\numberline {2}Функционал Бесселя. Уравнение Бесселя.}{65}{section.8.2}%
+\contentsline {chapter}{\numberline {Лекция~9}}{68}{chapter.9}%
+\contentsline {section}{\numberline {1}Функционал Бесселя. Уравнение Бесселя. (Продолжение.)}{68}{section.9.1}%
+\contentsline {section}{\numberline {2}Функционалы, зависящие от функций двух переменных.}{71}{section.9.2}%
+\contentsline {section}{\numberline {3}Вариационные задачи со свободной границей.}{74}{section.9.3}%
+\contentsline {part}{Часть~\CYRB \hspace {1em}Уравнения математической физики.}{77}{part.2}%
+\contentsline {chapter}{\numberline {Лекция~11}}{78}{chapter.11}%
+\contentsline {section}{\numberline {1}Уравнение малых колебаний струны.}{78}{section.11.1}%
+\contentsline {chapter}{\numberline {Лекция~12}}{84}{chapter.12}%
+\contentsline {section}{\numberline {1}Уравнение малых колебаний струны (продолжение).}{84}{section.12.1}%
+\contentsline {section}{\numberline {2}Свободные колебания однородной струны.}{86}{section.12.2}%
+\contentsline {section}{\numberline {3}Понятие о функции Грина.}{89}{section.12.3}%
+\contentsline {section}{\numberline {4}Свободные колебания однородной струны с другими г. у.}{90}{section.12.4}%

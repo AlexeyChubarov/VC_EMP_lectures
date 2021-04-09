@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper,openany,fleqn]{book}
+
+\usepackage{cmap}
+\usepackage[left=1.3cm, right=1.3cm, top=1.4cm, bottom=1.3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{gensymb}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{perpage}
+\usepackage{enumitem}
+\usepackage[unicode, colorlinks=true]{hyperref}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{xfrac}
+\usepackage{tocloft}    
+\usepackage{titlesec} \titlelabel{\thetitle.\quad}
+
+\setcounter{tocdepth}{1}
+
+\setlength{\mathindent}{0em}
+
+\addto{\captionsrussian}{\renewcommand{\contentsname}{Содержание}}
+\addto{\captionsrussian}{\renewcommand{\chaptername}{Лекция}}
+
+\newcommand {\defeq}{\stackrel{\hspace{0.09 cm}de\!f}{=}}
+\newcommand {\eqdef}{\defeq}
+\newcommand{\iffdef}{\stackrel{\hspace{0.09 cm}de\!f}{\iff}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Cf}{\ensuremath{\mathcal{C}}}
+\newcommand{\J}{\ensuremath{\mathcal{J}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\Cfn}[2][]{\ensuremath{\Cf{\mathstrut}^{#2}_{#1}}}
+\newcommand{\der}[2]{\ensuremath{\frac{d#1}{d#2}}}
+\newcommand{\dder}[2]{\ensuremath{\frac{d^2#1}{d#2^2}}}
+\newcommand{\pder}[2]{\ensuremath{\frac{\partial#1}{\partial#2}}}
+\newcommand{\pdder}[2]{\ensuremath{\frac{\partial^2#1}{\partial#2^2}}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\K}{\mc{K}}
+\newcommand{\LL}{\ensuremath{L}}
+\newcommand{\fL}[1][{[a,b]}]{\ensuremath{\mathscr{L}\hspace*{-0.11 cm}{\mathstrut}_{2}{\scriptstyle#1}}}
+\newcommand{\norm}[1]{\ensuremath{\left\|#1\right\|}}
+\newcommand{\Ul}[1][\lambda]{\ensuremath{\mc{U}\!{\mathstrut}_{#1}}}
+\newcommand{\fLr}[1][{[a,b];\rho}]{\ensuremath{\mathscr{L}\hspace*{-0.11 cm}{\mathstrut}_{2}{\scriptstyle\left(\vphantom{A^b}#1\right)}}}
+\newcommand{\dd}{\ensuremath{d}}
+
+\DeclareMathOperator\Tg{tg}
+\DeclareMathOperator{\Div}{div}
+
+
+
+
+\pagestyle{headings}
+
+\theoremstyle{definition}
+\newtheorem{_def}{Определение}[section]
+\newtheorem{_lemm}{Лемма}[section]
+\newtheorem{_teor}{Теорема}[section]
+\newtheorem*{_rem}{Замечание}
+\newtheorem*{_con}{Следствие}
+\MakePerPage{footnote}
+
+\setlist[enumerate,1]{label=\alph*), ref=\alph*)}
+
+\newlist{enumerate1}{enumerate}{1}
+\setlist[enumerate1,1]{label=\arabic*), ref=\arabic*)}
+\newlist{enumerateA}{enumerate}{1}
+\setlist[enumerateA,1]{label=\Alph*), ref=\Alph*)}
+
+\newlist{enumerateD}{enumerate}{2}
+\setlist[enumerateD,1]{label=\arabic*., ref=\arabic*.}
+\setlist[enumerateD,2]{{label=\alph*., ref=\alph*.}}
+
+\newlist{enumerateBr}{enumerate}{1}
+\setlist[enumerateBr,1]{label=\underline{(\arabic*)}, ref=\underline{(\arabic*)}}
+
+\newlist{enumerateP1}{enumerate}{1}
+\setlist[enumerateP1,1]{label=п.\,\arabic*.,ref=п.\,\arabic*.}
+
+\newlist{enumeraterm}{enumerate}{1}
+\setlist[enumeraterm,1]{label=\roman*),ref=\roman*)}
+
+\nofiles
+
+\begin{document}
+	\author{Г.\,М.~Жислин}
+	\title{Лекции по вариационному исчислению и уравнениям математической физики}
+	\date{Конспектировал А.\,Г.~Чубаров}
+	
+	
+	
+	\maketitle
+	\tableofcontents
+	
+	\renewcommand{\thepart}{\Asbuk{part}}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\renewcommand{\thesection}{\arabic{section}}
+	\renewcommand{\thesubsection}{\Roman{subsection}}
+	\renewcommand{\thefootnote}{\roman{footnote}}
+	\renewcommand{\phi}{\varphi}
+	\renewcommand{\Re}{\ensuremath{\mc{R}e\,}}
+	\renewcommand{\Im}{\ensuremath{\mc{I}m\,}}
+	\numberwithin{equation}{section}
+	
+	\part{Вариационное исчисление.}
+	\label{part1}
+	\input{lection1.tex}
+	\input{lection2.tex}
+	\input{lection3.tex}
+	\input{lection4.tex}
+	\input{lection5.tex}
+	\input{lection6.tex}
+	\input{lection7.tex}
+	\input{lection8.tex}
+	\input{lection9.tex}
+	\part{Уравнения математической физики.}
+	\label{part2}
+	\setcounter{chapter}{10}
+	\input{lection11.tex}
+	\input{lection12.tex}
+\end{document}	
+	
