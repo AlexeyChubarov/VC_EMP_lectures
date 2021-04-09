@@ -131,17 +131,17 @@
 	Сформулируем теперь общую постановку задачи
 	\begin{multline*}
 		\text{Пусть }\J[y]=\int\limits_a^b F(x,y,y')\,dx,\ F\in\Cfn{2},\;x\in[a,b],\ |y| <M,\ y'\text{ --- любое},\\
-		\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\;y(b)=y_1,\ |y|<M,\ \int\limits_a^b G(x,y,y')\,dx=l\right\}.
+		\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\;y(b)=y_1,\ |y|<M,\ \int\limits_a^b G(x,y,y')\,dx=l\right\}_{\displaystyle.}
 	\end{multline*}
 	Надо найти $\min\limits_{y\in\K}\,\J[y]$.
- 	
+ 	Пусть 
  	\begin{equation*}
- 		\text{Пусть }\J_1[y]\eqdef\int\limits_a^b G(x,y,y')\,dx.
+ 		\hfill\J_1[y]\eqdef\int\limits_a^b G(x,y,y')\,dx.\hfill
  	\end{equation*}
   	Будем предполагать, что ни одна из функций $y(x)\in\K$ не является экстремалью функционала $\J_1[y]$, то есть не удовлетворяет уравнению
   	\begin{equation}
   		\label{l4:eq:1}
-  		\hfill G_y-\der{}{x}G_{y'}\equiv0\hfill
+  		\hfill G_y-\der{}{x}G_{y'}\equiv0.\hfill
   	\end{equation}
   Если это не так, то есть $\exists y\in\K$, для которого~\eqref{l4:eq:1} выполняется, то тогда, считая, что функционал $\J_1[y]$ принимает на экстремалях экстремальные значения, получаем, что $\J_1[y]=l$ --- экстремальное значение. Но это равенство должно выполняться на любой функции из $\K$. Значит, весь класс \K{} в этом случае состоит из экстремалей функционала $\J_1[y]$. Но экстремаль --- в общем случае --- одна. Поэтому при выполнении~\eqref{l4:eq:1} мы получаем, что как правило, весь класс \K{} вырождается в одну функцию и задача на $\min\limits_{y\in\K}\,\J[y]$ теряет смысл.
   
@@ -156,7 +156,7 @@
 	
 	Построим $\eta(x)$. Функции $\eta_1(x)$ и $\eta_2(x)$ берём из $\Cfn[{[a,b]}]{1}$, $\eta_i(a)=\eta_i(b)=0$, $i=1,2$. Попробуем обеспечить выполнение условия $\J[\tilde{y}]=l$. Положим
 	\begin{equation*}
-		\Psi(t,\alpha)\eqdef\int\limits_a^b \overbrace{G\big(x,\underbrace{y+t\cdot\eta_1+\alpha(t)\cdot\eta_2}_{\tilde{y}},\underbrace{y'+t\cdot\eta'_1+\alpha(t)\cdot\eta'_2}_{\tilde{y}'}\big)}^{\widetilde{G}}\,dx.
+		\hfill\Psi(t,\alpha)\eqdef\int\limits_a^b \overbrace{G\big(x,\underbrace{y+t\cdot\eta_1+\alpha(t)\cdot\eta_2}_{\tilde{y}},\underbrace{y'+t\cdot\eta'_1+\alpha(t)\cdot\eta'_2}_{\tilde{y}'}\big)}^{\widetilde{G}}\,dx.\hfill
 	\end{equation*}
 Нам надо найти $\eta_2$ и функцию $\alpha(t)$ так, чтобы при $\forall\eta_1$ и $|t|\ll1$
 \begin{equation}
@@ -172,14 +172,14 @@
 Если бы правая часть~\eqref{l4:eq:3} равнялась нулю при $\forall\eta_2$, $\eta_2\in\Cfn[{[a,b]}]{1}$, $\eta_2(a)=\eta_2(b)=0$, то в силу леммы Лагранжа выполнялось бы~\eqref{l4:eq:1}. Но~\eqref{l4:eq:1} --- не верно по предположению. Значит мы можем найти $\eta_2$ так, что
 \begin{equation}
 	\label{l4:eq:4}
-	\hfill\left.\pder{\Psi(t,\alpha)}{\alpha}\right|_{\substack{t=0\\\alpha=0}}\neq0\hfill
+	\hfill\left.\pder{\Psi(t,\alpha)}{\alpha}\right|_{\substack{t=0\\\alpha=0}}\neq0.\hfill
 \end{equation}
 Выберем такую функцию $\eta_2(x)$ и зафиксируем её. После этого в силу~\eqref{l4:eq:4} по теореме о неявных функциях из равенства~\eqref{l4:eq:2}, \emph{верного при  $t=0$, $\alpha=0$}, мы находим $\alpha(t)$, $|t|\ll1$, обеспечивая тем самым выполнение изопериметрического условия. Таким образом, при выбранных $\alpha=\alpha(t)$ и $\eta_2$ функция $\eta=t\cdot\eta_1(x)+\alpha(t)\cdot\eta_2(x)$ --- допустимое изменение.
 
 Для дальнейшего нам понадобится $\displaystyle\left.\pder{\Psi(t,\alpha)}{t}\right|_{\substack{t=0\\\alpha=0}}$. Чтобы найти эту величину достаточно в~\eqref{l4:eq:3} заменить $\eta_2$ на $\eta_1$ и мы получим 
 \begin{equation}
 	\label{l4:eq:5}
-	\hfill\left.\pder{\Psi(t,\alpha)}{t}\right|_{\substack{t=0\\\alpha=0}}=\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx\hfill
+	\hfill\left.\pder{\Psi(t,\alpha)}{t}\right|_{\substack{t=0\\\alpha=0}}=\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx.\hfill
 \end{equation}
 
 Возвратимся теперь к нашему доказательству. Так как $\tilde{y}=y+\eta\in\K$, то поскольку $y$ --- минимайзер, то 
@@ -202,12 +202,12 @@
 	\label{l4:eq:9}
 	\left.\der{\phi}{t}\right|_{t=0}=\left.\der{\J[y+t\cdot\eta_1+\alpha(t)\cdot\eta_2]}{t}\right|_{t=0}=\left.\der{}{t}\int\limits_a^b \overbrace{F\big(x,\underbrace{y+t\cdot\eta_1+\alpha(t)\cdot\eta_2}_{\tilde{y}},\underbrace{y'+t\cdot\eta'_1+\alpha(t)\cdot\eta'_2}_{\tilde{y}'}\big)}^{\widetilde{F}}\,dx\right|_{t=0}=\\
 	=\left.\int\limits_a^b\left[\widetilde{F}_{\tilde{y}}\cdot\big(\eta_1+\alpha'(t)\cdot\eta_2\big)+\widetilde{F}_{\tilde{y}'}\cdot\big(\eta'_1+\alpha'(t)\cdot\eta'_2\big)\right]\,dx\right|_{t=0}=\\
-	=\int\limits_a^b\left[{F}_{{y}}\cdot\big(\eta_1+\alpha'(0)\cdot\eta_2\big)+{F}_{y'}\cdot\big(\eta'_1+\alpha'(0)\cdot\eta'_2\big)\right]\,dx=0
+	=\int\limits_a^b\left[{F}_{{y}}\cdot\big(\eta_1+\alpha'(0)\cdot\eta_2\big)+{F}_{y'}\cdot\big(\eta'_1+\alpha'(0)\cdot\eta'_2\big)\right]\,dx=0.
 \end{multline}
 Обычное интегрирование по частям показывает, что
 \begin{equation}
 	\label{l4:eq:10}
-	\int\limits_a^b F_{y'}\cdot\big(\eta'_1+\alpha'(0)\cdot\eta'_2\big)\,dx=-\int\limits_a^b\der{}{x}F_{y'}\cdot\big(\eta_1+\alpha'(0)\cdot\eta_2\big)\,dx
+	\hfill\int\limits_a^b F_{y'}\cdot\big(\eta'_1+\alpha'(0)\cdot\eta'_2\big)\,dx=-\int\limits_a^b\der{}{x}F_{y'}\cdot\big(\eta_1+\alpha'(0)\cdot\eta_2\big)\,dx.\hfill
 \end{equation}
 Далее находим $\alpha'(0)$. Так как 
 \begin{equation*}
@@ -228,14 +228,14 @@
 \begin{multline}
 	\label{l4:eq:12}
 	\left.\der{}{t}\J[y+t\cdot\eta_1+\alpha(t)\cdot\eta_2]\right|_{t=0}=\int\limits_a^b\left[F_y\cdot\big(\eta_1+\alpha'(0)\cdot\eta_2\big)+F_{y'}\cdot\big(\eta'_1+\alpha'(0)\cdot\eta'_2\big)\right]\,dx=\\
-	=\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_1\,dx-\frac{\displaystyle\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx}{\displaystyle\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_2\,dx}\cdot\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_2\,dx=0
+	=\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_1\,dx-\frac{\displaystyle\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx}{\displaystyle\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_2\,dx}\cdot\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_2\,dx=0.
 \end{multline}  
 \begin{equation*}
 	\text{Отношение }\frac{\displaystyle\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_2\,dx}{\displaystyle\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_2\,dx}\text{ обозначим через }\lambda.
 \end{equation*}
 Подставляя в~\eqref{l4:eq:12}, получим
 \begin{equation*}
-	\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_1\,dx-\lambda\cdot\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx=0,
+	\hfill\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta_1\,dx-\lambda\cdot\int\limits_a^b\left(G_y-\der{}{x}G_{y'}\right)\cdot\eta_1\,dx=0,\hfill
 \end{equation*} 
 откуда полагая
 \begin{equation*}
@@ -254,17 +254,19 @@
 Отсюда находим $y=y(x,c_1,c_2,\lambda)$. 
 
 Для нахождения неизвестных $c_1$, $c_2$, $\lambda$ у нас есть граничные условия 
-\begin{gather*}
-	y(a,c_1,c_2,\lambda)=y_0,\ y(b,c_1,c_2,\lambda)=y_1
-	\intertext{и изопериметрическое условие}
-	\int\limits_a^b G(x,y,y')\,dx=l.
-\end{gather*} 
+\begin{equation*}
+	\hfill y(a,c_1,c_2,\lambda)=y_0,\quad y(b,c_1,c_2,\lambda)=y_1\hfill
+\end{equation*}
+и изопериметрическое условие
+\begin{equation*}
+	\hfill\int\limits_a^b G(x,y,y')\,dx=l.\hfill
+\end{equation*} 
 
 Рассмотрим (без доказательства) некоторые обобщения.
 \begin{enumerateD}
 	\item Рассмотрим ситуацию, когда изопериметрических условий --- несколько.
 	\begin{equation*}
-	\J[y]=\int\limits_a^b F(x,y,y')\,dx,\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\,y(b)=y_1,\ \int\limits_a^b G_i(x,y,y')\,dx=l_i,\ i=\overline{1,m}\right\}.
+	\J[y]=\int\limits_a^b F(x,y,y')\,dx,\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\,y(b)=y_1,\ \int\limits_a^b G_i(x,y,y')\,dx=l_i,\ i=\overline{1,m}\right\}_{\displaystyle.}
 	\end{equation*}
 	В этом случае для нахождения минимайзера составляют 
 	\begin{equation*}
@@ -292,7 +294,7 @@
 \end{equation*}
 \item Рассматриваем функционал 
 \begin{equation*}
-	\J[y_1,\ldots,y_n]=\int\limits_a^b F(x,y_1,\ldots,y_n,y'_1,\ldots,y'_n)\,dx
+	\hfill\J[y_1,\ldots,y_n]=\int\limits_a^b F(x,y_1,\ldots,y_n,y'_1,\ldots,y'_n)\,dx\hfill
 \end{equation*}
 в классе 
 \begin{multline*}
@@ -324,16 +326,16 @@
 	\item Рекомендуемый в литературе метод. Составляют функцию
 	\begin{equation}
 		\label{l4:eq:ast}
-		F^{\ast}=F-\sum\limits_{i=1}^{m}\lambda_i(x)\cdot G_i.\tag{$\ast$}
+		\hfill F^{\ast}=F-\sum\limits_{i=1}^{m}\lambda_i(x)\cdot G_i.\tag{$\ast$}\hfill
 	\end{equation} 
 	Далее пишут систему уравнений
 	\begin{equation}
 		\label{l4:eq:21}
-		F^{\ast}_{y_j}-\der{}{x}F^{\ast}_{y'_j}=0,\quad j=\overline{1,n},
+		\hfill F^{\ast}_{y_j}-\der{}{x}F^{\ast}_{y'_j}=0,\quad j=\overline{1,n},\hfill
 	\end{equation}
 	то есть 
 	\begin{equation*}
-		F_{y_j}-\sum\limits_{i=1}^n\lambda_i(x)\cdot\pder{G_i}{y_j}-\der{}{x}F_{y_j}=0,\quad j=\overline{1,n}
+		\hfill F_{y_j}-\sum\limits_{i=1}^n\lambda_i(x)\cdot\pder{G_i}{y_j}-\der{}{x}F_{y_j}=0,\quad j=\overline{1,n}\hfill
 	\end{equation*}
 	и плюс $m$ уравнений~\eqref{l4:eq:20}.
 	В случае не голономных связей рецептура та же, то есть аналогично~\eqref{l4:eq:ast} составляется $	F^{\ast}$ и затем рассматриваем~\eqref{l4:eq:20} вместе с~\eqref{l4:eq:21}.
@@ -381,13 +383,13 @@
 \end{tikzpicture}
 
 Итак минимизируемый функционал
-\begin{gather*}
-	\J[y]=\int\limits_a^b\sqrt{1+y^{\prime2}}\,dx,
-	\K\left\{y(x)|y\in\Cfn[{[a,b]}]{1}\ y(a)=y_0,\,y(b)=y_1,\ \int\limits_a^b y\,dx=S\right\}.
-\end{gather*}
+\begin{equation*}
+	\hfill\J[y]=\int\limits_a^b\sqrt{1+y^{\prime2}}\,dx,\quad
+	\K\left\{y(x)|y\in\Cfn[{[a,b]}]{1}\ y(a)=y_0,\,y(b)=y_1,\ \int\limits_a^b y\,dx=S\right\}_{\displaystyle.}\hfill
+\end{equation*}
 Ищем $\min\limits_{y\in\K}\,\J[y]$. Для функционала $\J_1[y]=\smallint\limits_a^b y\,dx$ значение $S$ --- не экстремальное, поэтому применима общая теория
 \begin{equation*}
-	F^{\ast}\eqdef\sqrt{1+y^{\prime2}}-\lambda\cdot y\quad\Rightarrow\quad F^{\ast}_{y}-\der{}{x}F^{\ast}_{y'}=0.
+	\hfill F^{\ast}\eqdef\sqrt{1+y^{\prime2}}-\lambda\cdot y\quad\Rightarrow\quad F^{\ast}_{y}-\der{}{x}F^{\ast}_{y'}=0.\hfill
 \end{equation*}
 Так как $F^{\ast}$ не содержит $x$, то уравнение Эйлера имеет первый интеграл $F^{\ast}-y'\cdot F^{\ast}_{y'}=c_1$, то есть
 \begin{gather*}
@@ -405,7 +407,7 @@
 	\text{где }Q(x)\in\Cfn[{[a,b]}]{1},\ Q(x)>0,\,x\neq a,\ P(x)\in\Cfn[{[a,b]}]{},\text{ или }P(x)\geqslant0,\ P(x)\in\Cfn[{(a,b]}]{}.
 \end{equation*}
 \begin{equation*}
-	\text{Класс функций }\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y(b)=0,\ \int\limits_a^b y^2\,dx=1\right\}
+	\text{Класс функций }\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y(b)=0,\ \int\limits_a^b y^2\,dx=1\right\}_{\displaystyle.}
 \end{equation*}
 Покажем, что $\min\limits_{y\in\K}\,\J[y]>-\infty$, то есть задача отыскания $\min\limits_{y\in\K}\,\J[y]$ имеет смысл. Очевидно
 \begin{equation*}
@@ -433,14 +435,14 @@
 \end{equation}
 Оператор $\LL$ рассматривается в области 
 \begin{equation*}
-	\hfill\mc{D}_{\LL}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}.\hfill
+	\hfill\mc{D}_{\LL}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}_{\displaystyle.}\hfill
 \end{equation*}
 Очевидно, что оператор \LL{} --- линейный, и решения~\eqref{l4:eq:23} --- это собственные функции, отвечающие собственному значению $\lambda$.
 
 Далее мы займёмся изучением свойств собственных функций и собственных значений в~\eqref{l4:eq:23}. Для того, чтобы понять, что можно ожидать в общем случае, мы рассмотрим сначала случай постоянных коэффициентов: $Q=c_1$, $P=c_2$, причём $Q>0$, а в качестве отрезка $[a,b]$ возьмём отрезок $[0,l]$. Таким образом мы приходим к задаче
 \begin{equation}
 	\label{l4:eq:24}
-	-c_1\cdot y''+c_2\cdot y=\lambda\cdot y\quad\Rightarrow\quad y''+\frac{\lambda-c_2}{c_1}\cdot y=0,
+	\hfill-c_1\cdot y''+c_2\cdot y=\lambda\cdot y\quad\Rightarrow\quad y''+\frac{\lambda-c_2}{c_1}\cdot y=0,\hfill
 \end{equation}
 при $y(0)=y(l)=0$.
 

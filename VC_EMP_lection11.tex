@@ -132,7 +132,6 @@
 	 где $T$ и $V$ --- кинетическая и потенциальная энергии струны. Найдём первую вариацию $\delta\J$ и затем из равенства $\delta\J=0$ получим уравнение колебаний струны и --- в соответствующих случаях --- граничные условия как ЕГУ (естественные граничные условия).
 	 
 	 Пусть струна оттянута от положения равновесия и отпущена. Мы рассматриваем только малые колебания: $|u_x(x,t)|\ll1$.
-	 \vspace{-0.4cm}
 	 \begin{gather*}
 	 	\text{Энергия струны }\\
 	 	\qquad\qquad\text{кинетическая}\rightarrow T=T_{\text{р}}+T_{\text{с}},\ V=V_{\text{р}}+V_{\text{с}}\leftarrow\text{потенциальная},
@@ -376,11 +375,11 @@
 \begin{multline}
 	\label{l11:eq:2}
 	\int\limits_{\partial\Omega_1}P\,dl=\int\limits_{t_0}^{t_1}P\bigg|_{\lefteqn{\scriptstyle x=\overline{x}-0}}\,dt\quad+\int\limits_{t_1}^{t_0}P\bigg|_{\lefteqn{\scriptstyle x=a+0}}\,dl\quad=\int\limits_{t_0}^{t_1}P\bigg|_{\lefteqn{\scriptstyle x=\overline{x}-0}}\,dt\quad+\int\limits_{t_0}^{t_1}P\bigg|_{\lefteqn{\scriptstyle x=a+0}}\,dt\quad=\\
-		=\int\limits_{t_0}^{t_1}\left[\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=a+0}}\cdot\eta(a,t)-\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=\overline{x}-0}}\cdot\eta(\overline{x},t)\right]\,dt
+		=\int\limits_{t_0}^{t_1}\left[\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=a+0}}\cdot\eta(a,t)-\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=\overline{x}-0}}\cdot\eta(\overline{x},t)\right]\,dt.
 \end{multline}  
 \begin{equation}
 	\label{l11:eq:3}
-	\int\limits_{\partial\Omega_2}P\,dl=\int\limits_{t_0}^{t_1}P\bigg|_{\lefteqn{\scriptstyle x=b-0}}\,dt\quad+\int\limits_{t_1}^{t_0}P\bigg|_{\lefteqn{\scriptstyle x=\overline{x}+0}}\,dl\quad=\int\limits_{t_0}^{t_1}\left[-\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=b-0}}\cdot\eta(b,t)+\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=\overline{x}+0}}\cdot\eta(\overline{x},t)\right]\,dt
+	\int\limits_{\partial\Omega_2}P\,dl=\int\limits_{t_0}^{t_1}P\bigg|_{\lefteqn{\scriptstyle x=b-0}}\,dt\quad+\int\limits_{t_1}^{t_0}P\bigg|_{\lefteqn{\scriptstyle x=\overline{x}+0}}\,dl\quad=\int\limits_{t_0}^{t_1}\left[-\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=b-0}}\cdot\eta(b,t)+\mu\cdot u_x\bigg|_{\lefteqn{\scriptstyle x=\overline{x}+0}}\cdot\eta(\overline{x},t)\right]\,dt.
 \end{equation}
 Здесь учтено, что $dl=dt$ при интегрировании по $BC$, $M\!N$ и $dl=-dt$ при интегрировании по $N\!M$ и $D\!A$.
 
@@ -388,7 +387,7 @@
 \begin{multline}
 	\label{l11:eq:4}
 	\delta\J=\gamma\cdot\left\{\vphantom{\iint\limits_{\Omega_j}}\right.\!\sum\limits_{j=1}^{2}\iint\limits_{\Omega_j}\left[f+\pder{}{x}\big(\mu\cdot u_x\big)-\pder{}{t}\big(\rho\cdot u_t\big)\right]\cdot\eta\,dxdt+\\
-	+\int\limits_{t_0}^{t_1}\left[\mu\cdot u_x\cdot\eta\bigg|_{x=a+0}-\mu\cdot u_x\cdot\eta\bigg|_{x=\overline{x}-0}-\mu\cdot u_x\cdot\eta\bigg|_{x=b-0}+\mu\cdot u_x\cdot\eta\bigg|_{x=\overline{x}+0}-\big(\overline{m}\cdot u_{tt}+g_u\big)\cdot\eta\bigg|_{x=\overline{x}}\,\right]\,dt\!\left.\vphantom{\iint\limits_{\Omega_j}}\right\}
+	+\int\limits_{t_0}^{t_1}\left[\mu\cdot u_x\cdot\eta\bigg|_{x=a+0}-\mu\cdot u_x\cdot\eta\bigg|_{x=\overline{x}-0}-\mu\cdot u_x\cdot\eta\bigg|_{x=b-0}+\mu\cdot u_x\cdot\eta\bigg|_{x=\overline{x}+0}-\big(\overline{m}\cdot u_{tt}+g_u\big)\cdot\eta\bigg|_{x=\overline{x}}\,\right]\,dt\!\left.\vphantom{\iint\limits_{\Omega_j}}\right\}_{\displaystyle.}
 \end{multline}
 Взяв $\eta(a,t)=\eta(b,t)=\eta(\overline{x},t)=0$ и затем $\eta(x,t)\equiv0$, при $(x,t)\in\Omega_2$ получим условие $\delta\J=0$ в виде 
 \begin{equation*}

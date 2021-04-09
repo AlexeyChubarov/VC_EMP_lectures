@@ -109,7 +109,7 @@
 	\begin{equation*}
 		\J[y]=\int\limits_a^b\Big(Q\cdot y^{\prime2}+P\cdot y^2\Big)\,dx,\quad\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y(b)=0,\ \int\limits_a^b\rho\cdot y^2\,dx=1\right\},
 	\end{equation*}
-	где $\rho(x)>0$, при $x\in(a,b]$ некоторая функция. Ищем $\displaystyle\min\limits_{y\in\K}\,\J[y]$. Составляем $F^{*}=F-\lambda\cdot G=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot\rho\cdot y^2$ и пишем для $F^{*}$ уравнение Эйлера. Получим	
+	где $\rho(x)>0$ при $x\in(a,b]$ ---  некоторая непрерывная функция. Ищем $\displaystyle\min\limits_{y\in\K}\,\J[y]$. Составляем $F^{*}=F-\lambda\cdot G=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot\rho\cdot y^2$ и пишем для $F^{*}$ уравнение Эйлера. Получим	
 	\begin{equation}
 			\label{l8:eq:1}
 			\hfill P\cdot y-\der{}{x}\Big(Q\cdot y'\Big)-\lambda\cdot\rho\cdot y=0\quad\text{или}\quad Ly=\lambda\cdot\rho\cdot y\hfill
@@ -119,7 +119,7 @@
 		\begin{equation*}
 			\hfill\big(Ly,y\big)=\big(y,Ly\big)=\overline{\big(Ly,y\big)}.\hfill
 		\end{equation*}
-	Значит, число $\big(Ly,y\big)$ --- вещественно и поэтому из~\eqref{l8:eq:1} следует вещественность собственного значения $\lambda$ обобщённой задачи Штурма
+	Значит, число $\big(Ly,y\big)$ --- вещественно и поэтому из~\eqref{l8:eq:1} следует вещественность собственного значения $\lambda$ обобщённой задачи Штурма:
 	\begin{equation}
 		\label{l8:eq:2}
 		\hfill\big(Ly,y\big)=\lambda\cdot\big(\rho\cdot y,y\big)\quad\Rightarrow\quad\lambda=\big(Ly,y\big)\!\Bigm/\!\big(\rho\cdot y,y\big)\text{ --- вещественно.}\hfill
@@ -134,11 +134,11 @@
 		\end{equation}	
 		Откуда 
 		\begin{equation}
-			\hfill(\lambda_2-\lambda_1)\cdot\big(y_1,\rho\cdot y_2\big)=0\quad\Rightarrow\quad\big(y_1,\rho\cdot y_2\big).\hfill
+			\hfill(\lambda_2-\lambda_1)\cdot\big(y_1,\rho\cdot y_2\big)=0\quad\Rightarrow\quad\big(y_1,\rho\cdot y_2\big)=0.\hfill
 		\end{equation}
 	\end{proof}
 
-	Пусть\  $\Ul=\left\{y(x)|Ly=\lambda\cdot\rho\cdot y\right\}$ --- собственное подпространство для обобщённой задачи Штурма. Точно так же как и в обычной задаче Штурма, доказывается, что $\dim\Ul=1$, то есть собственные значения обобщённой задачи Штурма --- не вырождены и каждому $\lambda$ отвечает одна (с точностью до знака) нормированная $\smallint\limits_a^b\rho\cdot y^2\,dx$ собственная функция обобщённой задачи Штурма.
+	Пусть\  $\Ul=\left\{y(x)|y\in\mc{D}_L,\ Ly=\lambda\cdot\rho\cdot y\right\}$ --- собственное подпространство для обобщённой задачи Штурма. Точно так же как и в обычной задаче Штурма, доказывается, что $\dim\Ul=1$, то есть собственные значения обобщённой задачи Штурма --- не вырождены и каждому $\lambda$ отвечает одна (с точностью до знака) нормированная $\left(\smallint\limits_a^b\rho\cdot y^2\,dx=1\right)$ собственная функция обобщённой задачи Штурма.
 	 
 	Далее введём пространство функций \fLr\ интегрируемых с весом $\rho$, $\rho(x)>0$ $x\in(a,b]$, $\rho(x)\in\Cfn[{[a,b]}]{}$:
 	\begin{equation*}
@@ -183,6 +183,20 @@
 	
 	Таким образом, собственные значения обобщённой задачи Штурма растут со скоростью $k^2$ при росте $k$.
 	
+	\noindent\textbf{Замечание} к теореме сравнения собственных значений обобщённой задачи Штурма при росте веса $\rho$. Пусть $\rho\geqslant0$, $d>0$ --- любое число.
+	\begin{equation*}
+		\hfill Ly_k=\lambda_k\cdot\rho\cdot y_k,\hfill
+	\end{equation*}
+	где $\lambda_k$ и $y_k$ соответственно $k$-ое собственное значение и отвечающая ему собственная функция обобщённой задачи Штурма. 
+	
+	Пусть $\rho_d\eqdef d\cdot\rho$, $\lambda_k(d)\eqdef\lambda_k/d$. Тогда 
+	\begin{equation*}
+		\hfill Ly_k=\rho_d\cdot\lambda_k(d)\cdot y_k,\hfill
+	\end{equation*}
+	то есть для нового веса $\rho_d=d\cdot\rho$ оператор $L$ будет иметь те же собственные функции, что и раньше, но они будут отвечать другим собственным значениям $\lambda_k(d)=\lambda_k/d$. Мы видим, что при $d>1$, $\rho_d>\rho$, а $\lambda_k(d)<\lambda_k$. И вообще, если $d_2>d_1$, то $\rho_{d_2}>\rho_{d_1}$, а $\lambda_k(d_2)<\lambda_k(d_1)$.
+	
+	Разумеется, этот пример \emph{ничего не доказывает}, но он показывает, почему при росте веса $\rho$ собственные значения уменьшаются.
+	
 	Если $\rho(x)>0$, $x\in[a,b]$ и $\rho(x)\in\Cfn[{[a,b]}]{2}$, то можно обойтись без теоремы сравнения следующим образом. Пусть
 	\begin{equation}\label{l8:eq:8}
 		\hfill L_1y_k=\eqdef-\der{}{x}\Big(Q_1\cdot y'_k\Big)+P_1\cdot y_k=\lambda_k^{(1)}\cdot\rho_1\cdot y_k.\hfill
@@ -195,7 +209,7 @@
 	
 	Таким образом, собственные значения $\lambda_k^{(1)}$ оператора $L_1$ обобщённой задачи Штурма совпадают с собственными значениями оператора $L_0$ стандартной задачи Штурма. Отсюда следует рост собственных значений $\lambda_k^{(1)}$ со скоростью $k^2$ при $k\to\infty$. Далее можно сформулировать и доказать неравенство Бесселя и равенство Парсеваля, а также определить понятие полной системы. Разумеется при этом надо обобщённые коэффициенты Фурье считать с помощью скалярного произведения $\big(\cdot\,,\cdot\big)_1$ и вместо $\norm{\,\cdot\,}$ брать $\norm{\,\cdot\,}_1$.
 	
-	Далее можно передоказать теорему Стеклова, но а предположении, что $\rho(x)>0$, $x\in[a,b]$. Наметим основные формулировки. Пусть $y\in\fLr$, $y_k$ --- собственные функции обобщённой задачи Штурма, $\norm{y_k}_1=1$, $k=1,2,\ldots$,
+	Далее можно передоказать теорему Стеклова, но в предположении, что $\rho(x)>0$, $x\in[a,b]$. Наметим основные формулировки. Пусть $y\in\fLr$, $y_k$ --- собственные функции обобщённой задачи Штурма, $\norm{y_k}_1=1$, $k=1,2,\ldots$,
 	\begin{equation*}
 		\hfill C_k=\big(y,y_k\big)_1,\quad S_n=\sum\limits_{k=1}^n C_k\cdot y_k,\quad R_n=y-S_n.\hfill
 	\end{equation*}
@@ -203,7 +217,7 @@
 		\begin{enumerateP1}
 			\item\label{l8:Steclov:p1} Для $\forall y\in\fLr$ выполняется $\norm{y-S_n}_1\to0$ при $n\to\infty$, то есть
 			\begin{equation*}
-				\hfill\int\limits\left|y-\sum\limits_{k=1}^n C_k\cdot y_k\right|^2\cdot\rho(x)\,dx\to0,\quad\text{при}\quad n\to\infty.\hfill
+				\hfill\int\limits_a^b\left|y-\sum\limits_{k=1}^n C_k\cdot y_k\right|^2\cdot\rho(x)\,dx\to0,\quad\text{при}\quad n\to\infty.\hfill
 			\end{equation*}
 			(Это сходимость в среднем с весом $\rho$.)
 			
@@ -221,10 +235,10 @@
 		\hfill\underline{\rho}\cdot\norm{y-S_n}^2\leqslant\norm{y-S_n}_1^2\leqslant\overline{\rho}\cdot\norm{y-S_n}^2,\hfill
 	\end{equation*}
 	то есть из сходимости обобщённого ряда Фурье в метрике $\norm{\,\cdot\,}_1$ следует сходимость в метрике $\norm{\,\cdot\,}$ и наоборот. Разумеется здесь в сумме $S_n$ имеем $C_k=\big(y,y_k\big)_1$ не зависимо от того, берётся ли норма $\norm{\,\cdot\,}_1$ или $\norm{\,\cdot\,}$.
-	\begin{proof}[Теорема стеклова для собственных функций обобщённой задачи Штурма.]\hfill
+	\begin{proof}[Теорема Стеклова для собственных функций обобщённой задачи Штурма.]\hfill\\
 		Мы будем следовать схеме доказательства теоремы Стеклова, которую мы рассматривали раньше. Пусть
 		\begin{gather*}
-			y\in\mc{D}_L,\quad y_k:\,Ly_k=\lambda_k\cdot \rho\cdot y_k,\quad\big(Ly,y\big)=\lambda\cdot\norm{y}_1^2=\J[y].\\
+			y_k\in\mc{D}_L,\quad y_k:\,Ly_k=\lambda_k\cdot \rho\cdot y_k,\quad\big(Ly,y\big)=\lambda\cdot\norm{y}_1^2=\J[y].\\
 			S_n=\sum\limits_{k=1}^n C_k\cdot y_k,\quad C_k=\big(y,y_k\big)_1,\quad R_n=y-S_n,\quad \widetilde{R}_n=\dfrac{R_n}{\norm{R_n}_1}.
 		\end{gather*}
 		Так как
@@ -251,26 +265,26 @@
 		
 		В силу этих равенств
 		\begin{equation*}
-			\hfill\J[R_n]=\big(Ly,y\big)-\sum\limits_{k=1}^n\lambda_k\cdot|C_k|^2,\hfill
+			\hfill\J[R_n]=\big(Ly,y\big)-\sum\limits_{k=1}^n\lambda_k\cdot|C_k|^2.\hfill
 		\end{equation*}
-		так как $\lambda_k\to\infty$, то $\exists n_0$, $\lambda_k>0$ при $k>n_0$. Тогда, взяв $n>n_0$, получим 
+		Так как $\lambda_k\to\infty$, то $\exists n_0$, $\lambda_k>0$ при $k>n_0$. Тогда, взяв $n>n_0$, получим 
 		\begin{equation*}
 			\hfill\J[R_n]=\big(Ly,y\big)-\sum\limits_{k=1}^{n_0}\lambda_k\cdot|C_k|^2-\sum\limits_{k=n_0+1}^n\lambda_k\cdot|C_k|^2\leqslant\big(Ly,y\big)-\sum\limits_{k=1}^{n_0}\lambda_k\cdot|C_k|^2=\J[R_{n_0}],\hfill
 		\end{equation*}
-		и значит 
+		и, значит, 
 		\begin{equation*}
 			\hfill\sup\limits_{n}\J[R_n]<+\infty,\hfill
 		\end{equation*}
-		и поэтому
+		и поэтому в силу вышесказанного 
 		\begin{equation*}
 			\hfill\norm{R_n}_1\to0.\hfill
 		\end{equation*}
 	
-		Докажем теперь равномерную сходимость обобщённого ряда Фурье $\displaystyle\sum\limits_{k=1}^{\infty}C_k\cdot y_k$.
+		Докажем теперь равномерную сходимость обобщённого ряда Фурье $\displaystyle\sum\limits_{k=1}^{\infty}C_k\cdot y_k$. Оценим $C_k$.
 		\begin{equation*}
 			|C_k|=\big|\big(y,\rho\cdot y_k\big)\big|=\left|\left(y,\frac{Ly_k}{\lambda_k}\right)\right|=\frac1{|\lambda_k|}\cdot\big|\big(Ly,y_k\big)\big|\leqslant\frac1{|\lambda_k|}\cdot\left|\left(\frac{Ly}{\rho},\rho\cdot y\right)\right|=\frac1{|\lambda_k|}\cdot d_k,
 		\end{equation*} 
-		где $d_k\to0$ при $k\to\infty$ в силу неравенства Бесселя для обобщённых коэффициентов Фурье функции $Ly/\rho$ по собственным функциям $y_n$ обобщённой задачи Штурма.
+		где $d_k\to0$ при $k\to\infty$ в силу неравенства Бесселя для обобщённых коэффициентов Фурье функции $Ly/\rho$ по собственным функциям $y_k$ обобщённой задачи Штурма.
 		
 		Далее оцениваем $|y_k|$. Действуем так же, как в теореме Стеклова для обычной задачи Штурма, но учитываем, что
 		\begin{equation*}
@@ -278,7 +292,7 @@
 		\end{equation*}
 		\begin{equation}
 			\label{l8:eq:9_1}
-			y^2_k(x)-y^2_k(x')=\int\limits_x^{x'}\der{}{s}y_k^s(s)\,ds\leqslant2\cdot\int\limits_a^b\big|y_k(s)\big|\cdot\big|y'_k(s)\big|\,ds\leqslant2\cdot\sqrt{\int\limits_a^b y_k^{\prime2}\,ds}\cdot\frac{\norm{y_k}_1}{\sqrt{\rho_0}}=2\cdot\frac{\sqrt{\smallint\limits_a^b y_k^{\prime2}}}{\sqrt{\rho_0}}
+			y^2_k(x)-y^2_k(x')=\int\limits_{x'}^{x}\der{}{s}y_k^s(s)\,ds\leqslant2\cdot\int\limits_a^b\big|y_k(s)\big|\cdot\big|y'_k(s)\big|\,ds\leqslant2\cdot\sqrt{\int\limits_a^b y_k^{\prime2}\,ds}\cdot\frac{\norm{y_k}_1}{\sqrt{\rho_0}}=2\cdot\frac{\sqrt{\smallint\limits_a^b y_k^{\prime2}}}{\sqrt{\rho_0}}
 		\end{equation}
 		\begin{equation*}
 			\J[y_k]=\lambda_k=\int\limits_a^b\Big(Q\cdot y_k^{\prime2}+P\cdot y_k^2\Big)\,dx\geqslant Q_0\cdot\int\limits_a^b y_k^{\prime2}\,dx+P_0\cdot\int\limits_a^b\frac{y_k^2\cdot\rho}{\rho}\,ds\geqslant Q_0\cdot\int\limits_a^b y_k^{\prime2}\,dx-\frac{|P_0|}{\rho_0},
@@ -293,7 +307,7 @@
 		\end{equation*}
 		Интегрируем по $x'$ и получаем 
 		\begin{equation*}
-			\hfill(b-a)\cdot y_k^2(x)\leqslant\beta_2\cdot\sqrt{\lambda_k}\cdot(b-a)+\int\limits_a^b\frac{y_k^2(x')\cdot\rho(x')}{\rho(x')}\,dx\leqslant\beta_2\cdot\lambda_k\cdot(b-a)+\frac{1}{\rho}\leqslant\beta_3\cdot\sqrt{\lambda_k}.\hfill
+			\hfill(b-a)\cdot y_k^2(x)\leqslant\beta_2\cdot\sqrt{\lambda_k}\cdot(b-a)+\int\limits_a^b\frac{y_k^2(x')\cdot\rho(x')}{\rho(x')}\,dx\leqslant\beta_2\cdot\sqrt{\lambda_k}\cdot(b-a)+\frac{1}{\rho_0}\leqslant\beta_3\cdot\sqrt{\lambda_k}.\hfill
 		\end{equation*}
 		Откуда
 		\begin{equation*}
@@ -310,19 +324,7 @@
 		то $\tilde{y}(x)=y(x)$.
 	\end{proof}
 	
-	Замечание к теореме сравнения собственных значений обобщённой задачи Штурма при росте веса $\rho$. Пусть $\rho\geqslant0$, $d>0$ --- любое число.
-	\begin{equation*}
-		\hfill Ly_k=\lambda_k\cdot\rho\cdot y_k,\hfill
-	\end{equation*}
-	где $\lambda_k$ и $y_k$ соответственно $k$-ое собственное значение и отвечающая ему собственная функция обобщённой задачи Штурма. 
 	
-	Пусть $\rho_d\eqdef d\cdot\rho$, $\lambda_k(d)\eqdef\lambda_k/d$. Тогда 
-	\begin{equation*}
-		\hfill Ly_k=\rho_d\cdot\lambda_k(d)\cdot y_k,\hfill
-	\end{equation*}
-	то есть для нового веса $\rho_d=d\cdot\rho$ оператор $L$ будет иметь те же собственные функции, что и раньше, но они будут отвечать другим собственным значениям $\lambda_k(d)=\lambda_k/d$. Мы видим, что при $d>1$, $\rho_d>\rho$, а $\lambda_k(d)<\lambda_k$. И вообще, если $d_2>d_1$, то $\rho_{d_2}>\rho_{d_1}$, а $\lambda_k(d_2)<\lambda_k(d_1)$.
-	
-	Разумеется, этот пример \emph{ничего не доказывает}, но он показывает, почему при росте веса $\rho$ собственные значения уменьшаются.
 	
 	\section[Функционал Бесселя. Уравнение Бесселя.]{Квадратичный функционал специального вида. Уравнение Бесселя.}	
 	\label{lecture8section2}
@@ -350,7 +352,7 @@
 	\begin{equation*}
 		\hfill\mc{D}_{L}=\left\{y(x)|y\in\Cfn[{[0,R]}]{},\  y(R)=0,\ \begin{array}{rcl}
 			\text{при }\nu=0&:&y\in\Cfn[{[0,R]}]{2},\\
-			\text{при }\nu>0&:&y(0)=0,\ y\in\Cfn[{(0,R]}]{1},
+			\text{при }\nu>0&:&y(0)=0,\ y\in\Cfn[{(0,R]}]{2},
 		\end{array}\ \norm{Ly}_1<+\infty,\ \J[y]<+\infty\right\}_{\displaystyle.}\hfill
 	\end{equation*}  
 	Требование $\norm{Ly}_1<+\infty$ означает, что действие оператора $L$ на функции из $\mc{D}_L$ не выводит нас из пространства $\fLr[{[0,R];x}]$, а условие $\J[y]<+\infty$ --- наследие класса $\K$, которому принадлежал минимайзер.
@@ -361,12 +363,12 @@
 		
 		Пусть $f,\,g\in\mc{D}_L$, $\eps>0$. Имеем, применяя неравенство Буняковского
 		\begin{equation}\label{l8:eq:10}
-			\left|\int\limits_{\eps}^R L\cdot f\cdot\overline{g}\,dx\right|\leqslant\int\limits_{\eps}^R\big|Lf\cdot\overline{g}\big|\,dx\leqslant\int\limits_{0}^R\big|\sqrt{x}\cdot Lf\big|\cdot\left|\frac{\overline{g}}{\sqrt{x}}\right|\,dx\leqslant\sqrt{\int\limits_{0}^R x\cdot\big|Lf\big|^2\,dx}\cdot\sqrt{\int\limits_{0}^R \frac{|g|^2}{x}\,dx}<+\infty
+			\left|\int\limits_{\eps}^R Lf\cdot\overline{g}\,dx\right|\leqslant\int\limits_{\eps}^R\big|Lf\cdot\overline{g}\big|\,dx\leqslant\int\limits_{0}^R\big|\sqrt{x}\cdot Lf\big|\cdot\left|\frac{\overline{g}}{\sqrt{x}}\right|\,dx\leqslant\sqrt{\int\limits_{0}^R x\cdot\big|Lf\big|^2\,dx}\cdot\sqrt{\int\limits_{0}^R \frac{|g|^2}{x}\,dx}<+\infty
 		\end{equation}
 		ибо:
 		\begin{enumeraterm}
-			\item первый множитель справа в~\eqref{l8:eq:10} --- это $\norm{Lf}_1$, а она конечна;
-			\item второй множитель не превосходит $\dfrac{1}{\nu^2}\cdot\J[f]<+\infty$.
+			\item первый множитель справа в~\eqref{l8:eq:10} --- это $\norm{Lf}_1$, а эта норма конечна;
+			\item второй множитель не превосходит $\sqrt{\dfrac{1}{\nu^2}\cdot\J[f]}<+\infty$.
 		\end{enumeraterm}
 		Далее
 		\begin{equation}\label{l8:eq:11}
@@ -377,7 +379,7 @@
 			\left|\int\limits_{\eps}^R\frac{\nu^2\cdot f\cdot\overline{g}}{x}\,dx\right|\leqslant\int\limits_{\eps}^R\frac{\nu\cdot|f|}{\sqrt{x}}\cdot\frac{\nu\cdot|g|}{\sqrt{x}}\,dx\leqslant\left(\int\limits_{0}^R\frac{\nu^2\cdot|f|^2}{x}\,dx\right)^{\!\!\!\textstyle\frac{1}{2}}\cdot\left(\int\limits_{0}^R\frac{\nu^2\cdot|g|^2}{x}\,dx\right)^{\!\!\!\textstyle\frac{1}{2}}\leqslant\\
 			\leqslant\sqrt{\J[f]\cdot\J[g]}<\infty.
 		\end{multline}
-		Поэтому нам надо оценить(вычислить) только первое слагаемое в~\eqref{l8:eq:11}. Интегрируя по частям, получаем
+		Поэтому нам надо оценить(вычислить) только первое слагаемое справа в~\eqref{l8:eq:11}. Интегрируя по частям, получаем
 		\begin{equation}\label{l8:eq:13}
 			-\int\limits_{\eps}^R\underbrace{\overline{g}}_{v}\cdot\underbrace{\der{}{x}\Big(x\cdot f'\Big)\,dx}_{du}=-x\cdot f'\cdot\overline{g}\mathop{\Big|}\limits_{\eps}^R+\int\limits_{\eps}^R x\cdot f'\cdot\overline{g}'\,dx=\eps\cdot f'(\eps)\cdot\overline{g}(\eps)+\int\limits_{\eps}^R x\cdot f'\cdot\overline{g}'\,dx.
 		\end{equation}
@@ -389,7 +391,7 @@
 		
 		Действительно, так как $\lim\limits_{\eps\to0}\eps\cdot f'(\eps)\cdot\overline{g}(\eps)=\alpha$, то $\lim\limits_{\eps\to0}\eps\cdot |f'(\eps)\cdot\overline{g}(\eps)|=|\alpha|$, и поэтому при $|\alpha|>0$ для малых $\eps$ выполняется: $\eps\cdot|f'(\eps)|\cdot|\overline{g}(\eps)|\geqslant|\alpha|/2$, откуда 
 		\begin{equation*}
-			\hfill\sqrt{\eps}\cdot|f'(\eps)|\cdot\frac{|\overline{g}'(\eps)|}{\sqrt{\eps}}\geqslant\frac{\alpha}{2\cdot\sqrt{\eps}}\quad\Rightarrow\quad\eps\cdot|f'(\eps)|^2+\frac{|\overline{g}'(\eps)|^2}{4\cdot\eps}.\hfill
+			\hfill\sqrt{\eps}\cdot|f'(\eps)|\cdot\frac{|\overline{g}'(\eps)|}{\sqrt{\eps}}\geqslant\frac{|\alpha|}{2\cdot\eps}\quad\Rightarrow\quad\eps\cdot|f'(\eps)|^2+\frac{|\overline{g}'(\eps)|^2}{\eps}\geqslant\frac{|\alpha|}{2\cdot\eps}.\hfill
 		\end{equation*}
 		Интегрируя по $\eps$ от нуля до $\eps_0>0$ получим справа $+\infty$, а слева --- конечное число, так как $\J[f]<+\infty$, $\J[g]<+\infty$. Значит $\alpha=0$ и в силу~\eqref{l8:eq:13} 
 		\begin{equation}\label{l8:eq:14}
@@ -399,7 +401,7 @@
 		\begin{equation}\label{l8:eq:15}
 			\hfill\big(Lf,g\big)=\int\limits_0^R x\cdot f'\cdot\overline{g}'\,dx+\int\limits_{0}^{R}\frac{\nu^2}{x}\cdot f\cdot\overline{g}\,dx.\hfill
 		\end{equation}
-		Чтобы доказать симметричность оператора $L$ вычислим $\big(f,Lg\big)$. Имеем
+		Чтобы доказать эрмитовость оператора $L$ вычислим $\big(f,Lg\big)$. Имеем
 		\begin{equation*}
 			\hfill\big(f,Lg\big)=\overline{\big(Lg,f\big)}=\int\limits_0^R x\cdot \overline{g}'\cdot\overline{\overline{f}}\vphantom{f}'\,dx+\int\limits_{0}^{R}\frac{\nu^2}{x}\cdot \overline{g}\cdot\overline{\overline{f}}\,dx=\big(Lf,g\big)\hfill
 		\end{equation*}

@@ -103,9 +103,9 @@
 	Общий вид граничных условий:
 	\begin{equation*}
 		\begin{cases}
-			\alpha_1\cdot y'(a)+\alpha_2\cdot y(a)=0\\
-			\beta_1\cdot y'(b)+\beta_2\cdot y(b)=0
-		\end{cases},
+			\alpha_1\cdot y'(a)+\alpha_2\cdot y(a)=0,\\
+			\beta_1\cdot y'(b)+\beta_2\cdot y(b)=0,
+		\end{cases}
 	\end{equation*} 
 	где $\alpha_j,\,\beta_j$ --- фиксированные числа. Если $\alpha_1=0$ (или $\beta_1=0$), то тогда граничные условия переходят соответственно в
 	\begin{equation*}
@@ -118,7 +118,7 @@
 	Положим $\gamma_1\eqdef-\alpha_2/\alpha_1$, $\gamma_2\eqdef\beta_2/\beta_1$. В физических задачах $\gamma_1\,\gamma_2\geqslant0$. Таким образом мы будем рассматривать граничные условия 
 	\begin{equation}
 		\label{l6:eq:1}
-		\hfill y'(a)=\gamma_1\cdot y(a),\  y'(b)=-\gamma_2\cdot y(b),\quad\gamma_1,\,\gamma_2\geqslant0\hfill
+		\hfill y'(a)=\gamma_1\cdot y(a),\  y'(b)=-\gamma_2\cdot y(b),\quad\gamma_1,\,\gamma_2\geqslant0.\hfill
 	\end{equation} 
 	Таким образом в качестве области определения оператора Штурма 
 	\begin{equation*}
@@ -126,10 +126,10 @@
 	\end{equation*}
 	мы возьмём область
 	\begin{equation*}
-		\hfill\mc{D}_{L}^0\eqdef\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y'(a)=\gamma_1\cdot y(a),\ y'(b)=-\gamma_2\cdot y(b),\ \gamma_1,\,\gamma_2\geqslant0\right\}.\hfill
+		\hfill\mc{D}_{L}^0\eqdef\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y'(a)=\gamma_1\cdot y(a),\ y'(b)=-\gamma_2\cdot y(b),\ \gamma_1,\,\gamma_2\geqslant0\right\}_{\displaystyle.}\hfill
 	\end{equation*}
 	Как и при изучении оператора $L$ в $\mc{D}_L$\footnote{\vspace*{-0,4cm}\begin{equation*}
-			\qquad\mc{D}_L=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}
+			\qquad\mc{D}_L=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}_{\displaystyle.}
 	\end{equation*}}, мы в первую очередь рассмотрим оператор $L$ в $\mc{D}_{L}^0$ с постоянными коэффициентами $Q(x)=C_1$, $P(x)=C_2$, $[a,b]=[0,l]$. Как и раньше считаем $C_1>0$, что касается отрезка $[0,l]$, то мы можем перейти к нему от произвольного отрезка $[a,b]$ заменой переменной: $x'=x-a$. Тогда $x'\in[0,l]$, где $l=b-a$. Чтобы не загромождать изложение мы штрих писать не будем.
 
 	Итак, рассматриваем задачу на нахождение собственных значений и собственных функций оператора 
@@ -155,7 +155,7 @@
 	Подставляя в~\eqref{l7:eq:4}, имеем 
 	\begin{equation}
 		\label{l7:eq:5}
-		\hfill-\gamma_2\cdot|y(l)|^2-\gamma_1\cdot|y(0)|^2-\int\limits_0^l|y'(x)|^2\,dx+\omega^2\cdot\int\limits_0^l|y|^2\,dx=0\hfill
+		\hfill-\gamma_2\cdot|y(l)|^2-\gamma_1\cdot|y(0)|^2-\int\limits_0^l|y'(x)|^2\,dx+\omega^2\cdot\int\limits_0^l|y|^2\,dx=0.\hfill
 	\end{equation}
 	Отсюда следует, что $\omega^2$ --- вещественно и $\omega^2\geqslant0$. Посмотрим, возможно ли равенство $\omega^2=0$. При $\omega^2=0$ из~\eqref{l7:eq:5} следует, что 
 	\begin{equation*}
@@ -172,14 +172,14 @@
 	\end{equation*}
 	Находим $y'(0)$, $y'(l)$ и записываем граничные условия 
 	\begin{equation*}
-		\hfill y'(0)=\gamma_1\cdot y(0),\quad y'(l)=-\gamma_2\cdot y(l)\hfill
+		\hfill y'(0)=\gamma_1\cdot y(0),\quad y'(l)=-\gamma_2\cdot y(l).\hfill
 	\end{equation*}
 	$y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\cdot x)$, поэтому
 	\begin{equation}
 		\label{l7:eq:7}
 		\begin{cases}
-			\omega\cdot d_1=\gamma_1\cdot d_2\\
-			d_1\cdot\omega\cdot\cos(\omega\cdot l)-d_2\cdot\omega\cdot\sin(\omega\cdot l)=-d_1\cdot\gamma_2\cdot\sin(\omega\cdot l)-d_2\cdot\gamma_2\cdot\cos(\omega\cdot l)
+			\omega\cdot d_1=\gamma_1\cdot d_2,\\
+			d_1\cdot\omega\cdot\cos(\omega\cdot l)-d_2\cdot\omega\cdot\sin(\omega\cdot l)=-d_1\cdot\gamma_2\cdot\sin(\omega\cdot l)-d_2\cdot\gamma_2\cdot\cos(\omega\cdot l).
 		\end{cases}
 	\end{equation}
 	Получили систему двух однородных линейных уравнений с двумя неизвестными: $d_1,\,d_2$. Для существования не нулевого решения определитель системы должен равняться нулю.\footnote{Конечно, можно из первого уравнения выразить $d_1$ через $d_2$, или $d_2$ через $d_1$ и подставить во второе уравнение. Ошибки не будет. Однако стандартный способ решения (приравнивание определителя к нулю) лучше и надо приучаться к нему.} Выпишем определитель системы~\eqref{l7:eq:7}
@@ -188,12 +188,12 @@
 			\omega&-\gamma_1\\
 			\omega\cdot\cos(\omega\cdot l)+\gamma_2\cdot\sin(\omega\cdot l)&\gamma_2\cdot\cos(\omega\cdot l)-\omega\cdot\sin(\omega\cdot l)
 		\end{vmatrix}=0,\notag
-		\intertext{то есть}\omega\cdot\gamma_2\cdot\cos(\omega\cdot l)-\omega^2\cdot\sin(\omega\cdot l)+\gamma_1\cdot\omega\cdot\cos(\omega\cdot l)+\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=0
+		\intertext{то есть}\omega\cdot\gamma_2\cdot\cos(\omega\cdot l)-\omega^2\cdot\sin(\omega\cdot l)+\gamma_1\cdot\omega\cdot\cos(\omega\cdot l)+\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=0.
 		\label{l7:eq:8}
 	\end{gather}
 	Если $\cos(\omega\cdot l)=0$, то $\sin(\omega\cdot l)\neq0$ и сокращая в~\eqref{l7:eq:8} на $sin(\omega\cdot l)$ (после зануления $\cos(\omega\cdot l)$) мы получим 
 	\begin{equation*}
-		\hfill-\omega^2+\gamma_1\cdot\gamma_2,\quad\omega=\sqrt{\gamma_1\cdot\gamma_2},
+		\hfill-\omega^2+\gamma_1\cdot\gamma_2,\quad\omega=\sqrt{\gamma_1\cdot\gamma_2},\hfill
 	\end{equation*}
 	но так как $\cos(\omega\cdot l)=0$, то $l\cdot\omega_k=\displaystyle\frac{\pi}{2}+\pi\cdot k$. Таким образом этот случай имеет место, если для какого-то $k$ ($k=0,1,2,\ldots$)
 	\begin{equation}
@@ -302,7 +302,7 @@
 	
 	Рассмотрим теперь общий случай: оператор Штурма с переменными коэффициентами.
 	\begin{equation*}
-		Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y,\quad\mc{D}_{L}^{0}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y'(a)=\gamma_1\cdot y(a),\,y'(b)=-\gamma_2\cdot y(b),\ \gamma_1\cdot\gamma_2\geqslant0\right\}
+		Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y,\quad\mc{D}_{L}^{0}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y'(a)=\gamma_1\cdot y(a),\,y'(b)=-\gamma_2\cdot y(b),\ \gamma_1\cdot\gamma_2\geqslant0\right\}_{\displaystyle.}
 	\end{equation*}
 	Покажем, что оператор Штурма эрмитов в $\mc{D}_{L}^{0}$. Пусть $y(x),\,z(x)\in\mc{D}_{L}^{0}$. Имеем 
 	\begin{multline}
@@ -341,11 +341,11 @@
 	Имеем в силу~\eqref{l7:eq:12} при $z=y$
 	\begin{equation}
 		\label{l7:eq:13}
-		\hfill\J_0[y]\eqdef\big(Ly,y\big)=\int\limits_a^b\left(Q\cdot y^{\prime2}+P\cdot y^2\right)\,dx+\gamma_2\cdot y^2(b)\cdot Q(b)+\gamma_1\cdot y^2(a)\cdot Q(a)\hfill
+		\hfill\J_0[y]\eqdef\big(Ly,y\big)=\int\limits_a^b\left(Q\cdot y^{\prime2}+P\cdot y^2\right)\,dx+\gamma_2\cdot y^2(b)\cdot Q(b)+\gamma_1\cdot y^2(a)\cdot Q(a).\hfill
 	\end{equation} 
 	Пусть
 	\begin{equation*}
-		\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y'(a)=\gamma_1\cdot y(a),\ y'(b)=-\gamma_2\cdot y(b) \right\}.\hfill
+		\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y'(a)=\gamma_1\cdot y(a),\ y'(b)=-\gamma_2\cdot y(b) \right\}_{\displaystyle.}\hfill
 	\end{equation*}
 	Рассмотрим задачу на $\displaystyle\min\limits_{y\in\K}\,\J_0[y]$. 
 	
@@ -363,7 +363,7 @@
 	\begin{equation*}
 		\hfill\K^0\eqdef\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y'(a)=\gamma_1\cdot y(a),\;y'(b)=-\gamma_2\cdot y(b),\ \int\limits_a^b y^2\,dx=1\right\}_{\displaystyle.}\hfill
 	\end{equation*}
-	Так как задача на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ --- изопериметрическая, то надо повторить вывод, который мы делали раньше. Если $y$ --- минимайзер, то мы получаем $\tilde{y}=y+\alpha\cdot\eta_1+\beta(\alpha)\cdot\eta_2$, где $\eta_i(a)=\eta_i'(a)=0$, $\eta_i'(b)=\eta_i(b)=0$. Тогда действуя так же, как в случае простейших граничных условий мы получим, что минимайзер в задаче на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ удовлетворяет уравнени. Эйлера для интегранта $Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2$ ($F^{\ast}=F-\lambda\cdot G$) то есть уравнению $Ly=\lambda\cdot y$. После этого доказываем экстремальные свойства собственных значений и собственных функций оператора $L$, а также принцип минимакса, беря всюду $\J_0[y]$ вместо $\J[y]$. После этого доказываем теорему сравнения и с её помощью устанавливаем рост собственных значений $\lambda_k\geqslant C\cdot k^2$ для оператора с переменными $Q(x)$, $P(x)$, после чего доказываем теорему Стеклова, следуя использованной ранее схеме. Советую вам попытаться это сделать. Теперь о практике. Необходимо уметь находить собственные значения и собственные функции с любыми граничными условиями как на левом, так и на правом конце. Приведём эти условия в таблице.
+	Так как задача на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ --- изопериметрическая, то надо повторить вывод, который мы делали раньше. Если $y$ --- минимайзер, то мы получаем $\tilde{y}=y+\alpha\cdot\eta_1+\beta(\alpha)\cdot\eta_2$, где $\eta_i(a)=\eta_i'(a)=0$, $\eta_i'(b)=\eta_i(b)=0$. Тогда действуя так же, как в случае простейших граничных условий мы получим, что минимайзер в задаче на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ удовлетворяет уравнению. Эйлера для интегранта $Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2$ ($F^{\ast}=F-\lambda\cdot G$) то есть уравнению $Ly=\lambda\cdot y$. После этого доказываем экстремальные свойства собственных значений и собственных функций оператора $L$, а также принцип минимакса, беря всюду $\J_0[y]$ вместо $\J[y]$. После этого доказываем теорему сравнения и с её помощью устанавливаем рост собственных значений $\lambda_k\geqslant C\cdot k^2$ для оператора с переменными $Q(x)$, $P(x)$, после чего доказываем теорему Стеклова, следуя использованной ранее схеме. Советую вам попытаться это сделать. Теперь о практике. Необходимо уметь находить собственные значения и собственные функции с любыми граничными условиями как на левом, так и на правом конце. Приведём эти условия в таблице.
 	\begin{center}
 		\begin{tabular}{|c|c|}
 			\hline

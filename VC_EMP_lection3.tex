@@ -86,7 +86,7 @@
 	Считаем, что $F\in\Cfn{3}$, $x\in[a,b]$, $|y|<M,\ \forall y',\ y''$. 
 	Будем искать минимум функционала \eqref{l3:eq:1} в классе функций
 	\begin{equation*}
-		\K=\left\{y(x)|\,y\in\Cfn[{[a,b]}]{2},\ y(a)=y_0,\,y'(a)=y'_0,\ y(b)=y_1,\,y'(b)=y'_1,\ |y|<M\right\}
+		\hfill\K=\left\{y(x)|\,y\in\Cfn[{[a,b]}]{2},\ y(a)=y_0,\,y'(a)=y'_0,\ y(b)=y_1,\,y'(b)=y'_1,\ |y|<M\right\}\hfill
 	\end{equation*}
 	
 	Как обычно предполагаем, что минимайзер существует. Обозначим его через $y$ и введём понятие допустимого изменения $\eta(x)$ по аналогии с предыдущими случаями.
@@ -94,14 +94,11 @@
 		$\eta(x)$ --- допустимое изменение, если $\tilde{y}\eqdef y+t\cdot\eta\in\K$, при $|t|\ll1$.
 	\end{_def} 
 
-	Отсюда легко получаем, что 
-	\begin{equation*}
-		\eta=\frac{\tilde{y}-y}t\text{ и поэтому } \eta\in\Cfn[{[a,b]}]{2},\ \eta(a)=\eta'(a)=\eta(b)=\eta'(b)=0.
-	\end{equation*}
+	Отсюда легко получаем, что $\eta=\dfrac{\tilde{y}-y}t\text{ и поэтому } \eta\in\Cfn[{[a,b]}]{2},\ \eta(a)=\eta'(a)=\eta(b)=\eta'(b)=0.$
 	Далее 
 	\begin{equation}
 		\label{l3:eq:2}
-		\hfill\J[y+t\cdot\eta]\geqslant\J[y],\quad|t|\ll1\hfill
+		\hfill\J[y+t\cdot\eta]\geqslant\J[y],\quad|t|\ll1,\hfill
 	\end{equation}
 	и, полагая $\phi(t)=\J[y+t\cdot\eta]$, видим, что 
 	\begin{equation}
@@ -109,71 +106,77 @@
 		\hfill\phi(t)\geqslant\phi(0).\hfill
 	\end{equation}
 	Так как $t=0$ --- точка минимума для функции $\phi(t)$, то должно выполняться необходимое условие минимума.
-	\begin{gather}
-		\label{l3:eq:4}
-		\phi'(0)=0,
-		\intertext{то есть}
-		\label{l3:eq:5}\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}=0
-	\end{gather}
+	\begin{equation}\label{l3:eq:4}
+		\hfill\phi'(0)=0,\hfill
+	\end{equation}
+	то есть
+	\begin{equation}\label{l3:eq:5}
+		\hfill\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}=0.\hfill
+	\end{equation}
 	Дадим истолкование левым частям \eqref{l3:eq:4}, \eqref{l3:eq:5}, не предполагая, что $\eta$ --- допустимое изменение, а считая только $\eta\in\Cfn[{[a,b]}]{2}$. Тогда 
-	\begin{gather*}
-		\phi(t)=\phi(0)+t\cdot\phi'(0)+o(t)
-		\intertext{и}
-		\phi(t)-\phi(0)=t\cdot\phi'(0)+o(t).
-	\end{gather*}
+	\begin{equation*}
+		\hfill\phi(t)=\phi(0)+t\cdot\phi'(0)+o(t)\hfill
+	\end{equation*}
+	и
+	\begin{equation*}
+		\hfill\phi(t)-\phi(0)=t\cdot\phi'(0)+o(t).\hfill
+	\end{equation*}
 	Соответственно
-	\begin{gather*}
-		\J[y+t\cdot\eta]=\J[y]+t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}+o(t)\\
-		\J[y+t\cdot\eta]-\J[y]=t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}+o(t).
-	\end{gather*}
-	Назовём величину $t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}$ первой вариацией и обозначим через $\delta\J$. Таким образом первая вариация --- это главная часть приращения функционала $\J[y]$ при замене $y$ на $y+t\cdot\eta$. Из~\eqref{l3:eq:5} следует, что если $y$ --- минимайзер (или максимайзер --- рассуждения не меняются), то 
+	\begin{equation*}
+		\hfill\J[y+t\cdot\eta]=\J[y]+t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}+o(t)\hfill
+	\end{equation*}
+	и
+	\begin{equation*}
+		\hfill\J[y+t\cdot\eta]-\J[y]=t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}+o(t).\hfill
+	\end{equation*}
+	Назовём величину $t\cdot\left.\displaystyle\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}$ первой вариацией и обозначим через $\delta\J$. Таким образом первая вариация --- это главная часть приращения функционала $\J[y]$ при замене $y$ на $y+t\cdot\eta$. Из~\eqref{l3:eq:5} следует, что если $y$ --- минимайзер (или максимайзер --- рассуждения не меняются), то 
 	\begin{equation}
 		\label{l3:eq:6}
-		\hfill\delta\J=0\hfill
+		\hfill\delta\J=0.\hfill
 	\end{equation}
 	
 	Найдём выражение для первой вариации. Имеем
 	\begin{equation*}
-	\delta\J=t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}=t\cdot\left.\der{}{t}\int\limits_a^b F(x,y+t\cdot\eta,y'+t\cdot\eta',y''+t\cdot\eta'')\,dx\right|_{t=0}
+	\delta\J=t\cdot\left.\der{}{t}\J[y+t\cdot\eta]\right|_{t=0}=t\cdot\left.\der{}{t}\int\limits_a^b F(x,y+t\cdot\eta,y'+t\cdot\eta',y''+t\cdot\eta'')\,dx\right|_{t=0\displaystyle.}
 	\end{equation*}
 	Вводим обычные обозначения $\tilde{y}\eqdef y+t\cdot\eta$, $\widetilde{F}\eqdef F(x,\tilde{y},\tilde{y}',\tilde{y}'')$. Тогда 
 	\begin{equation*}
-		\delta\J=t\cdot\left.\int\limits_a^b\left( \widetilde{F}_{\tilde{y}}\cdot\eta+\widetilde{F}_{\tilde{y}'}\cdot\eta'+\widetilde{F}_{\tilde{y}''}\cdot\eta''\right)\,dx\right|_{t=0}=\int\limits_a^b \left(F_{y}\cdot\eta+F_{y'}\cdot\eta'+F_{y''}\cdot\eta''\right)\,dx
+		\delta\J=t\cdot\left.\int\limits_a^b\left( \widetilde{F}_{\tilde{y}}\cdot\eta+\widetilde{F}_{\tilde{y}'}\cdot\eta'+\widetilde{F}_{\tilde{y}''}\cdot\eta''\right)\,dx\right|_{t=0}=\int\limits_a^b \left(F_{y}\cdot\eta+F_{y'}\cdot\eta'+F_{y''}\cdot\eta''\right)\,dx.
 	\end{equation*}
 	
 	Как уже говорилось раньше, надо избавиться от $\eta'$, $\eta''$ под знаком интеграла. Сделаем это, проведя интегрирование по частям. При этом мы будем использовать повышенную гладкость минимайзера. Имеем
 	\begin{gather*}
-		\int\limits_a^b \underbrace{F_{y'}}_{u}\cdot\underbrace{\eta'\,dx}_{dv}=F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b-\int\limits_a^b\der{}{x}F_{y'}\cdot\eta\,dx\\
+		\int\limits_a^b \underbrace{F_{y'}}_{u}\cdot\underbrace{\eta'\,dx}_{dv}=F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b-\int\limits_a^b\der{}{x}F_{y'}\cdot\eta\,dx,\\
 		\int\limits_a^b \underbrace{F_{y''}}_{u}\cdot\underbrace{\eta''\,dx}_{dv}=F_{y''}\cdot\eta'\mathop{\Big|}\limits_a^b-\int\limits_a^b\underbrace{\der{}{x}F_{y''}}_{u}\cdot\underbrace{\eta'\,dx}_{dv}=\left(F_{y''}\cdot\eta'-\der{}{x}F_{y''}\eta\right)\mathop{\Big|}\limits_a^b+\int\limits_a^b\dder{}{x}F_{y''}\cdot\eta\,dx.
 	\end{gather*}
 	Подставляя эти результаты в выражение для $\delta\J$, получим 
 	\begin{equation}
 		\label{l3:eq:B}
-		\delta\J=t\left[\left(F_{y'}\cdot\eta+F_{y''}\cdot\eta'-\der{}{x}F_{y'}\cdot\eta\right)\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx\right].\tag{B}
+		\hfill\delta\J=t\left[\left(F_{y'}\cdot\eta+F_{y''}\cdot\eta'-\der{}{x}F_{y''}\cdot\eta\right)\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx\right]_{\displaystyle.}\tag{B}\hfill
 	\end{equation}
-	Это главная часть приращения функционала $\J[y]$ при замене $y$ на $y+t\cdot\eta$. Мы её вывели при $y\in\Cfn{4}$. Для этой формулы введено обозначение $(B)$, так как формула $(A)$ была на первой лекции, но для $F=F(x,y,y')$. 
+	Это главная часть приращения функционала $\J[y]$ при замене $y$ на $y+t\cdot\eta$. Мы её вывели при $y\in\Cfn{4}$. Для этой формулы введено обозначение $(\text{B})$, так как формула $(\text{A})$ была на первой лекции, но для $F=F(x,y,y')$. 
 	
 	Пусть $\eta$ --- допустимое изменение. Тогда в силу \eqref{l3:eq:6} приравнивая $\delta\J=0$, мы получаем уравнение, из которого с помощью леммы Лагранжа выведем уравнение для минимайзера. Так как $\eta$ --- допустимое изменение, то $\eta=\eta'=0$, при $x=a,b$ поэтому внеинтегральных членов в $\delta\J$ не будет и равенство $\delta\J=0$ влечёт соотношение 
 	\begin{equation*}
-		\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx=0\quad\forall\eta\text{ --- допустимое.}
+		\hfill\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx=0,\quad\forall\eta\text{ --- допустимое.}\hfill
 	\end{equation*}
 	Откуда с помощью леммы Лагранжа получим для минимайзера \emph{уравнение Эйлера--Пуассона}:
 	\begin{equation}
 		\label{l3:eq:7}
-		\hfill F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}=0\hfill
+		\hfill F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}=0.\hfill
 	\end{equation}
 	Это обыкновенное дифференциальное уравнение четвёртого порядка и его решение $y=y(x,c_1,c_2,c_3,c_4)$.
 	
 	Из граничных условий в общем случае константы $c_1,\ldots,c_4$ можно найти:
 	\begin{equation*}
-		\hfill y_0=y(a,c_1,\ldots,c_4),\ y'_0=y'(a,c_1,\ldots,c_4),\ y_1=y(b,c_1,\ldots,c_4),\ y'_1=y'(b,c_1,\ldots,c_4)\hfill
+		\hfill y_0=y(a,c_1,\ldots,c_4),\ y'_0=y'(a,c_1,\ldots,c_4),\ y_1=y(b,c_1,\ldots,c_4),\ y'_1=y'(b,c_1,\ldots,c_4).\hfill
 	\end{equation*}
 
 	Для простоты мы ограничились случаем, когда интегрант зависит от производных только первого и второго порядка. Но на этом же пути можно рассмотреть случай, когда интегрант зависит от производных любого порядка. Приведём без доказательства полученные результаты.
-	\begin{gather*}
-		\J[y]=\int\limits_a^b F(x,y,y',\ldots,y^{(n)})\,dx,\quad F\in\Cfn{n+1},\ x\in[a,b],\ |y|<M,\ y',\ldots,y^{(n)}\text{ --- любые}\\
-		\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{n},\ y^{(j)}(a)=y_0^{(j)},\ y^{(j)}(b)=y_1^{(j)},\ j=\overline{0,n-1}\right\}
-	\end{gather*}
+	\begin{multline*}
+		\J[y]=\int\limits_a^b F(x,y,y',\ldots,y^{(n)})\,dx,\quad F\in\Cfn{n+1},\ x\in[a,b],\ |y|<M,\ y',\ldots,y^{(n)}\text{ --- любые},\\
+		\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{n},\ y^{(j)}(a)=y_0^{(j)},\ y^{(j)}(b)=y_1^{(j)},\ j=\overline{0,n-1}\right\},
+	\end{multline*}
 	здесь $y^{(0)}(x)\equiv y(x)$, $y_0^{(j)}$ и $y_1^{(j)}$ --- произвольные фиксированные константы. Тогда минимайзер в задаче на $\min\limits_{y\in\K}\J[y]$ удовлетворяет уравнению 
 	\begin{equation}
 		\label{l3:eq:8}
@@ -186,14 +189,17 @@
 	 
 	 Возвратимся к задаче о равновесии балки. Мы получили там функционал 
 	 \begin{equation*}
-	 	E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac12\cdot\mu\cdot y^{\prime\prime2}\right)\,dx\text{, где }g,\ \rho,\ \mu\text{ --- постоянные.}
+	 	\hfill E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac12\cdot\mu\cdot y^{\prime\prime2}\right)\,dx,\hfill
 	 \end{equation*}
+ 	 где $g$, $\rho$, $\mu$ --- постоянные.
  Уравнение Эйлера--Пуассона 
- \begin{gather*}
- 	g\cdot\rho+\mu\cdot y^{IV}=0
- 	\intertext{откуда}
- 	y(x)=-\frac{g\cdot\rho}{4!\cdot\mu}\cdot x^4+c_1\cdot x^3+c_2\cdot x^2+c_3\cdot x+c_4.
- \end{gather*}
+ \begin{equation*}
+ 	\hfill g\cdot\rho+\mu\cdot y^{IV}=0,\hfill
+ \end{equation*}
+ откуда
+ \begin{equation*}
+ 	\hfill y(x)=-\frac{g\cdot\rho}{4!\cdot\mu}\cdot x^4+c_1\cdot x^3+c_2\cdot x^2+c_3\cdot x+c_4.\hfill
+ \end{equation*}
 Используя граничные условия $y(-l)=y(+l)=y'(-l)=y'(+l)=0$ получим
 \begin{equation*}
 	\hfill y=-\frac{g\cdot\rho}{24\cdot\mu}(x-l)^2\cdot(x+l)^2.\hfill
@@ -236,14 +242,15 @@
 
 Мы искали минимум функционала по траекториям, для которых были заданы начальная и конечная точки. Но можно поставить задачу по-другому: не задавать конечную точку! И тогда класс $\K$ допустимых кривых будет выглядеть так:
 \begin{equation*}
-	\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\ |y|<M\right\}.\text{ Найти }\min\limits_{y\in\K}\,T[y].
+	\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y_0,\ |y|<M\right\}.\hfill
 \end{equation*}
+Найти $\displaystyle\min\limits_{y\in\K}\,T[y]$.
 
 Переходим к общему случаю. Пусть функционал $\J[y]$ тот же, что в первой лекции
-\begin{gather*}
-	\J[y]=\int\limits_a^b F(x,y,y')\,dx\\
-	F\in\Cfn{2},\ x\in[a,b],\ |y|<M,\ \forall y';\quad \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ |y|<M\right\}
-\end{gather*}
+\begin{equation*}
+	\hfill\J[y]=\int\limits_a^b F(x,y,y')\,dx,\quad
+	F\in\Cfn{2},\ x\in[a,b],\ |y|<M,\ \forall y';\quad \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ |y|<M\right\}.\hfill
+\end{equation*}
 Допустимы любые кривые класса $\Cfn[{[a,b]}]{1}$, $|y|<M$.
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -279,12 +286,12 @@
 Пусть $y$ --- минимайзер в задаче на $\min\limits_{y\in\K}\,\J[y]$. Функция $\eta$ --- допустимое изменение, если $\tilde{y}\eqdef y+t\cdot\eta\in\K$, $|t|\ll1$. Отсюда следует, что единственное ограничение на $\eta$ --- требование гладкости: $\eta(x)\in\Cfn[{[a,b]}]{1}$. Рассуждая стандартным образом, мы получим, что необходимое условие экстремума --- это обращение в ноль первой вариации. Выражение для первой вариации даётся равенством $(A)$ первой лекции. Перепишем его 
 \begin{equation}
 	\label{l3:eq:9}
-	\hfill \delta\J=t\left\{\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b\right\}\hfill
+	\hfill \delta\J=t\left\{\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b\right\}_{\displaystyle.}\hfill
 \end{equation}
 
 Так как $y$ --- экстремайзер, то $\delta\J=0$, при $\forall\eta$ --- допустимом. Возьмём $\eta(a)=\eta(b)=0$. Тогда из равенства $\delta\J=0$ получим 
 \begin{equation*}
-	\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx=0,\quad \forall\eta\in\Cfn[{[a,b]}]{1},\ \eta(a)=\eta(b)=0.
+	\hfill\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx=0,\quad \forall\eta\in\Cfn[{[a,b]}]{1},\ \eta(a)=\eta(b)=0.\hfill
 \end{equation*}
 Отсюда в силу леммы Лагранжа получаем уравнение Эйлера
 \begin{equation}
@@ -309,26 +316,26 @@
 \end{equation*} 
 То есть траектория ортогональна к границе.
 
-Варианты с неполным заданием граничных условий могут быть и в случае функционалов, зависящих от старших производных.
+Варианты с неполным заданием граничных условий могут быть и в случае функционалов, зависящих от старших производных. Рассмотрим
 \begin{equation*}
-	\text{Рассмотрим }\J[y]=\int\limits_a^b F(x,y,y',y'')\,dx.
+	\hfill\J[y]=\int\limits_a^b F(x,y,y',y'')\,dx.\hfill
 \end{equation*}
 \vspace{-0.2cm}
 \begin{equation*}
-	\text{Мы решали задачу на }\min\limits_{y\in\K}\,J[y]\text{, где }	\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a),\,y'(a),\,y(b),\,y'(b)\text{ --- заданы}\right\}.
+	\text{Мы решали задачу на }\min\limits_{y\in\K}\,\J[y]\text{, где }	\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a),\,y'(a),\,y(b),\,y'(b)\text{ --- заданы}\right\}_{\displaystyle.}
 \end{equation*}
 Давайте рассмотрим теперь класс допустимых функций 
 \begin{equation*}
-	\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y_0,\,y'(b)=y_1^{(1)},\ |y|<M\right\}.
+	\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y_0,\,y'(b)=y_1^{(1)},\ |y|<M\right\}_{\displaystyle.}\hfill
 \end{equation*}
 Таким образом в отличие от рассмотренного ранее случая свободны $y'(a)$ и $y(b)$. Пусть \\$\eta(x)\in\Cfn[{[a,b]}]{2}$. Мы находим главную часть приращения 
 \begin{equation*}
-	\J[y+t\cdot\eta]-\J[y]=\delta\J+o(t),
+	\hfill\J[y+t\cdot\eta]-\J[y]=\delta\J+o(t),\hfill
 \end{equation*}
 где $\delta\J$ даётся равенством \eqref{l3:eq:B} текущей лекции (на стр.~\pageref{l3:eq:B}). 
 
-Функция $\eta(x)$ --- допустимое изменение для задачи $\min\limits_{y\in\K}\,\J[y]$, если $\tilde{y}\eqdef y+t\cdot\eta\in\K$, $t\ll1$. Так как $\eta=\frac{\tilde{y}-y}{t}$, то $\eta(a)=0$, $\eta'(b)=0$. Значения $\eta'(a)$ и $\eta(b)$ --- свободны. Разумеется, $\eta\in\Cfn[{[a,b]}]{2}$. Условие экстремума: $\delta\J=0$ при допустимых $\eta$. Так как не запрещено взять $\eta(a)=\eta'(a)=\eta(b)=\eta'(b)=0$, то как и раньше из \eqref{l3:eq:B}\footnote{\begin{equation*}
-	\hfill\delta\J=t\left[\left(F_{y'}\cdot\eta+F_{y''}\cdot\eta'-\der{}{x}F_{y'}\cdot\eta\right)\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx\right].\hfill\tag{B}
+Функция $\eta(x)$ --- допустимое изменение для задачи $\min\limits_{y\in\K}\,\J[y]$, если $\tilde{y}\eqdef y+t\cdot\eta\in\K$, $t\ll1$. Так как $\eta=\dfrac{\tilde{y}-y}{t}$, то $\eta(a)=0$, $\eta'(b)=0$. Значения $\eta'(a)$ и $\eta(b)$ --- свободны. Разумеется, $\eta\in\Cfn[{[a,b]}]{2}$. Условие экстремума: $\delta\J=0$ при допустимых $\eta$. Так как не запрещено взять $\eta(a)=\eta'(a)=\eta(b)=\eta'(b)=0$, то как и раньше из \eqref{l3:eq:B}\footnote{\begin{equation*}
+	\hfill\delta\J=t\left[\left(F_{y'}\cdot\eta+F_{y''}\cdot\eta'-\der{}{x}F_{y''}\cdot\eta\right)\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx\right].\hfill\tag{B}
 \end{equation*}} получим для $y$ --- минимайзера
 \begin{equation*}
 	\hfill F_y-\der{}{x}F_{y'}+\dder{}{x}F_{y''}=0.\hfill
@@ -336,22 +343,22 @@
 Поэтому в формуле первой вариации останутся только внеинтегральные члены, которые должны равняться нулю. Имеем
 \begin{equation}
 	\label{l3:eq:12}
-	\left(F_{y'}-\der{}{x}F_{y'}\right)\cdot\eta\mathop{\Big|}\limits_a^b+F_{y''}\cdot\eta'\mathop{\Big|}\limits_a^b=0
+	\hfill\left(F_{y'}-\der{}{x}F_{y''}\right)\cdot\eta\mathop{\Big|}\limits_a^b+F_{y''}\cdot\eta'\mathop{\Big|}\limits_a^b=0,\hfill
 \end{equation}
 так как $\eta(a)=0$ и $\eta'(b)=0$, то из \eqref{l3:eq:12} получим
 \begin{equation}
 	\label{l3:eq:13}
-	\left(F_{y'}-\der{}{x}F_{y'}\right)\Big|_{x=b}\cdot\eta(b)-F_{y''}\Big|_{x=a}\cdot\eta'(a)=0.
+	\hfill\left(F_{y'}-\der{}{x}F_{y''}\right)\Big|_{x=b}\cdot\eta(b)-F_{y''}\Big|_{x=a}\cdot\eta'(a)=0.\hfill
 \end{equation}
 Отсюда полагая сначала $\eta'(a)=0$, $\eta(b)=1$ получим
 \begin{equation}
 	\label{l3:eq:14}
-	\left(F_{y'}-\der{}{x}F_{y'}\right)\Big|_{x=b}=0,
+	\hfill\left(F_{y'}-\der{}{x}F_{y''}\right)\Big|_{x=b}=0,\hfill
 \end{equation}
 a потом при $\eta'(a)=1$, $\eta(b)=0$ получим 
 \begin{equation}
 	\label{l3:eq:15}
-	F_{y''}\Big|_{x=a}=0
+	\hfill F_{y''}\Big|_{x=a}=0.\hfill
 \end{equation}
 \eqref{l3:eq:14} и \eqref{l3:eq:15} --- это ЕГУ в данном случае.
 
@@ -360,9 +367,9 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 	\label{l3:eq:16}
 	\hfill\widehat{\J}[y]=\int\limits_a^b F(x,y,y')\,dx+d_1\cdot y^2(a)+d_2\cdot y^2(b),\hfill
 \end{equation}
-где $d_1\geqslant0$, $d_2\geqslant0$ --- фиксированные константы. Раньше мы не могли рассматривать подобные функционалы, поскольку $y(a)$ и $y(b)$ были заданы и добавка $d_1\cdot y^2(a)+d_2\cdot y^2(b)$ являлась бы фиксированным числом не зависящим от $y(x)$. Но теперь у нас $y(a)$ и $y(b)$ не заданы и значение $\widehat{\J}[y]$ зависит от них.
+где $d_1\geqslant0$, $d_2\geqslant0$ --- фиксированные константы. Раньше мы не могли рассматривать подобные функционалы, поскольку $y(a)$ и $y(b)$ были заданы и добавка $d_1\cdot y^2(a)+d_2\cdot y^2(b)$ являлась бы фиксированным числом не зависящим от $y(x)$. Но теперь у нас $y(a)$ и $y(b)$ не заданы и значение $\widehat{\J}[y]$ зависит от них. Пусть
 \begin{equation*}
-	\text{Пусть }\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ |y|<M\right\},\ \eta\in\Cfn[{[a,b]}]{2}.
+	 \hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ |y|<M\right\},\ \eta\in\Cfn[{[a,b]}]{2}.\hfill
 \end{equation*}
 Тогда как и раньше $\tilde{y}=y+t\cdot\eta\in\K$, при $y\in\K,\ t\ll1$. Если $y$ --- минимайзер, то 
 \begin{equation*}
@@ -371,16 +378,16 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 \vspace{-0,2cm}
 \begin{equation}
 	\label{l3:eq:17}
-	\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b+2\cdot d_1\cdot y(a)\cdot\eta(a)+2\cdot d_2\cdot y(b)\cdot\eta(b)=0
+	\int\limits_a^b\left(F_y-\der{}{x}F_{y'}\right)\cdot\eta\,dx+F_{y'}\cdot\eta\mathop{\Big|}\limits_a^b+2\cdot d_1\cdot y(a)\cdot\eta(a)+2\cdot d_2\cdot y(b)\cdot\eta(b)=0.
 \end{equation}
 Отсюда при $\eta(a)=\eta(b)=0$ получаем как и раньше уравнение Эйлера
 \begin{equation*}
-	\hfill F_y-\der{}{y}F_{y'}=0\hfill
+	\hfill F_y-\der{}{y}F_{y'}=0.\hfill
 \end{equation*}
 и поэтому \eqref{l3:eq:17} запишется в виде 
 \begin{equation}
 	\label{l3:eq:18}
-	\hfill\left(F_{y'}+2\cdot d_2\cdot y\right)\cdot\eta\Big|_{x=b}+\left(-F_{y'}+2\cdot d_1\cdot y\right)\cdot\eta\Big|_{x=a}=0\hfill
+	\hfill\left(F_{y'}+2\cdot d_2\cdot y\right)\cdot\eta\Big|_{x=b}+\left(-F_{y'}+2\cdot d_1\cdot y\right)\cdot\eta\Big|_{x=a}=0.\hfill
 \end{equation}
 Откуда сначала при $\eta(a)=1$, $\eta(b)=0$, а потом при $\eta(a)=0$, $\eta(b)=1$ получим ЕГУ для данного случая
 \begin{equation}
@@ -436,13 +443,13 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 
 Пусть $y(x)$ --- произвольная кривая из $\Cfn{1}$ и $y(x_1)=f_1(x_1)$, $y(x_2)=f_2(x_2)$. Тогда время прохождения света по кривой $y=y(x)$ есть
 \begin{equation*}
-	T[y]=\int\limits_{x_1}^{x_2}\frac{\sqrt{1+y^{\prime2}}}{v(x,y(x))}\,dx.
+	\hfill T[y]=\int\limits_{x_1}^{x_2}\frac{\sqrt{1+y^{\prime2}}}{v(x,y(x))}\,dx.\hfill
 \end{equation*} 
 Надо найти $\min\,T[y]$ по всем гладким функциям $y(x)$, <<графики>> которых пересекают заданные кривые.
 
-Дадим точную постановку задачи в общем случае. Пусть дано две кривые $y_1=f_1(x)$,\\ $a_1\leqslant x\leqslant b_1$; $y_2=f_2(x)$, $a_2\leqslant x\leqslant b_2$, $a\eqdef\min\{a_1,a_2\}$, $b\eqdef\max\{b_1,b_2\}$. Определим класс функций 
+Дадим точную постановку задачи в общем случае. Пусть дано две кривые $y_1=f_1(x)$, $a_1\leqslant x\leqslant b_1$; $y_2=f_2(x)$, $a_2\leqslant x\leqslant b_2$, $a\eqdef\min\{a_1,a_2\}$, $b\eqdef\max\{b_1,b_2\}$. Определим класс функций 
 \begin{equation*}
-	\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ \exists x_1, x_2\ y(x_1)=f_1(x_1),\  y(x_2)=f_2(x_2),\ x_1\in[a_1,b_1],\ x_2\in[a_2, b_2],\ |y|<M\right\}
+	\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ \exists x_1, x_2\ y(x_1)=f_1(x_1),\  y(x_2)=f_2(x_2),\ x_1\in[a_1,b_1],\ x_2\in[a_2, b_2],\ |y|<M\right\},\hfill
 \end{equation*} 
 точки $x_1$, $x_2$, конечно, зависят от функции $y$.
 \begin{equation*}
@@ -450,11 +457,11 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 \end{equation*}
 Мы решаем задачу на $\min\limits_{y\in\K}\J[y]$. Пусть $y(x)$ --- минимайзер в этой задаче,
 \begin{equation*}
-	y(\alpha_0)=f_1(\alpha_0),\ y(\beta_0)=f_2(\beta_0),\ a_1<\alpha_0<b_1,\ a_2<\beta_0<b_2,
+	\hfill y(\alpha_0)=f_1(\alpha_0),\quad y(\beta_0)=f_2(\beta_0),\quad a_1<\alpha_0<b_1,\quad a_2<\beta_0<b_2,\hfill
 \end{equation*}
 то есть пересечение кривой $y=y(x)$ граничных кривых происходит не в крайних точках. Кроме того, мы предполагаем, что в точках $\alpha_0$, $\beta_0$ нет касания граничных кривых, то есть
 \begin{equation*}
-	y'(\alpha_0)\neq f'_1(\alpha_0),\ y'(\beta_0)\neq f'_2(\beta_0).
+	\hfill y'(\alpha_0)\neq f'_1(\alpha_0),\quad y'(\beta_0)\neq f'_2(\beta_0).\hfill
 \end{equation*}
 
 Допустимое изменение $\eta(x)$ определяем как обычно $\tilde{y}\eqdef y+t\cdot\eta\in\K$, при $|t|\ll1$. Ясно, что единственное ограничение на $\eta$ --- требование $\eta(x)\in\Cfn[{[a,b]}]{1}$. Точки пересечения кривой $\tilde{y}=y+t\cdot\eta$ с граничными кривыми обозначим через $\alpha(t)$ и $\beta(t)$
@@ -511,10 +518,10 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 	\text{Таким образом }\J[y+t\cdot\eta]=\int\limits_{\alpha(t)}^{\beta(t)} F(x,y+t\cdot\eta,y'+t\cdot\eta')\,dx\geqslant\J[y]=\int\limits_{\alpha_0}^{\beta_0}F(x,y,y')\,dx.
 \end{equation*}
 Абсолютно так же, как раньше, получим, что главная часть $\delta\J$ приращения \begin{equation*}
-	\J[y+t\cdot\eta]-\J[y]=\delta\J+\ldots\text{есть}
+	\hfill\J[y+t\cdot\eta]-\J[y]=\delta\J+\ldots,\hfill
 \end{equation*}  
 \begin{equation*}
-	\delta\J=t\cdot\left.\der{}{x}\J[y+t\cdot\eta]\right|_{t=0}\text{ --- первая вариация, и что на минимайзере }\delta\J=0.
+	\text{есть } \delta\J=t\cdot\left.\der{}{x}\J[y+t\cdot\eta]\right|_{t=0}\text{ --- первая вариация, и что на минимайзере }\delta\J=0.
 \end{equation*}
 Положим как обычно $\tilde{y}=y+t\cdot\eta$, $\widetilde{F}=F(x,\tilde{y},\tilde{y}')$ и находим выражение для $\delta\J$. Имеем 
 \begin{multline}
@@ -525,7 +532,7 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 \end{multline}
 Производные $\beta'(0)$ и $\alpha'(0)$ находим из равенств
 \begin{equation*}
-	\tilde{y}(\alpha(t))=y(\alpha(t))+t\cdot\eta(\alpha(t))=f_1(\alpha(t));\ \tilde{y}(\beta(t))=y(\beta(t))+t\cdot\eta(\beta(t))=f_2(\beta(t)).
+	\hfill\tilde{y}(\alpha(t))=y(\alpha(t))+t\cdot\eta(\alpha(t))=f_1(\alpha(t));\ \tilde{y}(\beta(t))=y(\beta(t))+t\cdot\eta(\beta(t))=f_2(\beta(t)).\hfill
 \end{equation*}
 Продифференцируем по $t$ и положим $t=0$. Получим
 \begin{equation*}
@@ -553,7 +560,7 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 \end{equation}
 Учитывая это получаем согласно \eqref{l3:eq:23} 
 \begin{equation*}
-	\left.\left(\frac{F}{f'_2-y'}+F_{y'}\right)\cdot\eta\right|_{x=\beta_0}-\left.\left(\frac{F}{f'_1-y'}+F_{y'}\right)\cdot\eta\right|_{x=\alpha_0}=0
+	\hfill\left.\left(\frac{F}{f'_2-y'}+F_{y'}\right)\cdot\eta\right|_{x=\beta_0}-\left.\left(\frac{F}{f'_1-y'}+F_{y'}\right)\cdot\eta\right|_{x=\alpha_0}=0.\hfill
 \end{equation*}
 Полагая здесь $\eta(\beta_0)=1$, $\eta(\alpha_0)=0$, а потом $\eta(\beta_0)=0$, $\eta(\alpha_0)=1$ получим условия
 \begin{equation}

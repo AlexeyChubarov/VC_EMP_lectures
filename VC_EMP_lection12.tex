@@ -188,7 +188,7 @@
 	\der{E}{t}=\int\limits_a^b\left(\rho\cdot u_t\cdot u_{tt}+\mu\cdot u_x\cdot u_{xt}\right)\,dx=\int\limits_a^b\left[\rho\cdot u_t\cdot u_{tt}-\pder{}{x}\big(\mu\cdot u_x\big)\cdot u_t\right]\,dx+\mu\cdot u_x\cdot u_t{\mathop{\Big|}\limits_a^b}\phantom{|}{\vphantom{\bigg|}}^{\footnotemark{}}_{\displaystyle.}
 \end{equation*}
 \footnotetext{Мы интегрировали по частям слагаемое $\big(\mu\cdot u_x\big)\cdot u_{xt}$.}
-При условии~\eqref{l12:eq:7a} $u_t(a,t)=u_t(b,t)=0$. При условии~\eqref{l12:eq:7b} $u_x(a,t)=u_x(b,t)=0$. Поэтому внеинтегральный член в формуле для $\der{E}{t}$ равен нулю, а интеграл равен нулю вследствие~\eqref{l12:eq:5}. Следовательно $\der{E}{t}\equiv0$ и~\eqref{l12:eq:8} --- доказано. Таким образом единственность решения задач~\eqref{l12:eq:1},~\eqref{l12:eq:2},~\eqref{l12:eq:3a} и~~\eqref{l12:eq:1},~\eqref{l12:eq:2},~\eqref{l12:eq:3b} доказана.
+При условии~\eqref{l12:eq:7a} $u_t(a,t)=u_t(b,t)=0$. При условии~\eqref{l12:eq:7b} $u_x(a,t)=u_x(b,t)=0$. Поэтому внеинтегральный член в формуле для $\displaystyle\der{E}{t}$ равен нулю, а интеграл равен нулю вследствие~\eqref{l12:eq:5}. Следовательно $\displaystyle\der{E}{t}\equiv0$ и~\eqref{l12:eq:8} --- доказано. Таким образом единственность решения задач~\eqref{l12:eq:1},~\eqref{l12:eq:2},~\eqref{l12:eq:3a} и~~\eqref{l12:eq:1},~\eqref{l12:eq:2},~\eqref{l12:eq:3b} доказана.
 \vspace{0.2cm}
 
 \noindent\textbf{Задание. }Рассмотреть случай упругого закрепления (в интеграле энергии появятся дополнительные члены).
@@ -215,16 +215,16 @@
 
 Сначала попытаемся найти частное решение $u_{\text{ч}}(x,t)$ задачи~\eqref{l12:eq:10}, \eqref{l12:eq:12} (то есть без учёта начальных условий). Это решение будем искать в виде 
 \begin{equation*}
-	u_{\text{ч}}(x,t)=X(x)\cdot T(t),
+	\hfill u_{\text{ч}}(x,t)=X(x)\cdot T(t),\hfill
 \end{equation*} 
 где $X(x)$, $T(t)$ --- неизвестные функции, зависящие каждая соответственно только от $x$ и $t$. Подставим $u_{\text{ч}}(x,t)$ в~\eqref{l12:eq:10}. Получим
 \begin{equation*}
-	T''\cdot X=a^2\cdot X''\cdot T,
+\hfill	T''\cdot X=a^2\cdot X''\cdot T,\hfill
 \end{equation*} 
 где штрихи означают производные по аргументам. Поделив обе части этого равенства на произведение $a^2\cdot X\cdot T$ получим 
 \begin{equation}
 	\label{l12:eq:13}
-	\frac{T''}{a^2\cdot T}=\frac{X''}{X}.
+	\hfill\frac{T''}{a^2\cdot T}=\frac{X''}{X}.\hfill
 \end{equation}
 Так как левая часть~\eqref{l12:eq:13} не зависит от $x$, то и правая тоже. Так как правая часть~\eqref{l12:eq:13} не зависит от $t$, то и левая тоже. Поэтому отношение в~\eqref{l12:eq:13} равно константе, которую мы обозначим через ($-\lambda$), то есть
 \begin{gather}
@@ -262,7 +262,6 @@
 	\label{l12:eq:17}
 	\hfill u(x,0)=\sum\limits_{k=1}^{\infty}u_k(x,0)=\sum\limits_{k=1}^{\infty}A_k\cdot X_k(x)=\phi(x)\hfill
 \end{equation}
-\vspace{-0,8cm}
 \begin{equation}
 	\label{l12:eq:18}
 	\hfill u_t(x,0)=\sum\limits_{k=1}^{\infty}\pder{u_k}{t}(x,0)=\sum\limits_{k=1}^{\infty}B_k\cdot\omega_k\cdot X_k(x)=\psi(x)\hfill
@@ -271,7 +270,6 @@
 \begin{equation*}
 	\hfill A_k=\big(\phi,X_k\big)=\int\limits_0^l\phi(\xi)\cdot X_k(\xi)\,d\xi,\hfill
 \end{equation*}
-\vspace{-0,8cm}
 \begin{equation*}
 	\hfill B_k=\frac{\big(\phi,X_k\big)}{\omega_k}=\frac{1}{\omega_k}\cdot\int\limits_0^l\psi(\xi)\cdot X_k(\xi)\,d\xi,\hfill
 \end{equation*}
@@ -332,7 +330,7 @@
 	\label{l12:eq:21}
 	\hfill u(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\psi(\xi)\,d\xi+\int\limits_0^l G_t(x,\xi,t)\cdot\phi(\xi)\,d\xi.\hfill
 \end{equation}
-Отсюда видно, что для решения задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12} с любыми начальными условиями достаточно найти функцию Грина, то есть собственные значения и собственные функции оператора $-\dder{}{x}$ с граничными условиями~\eqref{l12:eq:12}.
+Отсюда видно, что для решения задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12} с любыми начальными условиями достаточно найти функцию Грина, то есть собственные значения и собственные функции оператора $-\displaystyle\dder{}{x}$ с граничными условиями~\eqref{l12:eq:12}.
 
 \section[Свободные колебания однородной струны с другими г. у.]{Свободные колебания однородной струны с другими граничными условиями.}
 \label{lecture11section4}
