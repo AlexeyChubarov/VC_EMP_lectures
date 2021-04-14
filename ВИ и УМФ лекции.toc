@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1}Определение функционала. Примеры вариационных задач.}{5}{section.1.1}%
 \contentsline {section}{\numberline {2}Задачи с неподвижными концами.}{8}{section.1.2}%
 \contentsline {chapter}{\numberline {Лекция~2}}{13}{chapter.2}%
-\contentsline {section}{\numberline {1}Примеры решения уравнения Эйлера-Лагранжа.}{13}{section.2.1}%
+\contentsline {section}{\numberline {1}Примеры решения уравнения Эйлера--Лагранжа.}{13}{section.2.1}%
 \contentsline {section}{\numberline {2}Задачи для функционалов, зависящих от вектор-функций.}{14}{section.2.2}%
 \contentsline {section}{\numberline {3}Примеры решения системы Эйлера--Лагранжа.}{16}{section.2.3}%
 \contentsline {section}{\numberline {4}Принцип Гамильтона.}{17}{section.2.4}%
@@ -17,8 +17,8 @@
 \contentsline {section}{\numberline {1}Изопериметрические задачи.}{28}{section.4.1}%
 \contentsline {section}{\numberline {2}Квадратичный функционал. Оператор Штурма.}{34}{section.4.2}%
 \contentsline {chapter}{\numberline {Лекция~5}}{37}{chapter.5}%
-\contentsline {section}{\numberline {1}Теорема сравнения.}{37}{section.5.1}%
-\contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{38}{section.5.2}%
+\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Штурма (Продолжение). }{37}{section.5.1}%
+\contentsline {section}{\numberline {2}Экстремальные свойства собственных значений оператора Штурма.}{40}{section.5.2}%
 \contentsline {chapter}{\numberline {Лекция~6}}{45}{chapter.6}%
 \contentsline {section}{\numberline {1}Теорема сравнения.}{45}{section.6.1}%
 \contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{46}{section.6.2}%
@@ -31,11 +31,19 @@
 \contentsline {section}{\numberline {1}Функционал Бесселя. Уравнение Бесселя. (Продолжение.)}{68}{section.9.1}%
 \contentsline {section}{\numberline {2}Функционалы, зависящие от функций двух переменных.}{71}{section.9.2}%
 \contentsline {section}{\numberline {3}Вариационные задачи со свободной границей.}{74}{section.9.3}%
-\contentsline {part}{Часть~\CYRB \hspace {1em}Уравнения математической физики.}{77}{part.2}%
-\contentsline {chapter}{\numberline {Лекция~11}}{78}{chapter.11}%
-\contentsline {section}{\numberline {1}Уравнение малых колебаний струны.}{78}{section.11.1}%
-\contentsline {chapter}{\numberline {Лекция~12}}{84}{chapter.12}%
-\contentsline {section}{\numberline {1}Уравнение малых колебаний струны (продолжение).}{84}{section.12.1}%
-\contentsline {section}{\numberline {2}Свободные колебания однородной струны.}{86}{section.12.2}%
-\contentsline {section}{\numberline {3}Понятие о функции Грина.}{89}{section.12.3}%
-\contentsline {section}{\numberline {4}Свободные колебания однородной струны с другими г. у.}{90}{section.12.4}%
+\contentsline {chapter}{\numberline {Лекция~10}}{77}{chapter.10}%
+\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Шредингера.}{77}{section.10.1}%
+\contentsline {section}{\numberline {2}Различные обобщения.}{83}{section.10.2}%
+\contentsline {subsection}{\numberline {I}Оператор Штурма. Случай периодических граничных условий.}{83}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {II}Случай неограниченной области.}{84}{subsection.10.2.2}%
+\contentsline {section}{\numberline {3}Оператор Шредингера во всём пространстве.}{84}{section.10.3}%
+\contentsline {subsection}{\numberline {I}Одночастичный случай.}{84}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {II}Многоэллектронный атом с неподвижным ядром.}{85}{subsection.10.3.2}%
+\contentsline {part}{Часть~\CYRB \hspace {1em}Уравнения математической физики.}{87}{part.2}%
+\contentsline {chapter}{\numberline {Лекция~11}}{88}{chapter.11}%
+\contentsline {section}{\numberline {1}Уравнение малых колебаний струны.}{88}{section.11.1}%
+\contentsline {chapter}{\numberline {Лекция~12}}{94}{chapter.12}%
+\contentsline {section}{\numberline {1}Уравнение малых колебаний струны (продолжение).}{94}{section.12.1}%
+\contentsline {section}{\numberline {2}Свободные колебания однородной струны.}{96}{section.12.2}%
+\contentsline {section}{\numberline {3}Понятие о функции Грина.}{99}{section.12.3}%
+\contentsline {section}{\numberline {4}Свободные колебания однородной струны с другими г. у.}{100}{section.12.4}%
