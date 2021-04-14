@@ -104,17 +104,17 @@
 \end{equation*}
 Оператор $\LL$ будем рассматривать в пространстве $\fL[{(a,b]}]$.
 \begin{equation*}
-	\hfill \fL\eqdef\left\{y(x)\middle|\int\limits_a^b|y|^2\,dx<+\infty\right\}_{\displaystyle.}\hfill
+	\hfill \fL\eqdef\left\{y(x)\middle|\int\limits_a^b|y(x)|^2\,dx<+\infty\right\}_{\displaystyle.}\hfill
 \end{equation*}
 Пространство \fL\ состоит из функций, которые интегрируемы с квадратом в смысле Лебега, мы же рассматриваем только функции интегрируемые по Риману как вас учили.\footnote[1]{Заметим, что если функция интегрируема по Риману, то она интегрируема и по Лебегу и оба интеграла совпадают.}
 
 В \fL\ введём скалярное произведение: при $y(x),\,z(x)\in\fL$
 \begin{equation*}
-	\hfill(y,z)\eqdef\int\limits_a^b y(x)\cdot \overline{z}\,dx\hfill
+	\hfill(y,z)\eqdef\int\limits_a^b y(x)\cdot \overline{z}(x)\,dx\hfill
 \end{equation*}  
 и норму
 \begin{equation*}
-	\hfill\norm{y}\eqdef\sqrt{\int\limits_a^b|y|^2\,dx}.\hfill
+	\hfill\norm{y}\eqdef\sqrt{\int\limits_a^b|y(x)|^2\,dx}.\hfill
 \end{equation*}
 \begin{_def}
 Под \textbf{сходимостью} $z_{m}\to z$ в \fL\ мы будем понимать сходимость по норме
@@ -157,7 +157,7 @@
 \end{tikzpicture}
 
 \begin{equation*}
-	\norm{z_m-z}=\sqrt{\int\limits_a^b\big|z_m(x)-z(x)\big|^2\,dx}=\sqrt{\lim\limits_{n\to\infty}\sum\limits_{i=1}^n\frac{\big|z_m(x)-z(x)\big|^2}{n}\cdot(b-a)},
+	\norm{z_m-z}=\sqrt{\int\limits_a^b\big|z_m(x)-z(x)\big|^2\,dx}=\sqrt{\lim\limits_{n\to\infty}\sum\limits_{i=1}^n\frac{\big|z_m(x_i)-z(x_i)\big|^2}{n}\cdot(b-a)},
 \end{equation*}
 а это и есть среднее с точностью до множителя $\sqrt{b-a}$.
 
@@ -534,12 +534,12 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 \end{equation}  
 Рассмотрим 
 \begin{equation*}
-	\hfill \tilde{y}_0=\sum\limits_{j=1}^{p}=\tilde{c}_j\cdot y_j\hfill
+	\hfill \tilde{y}_0=\sum\limits_{j=1}^{p}\tilde{c}_j\cdot y_j\hfill
 \end{equation*}
 и подберём коэффициенты $\tilde{c}_j$ так, чтобы $\big(\tilde{y},\phi_i\big)=0,\,i=\overline{1,p-1}$. Чтобы эти равенства выполнялись, очевидно, числа $\tilde{c}_j$ должны удовлетворять условиям
 \begin{equation}
 	\label{l5:eq:17}
-	\hfill \sum\limits_{j=1}^{p}=\tilde{c}_j\cdot \big(y_j,\phi_i\big)=0,\quad i=\overline{1,p-1}.\hfill
+	\hfill \sum\limits_{j=1}^{p}\tilde{c}_j\cdot \big(y_j,\phi_i\big)=0,\quad i=\overline{1,p-1}.\hfill
 \end{equation} 
 \eqref{l5:eq:17} --- система $(p-1)$ однородных уравнений относительно $p$ неизвестных $\tilde{c}_1,\ldots,\tilde{c}_p$. Так как число неизвестных больше числа уравнений, то существует не нулевое решение $\tilde{c}_1,\ldots,\tilde{c}_p$. Так как решение~\eqref{l5:eq:17} определено с точностью до произвольного множителя, то числа 
 \begin{equation*}

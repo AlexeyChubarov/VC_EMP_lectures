@@ -111,9 +111,9 @@
 		\K=\left\{y(x)|y(x)\in\Cfn[{[0,R]}]{},\ y(R)=0,\ \begin{array}{rcl}
 			\nu>0&:&y(0)=0,\ y\in\Cfn[{(0,R]}]{1},\\
 			\nu=0&:&y\in\Cfn[{[0,R]}]{1},
-		\end{array}\ \int\limits_0^R x\cdot y^2\,dx=1\right\}_{\displaystyle.}
+		\end{array}\ \int\limits_0^R x\cdot y^2\,dx=1\right\}_{\displaystyle,}
 	\end{multline*} 
-	Мы установили, что минимайзер должен удовлетворять уравнению
+	мы установили, что минимайзер должен удовлетворять уравнению
 	\begin{equation}\label{l9:eq:1}
 		\hfill Ly\eqdef-\der{}{x}\Big(x\cdot y'\Big)+\frac{\nu^2}{x}\cdot y=\lambda\cdot x\cdot y,\hfill
 	\end{equation}
@@ -124,7 +124,7 @@
 			\text{при }\nu>0&:&y(0)=0,\ y\in\Cfn[{(0,R]}]{1},
 		\end{array}\ \norm{Ly}_1<+\infty,\ \J[y]<+\infty\right\}_{\displaystyle.}\hfill
 	\end{equation*}
-	Было установлено, что в этой области оператор $L$ --- симметричен и 
+	Было установлено, что в этой области оператор $L$ --- эрмитов и 
 	\begin{equation}\label{l9:eq:2}
 		\hfill\big(Ly,y\big)=\J[y].\hfill
 	\end{equation}
@@ -142,10 +142,10 @@
 	\end{equation}
 	где в силу граничных условий и условий гладкости для функций $y_{\nu k}(x)$ мы должны потребовать
 	\begin{equation*}
-		\hfill z(\sqrt{\lambda}\cdot R)=0,\quad\text{при }\nu=0\ z(\rho)\in\Cfn[{[0,R]}]{2},\quad\text{при }\nu>0\ z(0)=0,\ z\in\Cfn[{[0,R]}]{2}.\hfill
+		\hfill z(\sqrt{\lambda}\cdot R)=0,\quad\text{при }\nu=0\ z(\rho)\in\Cfn[{[0,R]}]{2},\quad\text{при }\nu>0\ z(0)=0,\ z\in\Cfn[{(0,R]}]{2}.\hfill
 	\end{equation*}
 
-	Уравнение~\eqref{l9:eq:5} хорошо известно. Это уравнение Бесселя, его решения --- функции Бесселя $\nu$-ого порядка. Так как уравнение~\eqref{l9:eq:5} --- уравнение второго порядка --- то оно имеет два линейно независимых решения, называемые функциями Бесселя первого и второго рода. Но функция Бесселя второго рода $\nu$-ого порядка, или просто функция Бесселя $\nu$-ого порядка $J_\nu(\rho)$. Решение уравнения~\eqref{l9:eq:5} можно искать в виде ряда
+	Уравнение~\eqref{l9:eq:5} хорошо известно. Это уравнение Бесселя, его решения --- функции Бесселя $\nu$-ого порядка. Так как уравнение~\eqref{l9:eq:5} --- уравнение второго порядка --- то оно имеет два линейно независимых решения, называемые функциями Бесселя первого и второго рода. Но функция Бесселя второго рода имеет особенность при $\rho=0$. Остаётся функция Бесселя первого рода $\nu$-ого порядка, или просто функция Бесселя $\nu$-ого порядка $J_\nu(\rho)$. Решение уравнения~\eqref{l9:eq:5} можно искать в виде ряда
 	\begin{equation*}
 		\hfill\rho^{\nu}\cdot\sum\limits_{k=0}^{\infty}C_k^{(\nu)}\cdot\rho^k.\hfill
 	\end{equation*}  
@@ -155,18 +155,18 @@
 	\end{equation}
 	где $\displaystyle C_{2\cdot k}^{(\nu)}=-C_{2\cdot k-2}^{(\nu)}\cdot\frac{1}{4\cdot k\cdot(k+1)}$,$\quad k=1,2,\ldots$
 	
-	\noindent Таким образом все коэффициенты выражаются через $C_0^{(\nu)}$, который свободен\footnote{Решение определено с точностью до множителя}.
+	\noindent Таким образом все коэффициенты выражаются через коэффициент $C_0^{(\nu)}$, который свободен\footnote{Решение определено с точностью до множителя}.
 	
-	Итак, решение~\eqref{l9:eq:5} --- это $z(\rho)=J_{\nu}(\rho)$. Так как $y_{\nu k}(R)=0$, то $z(\sqrt{\lambda}\cdot R)=0=J_{\nu}\left(\sqrt{\lambda}\cdot R\right)$. Обозначим через $\mu_k^{(\nu)}$, $k=1,2,\ldots$ нули функции $J_{\nu}(\rho):\,J_{\nu}\left(\mu_k^{(\nu)}\right)=0$. Тогда $\sqrt{\lambda_{\nu k}}\cdot R=\mu_{k}^{(\nu)}$ и 
+	Итак, решение~\eqref{l9:eq:5} --- это $z(\rho)=J_{\nu}(\rho)$. Так как $y_{\nu k}(R)=0$, то $z(\sqrt{\lambda}\cdot R)=0=J_{\nu}\left(\sqrt{\lambda}\cdot R\right)$. Обозначим через $\mu_{\nu k}$, $k=1,2,\ldots$ нули функции $J_{\nu}(\rho):\,J_{\nu}\left(\mu_{\nu k}\right)=0$. Тогда $\sqrt{\lambda_{\nu k}}\cdot R=\mu_{\nu k}$ и 
 	\begin{equation}\label{l9:eq:7}
-		\hfill\lambda_{\nu k}=\left(\frac{\mu_{k}^{(\nu)}}{R}\right)^2.\hfill
+		\hfill\lambda_{\nu k}=\left(\frac{\mu_{\nu k}}{R}\right)^2.\hfill
 	\end{equation}
 	Таким образом (так как $\rho=\sqrt{\lambda}\cdot x$)
 	\begin{equation}\label{l9:eq:8}
-		\hfill y_{\nu k}(x)=z(\rho)=J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right)\footnotemark{}.\hfill
+		\hfill y_{\nu k}(x)=z(\rho)=J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)\footnotemark{}.\hfill
 	\end{equation}\footnotetext{Теперь, когда $y_{\nu k}(x)=z$ найдены, надо проверить неравенства $\J[y_{\nu k}]<+\infty$, $\norm{Ly_{\nu k}}_1<+\infty$, которые должны выполняться в $\mc{D}_L$. Мы это сделаем позже.}
 
-	Мы получили явный вид собственных функций $y_{\nu k}$ и собственных значений $\lambda_{\nu k}$ обобщённой задачи Штурма. Так как в выражения~\eqref{l9:eq:7},~\eqref{l9:eq:8} входят нули функции Бесселя $J_{\nu}(\rho)$, то проведём небольшое исследование тех точек $\mu_{k}^{(\nu)}$, в которых $J_{\nu}\left(\mu_{k}^{(\nu)}\right)=0$, то есть изучим --- хотя бы поверхностно, свойствва нулей функции Бесселя. Для этого воспользуемся известной асимптотикой функции Бесселя при больших $\rho$
+	Мы получили явный вид собственных функций $y_{\nu k}$ и собственных значений $\lambda_{\nu k}$ обобщённой задачи Штурма. Так как в выражения~\eqref{l9:eq:7},~\eqref{l9:eq:8} входят нули функции Бесселя $J_{\nu}(\rho)$, то проведём небольшое исследование тех точек $\mu_{\nu k}$, в которых $J_{\nu}\left(\mu_{\nu k}\right)=0$, то есть изучим --- хотя бы поверхностно, свойствва нулей функции Бесселя. Для этого воспользуемся известной асимптотикой функции Бесселя при больших $\rho$
 	\begin{equation*}
 		\hfill\sqrt{\rho}\cdot J_{\nu}(\rho)=a_{\nu}\cdot\cos(\rho-b\cdot\nu)+O\left(\frac{1}{\rho}\right),\hfill
 	\end{equation*}
@@ -174,40 +174,40 @@
 	\begin{equation}\label{l9:eq:9}
 		\hfill\sqrt{\rho_k}\cdot J_{\nu}(\rho_k)=(-1)^k\cdot a_{\nu}+O\left(\frac{1}{\rho_k}\right).\hfill
 	\end{equation}
-	Величина $J_{\nu}(\rho_k)$ и $J_{\nu}(\rho_{k+1})$ при больших $\rho$ имеют в силу~\eqref{l9:eq:9} разные знаки. И так как функция $J_{\nu}(\rho)$ непрерывна на отрезке $[\rho_k,\rho_{k+1}]$, на этом отрезке обязательно найдётся (и возможно не одна) точка, в которой $J_{\nu}(\rho)$ обращается в ноль. В тоже время, так как функция $J_{\nu}(\rho)$ --- аналитична на отрезке $[\rho_k,\rho_{k+1}]$ при $\rho_k>0$, то на этом отрезке \emph{не может быть бесконечного числа нулей}. Это относится вообще к любому отрезку $[\alpha,\beta]$ при $\alpha>0$. Что касается отрезка $[0,\alpha]$, то в силу~\eqref{l9:eq:6} при $0<\alpha<1$
+	Величины $J_{\nu}(\rho_k)$ и $J_{\nu}(\rho_{k+1})$ при больших $\rho$ имеют в силу~\eqref{l9:eq:9} разные знаки. И так как функция $J_{\nu}(\rho)$ непрерывна на отрезке $[\rho_k,\rho_{k+1}]$, на этом отрезке обязательно найдётся (и возможно не одна) точка, в которой $J_{\nu}(\rho)$ обращается в ноль. В тоже время, так как функция $J_{\nu}(\rho)$ --- аналитична на отрезке $[\rho_k,\rho_{k+1}]$ при $\rho_k>0$, то на этом отрезке \emph{не может быть бесконечного числа нулей}. Это относится вообще к любому отрезку $[\alpha,\beta]$ при $\alpha>0$. Что касается отрезка $[0,\alpha]$, то в силу~\eqref{l9:eq:6} при $0<\alpha<1$
 	\begin{equation*}
-		\hfill J_{\nu}(\rho)=\rho^{\nu}\cdot\Big(C_0^{(\nu)}+O(\rho)\Big),\quad\text{при}\quad\rho\neq0.\hfill
+		\hfill J_{\nu}(\rho)=\rho^{\nu}\cdot\Big(C_0^{(\nu)}+O(\rho)\Big)\quad\text{при}\quad\rho\ll1.\hfill
 	\end{equation*}
-	Следовательно, нули $\mu_{k}^{(\nu)}$ функции $J_{\nu}(\rho)$ могут накапливаться только на бесконечности. Поэтому собственные значения $\lambda_{\nu k}=\left(\mu_{k}^{(\nu)}/R\right)^2\to\infty$. Таким образом мы получили бесконечную последовательность при $k\to\infty$ собственных функций обобщённой задачи Штурма
+	Следовательно, нули $\mu_{\nu k}$ функции $J_{\nu}(\rho)$ могут накапливаться только на бесконечности. Поэтому при $k\to\infty$ собственные значения $\lambda_{\nu k}=\left(\mu_{\nu k}/R\right)^2\to\infty$. Таким образом мы получили бесконечную последовательность при $k\to\infty$ собственных функций обобщённой задачи Штурма
 	\begin{equation*}
-		\hfill y_{\nu k}(x)=J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right),\hfill
+		\hfill y_{\nu k}(x)=J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right),\hfill
 	\end{equation*}
 	отвечающих собственным значениям 
 	\begin{equation*}
-		\hfill \lambda_{\nu k}=\left(\frac{\mu_{k}^{(\nu)}}{R}\right)^2\to\infty,\quad\text{при}\quad k\to\infty.\hfill
+		\hfill \lambda_{\nu k}=\left(\frac{\mu_{\nu k}}{R}\right)^2\to\infty,\quad\text{при}\quad k\to\infty.\hfill
 	\end{equation*}
 	В силу свойств решений обобщённой задачи Штурма 
 	\begin{equation*}
-		\hfill\big(y_{\nu k},y_{\nu m}\big)_1=\left(J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right),J_{\nu}\left(\frac{\mu_{m}^{(\nu)}}{R}\cdot x\right)\right),\quad k\neq m.\hfill
+		\hfill\big(y_{\nu k},y_{\nu m}\big)_1=\left(J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right),J_{\nu}\left(\frac{\mu_{\nu m}}{R}\cdot x\right)\right)_1=0,\quad k\neq m.\hfill
 	\end{equation*}
 	\begin{_teor}[Стеклова]
 		Пусть
 		\begin{equation*}
-			\hfill d_k^{(\nu)}\eqdef\left(y,J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right)\right)_1\Biggm/\norm{J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right)}_1^2.\hfill
+			\hfill d_k^{(\nu)}\eqdef\left(y,J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)\right)_1\Biggm/\norm{J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)}_1^2.\hfill
 		\end{equation*} 
 		Тогда 
 		\begin{enumerateP1}
-			\item\label{l9:Steclov:L}при $y\in\fLr[{[0,R];x}]$\quad $\displaystyle\norm{y-\sum\limits_{k=1}^{\infty}d_k^{(\nu)}\cdot J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right)}_1\to0$, при $n\to\infty$,
-			\item\label{l9:Steclov:D}при $y\in\mc{D}_L$\quad$\displaystyle\sup\limits_{x\in[a,b]}\left|y-\sum\limits_{k=1}^{\infty}d_k^{(\nu)}\cdot J_{\nu}\left(\frac{\mu_{k}^{(\nu)}}{R}\cdot x\right)\right|\to0$, при $n\to\infty$. 
+			\item\label{l9:Steclov:L}при $y\in\fLr[{[0,R];x}]$\quad $\displaystyle\norm{y-\sum\limits_{k=1}^{n}d_k^{(\nu)}\cdot J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)}_1\to0$ при $n\to\infty$,
+			\item\label{l9:Steclov:D}при $y\in\mc{D}_L$\quad$\displaystyle\sup\limits_{x\in[a,b]}\left|y-\sum\limits_{k=1}^{n}d_k^{(\nu)}\cdot J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)\right|\to0$ при $n\to\infty$. 
 		\end{enumerateP1} 
 	\end{_teor}
-	\noindent\ref{l9:Steclov:L} --- без доказательства, \ref{l9:Steclov:D} --- доказать при $y\in\mc{D}_L$. 
+	\noindent\ref{l9:Steclov:D} --- без доказательства, а \ref{l9:Steclov:L} --- доказать самостоятельно при $y\in\mc{D}_L$. 
 	
-	Рассмотрим теперь случай граничного условия $y'(R)=0$ вместо $y(R)=0$. Обозначим соответствующие собственные функции и собственные значения обобщённой задачи Штурма через $\tilde{y}_{\nu k}(x)$ и через $\tilde{\lambda}_{\nu k}$. Вводим функцию $\tilde{z}(\rho)=\tilde{y}_{\nu k}(x)$, где $\rho=\sqrt{\tilde{\lambda}_{\nu k}}\cdot x$. Для функции $\tilde{z}(\rho)$ мы как и раньше получим уравнение Бесселя, выберем нужное нам решение $J_{\nu}(\rho)$, но теперь граничное условие при $x=R$, то есть при $\rho=\sqrt{\tilde{\lambda}}\cdot R$ будет $J_{\nu}'\left(\sqrt{\tilde{\lambda}}\cdot R\right)=0$. Обозначим нули функции $J_{\nu}'(\rho)$ через $\tilde{\mu}_k^{(\nu)}$ и тогда 
+	Рассмотрим теперь случай граничного условия $y'(R)=0$ вместо $y(R)=0$. Обозначим соответствующие собственные функции и собственные значения обобщённой задачи Штурма через $\tilde{y}_{\nu k}(x)$ и через $\tilde{\lambda}_{\nu k}$. Вводим функцию $\tilde{z}(\rho)=\tilde{y}_{\nu k}(x)$, где $\rho=\sqrt{\tilde{\lambda}_{\nu k}}\cdot x$. Для функции $\tilde{z}(\rho)$ мы как и раньше получим уравнение Бесселя, выберем нужное нам решение $J_{\nu}(\rho)$, но теперь граничное условие при $x=R$, то есть при $\rho=\sqrt{\tilde{\lambda}}\cdot R$ будет $J_{\nu}'\left(\sqrt{\tilde{\lambda}}\cdot R\right)=0$. Обозначим нули функции $J_{\nu}'(\rho)$ через $\tilde{\mu}_{\nu k}$ и тогда 
 	\begin{equation*}
-		\hfill\tilde{\lambda}_{\nu k}=\left(\frac{\tilde{\mu}_k^{(\nu)}}{R}\right)^2,\quad \tilde{y}_{\nu k}(x)=J_{\nu}\left(\frac{\tilde{\mu}_k^{(\nu)}}{R}\cdot x\right).\hfill
+		\hfill\tilde{\lambda}_{\nu k}=\left(\frac{\tilde{\mu}_{\nu k}}{R}\right)^2,\quad \tilde{y}_{\nu k}(x)=J_{\nu}\left(\frac{\tilde{\mu}_{\nu k}}{R}\cdot x\right).\hfill
 	\end{equation*}
-	Чтобы убедится в существовании бесконечного числа нулей $\tilde{\mu}_k^{(\nu)}$ функции $J_{\nu}'(\rho)$ рассмотрим её асимптотику при $\rho\gg1$
+	Чтобы убедится в существовании бесконечного числа нулей $\tilde{\mu}_{\nu k}$ функции $J_{\nu}'(\rho)$ рассмотрим её асимптотику при $\rho\gg1$
 	\begin{equation*}
 		\hfill\sqrt{\rho}\cdot J_{\nu}'(\rho)=a_{\nu-1}\cdot\sin(\rho-b_{\nu})+O\left(\frac{1}{\rho}\right)\hfill
 	\end{equation*}
@@ -223,7 +223,7 @@
 	\end{equation*}
 	Очевидно,
 	\begin{equation*}
-		\hfill x\cdot y_{\nu k}^{\prime2}\leqslant const\cdot\left(x^{2\cdot\nu}\cdot\Psi^{\prime2}(x)\cdot x+x^{2\cdot\nu}\cdot|\Psi(x)|\cdot|\Psi'(x)|+x^{2\cdot\nu-1}\cdot\Psi^2(x)\right).\hfill
+		\hfill x\cdot y_{\nu k}^{\prime2}\leqslant const\cdot\left(x^{2\cdot\nu}\cdot\Phi^{\prime2}(x)\cdot x+x^{2\cdot\nu}\cdot|\Phi(x)|\cdot|\Phi'(x)|+x^{2\cdot\nu-1}\cdot\Phi^2(x)\right).\hfill
 	\end{equation*}
 	Так как $\nu>0$, то
 	\begin{equation*}
@@ -298,7 +298,7 @@
 	\begin{_def}
 		Функцию $\eta(x,y)$ назовём \textbf{допустимым изменением}, если $\tilde{z}\eqdef z+t\cdot\eta\in\K$ при $|t|\ll1$.
 	\end{_def}  
-	Легко видеть, что отсюда вытекают такие ограничения на $\eta$: $\eta\Big|_{\partial G}=0$, $\eta\in\Cfn{1}(\overline{G})$. Далее проводим стандартные рассуждения. Полагаем $\phi(t)=\J[z+t\cdot\eta]$.
+	Легко видеть, что отсюда вытекают такие ограничения на $\eta$: $\eta\Big|_{\partial G}=0$, $\eta\in\Cfn{1}(\overline{G})$. Далее проводим стандартные рассуждения. Полагаем $\phi(t)=\J[z+t\cdot\eta]$. Тогда
 	\begin{equation*}
 		\J[z+t\cdot\eta]\geqslant\J[z]\quad\Rightarrow\quad\phi(t)\geqslant\phi(0);
 	\end{equation*}
@@ -334,15 +334,15 @@
 	\begin{equation}\label{l9:eq:10}
 		\hfill\delta\J=t\cdot\iint\limits_{G}\left(F_z-\der{}{x}F_p-\der{}{y}F_q\right)\cdot\eta\,dxdy+t\cdot\int\limits_{\partial G}(F_p\cdot\cos\alpha+F_q\cdot\cos\beta)\cdot\eta\,dl.\hfill
 	\end{equation}
-	Заметим, что это выражение даёт главную часто приращения $\J[z+t\cdot\eta]=\J[z]$ не зависимо ни от каких свойств $z$ и $\eta$ кроме гладкости. Мы этим будем пользоваться.
+	Заметим, что это выражение даёт главную часто приращения $\J[z+t\cdot\eta]-\J[z]$ не зависимо ни от каких свойств $z$ и $\eta$ кроме гладкости. Мы этим будем пользоваться.
 	
 	Теперь возвращаемся к нашей вариационной задаче. Если $z$ --- минимайзер и $\eta$ --- допустимое изменение, то $\eta\Big|_{\partial G}\equiv0$ и $\delta\J=0$, то есть
 	\begin{equation}\label{l9:eq:11}
-		\hfill\iint\limits_{G}\left(F_z-\der{}{x}F_p-\der{}{y}F_q\right)\cdot\eta\,dxdy=0,\quad\forall\eta\text{ --- допустимого.}\hfill
+		\hfill\iint\limits_{G}\left(F_z-\der{}{x}F_p-\der{}{y}F_q\right)\cdot\eta\,dxdy=0,\quad\forall\eta\text{ --- допустимое.}\hfill
 	\end{equation}
 	Пусть $\displaystyle\Psi\equiv F_z-\der{}{x}F_p-\der{}{y}F_q$. Тогда~\eqref{l9:eq:11} означает, что 
 	\begin{equation}\label{l9:eq:12}
-		\hfill\iint\limits_{G}\Psi(x,y)\cdot\eta\,dxdy=0\quad\forall\eta\text{ --- допустимого.}\hfill
+		\hfill\iint\limits_{G}\Psi(x,y)\cdot\eta\,dxdy=0,\quad\forall\eta\text{ --- допустимое.}\hfill
 	\end{equation}
 	Из равенства~\eqref{l9:eq:12} вытекает, что $\Psi(x,y)\equiv0$, $x,y\in G$ (Обобщение леммы Лагранжа на плоскость). Действительно, пусть в некоторой точке $x_0,\ y_0$ $\Psi(x_0,y_0)>0$. Так как функция $\Psi(x,y)$ --- непрерывная, то можно указать такой квадрат $A$ со стороной $2\cdot\delta$: $|x-x_0|\leqslant\delta$, $|y-y_0|\leqslant\delta$, что $\Psi(x,y)>0$, $x,\ y\in A$.
 	
@@ -484,7 +484,7 @@
 	\begin{equation*}
 		\hfill\int\limits_{\Gamma}(F_p\cdot\cos\alpha+F_q\cdot\cos\beta)\cdot\eta\,dl=0,\quad\forall\eta\text{ --- допустимое.}\hfill
 	\end{equation*}
-	Но так как на $\Gamma_1$ $\eta\Big|_{\Gamma_1}\equiv0$, а $\Gamma=\Gamma_1\cup\Gamma_2$, то мы получаем, что
+	Но так как $\eta\Big|_{\Gamma_1}\equiv0$, а $\Gamma=\Gamma_1\cup\Gamma_2$, то мы получаем, что
 	\begin{equation}\label{l9:eq:15}
 		\hfill\int\limits_{\Gamma_2}(F_p\cdot\cos\alpha+F_q\cdot\cos\beta)\cdot\eta\,dl=0.\hfill
 	\end{equation}
@@ -495,7 +495,7 @@
 	Это --- естественное граничное условие для свободной части границы. Если $\Gamma_1=\varnothing$, то условие~\eqref{l9:eq:16} должно выполняться на всей границе $\Gamma=\partial G$. Таким образом уравнение Остроградского надо решать с граничными условиями: на $\Gamma_2$ ---~\eqref{l9:eq:16}, на $\Gamma_1$ $z\Big|_{\Gamma_1}=f(x,y)$.
 	
 	Приведём пример. Пусть $F=z_x^2+z_y^2$, то есть мы рассматриваем интеграл Дирихле. Тогда \begin{equation*}
-		F_p\cdot\cos\alpha+F_q\cdot\cos\beta=2\cdot(z_x\cdot\cos\alpha+z_y\cdot\cos\beta)=2\cdot\big(\nabla z,\bm{n}\big)=2\cdot\pder{z}{n}
+		F_p\cdot\cos\alpha+F_q\cdot\cos\beta=2\cdot(z_x\cdot\cos\alpha+z_y\cdot\cos\beta)=2\cdot\big(\nabla z,\bm{n}\big)_{\R^2}=2\cdot\pder{z}{n}
 	\end{equation*}
 	и естественное граничное условие на свободной части границы $\displaystyle\left.\pder{z}{n}\right|_{\Gamma_2}=0$
 	

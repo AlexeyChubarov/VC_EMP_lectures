@@ -102,10 +102,10 @@
 	
 	Общий вид граничных условий:
 	\begin{equation*}
-		\begin{cases}
+		\hfill\begin{cases}
 			\alpha_1\cdot y'(a)+\alpha_2\cdot y(a)=0,\\
 			\beta_1\cdot y'(b)+\beta_2\cdot y(b)=0,
-		\end{cases}
+		\end{cases}\hfill
 	\end{equation*} 
 	где $\alpha_j,\,\beta_j$ --- фиксированные числа. Если $\alpha_1=0$ (или $\beta_1=0$), то тогда граничные условия переходят соответственно в
 	\begin{equation*}
@@ -193,7 +193,7 @@
 	\end{gather}
 	Если $\cos(\omega\cdot l)=0$, то $\sin(\omega\cdot l)\neq0$ и сокращая в~\eqref{l7:eq:8} на $sin(\omega\cdot l)$ (после зануления $\cos(\omega\cdot l)$) мы получим 
 	\begin{equation*}
-		\hfill-\omega^2+\gamma_1\cdot\gamma_2,\quad\omega=\sqrt{\gamma_1\cdot\gamma_2},\hfill
+		\hfill-\omega^2+\gamma_1\cdot\gamma_2=0,\quad\omega=\sqrt{\gamma_1\cdot\gamma_2},\hfill
 	\end{equation*}
 	но так как $\cos(\omega\cdot l)=0$, то $l\cdot\omega_k=\displaystyle\frac{\pi}{2}+\pi\cdot k$. Таким образом этот случай имеет место, если для какого-то $k$ ($k=0,1,2,\ldots$)
 	\begin{equation}
@@ -216,10 +216,10 @@
 		\label{l7:eq:10c}
 		\omega\cdot\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=\omega^2\cdot\sin(\omega\cdot l)-\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\sin(\omega\cdot l),\tag{\theequation c}
 	\end{equation}
-	где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\neq0$, значит $\gamma_1=\gamma_2=0$. Но тогда $\omega=0$, а этот случай нами уже рассмотрен. Следовательно мы можем считать $\omega\neq0$ и значит $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
+	где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\neq0\ \Rightarrow\ \gamma_1+\gamma_2=0$, так как $\gamma_1\geqslant0$, $\gamma_2\geqslant0$, то это возможно если $\gamma_1=\gamma_2=0\ \Rightarrow\ \omega=0$, а этот случай нами уже рассмотрен. Следовательно мы можем считать $\omega\neq0$, то есть  $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
 	\begin{equation}
 		\label{l7:eq:10a}
-		\hfill\omega\cdot(\gamma_1+\gamma_2)=(\omega^2-\gamma_1\cdot\gamma_2)\Tg(\omega\cdot l),\tag{\theequation a}\hfill
+		\hfill\omega\cdot(\gamma_1+\gamma_2)=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\Tg(\omega\cdot l),\tag{\theequation a}\hfill
 	\end{equation} 
 	откуда 
 	\begin{equation}
@@ -246,7 +246,7 @@
 	\end{equation*}
 	где связь между $d_{1k}$ и $d_{2k}$ даётся первым уравнением системы~\eqref{l7:eq:6}
 	\begin{equation*}
-		\hfill\omega_k\cdot d_{1k}=\gamma_1\cdot d_{2k}\quad\Rightarrow\quad d_{1k}=0,\text{а }d_{2k}\text{ --- произвольное число.}\hfill
+		\hfill\omega_k\cdot d_{1k}=\gamma_1\cdot d_{2k}\quad\Rightarrow\quad d_{1k}=0,\text{ а }d_{2k}\text{ --- произвольное число.}\hfill
 	\end{equation*}
 	Таким образом 
 	\begin{equation*}
