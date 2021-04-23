@@ -19,7 +19,7 @@
 \begin{equation}\label{l10:eq:1}
 	\hfill-\Delta u+P\cdot u=\lambda\cdot u\qquad\qquad\left(\Delta\eqdef\pdder{}{x}+\pdder{}{y}+\pdder{}{z}\right).\hfill
 \end{equation}
-Оператор $H=-\Delta+P$ называется оператором Шредингера, при $P=0$ --- оператором Лапласа. Мы рассматриваем функцию $3^{\text{ёх}}$ переменных, но можно рассматривать двух и вообще $n$. Решение~\eqref{l10:eq:1} ищется в классе функций $u\in\Cfn{2}(\Omega)\cap\Cfn{1}(\overline{\Omega})$ и на $S=\partial\Omega$, $u\Big|_{S}=0$. Таким образом, минимайзер является собственной функцией оператора Шредингера, отвечающий собственному значению $\lambda$. Докажем эрмитовость оператора $H$ в $\Cfn{2}(\Omega)\cap\Cfn{1}(\overline{\Omega})$ при заданном условии $u\Big|_{S}=0$ и при других возможных граничных условиях (аналогичных тем, что были в одномерной ситуации.)
+Оператор $H=-\Delta+P$ называется оператором Шредингера, при $P=0$ --- оператором Лапласа. Мы рассматриваем функцию $3^{\text{ёх}}$ переменных, но можно рассматривать двух и вообще $n$. Решение~\eqref{l10:eq:1} ищется в классе функций $u\in\Cfn{2}(\Omega)\cap\Cfn{1}(\overline{\Omega})$ и на $S=\partial\Omega$, $u\Big|_{S}=0$. Таким образом, минимайзер является собственной функцией оператора Шредингера, отвечающей собственному значению $\lambda$. Докажем эрмитовость оператора $H$ в $\Cfn{2}(\Omega)\cap\Cfn{1}(\overline{\Omega})$ при заданном условии $u\Big|_{S}=0$ и при других возможных граничных условиях (аналогичных тем, что были в одномерной ситуации.)
 \begin{equation}\label{l10:eq:A}
 	\hfill u\Big|_{S}=0;\tag{A}\hfill
 \end{equation}
@@ -52,7 +52,7 @@
 \end{equation}
 Далее
 \begin{equation}\label{l10:eq:6}
-	-\big(u,\Delta v\big)=-\overline{\big(\Delta v,u\big)}=\iiint\limits_{\Omega}\big(\nabla v,\nabla u\big)_{\R^3}\,d\Omega-\iint\limits_{S}\pder{\overline{v}}{n}\cdot\overline{u}\,dS.
+	-\big(u,\Delta v\big)=-\overline{\big(\Delta v,u\big)}=\overline{\iiint\limits_{\Omega}\big(\nabla v,\nabla u\big)_{\R^3}\,d\Omega}-\iint\limits_{S}\pder{\overline{v}}{n}\cdot u\,dS.
 \end{equation}
 Таким образом для эрмитовости оператора лапласа надо, чтобы на границе $S$
 \begin{equation*}
@@ -142,7 +142,7 @@
 	\begin{equation}\label{l10:eq:10}
 		\hfill\lambda_{n+1}=\max\limits_{\phi_1,\ldots,\phi_{n}}\quad\min\limits_{\substack{y\in\K_1,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}u\perp\phi_1,\phi_2,\ldots,\phi_{n}}}}B[u],\hfill
 	\end{equation}
-	где $\phi_1,\ldots,\phi_n$ --- произвольный набор $n$ функций из $\fL(\Omega)$.
+	где $\phi_1,\ldots,\phi_n$ --- произвольный набор $n$ функций из $\fLr[\Omega]$.
 \end{_teor}
 \noindent Доказательство~\eqref{l10:eq:10} не отличается от аналогичного доказательства для оператора Штурма.
 
@@ -150,7 +150,7 @@
 \begin{equation*}
 	\hfill H=-\Delta+P,\quad \widetilde{H}=-\Delta+\overline{P}.\hfill
 \end{equation*}
-Обозначим через $\lambda_j$ и $\widetilde{\lambda}_j$ собственные значения этих операторов в области 
+Обозначим через $\lambda_j$ и $\widetilde{\lambda}_j$ собственные значения этих операторов с областью 
 \begin{equation*}
 	\hfill\mc{D}_{H}=\mc{D}_{\widetilde{H}}=\left\{u|u\in\Cfn{2}(\Omega)\cup\Cfn{1}(\overline{\Omega}),\ u\Big|_{\partial G}=0\right\}_{\displaystyle.}\hfill
 \end{equation*}
@@ -266,7 +266,7 @@
 			\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k}&  &\big(u,\check{\phi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
 		\end{array}\tag{\theequation b}\hfill
 	\end{equation} 
-	Так как~\eqref{l10:eq:13b} выполняется для $\forall u\in{\mathop{\K}\limits^0}_1(\widehat{\Omega})$ возьмём справа минимум по точкам $u$, причём вместо ${\mathop{\K}\limits^0}_1(\widehat{\Omega})$ возьмём $\K_1(\Omega)$.
+	Так как~\eqref{l10:eq:13b} выполняется для $\forall u\in{\mathop{\K}\limits^0}_1(\widehat{\Omega})$ возьмём справа минимум по функциям $u$, причём вместо ${\mathop{\K}\limits^0}_1(\widehat{\Omega})$ возьмём $\K_1(\Omega)$.
 	\begin{equation}\label{l10:eq:14}
 		\hfill\begin{array}{rcl}
 			\min\widehat{B}[v]&\leqslant&\min B[u],\\
@@ -274,26 +274,26 @@
 			\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k}&  &\big(u,\check{\phi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
 		\end{array}\hfill
 	\end{equation} 
-	Оставляя слева $\phi_1,\ldots,\phi_k$ --- фиксировано, возьмём справа в~\eqref{l10:eq:14} максимум в условии ортогональности $\big(u,\check{\phi}_j\big)_{\Omega}=0$ по всевозможным $\psi_j\in\fLr[(\Omega)]$. Получим
+	Оставляя слева $\phi_1,\ldots,\phi_k$ --- фиксированными, возьмём справа в~\eqref{l10:eq:14} максимум в условии ортогональности $\big(u,\check{\phi}_j\big)_{\Omega}=0$ по всевозможным $\psi_j\in\fLr[\Omega]$. Получим
 	\begin{equation}\label{l10:eq:15}
 		\hfill\begin{array}{rcll}
 			\min\widehat{B}[v]&\leqslant&\max&\min B[u],\\
-			v\in\K_1(\widehat{\Omega})&  &\psi_1,\ldots,\psi_n &u\in\K_1(\Omega),\\
-			\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k}& &   &\big(u,\check{\phi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
+			v\in\K_1(\widehat{\Omega})&  &\psi_1,\ldots,\psi_k &u\in\K_1(\Omega),\\
+			\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k}& &   &\big(u,\check{\psi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
 		\end{array}\hfill
 	\end{equation}
 	А теперь возьмём в~\eqref{l10:eq:15} слева максимум по $\forall\phi_1,\ldots,\phi_k\in\fLr[\widehat{\Omega}]$. Получим окончательно
 	\begin{equation}\label{l10:eq:16}
 		\hfill\begin{array}{rrcll}
 			\max&\min\widehat{B}[v]&\leqslant&\max&\min B[u],\\
-			\phi_1,\ldots,\phi_k&v\in\K_1(\widehat{\Omega})&  &\psi_1,\ldots,\psi_n &u\in\K_1(\Omega),\\
-			&\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k} & &  &\big(u,\check{\phi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
+			\phi_1,\ldots,\phi_k&v\in\K_1(\widehat{\Omega})&  &\psi_1,\ldots,\psi_k &u\in\K_1(\Omega),\\
+			&\big(v,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k} & &  &\big(u,\check{\psi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
 		\end{array}\hfill
 	\end{equation}	
 	Согласно принципу минимакса слева в~\eqref{l10:eq:16} $\lambda_{k+1}^0\big(\widetilde{\Omega}\big)$, справа $\lambda_{k+1}^0\big(\Omega\big)$ и таким образом теорема~\ref{l10:teor:sr2} доказана, так как в~\eqref{l10:eq:16}: $\lambda_{k+1}^0\big(\widetilde{\Omega}\big)\leqslant\lambda_{k+1}^0\big(\Omega\big)$.  
 \end{proof}
 
-Возьмём теперь два произвольных куба $A_1$, $A_2$, один из которых $A_2$ содержит $\Omega_1$ (можно считать в теореме~\ref{l10:teor:sr2} $A_2=\widehat{\Omega}$), а другой $A_1\subset\Omega$. Пусть $\nu_k^{(2)}$ и $\nu_k^{(1)}$ --- собственные значения оператора $H_0=-\Delta$ в $A_2$ и $A_1$ с нулевым граничным условием на $\partial A_2$ и $\partial A_1$ соответственно. В силу теоремы~\ref{l10:teor:sr2} 
+Возьмём теперь два произвольных куба $A_1$, $A_2$, один из которых $A_2$ содержит $\Omega$ (можно считать в теореме~\ref{l10:teor:sr2} $A_2=\widehat{\Omega}$), а другой $A_1\subset\Omega$. Пусть $\nu_k^{(2)}$ и $\nu_k^{(1)}$ --- собственные значения оператора $H_0=-\Delta$ в $A_2$ и $A_1$ с нулевым граничным условием на $\partial A_2$ и $\partial A_1$ соответственно. В силу теоремы~\ref{l10:teor:sr2} 
 \begin{equation}\label{l10:eq:17}
 	\hfill\nu_k^{(1)}\geqslant\lambda_k\geqslant\nu_k^{(2)}.\hfill	
 \end{equation}
@@ -336,29 +336,30 @@
 В остальном --- доказательство не отличается от проведённого для обычного оператора Штурма при условиях $y(a)=y(b)=0$. Заметим только, что при $l=2\cdot\pi$ мы в теореме Стеклова получили разложение в обычный ряд Фурье.
 \subsection{Случай неограниченной области.} 
 \label{lecture10section2sub2}
-Рассмотрим оператор $Ly=-y''$ на полуоси $[0,+\infty)$ в пространстве $\fL[{[0,+\infty)}]$, с заданным условием $y(0)=0$ и условием $\smallint\limits_0^{\infty}|y'|^2\,dx<+\infty$, заменяющее условие на бесконечности. 
+Рассмотрим оператор $Ly=-y''$ на полуоси $[0,+\infty)$ в пространстве $\fL[{[0,+\infty)}]$, с заданным условием $y(0)=0$ и условием $\smallint\limits_0^{\infty}|y'|^2\,dx<+\infty$, заменяющим условие на бесконечности. 
 
 Тогда если $-y''=\lambda\cdot y$, то $y''\in\fL[{[0,\infty)}]$. Найдём знак $\lambda$. Пусть $N\gg1$
 \begin{equation*}
-	-\underline{\int\limits_0^N y''\cdot\overline{y}\,dx}=-y'\cdot\overline{y}\mathop{\Big|}\limits_{0}^{N}+\underline{\int\limits_0^N|y'|^2\,dx}=-y'\cdot\overline{y}\Big|_{x=N}+\underline{\int\limits_0^N|y'|^2\,dx}=\lambda\cdot\underline{\int\limits_0^N|y'|^2\,dx}.
+	-\underline{\int\limits_0^N y''\cdot\overline{y}\,dx}=-y'\cdot\overline{y}\mathop{\Big|}\limits_{0}^{N}+\underline{\int\limits_0^N|y'|^2\,dx}=-y'\cdot\overline{y}\Big|_{x=N}+\underline{\int\limits_0^N|y'|^2\,dx}=\lambda\cdot\underline{\int\limits_0^N|y|^2\,dx}.
 \end{equation*}    
-При $N\to\infty$ подчёркнутые интегралы имеют конечный предел, значит и $\alpha=\lim\limits_{N\to\infty}y'(N)\cdot y(N)$ --- существует и конечен. Но $\smallint\limits_0^{\infty}|y'\cdot y|\,dx$ --- конечен, то $\alpha=0$ и поэтому в пределе при $N\to\infty$ мы получаем, что
+При $N\to\infty$ подчёркнутые интегралы имеют конечный предел, значит и $\alpha=\lim\limits_{N\to\infty}y'(N)\cdot y(N)$ --- существует и конечен. Но так как интеграл  $\smallint\limits_0^{\infty}|y'\cdot y|\,dx$ --- конечен, то $\alpha=0$ и поэтому в пределе при $N\to\infty$ мы получаем, что
 \begin{equation*}
 	\hfill\int\limits_0^{\infty}|y'|^2\,dx=\lambda\cdot\int\limits_0^{\infty}y^2\,dx.\hfill
 \end{equation*}
 Значит $\lambda\geqslant0$. Полагая $\lambda=\nu^2$ из условия $-y''=\nu^2\cdot y$ находим $y=c_1\cdot\sin\left(\nu\cdot x\right)$. Но $y\notin\fL[{[0,\infty)}]$, хотя формально удовлетворяет уравнению $-y''=\nu^2\cdot y$. Таким образом в $\fL[{[0,\infty)}]$ нет собственных функций. Поэтому в привычном виде нет теоремы Стеклова. В то же время, если $y\in\fL[{[0,\infty)}]\cap\fLone[{[0,\infty)}]$\footnote{$\displaystyle\fLone[{[0,\infty)}]=\left\{y(x)|\int\limits_{0}^{\infty}|y(x)|\,dx<+\infty\right\}_{\displaystyle.}$} то для 
 \begin{equation*}
-	\hfill \tilde{y}(\nu)\eqdef\int\limits_0^{\infty}y(x)\cdot\sin\left(\nu\cdot x\right)\,dx\hfill
+	\hfill \overline{y}(\nu)\eqdef\int\limits_0^{\infty}y(x)\cdot\sin\left(\nu\cdot x\right)\,dx\hfill
 \end{equation*}
 имеет место 
 \begin{equation*}
-	\hfill y(x)=\frac{1}{\pi}\cdot\int\limits_0^{\infty}\tilde{y}(\nu)\cdot\sin\left(\nu\cdot x\right)\,d\nu.\hfill
+	\hfill y(x)=\frac{1}{\pi}\cdot\int\limits_0^{\infty}\overline{y}(\nu)\cdot\sin\left(\nu\cdot x\right)\,d\nu.\hfill
 \end{equation*}
-Функция $\sin\left(\nu\cdot x\right)$ называется собственной функцией непрерывного спектра, $\tilde{y}(\nu)$ --- аналог коэффициента Фурье. Если рассмотреть на полуоси оператор 
+Здесь $\overline{y}(\nu)$ --- это не комплексно сопряжённая функция, а обозначение.
+Функция $\sin\left(\nu\cdot x\right)$ называется собственной функцией непрерывного спектра, $\overline{y}(\nu)$ --- аналог коэффициента Фурье. Если рассмотреть на полуоси оператор 
 \begin{equation*}
 	\hfill Ly=-y''+P(x)\cdot y,\quad P(x)\to0,\ x\to\infty.\hfill
 \end{equation*}
-Тогда может быть какое-то число собственных значений $\lambda_n$. Пусть собственные функции $н_n(x)$ тогда
+Тогда может быть какое-то число собственных значений $\lambda_n$. Пусть собственные функции суть $y_n(x)$ тогда
 \begin{equation*}
 	\hfill y(x)=\sum\limits_{n}C_n\cdot y_n+\int\dots\,.\hfill
 \end{equation*}
@@ -381,9 +382,9 @@
 \end{equation*}
 В общем случае
 \begin{equation*}
-	\hfill Hu=-a\cdot\Delta u+P(\bm{r})\cdot u,\ P(\bm{r})\to0\text{ при }\bm{r}\to\infty.\hfill
+	\hfill Hu=-a\cdot\Delta u+P(\bm{r})\cdot u,\ P(\bm{r})\to0\text{ при }|\bm{r}|\to\infty.\hfill
 \end{equation*} 
-Для простоты считаем, что $P(\bm{r})<0$ при $|\bm{r}|\gg1$. Тогда доказано, что если $|\bm{r}|^2\cdot|P(\bm{r})|\to0$ при $|\bm{r}|\to\infty$, то слева от точки $0$ может быть не более чем конечное число собственных значений. Это так называемые короткодействующее взаимодействие $P(\bm{r})$, характерные для взаимодействий между нуклонами. Если $|\bm{r}|^2\cdot|P(\bm{r})|\to+\infty$	при $|\bm{r}|\to\infty$ --- то это --- длиннодействие. Пример $P(\bm{r})=-\dfrac{c}{|\bm{r}|} (c>0)$ --- случай атома водорода. При отрицательном длиннодействии имеется бесконечное число собственных значений $\lambda_k<0$, $\lambda_k\to0$, $k\to\infty$.
+Для простоты считаем, что $P(\bm{r})<0$ при $|\bm{r}|\gg1$. Тогда доказано, что если $|\bm{r}|^2\cdot|P(\bm{r})|\to0$ при $|\bm{r}|\to\infty$, то слева от точки $0$ может быть не более чем конечное число собственных значений. Это так называемые короткодействующие взаимодействия $P(\bm{r})$, характерные для взаимодействий между нуклонами. Если $|\bm{r}|^2\cdot|P(\bm{r})|\to+\infty$	при $|\bm{r}|\to\infty$ --- то это --- длиннодействие. Пример $P(\bm{r})=-\dfrac{c}{|\bm{r}|} (c>0)$ --- случай атома водорода. При отрицательном длиннодействии имеется бесконечное число собственных значений $\lambda_k<0$, $\lambda_k\to0$, $k\to\infty$.
 \vspace{0.2cm}
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -430,7 +431,7 @@
 \begin{equation*}
 	\hfill H_n u=\lambda\cdot u\hfill
 \end{equation*}
-описывает стационарные (связанные) состояния атома (иона) с энергией $\lambda$. Хотя написанное уравнение является одним из основных уравнений не релятивистской квантовой механики, вопрос о существовании собственных значений, их числе и местоположении не был решён к $60^{\text{\underline{м}}}$ годам прошлого века. Задача исследования этого вопроса была поставлена мне в аспирантуре (1956-1959). Результаты решения этой задачи привожу ниже. При $Z\geqslant n$ (случай нейтральных атомов ($Z=n$) и положительных ионов ($Z>n$)) существует бесконечная серия собственных значений $\lambda_k(n)\to\lambda_{0}(n-1)$ при $k\to\infty$, где $\lambda_0(n-1)$ --- наименьшее собственное значение оператора $H_{n-1}$, то есть при $Z=n$ нижняя грань энергии $(+)$ иона, получившегося удалением из системы одного электрона (теорема Жислина). Сплошной спектр $\big[\lambda_0(n-1),+\infty\big)$ (HWZ--theorem, теорема Хунцикера--ван Витера--Жислина).
+описывает стационарные (связанные) состояния атома (иона) с энергией $\lambda$. Хотя написанное уравнение является одним из основных уравнений не релятивистской квантовой механики, вопрос о существовании собственных значений, их числе и местоположении не был решён к $60^{\text{\underline{м}}}$ годам прошлого века. Задача исследования этого вопроса была поставлена мне в аспирантуре (1956-1959). Результаты решения этой задачи привожу ниже. При $Z\geqslant n$ (случай нейтральных атомов ($Z=n$) и положительных ионов ($Z>n$)) существует бесконечная серия собственных значений $\lambda_k(n)\to\lambda_{0}(n-1)$ при $k\to\infty$, где $\lambda_0(n-1)$ --- наименьшее собственное значение оператора $H_{n-1}$, то есть при $Z=n$ нижняя грань энергии $(+)$ иона, получившегося удалением из системы одного электрона (теорема Жислина). Сплошной спектр $\big[\lambda_0(n-1),+\infty\big)$ (HWZ--theorem, теорема Хунцикера--ван Винтера--Жислина).
 \vspace{0.5cm}
 
 

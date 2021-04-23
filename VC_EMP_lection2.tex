@@ -375,11 +375,11 @@ t\cdot\left.\der{}{t}\J[\bm{y}+t\cdot\bm{\eta}]\right|_{t=0}= t\left.\der{}{t}\i
 Балка жёстко закреплена на концах, поэтому кроме условия обычного закрепления $y(-l)=y(l)=0$ должно выполняться условие $y'(-l)=y'(l)=0$. В положении равновесия у балки будет минимальное значение потенциальной энергии. Когда происходит прогиб балки, то потенциальная энергия за счёт силы тяжести уменьшается, так как уменьшается ордината центра тяжести и увеличивается за счёт появления изгибающего момента. Запишем полное выражение потенциальной энергии балки без вывода
 \begin{equation}
 	\label{l2:eq:19}
-	\hfill E[y]=g\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx\hfill
+	\hfill E[y]=g\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx.\hfill
 \end{equation}
 Здесь $g$ --- ускорение силы тяжести, $\rho$ --- плотность на единицу длины балки, $\mu$ --- коэффициент, описывающий упругие свойства балки. Так как её прогиб, очевидно, не большой, то $|y'|\ll1$. Поэтому в \eqref{l2:eq:19} можно пренебречь членом $y^{\prime2}$ и таким образом окончательно мы приходим к задаче:
 \begin{multline*}
-	\text{Найти }\min\limits_{y\in\K}\,E[y], \text{ где } E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac{1}{2}\mu\cdot y^{\prime\prime2}\right)\,dx,\\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(l)=y'(l)=y(-l)=y'(-l)=0\right\}
+	\text{Найти }\min\limits_{y\in\K}\,E[y], \text{ где } E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac{1}{2}\mu\cdot y^{\prime\prime}\right)\,dx,\\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(l)=y'(l)=y(-l)=y'(-l)=0\right\}_{\displaystyle.}
 \end{multline*} 
 После построения общей теории мы вернёмся к этой задаче и решим её.  
 \end{document}

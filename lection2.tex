@@ -1,4 +1,4 @@
-\chapter{}
+	\chapter{}
 \label{lecture2}
 
 \noindent На прошлой лекции мы установили, что минимайзер в задаче на $\min\limits_{y\in\K}\,\J[y]$, где  $\J[y]=\int\limits_a^b F(x,y,y')\,dx$ $\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1}, y(a)=y_0, y(b)=y_1, |y|<M\right\}$ удовлетворяет уравнению Эйлера--Лагранжа:
@@ -9,7 +9,7 @@
 которое надо решать при условиях 
 \begin{equation}
 	\label{l2:eq:2}
-	\hfill y(a)=y_0,\ y(b)=y_1.\hfill
+	\hfill y(a)=y_0,\ y(b)=y_1\hfill
 \end{equation}
 
 \section{Примеры решения уравнения Эйлера--Лагранжа.}
@@ -21,7 +21,7 @@
 	\item  $F=\alpha(x,y)\cdot y'+\beta(x,y)$ --- функция линейна по $y'$. Уравнение Эйлера в этом случае
 	\begin{equation}
 		\label{l2:eq:3}
-		\alpha_y\cdot y'+\beta_y-\der{}{x}\alpha(x,y)=\underline{\alpha_y\cdot y'}+\beta_y-\alpha_x-\underline{\alpha_y\cdot y'}=\beta_y-\alpha_x=0.
+		\alpha_y\cdot y'+\beta_y-\der{}{x}\alpha(x,y)=\underline{\alpha_y\cdot y'}+\beta_y-\alpha_x-\underline{\alpha_y\cdot y'}=\beta_y-\alpha_x=0
 	\end{equation}
 	Далее возможны два варианта. Первый $\beta_y-\alpha_x=0$ не тождественно, то есть \eqref{l2:eq:3} можно рассматривать как уравнение относительно $y$ и мы приходим к \ref{l2:1:enum1}: в общем случае решения нет. 
 	\noindent Второй вариант: $\beta_y-\alpha_x\equiv0$, то есть уравнения нет и, значит, любая кривая из \K --- экстремаль. Но при $\beta_y=\alpha_x$ можно указать такую функцию $\widetilde{\phi}(x,y)$ так, что $\alpha(x,y)=\widetilde{\phi}_y$, $\beta(x,y)=\widetilde{\phi}_x$ и интегрант $\alpha(x,y)\cdot y'+\beta(x,y)=\displaystyle\der{\widetilde{\phi}}{x}$. Поэтому 
@@ -30,7 +30,7 @@
 	\end{equation*}
 	Таким образом значение интеграла не зависит от функций $y(x)\in\K$ и задача на $\min\limits_{y\in\K}\,\J[y]$ и $\max\limits_{y\in\K}\,\J[y]$ не имеет смысла.
 	
-	\item $F=F(y')$. Уравнение $\displaystyle\der{}{x}F_{y'}=0\rightarrow F_{y'}=const$ и при $F_{y'y'}\neq0$ мы получаем, что $y(x)=c_1\cdot x+c_2$, где константы $c_1$ и $c_2$ находятся из граничных условий.
+	\item $F=F(y')$. Уравнение $\der{}{x}F_{y'}=0\rightarrow F_{y'}=const$ и при $F_{y'y'}\neq0$ мы получаем, что $y(x)=c_1\cdot x+c_2$, где константы $c_1$ и $c_2$ находятся из граничных условий.
 	
 	\item $F=F(y,y')$ --- нет явной зависимости от аргумента $x$, только через $y(x)$, $y'(x)$. Это наиболее часто встречающийся частный случай. Покажем, что в этом случае уравнение Эйлера имеет первый интеграл
 	\begin{equation}
@@ -54,7 +54,7 @@
 %\makeatother
 Сейчас мы будем рассматривать функционалы вида 
 \begin{equation*}
-	\hfill\J[y_1,\ldots,y_n]=\int\limits_a^b F(x,y_1,\ldots,y_n,y'_1,\ldots,y'_n)\,dx.\hfill
+	\hfill\J[y_1,\ldots,y_n]=\int\limits_a^b F(x,y_1,\ldots,y_n,y'_1,\ldots,y'_n)\,dx\hfill
 \end{equation*}
 
 Приведём пример задачи, в которой возникает необходимость найти минимум функционала подобного рода. Пусть $A(a_0,b_0,c_0)$ и $B(a_1,b_1,c_1)$ --- произвольные точки и в точке $A$ помещён источник света.
@@ -300,10 +300,10 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 Балка жёстко закреплена на концах, поэтому кроме условия обычного закрепления $y(-l)=y(l)=0$ должно выполняться условие $y'(-l)=y'(l)=0$. В положении равновесия у балки будет минимальное значение потенциальной энергии. Когда происходит прогиб балки, то потенциальная энергия за счёт силы тяжести уменьшается, так как уменьшается ордината центра тяжести и увеличивается за счёт появления изгибающего момента. Запишем полное выражение потенциальной энергии балки без вывода
 \begin{equation}
 	\label{l2:eq:19}
-	\hfill E[y]=g\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx\hfill
+	\hfill E[y]=g\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx.\hfill
 \end{equation}
 Здесь $g$ --- ускорение силы тяжести, $\rho$ --- плотность на единицу длины балки, $\mu$ --- коэффициент, описывающий упругие свойства балки. Так как её прогиб, очевидно, не большой, то $|y'|\ll1$. Поэтому в \eqref{l2:eq:19} можно пренебречь членом $y^{\prime2}$ и таким образом окончательно мы приходим к задаче:
 \begin{multline*}
-	\text{Найти }\min\limits_{y\in\K}\,E[y], \text{ где } E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac{1}{2}\mu\cdot y^{\prime\prime2}\right)\,dx,\\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(l)=y'(l)=y(-l)=y'(-l)=0\right\}
+	\text{Найти }\min\limits_{y\in\K}\,E[y], \text{ где } E[y]=\int\limits_{-l}^{+l}\left(g\cdot\rho\cdot y+\frac{1}{2}\mu\cdot y^{\prime\prime}\right)\,dx,\\ \K=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(l)=y'(l)=y(-l)=y'(-l)=0\right\}_{\displaystyle.}
 \end{multline*} 
-После построения общей теории мы вернёмся к этой задаче и решим её. 
+После построения общей теории мы вернёмся к этой задаче и решим её.  

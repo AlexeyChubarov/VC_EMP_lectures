@@ -1,4 +1,4 @@
-\chapter{}
+	\chapter{}
 \label{lecture8}
 \section{Обобщённая задача Штурма.}
 \label{lecture8section1}
@@ -24,7 +24,7 @@
 
 Далее, собственные функции обобщённой задачи Штурма, отвечающие различным собственным значениям, ортогональны с весом $\rho$. 
 \begin{proof}
-	Действительно, если $Ly_1=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$ и $\lambda_2\neq\lambda_1$, то умножая первое соотношение на $y_2$ скалярно получим $\big(Ly_1,y_2\big)=\lambda_1\cdot\big(y_1,\rho\cdot y_2\big)$ и одновременно
+	Действительно, если $Ly_1=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$ и $\lambda_2\neq\lambda_1$, то умножая первое соотношение на $y_2$ скалярно получим $\big(Ly_1,y_2\big)=\lambda_1\cdot\big(\rho\cdot y_1,y_2\big)$ и одновременно
 	\begin{equation}
 		\label{l8:eq:3}
 		\hfill\big(Ly_1,y_2\big)=\big(y_1,Ly_2\big)=\big(y_1,\lambda_2\cdot\rho\cdot y_2\big)=\lambda_2\cdot\big(y_1,\rho\cdot y_2\big).\hfill
@@ -96,7 +96,7 @@
 
 Если $\rho(x)>0$, $x\in[a,b]$ и $\rho(x)\in\Cfn[{[a,b]}]{2}$, то можно обойтись без теоремы сравнения следующим образом. Пусть
 \begin{equation}\label{l8:eq:8}
-	\hfill L_1y_k=\eqdef-\der{}{x}\Big(Q_1\cdot y'_k\Big)+P_1\cdot y_k=\lambda_k^{(1)}\cdot\rho_1\cdot y_k.\hfill
+	\hfill L_1y_k\eqdef-\der{}{x}\Big(Q_1\cdot y'_k\Big)+P_1\cdot y_k=\lambda_k^{(1)}\cdot\rho_1\cdot y_k.\hfill
 \end{equation}
 Вводим фкнкцию $z_k\eqdef\sqrt{\rho_1}\cdot y_k$ и поделим обе части~\eqref{l8:eq:8} на $\sqrt{\rho_1}$. Тогда полученное уравнение можно записать в виде
 \begin{equation}\label{l8:eq:9}
@@ -125,7 +125,7 @@
 		(Это равномерная сходимость.)
 	\end{enumerateP1}
 \end{_teor}
-Доказательство~\ref{l8:Steclov:p2} я приведу прямо сейчас,~\ref{l8:Steclov:p1} --- без доказательства.
+\noindent Доказательство~\ref{l8:Steclov:p2} я приведу прямо сейчас,~\ref{l8:Steclov:p1} --- без доказательства.
 
 В заключение отметим, что если $0<\underline{\rho}\leqslant\rho(x)\leqslant\overline{\rho}$ для $\forall x\in[a,b]$, где $\underline{\rho}$, $\overline{\rho}$ --- константы, то 
 \begin{equation*}
@@ -265,7 +265,7 @@
 	ибо:
 	\begin{enumeraterm}
 		\item первый множитель справа в~\eqref{l8:eq:10} --- это $\norm{Lf}_1$, а эта норма конечна;
-		\item второй множитель не превосходит $\sqrt{\dfrac{1}{\nu^2}\cdot\J[f]}<+\infty$.
+		\item второй множитель не превосходит $\sqrt{\dfrac{1}{\nu^2}\cdot\J[g]}<+\infty$.
 	\end{enumeraterm}
 	Далее
 	\begin{equation}\label{l8:eq:11}

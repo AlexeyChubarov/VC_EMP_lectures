@@ -120,7 +120,7 @@
 		Откуда при $t=0$ в силу условий~\eqref{l12:eq:2}
 		\begin{equation}
 			\label{l12:eq:4}
-			u_{tt}(x,0)=\left(\mu\cdot\phi_x+\mu\cdot\phi_{xx}-\rho_t\cdot\psi+f\right)\bigm/\rho,
+			u_{tt}(x,0)=\left(\mu_x\cdot\phi_x+\mu\cdot\phi_{xx}-\rho_t\cdot\psi+f\right)\bigm/\rho,
 		\end{equation}
 		где правая часть полностью определяется условиями~\eqref{l12:eq:2}. Поэтому если функция $h(x)$ не равна правой части~\eqref{l12:eq:4}, то решение задачи~\eqref{l12:eq:1}--\eqref{l12:eq:3} с условием $u_{tt}(x,0)=h(x)$ не существует.
 		
@@ -136,7 +136,7 @@
 	\begin{_def}
 		Пусть $\phi$, $\psi$ и $\widehat{\phi}$, $\widehat{\vphantom{\phi}\smash{\!\psi}}$ некоторые начальные условия для уравнения \eqref{l12:eq:1} и $u$ и $\widehat{u}$ --- отвечающие им решения. Будем говорить, что для решения задачи~\eqref{l12:eq:1}--\eqref{l12:eq:3} имеет место непрерывная зависимость от начальных данных, если по $\forall\eps>0$, $T>0$ можно найти $\delta>0$ так, что при 
 		\begin{gather*}
-			\big|\phi(x,t)-\widehat{\phi}(x,t)\big|<\delta,\ \big|\psi(x,t)-\widehat{\vphantom{\phi}\smash{\!\psi}}(x,t)\big|<\delta\quad\forall x\in[a,b],\ t\in[0,T]
+			\big|\phi(x)-\widehat{\phi}(x)\big|<\delta,\ \big|\psi(x)-\widehat{\vphantom{\phi}\smash{\!\psi}}(x)\big|<\delta\quad\forall x\in[a,b],\ t\in[0,T]
 			\intertext{выполняется}
 			\big|u(x,t)-\widehat{u}(x,t)\big|<\eps,\quad\forall x\in[a,b],\ t\in[0,T].
 		\end{gather*} 
@@ -169,7 +169,7 @@
 		\begin{gather}
 			u(a,t)=u(b,t)=0\hfill\label{l12:eq:7a}
 			\intertext{или}
-			 u_x(a,t)=u_x(b,t)=0\label{l12:eq:7b}
+			 u_x(a,t)=u_x(b,t)=0.\label{l12:eq:7b}
 		\end{gather}
 \end{subequations}
 \newpage
@@ -181,7 +181,7 @@
 Покажем, что $E(t)$ не зависит от $t$. Тогда 
 \begin{equation}
 	\label{l12:eq:8}
-	E(t)=E(0),\quad t\geqslant0,
+	\hfill E(t)=E(0),\quad t\geqslant0,\hfill
 \end{equation}
 но в силу \eqref{l12:eq:6} $E(0)=0$ и значит $E(t)\equiv0$ при $\forall t$. Но это возможно лишь при $u_x\equiv0$, $u_t\equiv0$, то есть при $u=const$. Отсюда очевидно, в силу~\eqref{l12:eq:6} $u\equiv0$, то есть единственность доказана. Остаётся установить~\eqref{l12:eq:8}. Для этого найдём $\der{E}{t}$. Имеем 
 \begin{equation*}
@@ -251,11 +251,11 @@
 
 Таким образом искомое решение $u_{\text{ч}}(x,t)$ есть $u_k(x,t)=X_k(x)\cdot T_k(t)$. $u_k(x,t)$ есть решение задачи~\eqref{l12:eq:10},~\eqref{l12:eq:12}. Конечная сумма 
 \begin{equation*}
-	S_n(x,t)=\sum\limits_{k=1}^n u_k(x,t) 
+	\hfill S_n(x,t)=\sum\limits_{k=1}^n u_k(x,t)\hfill 
 \end{equation*}
 тоже есть решение задачи~\eqref{l12:eq:10},~\eqref{l12:eq:12}. А теперь рассмотрим бесконечную сумму 
 \begin{equation*}
-	u\eqdef\sum\limits_{k=1}^{\infty}u_k(x,t)
+	\hfill u\eqdef\sum\limits_{k=1}^{\infty}u_k(x,t)\hfill
 \end{equation*}
 и будем считать, что коэффициенты $A_k$, $B_k$ в формуле $T_k(t)$ выбраны так, что ряд $\sum\limits_{k=1}^{\infty}u_k(x,t)$ сходится равномерно и допускает почленное дифференцирование два раза по $x$ и по $t$. Тогда подставляя этот ряд в уравнение~\eqref{l12:eq:10} и в граничные условия~\eqref{l12:eq:12} убеждаемся, что функция $u=\sum\limits_{k=1}^{\infty}u_k(x,t)$ удовлетворяет и~\eqref{l12:eq:10}, и~\eqref{l12:eq:12}. Попробуем теперь найти пока <<свободные>> константы $A_k$ и $B_k$ так, чтобы функция $u$ удовлетворяла начальным условиям~\eqref{l12:eq:11}
 \begin{equation}
@@ -271,9 +271,9 @@
 	\hfill A_k=\big(\phi,X_k\big)=\int\limits_0^l\phi(\xi)\cdot X_k(\xi)\,d\xi,\hfill
 \end{equation*}
 \begin{equation*}
-	\hfill B_k=\frac{\big(\phi,X_k\big)}{\omega_k}=\frac{1}{\omega_k}\cdot\int\limits_0^l\psi(\xi)\cdot X_k(\xi)\,d\xi,\hfill
+	\hfill B_k=\frac{\big(\psi,X_k\big)}{\omega_k}=\frac{1}{\omega_k}\cdot\int\limits_0^l\psi(\xi)\cdot X_k(\xi)\,d\xi,\hfill
 \end{equation*}
-где $\omega_k=a\cdot\sqrt{\lambda_k}=a\cdot\frac{\pi\cdot k}{l}$, $X_k(\xi)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot\xi\right)$.
+где $\displaystyle\omega_k=a\cdot\sqrt{\lambda_k}=a\cdot\frac{\pi\cdot k}{l}$, $\displaystyle  X_k(\xi)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot\xi\right)$.
 
 Таким образом, если найденные коэффициенты $A_k$, $B_k$ обеспечивают равномерную сходимость ряда $\sum\limits_{k=1}^{\infty}u_k$ и возможность его двукратного почленного дифференцирования по $x$ и по $t$, то функция $u=\sum\limits_{k=1}^{\infty}u_k(x,t)$ есть решение задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12}. 
 
@@ -297,9 +297,9 @@
 \begin{gather*}
 	u_k(x,t)=X_k(x)\cdot\big(A_k\cdot\cos(\omega_k\cdot t)+B_k\cdot\sin(\omega_k\cdot t)\big)=C_k\cdot\sin(\omega_k\cdot t+\beta_k)\cdot X_k(x),
 	\intertext{где}
-	C_k=\sqrt{A^2_k+B^2_k},\text{ а угол } \beta_k\text{ определяется из соотношений }\sin\beta_k=A_k\bigm/C_k,\ \cos\beta_k=B_k\bigm/C_k. 
+	C_k=\sqrt{A^2_k+B^2_k},\text{ а угол } \beta_k\text{ определяется из соотношений }\sin\beta_k=A_k\!\bigm/\!C_k,\ \cos\beta_k=B_k\!\bigm/\!C_k. 
 \end{gather*}
-Функция $u_k$ называется \emph{стоячей волной} (отсюда одно из названий метода --- метод суперпозиции стоячих волн). Каждая точка $x_0$ стоячей волны $u_k$ колеблется с частотой $\omega_k$ и амплитудой \\$C_k\cdot X_k(x_0)$. Те точки волны $u_k(x,t)$, для которых амплитуда равна нулю для всех $t$ называются её узлами. Профиль стоячей волны определяется функцией $X_k(x)$; в данном случае это синусоида. Частота $\omega_k=\lambda_k\cdot\sqrt{{\mu}\bigm/{\rho}}$ стоячей волны обратно пропорциональна корню из плотности струны и прямо пропорциональна корню из жёсткости струны, что качественно естественно из физических соображений. 
+Функция $u_k$ называется \emph{стоячей волной} (отсюда одно из названий метода --- метод суперпозиции стоячих волн). Каждая точка $x_0$ стоячей волны $u_k$ колеблется с частотой $\omega_k$ и амплитудой \\$C_k\cdot X_k(x_0)$. Те точки волны $u_k(x,t)$, для которых амплитуда равна нулю для всех $t$ называются её узлами. Профиль стоячей волны определяется функцией $X_k(x)$; в данном случае это синусоида. Частота $\omega_k=\lambda_k\cdot\sqrt{{\mu}\!\bigm/\!{\rho}}$ стоячей волны обратно пропорциональна корню из плотности струны и прямо пропорциональна корню из жёсткости струны, что качественно естественно из физических соображений. 
 
 \section{Понятие о функции Грина.}
 \label{lecture11section3}
