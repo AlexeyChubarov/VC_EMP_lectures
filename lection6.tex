@@ -3,8 +3,9 @@
 На прошлой лекции мы доказали принцип минимакса. Он редко используется на практике, но с его помощью мы сейчас получим результат, имеющий как теоретическое, так и практическое значение.
 \section{Теорема сравнения.}
 \label{lecture6section1}
+Пусть
 \begin{equation*}
-	\text{Пусть}\quad Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y\quad\text{и}\quad  \widetilde{L}y=-\der{}{x}\Big(\widetilde{Q}\cdot y'\Big)+\widetilde{P}\cdot y
+	Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y\quad\text{и}\quad  \widetilde{L}y=-\der{}{x}\Big(\widetilde{Q}\cdot y'\Big)+\widetilde{P}\cdot y
 \end{equation*}
 --- операторы Штурма с областью определения 
 \begin{equation*}
@@ -55,7 +56,7 @@
 В силу теоремы сравнения
 \begin{equation}
 	\label{l6:eq:7}
-	\hfill\lambda_k\geqslant\widetilde{C}_1\cdot\left(\frac{\pi\cdot k}{b-a}\right)+\widetilde{C}_2.\hfill
+	\hfill\lambda_k\geqslant\widetilde{C}_1\cdot\left(\frac{\pi\cdot k}{b-a}\right)^2+\widetilde{C}_2.\hfill
 \end{equation}
 С другой стороны, если положить $\widehat{C}_1\eqdef\max\limits_{x\in[a,b]}Q(x)$, $\widehat{C}_2\eqdef\max\limits_{x\in[a,b]}P(x)$ и рассмотреть оператор Штурма $\widehat{L}y=-\der{}{x}\Big(\widehat{Q}\cdot y'\Big)+\widehat{P}\cdot y\quad$с$\quad\widehat{Q}=\widehat{C}_1$, $\widehat{P}=\widehat{C}_2$, то поскольку $\widehat{Q}\geqslant Q$, $\widehat{P}\geqslant P$, то для собственных значений $\widehat{\lambda}_k$ оператора $\widehat{L}$ будет верно неравенство
 \begin{equation}
@@ -80,7 +81,7 @@
 \end{equation} 
 \section[Разложение по собственным функциям оператора Штурма.]{Разложение по собственным функциям оператора Штурма. Неравенство Бесселя, равенство Парсеваля. Теорема Стеклова.}
 \label{lecture6section2}
-Пусть $y_1,y_2,\ldots,y_n,\ldots$ --- бесконечная ортонормированная система $\big(y_i,y_j\big)=\delta_{ij}$ и $y\in\fL$. Составим так называемые обобщённые коэффициенты Фурье 
+Пусть $y_1,y_2,\ldots,y_n,\ldots$ --- бесконечная ортонормированная система из $\fL$, то есть $\big(y_i,y_j\big)=\delta_{ij}$ и $y\in\fL$. Составим так называемые обобщённые коэффициенты Фурье 
 \begin{equation}
 	\label{l6:eq:11}
 	\hfill C_k=\big(y,y_k\big)=\int\limits_a^b y\cdot\overline{y}_k\,dx\hfill
@@ -121,7 +122,7 @@
 	Пусть задан некоторый класс функций $\mathscr{K}\subseteq\fL$. Будем говорить, что ортонормированная система $y_1,\ldots,y_n,\ldots$ \textbf{полна} в $\mathscr{K}$ в среднем \{в смысле равномерной сходимости\}, если для $\forall y\in\mathscr{K}$ её обобщённый ряд Фурье $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится к ней в среднем \{равномерно\}. Полная система играет роль базиса в $\mathscr{K}$.
 \end{_def}
 
-К вопросу о полноте мы вернёмся, а пока исследуем некоторые свойства $S_n(x)=\sum\limits_{k=1}^n C_k\cdot y_k$. Пусть $R_n\eqdef y-S_n$. Свойства $R_n$:
+К вопросу о полноте мы ещё вернёмся, а пока исследуем некоторые свойства $S_n(x)=\sum\limits_{k=1}^n C_k\cdot y_k$. Пусть $R_n\eqdef y-S_n$. Свойства $R_n$:
 \begin{enumerateBr}
 	\item\label{l6:s2:enum:1} $\big(R_n,y_j\big)=0$, $j=\overline{1,n}$. Действительно,
 	\begin{equation*}
@@ -173,10 +174,10 @@
 так как ряд $\sum\limits_{k=1}^{\infty} |C_k|^2$ сходится в силу неравенства Бесселя~\eqref{l6:eq:13}. Значит $\exists\hat{y}\in\fL$ так, что $\norm{\hat{y}-S_n}\to0$ при $n\to\infty$\footnote{Разумеется в общем случае $\hat{y}$ может не совпадать с $y$.}.
 
 
-\parbox{\textwidth}{\begin{_teor}[Стеклова]
-		Ортонормированная система собственных функций $y_1,\ldots,y_n,\ldots$ отвечающая всем собственным значениям $\lambda_1<\lambda_2<\ldots<\lambda_n<\ldots$ оператора Штурма является \emph{полной}
+\noindent\parbox{\textwidth}{\begin{_teor}[Стеклова]
+		Ортонормированная система собственных функций $y_1,\ldots,y_n,\ldots$ отвечающая всем собственным значениям $\lambda_1<\lambda_2<\ldots<\lambda_n<\ldots$ оператора Штурма,  является \emph{полной}
 		\begin{enumerate1}
-			\item в $\mc{D}_{L}$ --- в смысле равномерной сходимости.
+			\item в $\mc{D}_{L}$ --- в смысле равномерной сходимости;
 			\item в $\fL$ --- в смысле сходимости в среднем.
 		\end{enumerate1}
 \end{_teor}}
@@ -208,9 +209,7 @@
 		\label{l6:eq:18}
 		\hfill\norm{R_n}=\norm{y-S_n}\to0\quad\text{при}\quad n\to\infty.\hfill
 	\end{equation}
-	Рассмотрим функцию $\widetilde{R}_n\eqdef R_n\bigm/\norm{R_n}$, $\norm{\widetilde{R}_n}=1$\footnote{Если $\norm{R_n}=0$, то~\eqref{l6:eq:18} --- очевидно и тогда вводить $\widetilde{R}_n$ не надо, поэтому мы считаем $\norm{R_n}\neq0$.}
-	
-	Кроме того в силу свойств $R_n$ выполняются равенства $\big(\widetilde{R}_n,y_j\big)=0$, $j=\overline{1,n}$. Наконец $\widetilde{R}_n(a)=\widetilde{R}_n(b)=0$, так как $y_j(a)=y_j(b)=0$. Из этих рассуждений следует, что $\widetilde{R}_n(x)\in\K_{n+1}$ и значит 
+	Рассмотрим функцию $\widetilde{R}_n\eqdef R_n\bigm/\norm{R_n}$, $\norm{\widetilde{R}_n}=1$\footnote{Если $\norm{R_n}=0$, то~\eqref{l6:eq:18} --- очевидно и тогда вводить $\widetilde{R}_n$ не надо, поэтому мы считаем $\norm{R_n}\neq0$.}, кроме того в силу свойств $R_n$ выполняются равенства $\big(\widetilde{R}_n,y_j\big)=0$, $j=\overline{1,n}$. Наконец $\widetilde{R}_n(a)\?=\widetilde{R}_n(b)=0$, так как $y_j(a)=y_j(b)=0$. Из этих рассуждений следует, что $\widetilde{R}_n(x)\in\K_{n+1}$ и значит 
 	\begin{equation*}
 		\hfill\J[\widetilde{R}_n]\equiv\frac{\J[R_n]}{{\norm{R_n}}^2}\geqslant\lambda_{n+1},\hfill
 	\end{equation*} 
@@ -239,7 +238,7 @@
 		\big(LS_n,y\big)=\sum\limits_{k=1}^n C_k\cdot\big(Ly_k,y\big)=\sum\limits_{k=1}^n C_k\cdot\lambda_k\cdot\big(y_k,y\big)=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}},\\			\big(Ly,S_n\big)=\big(y,LS_n\big)=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}},\\
 		\big(LS_n,S_n\big)=\left(\sum\limits_{k=1}^n C_k\cdot\lambda_k\cdot y_k,\sum\limits_{j=1}^n C_j\cdot y_j\right)=\sum\limits_{k,j=1}^n C_k\cdot \overline{C}_j\cdot\lambda_k\cdot\underbrace{\big(y_k,y_j\big)}_{\delta_{kj}}=\underline{\underline{\sum\limits_{k=1}^n |C_k|^2\cdot\lambda_k}}.
 	\end{gather*}
-	Подставляя в~\eqref{l6:eq:22} получим 
+	Подставляя эти выражения  в~\eqref{l6:eq:22}, получим 
 	\begin{equation*}
 		\hfill\J[R_n]=\J[y]-\sum\limits_{k=1}^n|C_k|^2\cdot\lambda_k.\hfill
 	\end{equation*}
@@ -292,13 +291,13 @@
 	\end{equation}
 	где $\beta_4>0$ --- фиксированное число.
 	
-	\noindent Подставим в~\eqref{l6:eq:25} оценку~\eqref{l6:eq:27}. Имеем 
+	\noindent Подставим в~\eqref{l6:eq:23} оценку~\eqref{l6:eq:27}. Имеем 
 	\begin{equation}
 		\label{l6:eq:28}
 		\hfill\big|C_k\cdot y_k\big|\leqslant\frac{|d_k|}{|\lambda_k|}\cdot|y_k|\leqslant\frac{\beta_5}{|\lambda_k|^{3/4}},\quad\beta_5>0.\hfill
 	\end{equation}
 	
-	С помощью теоремы сравнения мы ранее установили, что скорость роста собственных значений $\lambda_k$ есть $k^2$, или точнее, $\lambda_k\geqslant\beta_6\cdot k^2$ для некоторого $\beta_6>0$. Подставляя в~\eqref{l6:eq:28} окончательно получаем 
+	С помощью теоремы сравнения мы ранее установили, что скорость роста собственных значений $\lambda_k$ есть $k^2$, или точнее, $\lambda_k\geqslant\beta_6\cdot k^2$ для некоторого $\beta_6>0$. Подставляя эту оценку в~\eqref{l6:eq:28} окончательно получаем 
 	\begin{equation}
 		\hfill\big|C_k\cdot y_k\big|\leqslant\frac{\beta_5}{\beta_6\cdot k^{3/2}}\leqslant\beta_7\cdot\frac{1}{k^{3/2}}.\hfill
 	\end{equation}
@@ -310,7 +309,7 @@
 	\begin{equation*}
 		\hfill{\norm{S_n-S_m}}^2=\sum\limits_{k=m+1}^n|C_k|^2\to0,\quad m,\,n\to\infty,\ n>m,\hfill
 	\end{equation*}
-	и поэтому ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится в среднем к некоторой функции $\tilde{y}\in\fL[(a,b)]$, то есть
+	то ряд $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится в среднем к некоторой функции $\tilde{y}\in\fL[(a,b)]$, то есть
 	\begin{equation}
 		\label{l6:eq:30}
 		\hfill \tilde{y}(x)=\sum\limits_{k=1}^{\infty}C_k\cdot y_k,\hfill
@@ -322,16 +321,16 @@
 		\label{l6:eq:31}
 		\hfill\big(\tilde{y},y_j\big)=\big(y,y_j\big)\quad\Rightarrow\quad\big(\tilde{y}-y,y_j\big)=0.\hfill
 	\end{equation}
-	Таким образом функция $z\eqdef\tilde{y}-y$ ортогональна к любой собственной функции оператора Штурма и значит $z\perp S_n$. Отсюда следует, что $z(x)$ ортогональна к $\forall f(x)\in\mc{D}_L$. Докажем это. Пусть $\eps>0$, так как обобщённый ряд Фурье для функции $f(x)$ сходится к ней равномерно --- согласно первой части теоремы Стеклова --- то 
+	Таким образом функция $z\eqdef\tilde{y}-y$ ортогональна к любой собственной функции оператора Штурма и, значит, $z\perp S_n$. Отсюда следует, что $z(x)$ ортогональна к $\forall f(x)\in\mc{D}_L$. Докажем это. Пусть $\eps>0$; так как обобщённый ряд Фурье для функции $f(x)$ сходится к ней равномерно --- согласно первой части теоремы Стеклова --- то 
 	\begin{equation*}
 		\hfill\text{по }\eps>0\ \exists n,\text{ что }\left|f(x)-\sum\limits_{k=1}^n\alpha_k\cdot y_k(x)\right|<\eps,\text{ где }\alpha_k=\big(f,y_k\big).\hfill
 	\end{equation*} 
 	Имеем, полагая $S_n=\sum\limits_{k=1}^n\alpha_k\cdot y_k$
 	\begin{equation}
 		\label{l6:eq:32}
-		\hfill\left|\big(z,f\big)\right|=\left|\big(z,f-S_n\big)\right|\leqslant\norm{z}\cdot\norm{f-S_n}\leqslant\eps\cdot\sqrt{b-a}\cdot\norm{z}.\hfill
+		\hfill\left|\big(z,f\big)\right|=\left|\big(z,f-S_n\big)\right|\leqslant\norm{z}\cdot\norm{f-S_n}\leqslant\eps\cdot\sqrt{b-a}\cdot\norm{z}\hfill
 	\end{equation}
-	Так как $\norm{f-S_n}=\sqrt{\smallint\limits_a^b|f-S_n|^2\,dx}\leqslant\eps\cdot\sqrt{b-a}$. Так как $\eps>0$ --- любое число, то из~\eqref{l6:eq:32} следует, что
+	ибо $\norm{f-S_n}=\sqrt{\smallint\limits_a^b|f-S_n|^2\,dx}\leqslant\eps\cdot\sqrt{b-a}$. Так как $\eps>0$ --- любое число, то из~\eqref{l6:eq:32} следует, что
 	\begin{equation}
 		\label{l6:eq:33}
 		\hfill\big(z,f\big)=0,\quad\forall f\in\mc{D}_L.\hfill
@@ -341,7 +340,7 @@
 		\label{l6:eq:34}
 		\hfill{\norm{z-f_{\eps}}}^2<\eps\quad\Rightarrow\quad\big(z-f_{\eps},z-f_{\eps}\big)={\norm{z}}^2-\big(f_{\eps},z\big)-\big(z,f_{\eps}\big)+{\norm{f_{\eps}}}^2<\eps.\hfill
 	\end{equation}
-	Но в силу~\eqref{l6:eq:33} $\big(f_{\eps},z\big)=\big(z,f_{\eps}\big)=0$. Так как $f_{\eps}\in\mc{D}_L$. Поэтому из~\eqref{l6:eq:34} следует, что ${\norm{z}}^2<\eps$, то есть
+	Но в силу~\eqref{l6:eq:33} $\big(f_{\eps},z\big)=\big(z,f_{\eps}\big)=0$, так как $f_{\eps}\in\mc{D}_L$. Поэтому из~\eqref{l6:eq:34} следует, что ${\norm{z}}^2<\eps$, то есть
 	\begin{equation*}
 		\hfill\norm{z}=0\quad\Rightarrow\quad\norm{y-\tilde{y}}=0.\hfill
 	\end{equation*}

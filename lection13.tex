@@ -1,6 +1,6 @@
 	\chapter{}
 \label{lecture13}
-\section{Свободные колебания не однородной струны.}
+\section{Свободные колебания неоднородной струны.}
 \label{lecture13section1}
 На прошлой лекции мы изучали свободные колебания \emph{однородной} струны. А если она не однородна? В этом случае натяжение $\mu$ и плотность $\rho$ не являются константами. Для простоты будем предполагать, что $\mu=\mu(x)$, $\rho=\rho(x)$\footnote[1]{То есть нет зависимости от времени.}. Тогда уравнение свободных колебаний струны запишется в виде
 \begin{equation}\label{l13:eq:1}
@@ -91,10 +91,11 @@
 \begin{equation}\label{l13:eq:13}
 	\hfill v(x,0)=\widetilde{\phi},\quad v_t(x,0)=\widetilde{\psi},\hfill
 \end{equation}
-где $\displaystyle g(x,t)=f-\pdder{v_0}{t}+a^2\cdot\pdder{v_0}{x}$, $\widetilde{\phi}=\phi(x)-v_0(x,0)$, $\displaystyle\widetilde{\psi}=\psi(x)-\pder{v_0}{t}(x,0)$. Но главным является тот факт, что для функции $v$ граничные условия --- однородны. Действительно, подставляя $u=v+v_0$ в~\eqref{l13:eq:10} и в~\eqref{l13:eq:11} имеем\addtocounter{equation}{-3}
+где $\displaystyle g(x,t)=f-\pdder{v_0}{t}+a^2\cdot\pdder{v_0}{x}$, $\widetilde{\phi}=\phi(x)-v_0(x,0)$, $\displaystyle\widetilde{\psi}=\psi(x)-\pder{v_0}{t}(x,0)$. Но главным является тот факт, что для функции $v$ граничные условия --- однородны. Действительно, подставляя $u=v+v_0$ в~\eqref{l13:eq:10} и в~\eqref{l13:eq:11} имеем, если $v_0(x,t)$ удовлетворяет~\eqref{l13:eq:10}\addtocounter{equation}{-3}
 \begin{equation}\label{l13:eq:10A}
 	\hfill v(0,t)+v_0(0,t)=\nu_1(t),\quad v(l,t)+v_0(l,t)=\nu_2(t);\hfill\tag{\theequation A}
 \end{equation}\addtocounter{equation}{1}
+или если $v_0(x,t)$ удовлетворяет~\eqref{l13:eq:11}
 \begin{equation}\label{l13:eq:11A}
 	\hfill v_x(0,t)+v_{0x}(0,t)=\widetilde{f}_1(t),\quad v_x(l,t)+v_{0x}(l,t)=\widetilde{f}_2(t).\hfill\tag{\theequation A}
 \end{equation}\addtocounter{equation}{2}
@@ -158,12 +159,11 @@
 	\hfill\pdder{v_2}{t}=a^2\cdot\pdder{v_2}{x}.\hfill
 \end{equation}
 Что касается граничных условий, то имеем в силу~\eqref{l13:eq:14} (или~\eqref{l13:eq:15})
-\begin{equation*}
-	\hfill v_2(0,t)+v_1(0,t)=0,\quad v_2(l,t)+v_1(l,t)=0\hfill
-\end{equation*} 
-\begin{equation*}
-	\hfill \pder{v_2}{x}(0,t)+\pder{v_1}{x}(0,t)=0,\quad \pder{v_2}{x}(l,t)+\pder{v_1}{x}(l,t)=0.\hfill
-\end{equation*} 
+\begin{gather*}
+	 v_2(0,t)+v_1(0,t)=0,\quad v_2(l,t)+v_1(l,t)=0\hfill
+\intertext{или} 
+ \pder{v_2}{x}(0,t)+\pder{v_1}{x}(0,t)=0,\quad \pder{v_2}{x}(l,t)+\pder{v_1}{x}(l,t)=0.\hfill
+\end{gather*} 
 Но так как функция $v_1$ удовлетворяет граничным условиям, то для $v_2(x,t)$ мы получим 
 \begin{equation}\label{l13:eq:17}
 	\hfill v_2(0,t)=v_2(l,t)=0\hfill
@@ -176,7 +176,7 @@
 \begin{equation*}
 	\hfill v_2(x,0)=\widetilde{\phi}(x)-v_1(x,0),\quad \pder{v_2}{t}(x,0)=\widetilde{\psi}(x)-\pder{v_1}{t}(x,0).\hfill
 \end{equation*}
-Таким образом для функции $v_2(x,t)$ мы получили задачу, решению которой была посвящена прошлая лекция и мы можем написать
+Таким образом для функции $v_2(x,t)$ мы получили задачу, решению которой была посвящена прошлая лекция, и мы можем написать
 \begin{equation*}
 	\hfill v_2(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\psihat(\xi)\,d\xi+\int\limits_0^l G_t(x,\xi,t)\cdot\widehat{\phi}(\xi)\,d\xi,\hfill
 \end{equation*}
@@ -212,7 +212,7 @@
 \noindent\textbf{Задание.} Проверить, существует ли стационарное решение при $g(x,t)=g(x)$, если закреплён один из концов струны.
 \vspace{0.2cm}
 
-Переходим к общему методу решения задачи~\eqref{l13:eq:10},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). В первую очередь надо найти собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи (то есть~\eqref{l13:eq:14} или~\eqref{l13:eq:15}). Пусть эти собственные значения $\lambda_k$ и нормированные собственные функции $X_k(x)$\footnote{В условиях~\eqref{l13:eq:14} $\displaystyle X_k(x)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)$, $\displaystyle\lambda_k=\left(\frac{\pi\cdot k}{l}\cdot x\right)^2$.}. Будем искать функцию $v_1$ в виде ряда
+Переходим к общему методу решения задачи~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). В первую очередь надо найти собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи (то есть~\eqref{l13:eq:14} или~\eqref{l13:eq:15}). Пусть эти собственные значения $\lambda_k$ и нормированные собственные функции $X_k(x)$\footnote{В условиях~\eqref{l13:eq:14} $\displaystyle X_k(x)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)$, $\displaystyle\lambda_k=\left(\frac{\pi\cdot k}{l}\cdot x\right)^2$.}. Будем искать функцию $v_1$ в виде ряда
 \begin{equation*}
 	\hfill v_1(x,t)=\sum\limits_{k=1}^{\infty}b_k(t)\cdot X_k(x).\hfill
 \end{equation*}
@@ -226,7 +226,7 @@
 \begin{equation*}
 	\hfill\sum\limits_{k=1}^{\infty}b_k''(t)\cdot X_k(x)=-a^2\cdot\sum\limits_{k=1}^{\infty} \lambda_k\cdot b_k(t)\cdot X_k(x)+\sum\limits_{k=1}^{\infty}g_k(t)\cdot X_k(x).\hfill
 \end{equation*}
-Умножая это соотношение на $X_n(x)$ скалярно мы получим уравнение на $b_n(t)$:
+Умножая это соотношение на $X_n(x)$ скалярно, мы получим уравнение на $b_n(t)$:
 \begin{equation*}
 	\hfill b_n''(t)=-a^2\cdot\lambda_k\cdot b_n(t)+g_n(t).\hfill
 \end{equation*}

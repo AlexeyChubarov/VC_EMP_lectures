@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,openany,fleqn]{book}
+\documentclass[12pt,a4paper,openany]{book}
 
 \usepackage{cmap}
 \usepackage[left=1.3cm, right=1.3cm, top=1.4cm, bottom=1.3cm]{geometry}
@@ -14,6 +14,7 @@
 \usepackage{perpage}
 \usepackage{enumitem}
 \usepackage[unicode, colorlinks=true]{hyperref}
+\hypersetup{pdftitle={Лекции по ВИ и УМФ.}, pdfauthor={Г. М. Жислин}}
 \usepackage{tikz}
 \usepackage{tabularx}
 \usepackage{graphicx}
@@ -23,7 +24,7 @@
 
 \setcounter{tocdepth}{1}
 
-\setlength{\mathindent}{0em}
+%\setlength{\mathindent}{0em}
 
 \addto{\captionsrussian}{\renewcommand{\contentsname}{Содержание}}
 \addto{\captionsrussian}{\renewcommand{\chaptername}{Лекция}}
@@ -35,6 +36,7 @@
 \newcommand{\Cf}{\ensuremath{\mathcal{C}}}
 \newcommand{\J}{\ensuremath{\mathcal{J}}}
 \newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\ms}[1]{\ensuremath{\mathscr{#1}}}
 \newcommand{\Cfn}[2][]{\ensuremath{\Cf{\mathstrut}^{#2}_{#1}}}
 \newcommand{\der}[2]{\ensuremath{\frac{d#1}{d#2}}}
 \newcommand{\dder}[2]{\ensuremath{\frac{d^2#1}{d#2^2}}}
@@ -51,9 +53,9 @@
 \newcommand{\fLone}[1][]{\ensuremath{\mathscr{L}\hspace*{-0.11 cm}{\mathstrut}_{1}{\scriptstyle#1}}}
 \newcommand{\psihat}{\ensuremath{\widehat{\vphantom{\phi}\smash{\!\psi}}}}
 
-\DeclareMathOperator\Tg{tg}
+\DeclareMathOperator{\Tang}{tg}
 \DeclareMathOperator{\Div}{div}
-
+\DeclareMathOperator{\grad}{grad}
 
 
 
@@ -61,6 +63,7 @@
 
 \theoremstyle{definition}
 \newtheorem{_def}{Определение}[section]
+\newtheorem*{_definition}{Определение}
 \newtheorem{_lemm}{Лемма}[section]
 \newtheorem{_teor}{Теорема}[section]
 \newtheorem*{_rem}{Замечание}
@@ -87,9 +90,18 @@
 \newlist{enumeraterm}{enumerate}{1}
 \setlist[enumeraterm,1]{label=\roman*),ref=\roman*)}
 
+\newlist{enumerateAi}{enumerate}{1}
+\setlist[enumerateAi,1]{label=(\Alph*$_{i}$), ref=(\Alph*$_i$)}
+
 \nofiles
 
+\def\?#1{#1\nobreak\discretionary{}{\hbox{$\mathsurround=0pt #1$}}{}}
+
 \begin{document}
+	
+
+	
+	
 	\author{Г.\,М.~Жислин}
 	\title{Лекции по вариационному исчислению и уравнениям математической физики}
 	\date{Конспектировал А.\,Г.~Чубаров}
@@ -129,5 +141,9 @@
 	\input{lection14.tex}
 	\input{lection15.tex}
 	\input{lection16.tex}
+	\input{lection17.tex}
+	\input{lection18.tex}
+	\input{lection19.tex}
+	\input{lection20.tex}
 \end{document}	
 	

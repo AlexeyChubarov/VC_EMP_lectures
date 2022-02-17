@@ -6,7 +6,7 @@
 \begin{equation*}
 	\J[y]=\int\limits_a^b\Big(Q\cdot y^{\prime2}+P\cdot y^2\Big)\,dx,\quad\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y(b)=0,\ \int\limits_a^b\rho\cdot y^2\,dx=1\right\},
 \end{equation*}
-где $\rho(x)>0$ при $x\in(a,b]$ ---  некоторая непрерывная функция. Ищем $\displaystyle\min\limits_{y\in\K}\,\J[y]$. Составляем $F^{*}=F-\lambda\cdot G=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot\rho\cdot y^2$ и пишем для $F^{*}$ уравнение Эйлера. Получим	
+где $\rho(x)>0$ при $x\in(a,b]$ ---  некоторая непрерывная на $[a,b]$ функция. При $\rho(a)=0$ мы всегда считаем, что $P(x)\geqslant 0$, $x\in[a,b]$, иначе был бы возможен случай, когда $\displaystyle\inf\limits_{y\in\mc{K}}\J[y]=-\infty$; попробуйте привести пример такой ситуации. Ищем $\displaystyle\min\limits_{y\in\K}\,\J[y]$. Составляем $F^{*}=F-\lambda\cdot G=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot\rho\cdot y^2$ и пишем для $F^{*}$ уравнение Эйлера. Получим	
 \begin{equation}
 	\label{l8:eq:1}
 	\hfill P\cdot y-\der{}{x}\Big(Q\cdot y'\Big)-\lambda\cdot\rho\cdot y=0\quad\text{или}\quad Ly=\lambda\cdot\rho\cdot y\hfill
@@ -24,24 +24,24 @@
 
 Далее, собственные функции обобщённой задачи Штурма, отвечающие различным собственным значениям, ортогональны с весом $\rho$. 
 \begin{proof}
-	Действительно, если $Ly_1=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$ и $\lambda_2\neq\lambda_1$, то умножая первое соотношение на $y_2$ скалярно получим $\big(Ly_1,y_2\big)=\lambda_1\cdot\big(\rho\cdot y_1,y_2\big)$ и одновременно
+	Действительно, если $Ly_1=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$ и $\lambda_2\neq\lambda_1$, то, умножая первое соотношение на $y_2$ скалярно, получим $\big(Ly_1,y_2\big)=\lambda_1\cdot\big(\rho\cdot y_1,y_2\big)$ и одновременно
 	\begin{equation}
 		\label{l8:eq:3}
 		\hfill\big(Ly_1,y_2\big)=\big(y_1,Ly_2\big)=\big(y_1,\lambda_2\cdot\rho\cdot y_2\big)=\lambda_2\cdot\big(y_1,\rho\cdot y_2\big).\hfill
 	\end{equation}	
-	Откуда 
+	Отсюда
 	\begin{equation}
 		\hfill(\lambda_2-\lambda_1)\cdot\big(y_1,\rho\cdot y_2\big)=0\quad\Rightarrow\quad\big(y_1,\rho\cdot y_2\big)=0.\hfill
 	\end{equation}
 \end{proof}
 
-Пусть\  $\Ul=\left\{y(x)|y\in\mc{D}_L,\ Ly=\lambda\cdot\rho\cdot y\right\}$ --- собственное подпространство для обобщённой задачи Штурма. Точно так же как и в обычной задаче Штурма, доказывается, что $\dim\Ul=1$, то есть собственные значения обобщённой задачи Штурма --- не вырождены и каждому $\lambda$ отвечает одна (с точностью до знака) нормированная $\left(\smallint\limits_a^b\rho\cdot y^2\,dx=1\right)$ собственная функция обобщённой задачи Штурма.
+Пусть\  $\Ul=\left\{y(x)|y\in\mc{D}_L,\ Ly=\lambda\cdot\rho\cdot y\right\}$ --- собственное подпространство для обобщённой задачи Штурма. Точно так же как и в обычной задаче Штурма, доказывается, что $\dim\Ul=1$, то есть собственные значения обобщённой задачи Штурма --- не вырождены и, значит, каждому $\lambda$ отвечает одна (с точностью до знака) собственная функция обобщённой задачи Штурма, удовлетворяющая изопериметрическому условию $\smallint\limits_a^b\rho\cdot y^2\,dx=1$.
 
 Далее введём пространство функций \fLr\ интегрируемых с весом $\rho$, $\rho(x)>0$ $x\in(a,b]$, $\rho(x)\in\Cfn[{[a,b]}]{}$:
 \begin{equation*}
 	\hfill\fLr\eqdef\left\{y(x)\middle| \int\limits_a^b\rho|y|^2\,dx<+\infty\right\}_{\displaystyle.}\hfill
 \end{equation*}
-Если $\rho(a)=0$, то $\fLr\supset\fL$ (приведите обоснование!), если $\displaystyle\inf\limits_{x\in[a,b]}\rho(x)>0$, то $\fLr=\fL$. В пространстве \fLr\ введём скалярное произведение и норму
+Если $\rho(a)=0$, то $\fLr\supset\fL$ (приведите обоснование!), если $\displaystyle\inf\limits_{x\in[a,b]}\rho(x)>0$, то $\fLr\?=\fL$. В пространстве \fLr\ введём скалярное произведение и норму
 \begin{equation*}
 	\hfill\big(u(x),v(x)\big)_1\eqdef\int\limits_a^b\rho\cdot u\cdot\overline{v}\,dx=\big(u,\rho\cdot v\big),\quad{\norm{u}}_1^2\eqdef\big(u,u\big)_1.\hfill
 \end{equation*}
@@ -49,7 +49,7 @@
 \begin{equation*}
 	\hfill\K=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\ y(a)=y(b)=0,\ \norm{y}_1=1\right\},\hfill
 \end{equation*}
-а условие ортогональности с весом $\left\{\big(u,\rho\cdot v\big)=0\right\}\sim\left\{\big(u,v\big)_1=0\right\}$. Таким образом, если $Ly_1=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$, $y_i\in\mc{D}_L$ и $\lambda_1\neq\lambda_2$, то $\big(y_1,y_2\big)_1=0$.
+а условие ортогональности с весом $\left\{\big(u,\rho\cdot v\big)=0\right\}\sim\left\{\big(u,v\big)_1=0\right\}$. Таким образом, если $Ly_1\?=\lambda_1\cdot\rho\cdot y_1$, $Ly_2=\lambda_2\cdot\rho\cdot y_2$, $y_i\in\mc{D}_L$ и $\lambda_1\neq\lambda_2$, то $\big(y_1,y_2\big)_1=0$.
 
 Далее устанавливаем экстремальные свойства собственных значений и собственных функций обобщённой задачи Штурма. При этом используем соотношения $\big(Ly,y\big)=\J[y]$ и $\big(Ly,y\big)=\lambda$, если $Ly=\lambda\cdot\rho\cdot y$ и $\norm{y}_1=1$. Тогда $\displaystyle\inf\limits_{y\in\K}\,\J[y]$ --- наименьшее собственное значение обобщённой задачи Штурма, а минимайзер $y_1$ этой задачи --- соответствующая собственная функция. Далее $\displaystyle\inf\limits_{\substack{y\in\K,\\ \scriptstyle{(y,y_1)}_1=0}}\,\J[y]$ --- второе по величине собственное значение обобщённой задачи Штурма и так далее. Доказательство практически полностью повторяет приведённое для стандартной задачи Штурма.
 
@@ -61,40 +61,195 @@
 
 В случае обычной задачи Штурма мы брали $\displaystyle Q_2=\min\limits_{x\in[a,b]}Q_1(x)$, $\displaystyle P_2=\min\limits_{x\in[a,b]}P_1(x)$ и получали оператор $L_2$ с постоянными коэффициентами, для которого было известно, что собственные значения $\lambda_k^{(2)}$ растут со скоростью $k^2$ ($\rho=1$!).
 
-В случае обобщённой задачи Штурма мы не можем найти собственные значения $\lambda_k^{(2)}$ даже при постоянных $P_2$ и $Q_2$, так как функция $\rho(x)$ --- не даёт возможности найти $\lambda_k^{(2)}$. Поэтому нам понадобится ещё одна теорема сравнения, которую я привожу без доказательства. Смысл её: увеличение $\rho(x)$ уменьшает собственные значения обобщённой задачи Штурма. Теперь точная формулировка.
-\begin{_teor}[вторая теорема сравнения]
-	Пусть
-	\begin{equation}\label{l8:eq:5}
-		\hfill Q_3\leqslant Q_1,\quad P_3\leqslant P_1,\quad\rho_3\geqslant\rho_1\geqslant0\quad\text{и}\quad L_3y_k^{(3)}=-\der{}{x}\Big(Q_3\cdot {y_k^{(3)}}'\Big)+P_3\cdot y_k^{(3)}=\lambda_k^{(3)}\cdot\rho_3\cdot y_k^{(3)},\hfill
-	\end{equation}
-	тогда 
-	\begin{equation}\label{l8:eq:6}
-		\hfill\lambda_k^{(3)}\leqslant\lambda_k^{(1)}.\hfill
+В случае обобщённой задачи Штурма мы не можем найти собственные значения $\lambda_k^{(2)}$ даже при постоянных $P_2$ и $Q_2$, из-за наличия  функции $\rho(x)$. Поэтому нам понадобится ещё одна теорема сравнения.
+
+Прежде чем её формулировать рассмотрим пример, подсказывающий какое поведение собственных значений обобщённой задачи Штурма можно ожидать при росте $\rho(x)$. Пусть $\lambda_k$ и $y_k$, $k=1,2,\ldots$ --- собственные значения и собственные функции оператора Штурма:
+\begin{equation*}
+	L y_k=\lambda_k\cdot y_k.
+\end{equation*}
+Для $\forall d_1>0$ очевидно
+\begin{equation*}
+	L y_k=\lambda_k(d_1)\cdot d_1\cdot y_k,
+\end{equation*}
+где $\lambda_k(d_1)=\lambda_k/d_1$. Поэтому $\lambda_k(d_1)$ можно рассматривать как $k$-ое собственное значение обобщённой задачи Штурма с $\rho(x)=d_1$. Аналогично при $d_2\geqslant d_1$ имеем 
+\begin{equation*}
+	L y_k=\lambda_k(d_2)\cdot d_2\cdot y_k,
+\end{equation*}
+где $\lambda_k(d_2)=\lambda_k/d_2$. Так как $d_2\geqslant d_1$, то при положительных $\lambda_k$
+\begin{equation*}
+	\lambda_k(d_2)\leqslant\lambda_k(d_1)\quad\text{при }d_2\geqslant d_1.
+\end{equation*}
+Это неравенство и есть подсказка возможного поведения собственных значений обобщённой задачи Штурма при росте $\rho(x)$.
+
+\begin{_teor}[вторая теорема сравнения]\label{l8:teor:8.1}
+	Пусть $\lambda_k^{(i)}$; $k=1,2,\ldots$; $i=1,2$ --- собственные значения двух обобщённых задач Штурма с одним и тем же оператором $L$  и с разными $\rho(x)$:
+	\begin{equation*}
+		Ly_k^{(i)}=\lambda_{k}^{(i)}\cdot\rho_i(x)\cdot y_k^{(i)};\quad k=1,2,\ldots;\ i=1,2
+	\end{equation*}
+	и пусть 
+	\begin{equation*}
+		\J[y]\eqdef\big(L y,y\big)\geqslant0,\ y\in\mc{D}_{L},\quad\sup\limits_{x\in[a,b]}\frac{\rho_2(x)}{\rho_1(x)}<+\infty.
+	\end{equation*}
+	Тогда если $\rho_2(x)\geqslant\rho_1(x)$, то
+	\begin{equation}\label{l8:eq:1.5}
+		\lambda_k^{(2)}\leqslant\lambda_k^{(1)},\quad k=1,2,\ldots
 	\end{equation}
 \end{_teor}
+Для доказательства теоремы нам понадобится 
+\begin{_lemm}\label{l8:lemm:8.1}
+	Положим 
+	\begin{equation*}
+		M_{ij}=\frac{\rho_i(x)}{\rho_j(x)},\quad A_1=\left\{M_{12}\cdot\phi(x)|\forall\phi\in\fLr[{[a,b];\rho_1}]\right\},\quad A_2=\fLr[{[a,b];\rho_2}]
+	\end{equation*}
+	и пусть 
+	\begin{equation*}
+		\overline{M}_{ij}=\max\limits_{x\in[a,b]}M_{ij}(x)<+\infty,\quad i,j=1,2.
+	\end{equation*}
+	Тогда
+	\begin{equation*}
+		A_1=A_2.
+	\end{equation*}
+\end{_lemm}
+\begin{proof}[Доказательство леммы~\ref{l8:lemm:8.1}.]
+	Пусть $\psi\in A_2$ и $\phi=M_{21}\cdot\psi$. Очевидно, $M_{12}\cdot\phi=\psi$ и 
+	\begin{equation*}
+		\norm{\phi}_1^2=\int\limits_{a}^{b}M_{21}^2\cdot|\psi|^2\cdot\rho_1\,dx=\int\limits_{a}^{b}M_{21}\cdot|\psi|^2\cdot\rho_2\,dx\leqslant\overline{M}_{21}\cdot\norm{\psi}_2^2<+\infty.
+	\end{equation*}
+	Значит, $\phi\in\fLr[{[a,b];\rho_1}]$ и поэтому $\psi=M_{12}\cdot\phi\in A_1$. Следовательно
+	\begin{equation*}
+		A_2\subseteq A_1.
+	\end{equation*}
 
-Взяв $Q_3=\displaystyle\min\limits_{x\in[a,b]}Q_1(x)$, $P_3=\displaystyle\min\limits_{x\in[a,b]}P_1(x)$, $\rho_3=\displaystyle\max\limits_{x\in[a,b]}\rho(x)$ и поделив~\eqref{l8:eq:5} на $\rho_3$ мы получим, что числа $\lambda_k^{(3)}$ --- собственные значения оператора Штурма с постоянными коэффициентами --- $\sfrac{Q_3}{\rho_3}$, $\sfrac{P_3}{\rho_3}$. Значит для некоторой константы $C>0$ $\lambda_k^{(3)}\geqslant C\cdot k^2$ и в силу~\eqref{l8:eq:6} 
-\begin{equation}\label{l8:eq:7}
-	\hfill\lambda_k^{(1)}\geqslant C\cdot k^2\hfill
+	Рассмотрим теперь $\psi=M_{12}\cdot\phi\in A_1$ и покажем, что $\psi\in A_2$. Имеем
+	\begin{equation*}
+		\norm{\psi}_2^2=\int\limits_a^b M_{12}^2\cdot|\phi|^2\cdot\rho_2\,dx=\int\limits_a^b M_{12}\cdot|\phi|^2\cdot\rho_1\,dx\leqslant\overline{M}_{12}\cdot\norm{\phi}_1^2<+\infty.
+	\end{equation*}
+	Значит, $\psi\in A_2$ и поэтому 
+	\begin{equation*}
+		A_1\subseteq A_2.
+	\end{equation*}
+	Но раньше мы получили, что $A_2\subseteq A_1$, следовательно
+	\begin{equation*}
+		A_1=A_2
+	\end{equation*}
+	и \emph{лемма~\ref{l8:lemm:8.1} доказана.}
+\end{proof}
+\begin{_rem}
+	Если $\rho_1>0$, $\rho_2(x)>0$, $x\in[a,b]$, то $\overline{M}_{ij}<+\infty$, $i,j=1,2$.
+\end{_rem}
+\begin{proof}[Доказательство теоремы~\ref{l8:teor:8.1}.]
+	Пусть
+	\begin{equation*}
+		T=\left\{y(x)|y\in\Cfn[{[a,b]}]{1},\;y(a)=y(b)=0\right\}
+	\end{equation*}
+	и $y\in T$. Тогда так как $\norm{y}_2\geqslant\norm{y}_1$, то 
+	\begin{equation}\label{l8:eq:1.6}
+		\J[y]\cdot\norm{y}_2^{-2}\leqslant\J[y]\cdot\norm{y}_1^{-2}.
+	\end{equation}
+	Пусть далее $\phi_i(x)$, $i=\overline{1,n}$ --- произвольные фиксированные функции из $\fLr[{[a,b];\rho_1}]$ и $\big(y,\phi_i\big)_1=0$, $i=\overline{1,n}$. Положим $\psi_i=M_{12}\cdot\phi_i$. Так как
+	\begin{equation*}
+		\big(y,\phi_i\big)_1=\big(y,\rho_1\cdot\phi_i\big)=\big(y,M_{12}\cdot\rho_2\cdot\phi_i\big)=\big(y,\psi_i\big)_2,
+	\end{equation*}
+	то условие $\big(y,\phi_i\big)_1=0$ эквивалентно условию $\big(y,\psi_i\big)_2=0$ при $\psi_i=M_{12}\cdot\phi_i$. При фиксированных $y$ и $\phi_i$, $i=\overline{1,n}$ возьмём в левой части~\eqref{l8:eq:1.6} минимум по всем $\widetilde{y}\in T$, $\big(\widetilde{y},\psi_i\big)_2=0$, $i=\overline{1,n}$. Получим
+	\begin{equation}\label{l8:eq:1.6a}
+		\nu_2(\psi_1,\ldots,\psi_n)\eqdef\min\limits_{\substack{\widetilde{y}\in T,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}(\widetilde{y},\psi_i)_2=0,\:i=\overline{1,n}}}}\J[\widetilde{y}]\leqslant\J[y]\cdot\norm{y}_1^{-2}. \tag{\theequation a}
+	\end{equation}
+	Теперь в правой части~\eqref{l8:eq:1.6a} возьмём минимум по всем $y\in T$, $\big(y,\phi_i\big)_1=0$, $i=\overline{1,n}$. Тогда в силу~\eqref{l8:eq:1.6a}
+	\begin{equation*}
+		\nu_2(\psi_1,\ldots,\psi_n)\leqslant\nu_1(\phi_1,\ldots,\phi_n)\eqdef\min\limits_{\substack{{y}\in T,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}(y,\phi_i)_1=0,\:i=\overline{1,n}}}}\J[y]\cdot\norm{y}_1^{-2}.
+	\end{equation*}
+	Таким образом мы доказали неравенство
+	\begin{equation}\label{l8:eq:1.6b}
+		\nu_2(\psi_1,\ldots\psi_n)\leqslant\nu_1(\phi_1,\ldots,\phi_n)\tag{\theequation b}
+	\end{equation}
+	которое верно при $\forall\phi_i\in\fLr[{[a,b];\rho_1}]$ и $\psi_i=M_{12}\cdot\phi_i$, $i=\overline{1,n}$. Возьмём в правой части~\eqref{l8:eq:1.6b} максимум по всем $\widetilde{\phi}_i\in\fLr[{[a,b];\rho_1}]$ при фиксированных слева $\psi_i=M_{12}\cdot\phi_i$. Получим
+	\begin{equation}\label{l8:eq:1.6c}
+		\nu_2(\psi_1,\ldots,\psi_n)\leqslant\max\limits_{\lefteqn{\vphantom{\big(}\scriptstyle \widetilde{\phi}_1,\ldots,\widetilde{\phi}_n\in\fLr[{[a,b];\rho_1}]}}\nu_1(\widetilde{\phi}_1,\ldots,\widetilde{\phi}_n).\tag{\theequation c}
+	\end{equation}
+	Так как данное неравенство верно при $\forall\phi_i\in\fLr[{[a,b];\rho_1}]$ и так как $\psi_i=M_{12}\cdot\phi_i$, то мы можем слева в~\eqref{l8:eq:1.6c} взять максимум по всем $\phi_i$, но в силу леммы~\ref{l8:lemm:8.1} когда набор $\phi_1,\ldots,\phi_n$ будет пробегать все системы $n$ функций из $\fLr[{[a,b];\rho_1}]$, то набор $\psi_1,\ldots,\psi_n$ будет пробегать все системы $n$ функций из $\fLr[{[a,b];\rho_2}]$, поэтому слева в~\eqref{l8:eq:1.6c} мы можем взять максимум по всем системам $\widetilde{\psi}_1,\ldots,\widetilde{\psi}_n$ из $\fLr[{[a,b];\rho_2}]$. Получим
+	\begin{equation}\label{l8:eq:1.6d}
+		\max\limits_{\lefteqn{\vphantom{\big(}\scriptstyle \widetilde{\psi}_1,\ldots,\widetilde{\psi}_n\in\fLr[{[a,b];\rho_2}]}}\nu_2(\widetilde{\psi}_1,\ldots,\widetilde{\psi}_n)\leqslant\max\limits_{\lefteqn{\vphantom{\big(}\scriptstyle \widetilde{\phi}_1,\ldots,\widetilde{\phi}_n\in\fLr[{[a,b];\rho_1}]}}\nu_1(\widetilde{\phi}_1,\ldots,\widetilde{\phi}_n).\tag{\theequation d}
+	\end{equation}
+	В силу принципа минимакса~\eqref{l8:eq:1.6d} --- это и есть доказываемое неравенство~\eqref{l8:eq:1.5}.
+\end{proof}
+
+Применим теорему~\ref{l8:teor:8.1}, считая $\overline{M}_{21}<+\infty$ и взяв $\rho_2=\max\limits_{x\in[a,b]}\rho_1(x)$. Тогда обобщённая задача Штурма
+\begin{equation*}
+	L y_k^{(2)}=\lambda_{k}^{(2)}\cdot\rho_2\cdot y_k^{(2)}
+\end{equation*}
+превращается в обычную задачу Штурма для оператора $L/\rho_2$. А для этого оператора мы знаем, что $\exists c_0>0$ так, что 
+\begin{equation*}
+	\lambda_k^{(2)}\geqslant c_0\cdot k^2,\quad k\gg1.
+\end{equation*}
+В силу~\eqref{l8:eq:1.5} получаем
+\begin{equation}\label{l8:eq:1.7}
+	\lambda_k^{(1)}\geqslant c_0\cdot k^2,\quad k\gg1.
 \end{equation}
+Совершенно аналогично можно установить неравенство 
+\begin{equation}\label{l8:eq:1.7a}
+	\lambda_{k}^{(2)}<c_1\cdot k^2,\tag{\theequation a}
+\end{equation}
+если взять $\rho_1=\min\limits_{x\in[a,b]}\rho_2(x)$ при $\rho_1>0$.
+%, которую я привожу без доказательства. Смысл её: увеличение $\rho(x)$ уменьшает собственные значения обобщённой задачи Штурма. Теперь точная формулировка.
+%\begin{_teor}[вторая теорема сравнения]\label{l8:teor:1.1}
+%	Пусть
+%	\begin{equation}\label{l8:eq:5}
+%		\hfill Q_3\leqslant Q_1,\quad P_3\leqslant P_1,\quad\rho_3\geqslant\rho_1\geqslant0\quad\text{и}\quad L_3y_k^{(3)}=-\der{}{x}\Big(Q_3\cdot {y_k^{(3)}}'\Big)+P_3\cdot y_k^{(3)}=\lambda_k^{(3)}\cdot\rho_3\cdot y_k^{(3)}.\hfill
+%	\end{equation}
+%	Тогда при $\lambda^{(3)}_k>0$ 
+%	\begin{equation}\label{l8:eq:6}
+%		\hfill\lambda_k^{(3)}\leqslant\lambda_k^{(1)}.\hfill
+%	\end{equation}
+%\end{_teor}
+%
+%Взяв $Q_3=\displaystyle\min\limits_{x\in[a,b]}Q_1(x)$, $P_3=\displaystyle\min\limits_{x\in[a,b]}P_1(x)$, $\rho_3=\displaystyle\max\limits_{x\in[a,b]}\rho(x)$ и поделив~\eqref{l8:eq:1.5} на $\rho_3$ мы получим, что числа $\lambda_k^{(3)}$ --- собственные значения оператора Штурма с постоянными коэффициентами --- $\sfrac{Q_3}{\rho_3}$, $\sfrac{P_3}{\rho_3}$. Значит для некоторой константы $C>0$ при $k\gg1$ выполняется  $\lambda_k^{(3)}\geqslant C\cdot k^2$ и в силу~\eqref{l8:eq:1.6} 
+%\begin{equation}\label{l8:eq:7}
+%	\hfill\lambda_k^{(1)}\geqslant C\cdot k^2\hfill
+%\end{equation}
 
-Таким образом, собственные значения обобщённой задачи Штурма растут со скоростью $k^2$ при росте $k$.
+В силу~\eqref{l8:eq:1.7},~\eqref{l8:eq:1.7a} собственные значения обобщённой задачи Штурма растут со скоростью $k^2$ при росте $k$.
 
-\noindent\textbf{Замечание} к теореме сравнения собственных значений обобщённой задачи Штурма при росте веса $\rho$. Пусть $\rho\geqslant0$, $d>0$ --- любое число.
+%\noindent\textbf{Замечание} к теореме сравнения собственных значений обобщённой задачи Штурма при росте веса $\rho$. Пусть $\rho\geqslant0$, $d>0$ --- любое число.
+%\begin{equation*}
+%	\hfill Ly_k=\lambda_k\cdot\rho\cdot y_k,\hfill
+%\end{equation*}
+%где $\lambda_k$ и $y_k$ соответственно $k$-ое собственное значение и отвечающая ему собственная функция обобщённой задачи Штурма. Предполагаем, что $\lambda_k>0$.
+%
+%Пусть $\rho_d\eqdef d\cdot\rho$, $\lambda_k(d)\eqdef\lambda_k/d$. Тогда 
+%\begin{equation*}
+%	\hfill Ly_k=\rho_d\cdot\lambda_k(d)\cdot y_k,\hfill
+%\end{equation*}
+%то есть для нового веса $\rho_d=d\cdot\rho$ оператор $L$ будет иметь те же собственные функции, что и раньше, но они будут отвечать другим собственным значениям $\lambda_k(d)=\lambda_k/d$. Мы видим, что при $d>1$, $\rho_d>\rho$, а $\lambda_k(d)<\lambda_k$. И вообще, если $d_2>d_1$, то $\rho_{d_2}>\rho_{d_1}$, а $\lambda_k(d_2)<\lambda_k(d_1)$.
+%
+%Разумеется, этот пример \emph{ничего не доказывает}, но он показывает, почему при росте веса $\rho$ собственные значения уменьшаются.
+
+Все эти результаты получены при условии $\J[y]\geqslant0$ при $y\in\mc{D}_{L}$, то есть при неотрицательности всех собственных значений обобщённой (и обычной!) задачи Штурма. Рассмотрим теперь случай, когда 
 \begin{equation*}
-	\hfill Ly_k=\lambda_k\cdot\rho\cdot y_k,\hfill
-\end{equation*}
-где $\lambda_k$ и $y_k$ соответственно $k$-ое собственное значение и отвечающая ему собственная функция обобщённой задачи Штурма. 
-
-Пусть $\rho_d\eqdef d\cdot\rho$, $\lambda_k(d)\eqdef\lambda_k/d$. Тогда 
+	\beta\eqdef\inf\limits_{i\in\K}\J[y]<0.
+\end{equation*} 
+Пусть $\alpha>-\beta$ и 
 \begin{equation*}
-	\hfill Ly_k=\rho_d\cdot\lambda_k(d)\cdot y_k,\hfill
+	L(\alpha)y=Ly+\alpha\cdot\rho\cdot y.
 \end{equation*}
-то есть для нового веса $\rho_d=d\cdot\rho$ оператор $L$ будет иметь те же собственные функции, что и раньше, но они будут отвечать другим собственным значениям $\lambda_k(d)=\lambda_k/d$. Мы видим, что при $d>1$, $\rho_d>\rho$, а $\lambda_k(d)<\lambda_k$. И вообще, если $d_2>d_1$, то $\rho_{d_2}>\rho_{d_1}$, а $\lambda_k(d_2)<\lambda_k(d_1)$.
+Тогда 
+\begin{equation*}
+	\J^{(\alpha)}(y)\eqdef\big(L(\alpha)y,y\big)=\big(Ly,y\big)+\alpha\cdot\big(\rho\cdot y,y\big)=\J[y]+\alpha\cdot\norm{y}_1^2>0.
+\end{equation*}
+Следовательно, собственные значения $\lambda_k(\alpha)$ обобщённой задачи Штурма для оператора $L(\alpha)$ стремятся к $+\infty$ при $k\to\infty$ со скоростью $c_3\cdot k^2$, где $c_3>0$ --- некоторая константа. Так как для исходной задачи Штурма 
+\begin{equation*}
+	L y_k=\lambda_k\cdot\rho\cdot y_k,
+\end{equation*}
+то 
+\begin{equation*}
+	L(\alpha)y_k=L y_k+\alpha\cdot\rho\cdot y_k=\lambda_k\cdot\rho\cdot y_k+\alpha\cdot\rho\cdot y_k=(\lambda_k+\alpha)\cdot\rho\cdot y_k.
+\end{equation*}
+Значит,
+\begin{equation*}
+	\lambda_k(\alpha)=\lambda_k+\alpha
+\end{equation*}
+и, следовательно $\lambda_k\to+\infty$ со скоростью $c_3\cdot k^2$.
 
-Разумеется, этот пример \emph{ничего не доказывает}, но он показывает, почему при росте веса $\rho$ собственные значения уменьшаются.
-
-Если $\rho(x)>0$, $x\in[a,b]$ и $\rho(x)\in\Cfn[{[a,b]}]{2}$, то можно обойтись без теоремы сравнения следующим образом. Пусть
+Если $\rho(x)>0$, $x\in[a,b]$ и $\rho(x)\in\Cfn[{[a,b]}]{2}$, то можно обойтись без теоремы сравнения~\ref{l8:teor:8.1} следующим образом. Пусть
 \begin{equation}\label{l8:eq:8}
 	\hfill L_1y_k\eqdef-\der{}{x}\Big(Q_1\cdot y'_k\Big)+P_1\cdot y_k=\lambda_k^{(1)}\cdot\rho_1\cdot y_k.\hfill
 \end{equation}
@@ -104,7 +259,7 @@
 \end{equation}
 где $\displaystyle Q_0=\frac{Q_1}{\rho_1}$, $\displaystyle P_0=\frac{P_1}{\rho_1}+\frac1{\sqrt{\rho_1}}\cdot\der{}{x}\left(\frac12\cdot\frac{Q_1\cdot\rho'_1}{\rho_1^{\sfrac{3}{2}}}\right)$.
 
-Таким образом, собственные значения $\lambda_k^{(1)}$ оператора $L_1$ обобщённой задачи Штурма совпадают с собственными значениями оператора $L_0$ стандартной задачи Штурма. Отсюда следует рост собственных значений $\lambda_k^{(1)}$ со скоростью $k^2$ при $k\to\infty$. Далее можно сформулировать и доказать неравенство Бесселя и равенство Парсеваля, а также определить понятие полной системы. Разумеется при этом надо обобщённые коэффициенты Фурье считать с помощью скалярного произведения $\big(\cdot\,,\cdot\big)_1$ и вместо $\norm{\,\cdot\,}$ брать $\norm{\,\cdot\,}_1$.
+Таким образом, собственные значения $\lambda_k^{(1)}$ оператора $L_1$ обобщённой задачи Штурма совпадают с собственными значениями оператора $L_0$ обычной задачи Штурма. Отсюда следует рост собственных значений $\lambda_k^{(1)}$ со скоростью $k^2$ при $k\to\infty$. Далее можно сформулировать и доказать неравенство Бесселя и равенство Парсеваля, а также определить понятие полной системы. Разумеется при этом надо обобщённые коэффициенты Фурье считать с помощью скалярного произведения $\big(\cdot\,,\cdot\big)_1$ и вместо $\norm{\,\cdot\,}$ брать $\norm{\,\cdot\,}_1$.
 
 Далее можно передоказать теорему Стеклова, но в предположении, что $\rho(x)>0$, $x\in[a,b]$. Наметим основные формулировки. Пусть $y\in\fLr$, $y_k$ --- собственные функции обобщённой задачи Штурма, $\norm{y_k}_1=1$, $k=1,2,\ldots$,
 \begin{equation*}
@@ -179,7 +334,7 @@
 	
 	Докажем теперь равномерную сходимость обобщённого ряда Фурье $\displaystyle\sum\limits_{k=1}^{\infty}C_k\cdot y_k$. Оценим $C_k$.
 	\begin{equation*}
-		|C_k|=\big|\big(y,\rho\cdot y_k\big)\big|=\left|\left(y,\frac{Ly_k}{\lambda_k}\right)\right|=\frac1{|\lambda_k|}\cdot\big|\big(Ly,y_k\big)\big|\leqslant\frac1{|\lambda_k|}\cdot\left|\left(\frac{Ly}{\rho},\rho\cdot y\right)\right|=\frac1{|\lambda_k|}\cdot d_k,
+		|C_k|=\big|\big(y,\rho\cdot y_k\big)\big|=\left|\left(y,\frac{Ly_k}{\lambda_k}\right)\right|=\frac1{|\lambda_k|}\cdot\big|\big(Ly,y_k\big)\big|\leqslant\frac1{|\lambda_k|}\cdot\left|\left(\frac{Ly}{\rho},\rho\cdot y_k\right)\right|=\frac1{|\lambda_k|}\cdot d_k,
 	\end{equation*} 
 	где $d_k\to0$ при $k\to\infty$ в силу неравенства Бесселя для обобщённых коэффициентов Фурье функции $Ly/\rho$ по собственным функциям $y_k$ обобщённой задачи Штурма.
 	
@@ -187,9 +342,10 @@
 	\begin{equation*}
 		\hfill\norm{y_k}^2=\int\limits_a^b\frac{y_k^2\cdot\rho}{\rho}\,ds\leqslant\norm{y_k}^2_1\cdot\frac{1}{\rho_0}\quad\big(\rho_0\eqdef\min\rho(x)\big).\hfill
 	\end{equation*}
+	Имеем
 	\begin{equation}
 		\label{l8:eq:9_1}
-		y^2_k(x)-y^2_k(x')=\int\limits_{x'}^{x}\der{}{s}y_k^s(s)\,ds\leqslant2\cdot\int\limits_a^b\big|y_k(s)\big|\cdot\big|y'_k(s)\big|\,ds\leqslant2\cdot\sqrt{\int\limits_a^b y_k^{\prime2}\,ds}\cdot\frac{\norm{y_k}_1}{\sqrt{\rho_0}}=2\cdot\frac{\sqrt{\smallint\limits_a^b y_k^{\prime2}}}{\sqrt{\rho_0}}
+		y^2_k(x)-y^2_k(x')=\int\limits_{x'}^{x}\der{}{s}y_k^s(s)\,ds\leqslant2\cdot\int\limits_a^b\big|y_k(s)\big|\cdot\big|y'_k(s)\big|\,ds\leqslant2\cdot\sqrt{\int\limits_a^b y_k^{\prime2}\,ds}\cdot\frac{\norm{y_k}_1}{\sqrt{\rho_0}}=2\cdot\frac{\sqrt{\smallint\limits_a^b y_k^{\prime2}}}{\sqrt{\rho_0}},
 	\end{equation}
 	\begin{equation*}
 		\J[y_k]=\lambda_k=\int\limits_a^b\Big(Q\cdot y_k^{\prime2}+P\cdot y_k^2\Big)\,dx\geqslant Q_0\cdot\int\limits_a^b y_k^{\prime2}\,dx+P_0\cdot\int\limits_a^b\frac{y_k^2\cdot\rho}{\rho}\,ds\geqslant Q_0\cdot\int\limits_a^b y_k^{\prime2}\,dx-\frac{|P_0|}{\rho_0},
@@ -210,7 +366,7 @@
 	\begin{equation*}
 		\hfill|y_k(x)|\leqslant\beta_4\cdot|\lambda_k|^{\sfrac{1}{4}}.\hfill
 	\end{equation*}
-	Подставим эту оценку и оценку $|C_k|\leqslant d_k\!\bigm/\!|\lambda_k|$ в оценку общего члена обобщённого ряда Фурье
+	Подставим эту оценку и оценку $|C_k|\leqslant d_k\!\bigm/\!|\lambda_k|$ в оценку общего члена обобщённого ряда Фурье в силу~\eqref{l8:eq:1.7b}
 	\begin{equation*}
 		\hfill|C_k\cdot y_k|\leqslant\frac{d_k}{|\lambda_k|}\cdot\beta_4\cdot|\lambda_k|^{\sfrac{1}{4}}\leqslant\beta_5\cdot\frac{1}{|\lambda_k|^{\sfrac{3}{4}}}\leqslant\beta_6\cdot\frac{1}{k^{\sfrac{3}{2}}}\hfill
 	\end{equation*}
@@ -239,7 +395,7 @@
 		\nu=0&:&y\in\Cfn[{[0,R]}]{1},
 	\end{array}\ \int\limits_0^R x\cdot y^2\,dx=1\right\}_{\displaystyle.}\hfill
 \end{equation*} 
-Так как в точке $x=0$ интегрант не может иметь особенность, то при выводе мы возьмём функции $\eta_i(x)\equiv0$, $x\in[0,\delta]$ для какого-то малого $\delta>0$. Тогда действуя обычным образом мы получим уравнение для минимайзера в задаче на $\displaystyle\min\limits_{y\in\K}\,\J[y]$
+Здесь требование $y(0)=0$ при $\nu>0$ вызвано тем, что при $|y(0)|>0$ значение функционала будет бесконечным из-за наличия члена $\nu^2/x$. Этот же член не позволяет требовать от $y(x)$ гладкость $\Cfn[]{1}$ при $x=0$. Так как в точке $x=0$ интегрант может иметь особенность, то при выводе уравнения Эйлера мы возьмём функции $\eta_i(x)\equiv0$, $x\in[0,\delta]$ для какого-то малого $\delta>0$. Тогда, действуя обычным образом, мы получим уравнение для минимайзера в задаче на $\displaystyle\min\limits_{y\in\K}\,\J[y]$
 \begin{equation*}
 	\hfill Ly=-\der{}{x}\big(x\cdot y'\big)+\frac{\nu^2}{x}\cdot y=\lambda\cdot x\cdot y,\hfill
 \end{equation*}
@@ -258,7 +414,7 @@
 \begin{proof}[Доказательство при $\nu>0$]
 	Оно не простое и требует внимания.
 	
-	Пусть $f,\,g\in\mc{D}_L$, $\eps>0$. Имеем, применяя неравенство Буняковского
+	Пусть $f,\,g\in\mc{D}_L$, $\eps>0$. Имеем, применяя неравенство Буняковского,
 	\begin{equation}\label{l8:eq:10}
 		\left|\int\limits_{\eps}^R Lf\cdot\overline{g}\,dx\right|\leqslant\int\limits_{\eps}^R\big|Lf\cdot\overline{g}\big|\,dx\leqslant\int\limits_{0}^R\big|\sqrt{x}\cdot Lf\big|\cdot\left|\frac{\overline{g}}{\sqrt{x}}\right|\,dx\leqslant\sqrt{\int\limits_{0}^R x\cdot\big|Lf\big|^2\,dx}\cdot\sqrt{\int\limits_{0}^R \frac{|g|^2}{x}\,dx}<+\infty
 	\end{equation}

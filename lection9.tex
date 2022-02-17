@@ -39,7 +39,7 @@
 \end{equation}
 где в силу граничных условий и условий гладкости для функций $y_{\nu k}(x)$ мы должны потребовать
 \begin{equation*}
-	\hfill z(\sqrt{\lambda}\cdot R)=0,\quad\text{при }\nu=0\ z(\rho)\in\Cfn[{[0,R]}]{2},\quad\text{при }\nu>0\ z(0)=0,\ z\in\Cfn[{(0,R]}]{2}.\hfill
+	\hfill z(\sqrt{\lambda}\cdot R)=0;\quad z(0)=0;\quad z\in\Cfn[{(0,R]}]{2}\ \text{при }\nu=0;\quad z(\rho)\in\Cfn[{[0,R]}]{2}\ \text{при }\nu>0.\hfill
 \end{equation*}
 
 Уравнение~\eqref{l9:eq:5} хорошо известно. Это уравнение Бесселя, его решения --- функции Бесселя $\nu$-ого порядка. Так как уравнение~\eqref{l9:eq:5} --- уравнение второго порядка --- то оно имеет два линейно независимых решения, называемые функциями Бесселя первого и второго рода. Но функция Бесселя второго рода имеет особенность при $\rho=0$. Остаётся функция Бесселя первого рода $\nu$-ого порядка, или просто функция Бесселя $\nu$-ого порядка $J_\nu(\rho)$. Решение уравнения~\eqref{l9:eq:5} можно искать в виде ряда
@@ -63,9 +63,9 @@
 	\hfill y_{\nu k}(x)=z(\rho)=J_{\nu}\left(\frac{\mu_{\nu k}}{R}\cdot x\right)\footnotemark{}.\hfill
 \end{equation}\footnotetext{Теперь, когда $y_{\nu k}(x)=z$ найдены, надо проверить неравенства $\J[y_{\nu k}]<+\infty$, $\norm{Ly_{\nu k}}_1<+\infty$, которые должны выполняться в $\mc{D}_L$. Мы это сделаем позже.}
 
-Мы получили явный вид собственных функций $y_{\nu k}$ и собственных значений $\lambda_{\nu k}$ обобщённой задачи Штурма. Так как в выражения~\eqref{l9:eq:7},~\eqref{l9:eq:8} входят нули функции Бесселя $J_{\nu}(\rho)$, то проведём небольшое исследование тех точек $\mu_{\nu k}$, в которых $J_{\nu}\left(\mu_{\nu k}\right)=0$, то есть изучим --- хотя бы поверхностно, свойствва нулей функции Бесселя. Для этого воспользуемся известной асимптотикой функции Бесселя при больших $\rho$
+Мы получили явный вид собственных функций $y_{\nu k}$ и собственных значений $\lambda_{\nu k}$ обобщённой задачи Штурма. Так как в выражения~\eqref{l9:eq:7},~\eqref{l9:eq:8} входят нули функции Бесселя $J_{\nu}(\rho)$, то проведём небольшое исследование тех точек $\mu_{\nu k}$, в которых $J_{\nu}\left(\mu_{\nu k}\right)=0$, то есть изучим --- хотя бы поверхностно ---  свойствва нулей функции Бесселя. Для этого воспользуемся известной асимптотикой функции Бесселя при больших $\rho$
 \begin{equation*}
-	\hfill\sqrt{\rho}\cdot J_{\nu}(\rho)=a_{\nu}\cdot\cos(\rho-b\cdot\nu)+O\left(\frac{1}{\rho}\right),\hfill
+	\hfill\sqrt{\rho}\cdot J_{\nu}(\rho)=a_{\nu}\cdot\cos(\rho-b_\nu)+O\left(\frac{1}{\rho}\right),\hfill
 \end{equation*}
 где $a_{\nu}>0$ --- некоторое число, $\displaystyle b_{\nu}=\frac{\pi}{4}+\frac{\pi\cdot\nu}{2}$. Отсюда видно, что при $\rho=\rho_k=\pi\cdot k+b_{\nu}$ выполняется
 \begin{equation}\label{l9:eq:9}
@@ -213,7 +213,7 @@
 \begin{multline*}
 	\delta\J=\left.t\cdot\der{}{t}\iint\limits_{G}\widetilde{F}\,dxdy\right|_{t=0}=\left.t\cdot\iint\limits_{G}\left(\widetilde{F}_{\tilde{z}}\cdot\eta+\widetilde{F}_{\tilde{z}_x}\cdot\eta_x+\widetilde{F}_{\tilde{z}_y}\cdot\eta_y\right)\,dxdy\right|_{t=0}=\\=t\cdot\iint\limits_{G}\left({F}_{z}\cdot\eta+{F}_{z_x}\cdot\eta_x+{F}_{z_y}\cdot\eta_y\right)\,dxdy.
 \end{multline*}
-Преобразуем полученное выражение так, чтобы оно не содержало производных $\eta_x$, $\eta_y$. Имеем выделяя дивергентную форму 
+Преобразуем полученное выражение так, чтобы оно не содержало производных $\eta_x$, $\eta_y$. Имеем, выделяя дивергентную форму 
 \begin{equation*}
 	\iint\limits_{G}\left(F_p\cdot\eta_x+F_q\cdot\eta_y\right)\,dxdy=\iint\limits_{G}\left(\der{}{x}(F_p\cdot\eta)+\der{}{y}(F_q\cdot\eta)\right)\,dxdy-\iint\limits_{G}\left(\der{}{x}F_p+\der{}{y}F_q\right)\cdot\eta\,dxdy.
 \end{equation*}
@@ -313,11 +313,11 @@
 \end{equation*}
 Оператор $\displaystyle\Delta\eqdef\pdder{}{x}+\pdder{}{y}$ --- оператор Лапласа.
 
-\noindent\underline{Обобщение}. Рассмотрим функционал $\J[z]$ для функции $z=z(x_1,\ldots,x_n)$ зависящей от $n$ переменных. Пусть $\displaystyle p_i\eqdef\pder{z}{x_i}$, $i=\overline{1,n}$, $\Omega=\{x_1,\ldots,x_n\}$ --- некоторая область.
+\noindent\underline{Обобщение}. Рассмотрим функционал $\J[z]$ для функции $z=z(x_1,\ldots,x_n)$, зависящей от $n$ переменных. Пусть $\displaystyle p_i\eqdef\pder{z}{x_i}$, $i=\overline{1,n}$, $\Omega=\{x_1,\ldots,x_n\}$ --- некоторая область.
 \begin{equation*}
 	\hfill\J[z]=\idotsint\limits_{\Omega}F(x_1,\ldots,x_n,z,p_1,\ldots,p_n)\,d\Omega.\hfill
 \end{equation*}
-$z\Big|_{\partial\Omega}=f(x_1,\ldots,x_n)$. Уравнение Остроградского для этого функционала выводится совершенно аналогично. В результате мы получим 
+$z\Big|_{\partial\Omega}=f(x_1,\ldots,x_n)$. Уравнение Остроградского для этого функционала выводится совершенно аналогично случаю $n=2$. В результате мы получим 
 \begin{equation*}
 	\hfill F_z-\der{}{x_1}F_{p_1}-\der{}{x_2}F_{p_2}-\ldots-\der{}{x_n}F_{p_n}=0.\hfill
 \end{equation*}
@@ -377,7 +377,7 @@ $z\Big|_{\partial\Omega}=f(x_1,\ldots,x_n)$. Уравнение Острогра
 \begin{equation*}
 	\hfill F_z-\der{}{x}F_p-\der{}{y}F_q=0.\hfill
 \end{equation*}
-Значит равенство $\delta\J=0$ сводится к равенству
+Поэтому равенство $\delta\J=0$ сводится к равенству
 \begin{equation*}
 	\hfill\int\limits_{\Gamma}(F_p\cdot\cos\alpha+F_q\cdot\cos\beta)\cdot\eta\,dl=0,\quad\forall\eta\text{ --- допустимое.}\hfill
 \end{equation*}
@@ -389,12 +389,12 @@ $z\Big|_{\partial\Omega}=f(x_1,\ldots,x_n)$. Уравнение Острогра
 \begin{equation}\label{l9:eq:16}
 	\hfill F_p\cdot\cos\alpha+F_q\cdot\cos\beta=0,\quad(x,y)\in\Gamma_2.\hfill
 \end{equation}
-Это --- естественное граничное условие для свободной части границы. Если $\Gamma_1=\varnothing$, то условие~\eqref{l9:eq:16} должно выполняться на всей границе $\Gamma=\partial G$. Таким образом уравнение Остроградского надо решать с граничными условиями: на $\Gamma_2$ ---~\eqref{l9:eq:16}, на $\Gamma_1$ $z\Big|_{\Gamma_1}=f(x,y)$.
+Это --- естественное граничное условие для свободной части границы. Если $\Gamma_1=\varnothing$, то условие~\eqref{l9:eq:16} должно выполняться на всей границе $\Gamma=\partial G$. Таким образом уравнение Остроградского надо решать с граничными условиями: на $\Gamma_2$ ---~\eqref{l9:eq:16}, $z\Big|_{\Gamma_1}=f(x,y)$.
 
 Приведём пример. Пусть $F=z_x^2+z_y^2$, то есть мы рассматриваем интеграл Дирихле. Тогда \begin{equation*}
 	F_p\cdot\cos\alpha+F_q\cdot\cos\beta=2\cdot(z_x\cdot\cos\alpha+z_y\cdot\cos\beta)=2\cdot\big(\nabla z,\bm{n}\big)_{\R^2}=2\cdot\pder{z}{n}
 \end{equation*}
-и естественное граничное условие на свободной части границы $\displaystyle\left.\pder{z}{n}\right|_{\Gamma_2}=0$
+и естественное граничное условие на свободной части границы $\displaystyle\left.\pder{z}{n}\right|_{\Gamma_2}=0$. Например для прямоугольника (см. картинку) со свободными левой и правой сторонами естественные граничные условия суть
 
 
 

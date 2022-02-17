@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  23 APR 2021 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  14 FEB 2022 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,16 +8,6 @@ LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06>
 (c:/texlive/2020/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(c:/texlive/2020/texmf-dist/tex/latex/base/fleqn.clo
-File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
-\mathindent=\dimen134
-Applying: [2015/01/01] Make \[ robust on input line 50.
-LaTeX Info: Redefining \[ on input line 51.
-Already applied: [0000/00/00] Make \[ robust on input line 62.
-Applying: [2015/01/01] Make \] robust on input line 74.
-LaTeX Info: Redefining \] on input line 75.
-Already applied: [0000/00/00] Make \] robust on input line 83.
-)
 (c:/texlive/2020/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
@@ -32,7 +22,7 @@ File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen135
+\bibindent=\dimen134
 )
 (c:/texlive/2020/texmf-dist/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
@@ -53,14 +43,14 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@cnth=\count176
 \Gm@cntv=\count177
 \c@Gm@tempcnt=\count178
-\Gm@bindingoffset=\dimen136
-\Gm@wd@mp=\dimen137
-\Gm@odd@mp=\dimen138
-\Gm@even@mp=\dimen139
-\Gm@layoutwidth=\dimen140
-\Gm@layoutheight=\dimen141
-\Gm@layouthoffset=\dimen142
-\Gm@layoutvoffset=\dimen143
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
 )
 (c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
@@ -74,7 +64,7 @@ Package: babel 2020/04/28 3.43 The Babel package
 (c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/04/28 3.43 Babel common definitions
 \babel@savecnt=\count179
-\U@D=\dimen144
+\U@D=\dimen143
 
 (c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -320,11 +310,11 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen145
+\ex@=\dimen144
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen146
+\pmbraise@=\dimen145
 )
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -341,7 +331,7 @@ LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box45
 \strutbox@=\box46
-\big@size=\dimen147
+\big@size=\dimen146
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count186
@@ -354,12 +344,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \column@=\count191
 \maxfields@=\count192
 \andhelp@=\toks21
-\eqnshift@=\dimen148
-\alignsep@=\dimen149
-\tagshift@=\dimen150
-\tagwidth@=\dimen151
-\totwidth@=\dimen152
-\lineht@=\dimen153
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
 \@envbody=\toks22
 \multlinegap=\skip50
 \multlinetaggap=\skip51
@@ -412,7 +402,7 @@ Package: perpage 2014/10/25 2.0 Reset/sort counters per page
 (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip55
-\enit@outerparindent=\dimen154
+\enit@outerparindent=\dimen153
 \enit@toks=\toks30
 \enit@inbox=\box47
 \enit@count@id=\count194
@@ -456,7 +446,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen155
+\@linkdim=\dimen154
 \Hy@linkcounter=\count196
 \Hy@pagecounter=\count197
 
@@ -495,7 +485,7 @@ Package hyperref Info: Bookmarks ON on input line 4800.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen156
+\XeTeXLinkMargin=\dimen155
 
 (c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -505,8 +495,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count266
-\Field@Width=\dimen157
-\Fld@charsize=\dimen158
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -552,8 +542,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen159
-\pgfutil@tempdimb=\dimen160
+\pgfutil@tempdima=\dimen158
+\pgfutil@tempdimb=\dimen159
 
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -586,8 +576,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
 )
 (c:/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -600,16 +590,16 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen163
-\pgf@y=\dimen164
-\pgf@xa=\dimen165
-\pgf@ya=\dimen166
-\pgf@xb=\dimen167
-\pgf@yb=\dimen168
-\pgf@xc=\dimen169
-\pgf@yc=\dimen170
-\pgf@xd=\dimen171
-\pgf@yd=\dimen172
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count272
@@ -662,7 +652,7 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen173
+\pgfmath@dimen=\dimen172
 \pgfmath@count=\count279
 \pgfmath@box=\box49
 \pgfmath@toks=\toks38
@@ -692,32 +682,32 @@ etics.code.tex)))
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen174
-\pgf@picmaxx=\dimen175
-\pgf@picminy=\dimen176
-\pgf@picmaxy=\dimen177
-\pgf@pathminx=\dimen178
-\pgf@pathmaxx=\dimen179
-\pgf@pathminy=\dimen180
-\pgf@pathmaxy=\dimen181
-\pgf@xx=\dimen182
-\pgf@xy=\dimen183
-\pgf@yx=\dimen184
-\pgf@yy=\dimen185
-\pgf@zx=\dimen186
-\pgf@zy=\dimen187
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen188
-\pgf@path@lasty=\dimen189
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen190
-\pgf@shorten@start@additional=\dimen191
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -729,14 +719,14 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen192
+\pgflinewidth=\dimen191
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
 ode.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen193
-\pgf@pt@y=\dimen194
-\pgf@pt@temp=\dimen195
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -750,11 +740,11 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen196
+\pgfarrowsep=\dimen195
 )
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen197
+\pgf@max=\dimen196
 \pgf@sys@shading@range@num=\count282
 \pgf@shadingcount=\count283
 )
@@ -787,8 +777,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
 y
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen198
-\pgf@nodesepend=\dimen199
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
 )
 (c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y
@@ -802,8 +792,8 @@ Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen256
-\pgffor@skip=\dimen257
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
 ))
@@ -814,16 +804,16 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 de.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@plot@mark@count=\count284
-\pgfplotmarksize=\dimen258
+\pgfplotmarksize=\dimen257
 )
-\tikz@lastx=\dimen259
-\tikz@lasty=\dimen260
-\tikz@lastxsaved=\dimen261
-\tikz@lastysaved=\dimen262
-\tikz@lastmovetox=\dimen263
-\tikz@lastmovetoy=\dimen264
-\tikzleveldistance=\dimen265
-\tikzsiblingdistance=\dimen266
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikz@lastmovetox=\dimen262
+\tikz@lastmovetoy=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
 \tikz@figbox=\box55
 \tikz@figbox@bg=\box56
 \tikz@tempbox=\box57
@@ -850,19 +840,19 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
 (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen267
+\col@sep=\dimen266
 \ar@mcellbox=\box59
-\extrarowheight=\dimen268
+\extrarowheight=\dimen267
 \NC@list=\toks43
 \extratabsurround=\skip57
 \backup@length=\skip58
 \ar@cellbox=\box60
 )
-\TX@col@width=\dimen269
-\TX@old@table=\dimen270
-\TX@old@col=\dimen271
-\TX@target=\dimen272
-\TX@delta=\dimen273
+\TX@col@width=\dimen268
+\TX@old@table=\dimen269
+\TX@old@col=\dimen270
+\TX@target=\dimen271
+\TX@delta=\dimen272
 \TX@cols=\count293
 \TX@ftn=\toks44
 )
@@ -890,7 +880,7 @@ Package: xparse 2020-03-06 L3 Experimental document command parser
 )
 (c:/texlive/2020/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen274
+\l__xtemplate_tmp_dim=\dimen273
 \l__xtemplate_tmp_int=\count299
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip59
@@ -898,11 +888,11 @@ Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
 Package: xfrac 2020-03-06 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box62
 \l__xfrac_tmp_box=\box63
-\l__xfrac_denominator_bot_sep_dim=\dimen275
-\l__xfrac_numerator_bot_sep_dim=\dimen276
-\l__xfrac_numerator_top_sep_dim=\dimen277
-\l__xfrac_slash_left_sep_dim=\dimen278
-\l__xfrac_slash_right_sep_dim=\dimen279
+\l__xfrac_denominator_bot_sep_dim=\dimen274
+\l__xfrac_numerator_bot_sep_dim=\dimen275
+\l__xfrac_numerator_top_sep_dim=\dimen276
+\l__xfrac_slash_left_sep_dim=\dimen277
+\l__xfrac_slash_right_sep_dim=\dimen278
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 
@@ -955,12 +945,12 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box64
 \beforetitleunit=\skip94
 \aftertitleunit=\skip95
-\ttl@plus=\dimen280
-\ttl@minus=\dimen281
+\ttl@plus=\dimen279
+\ttl@minus=\dimen280
 \ttl@toksa=\toks45
-\titlewidth=\dimen282
-\titlewidthlast=\dimen283
-\titlewidthfirst=\dimen284
+\titlewidth=\dimen281
+\titlewidthlast=\dimen282
+\titlewidthfirst=\dimen283
 )
 \c@_def=\count302
 \c@_lemm=\count303
@@ -979,6 +969,8 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \enitdp@enumerateP1=\count316
 \c@enumeratermi=\count317
 \enitdp@enumeraterm=\count318
+\c@enumerateAii=\count319
+\enitdp@enumerateAi=\count320
 
 No auxiliary output files.
 
@@ -989,26 +981,26 @@ LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
 (c:/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1046,17 +1038,17 @@ LaTeX Font Info:    ... okay on input line 92.
 
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 92.
-Package gensymb Info: Math companion symbols declared on input line 92.
-LaTeX Info: Redefining \degree on input line 92.
-LaTeX Info: Redefining \celsius on input line 92.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 100.
+Package gensymb Info: Math companion symbols declared on input line 100.
+LaTeX Info: Redefining \degree on input line 100.
+LaTeX Info: Redefining \celsius on input line 100.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 92.
-LaTeX Info: Redefining \ohm on input line 92.
-Package gensymb Info: Using \textohm for \ohm on input line 92.
-Package gensymb Info: Using \textmu for \micro on input line 92.
+erthousand on input line 100.
+LaTeX Info: Redefining \ohm on input line 100.
+Package gensymb Info: Using \textohm for \ohm on input line 100.
+Package gensymb Info: Using \textmu for \micro on input line 100.
 \AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 100.
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1066,26 +1058,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
 
 (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.out) (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.out)
 ABD: EveryShipout initializing macros
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen285
+\scratchcounter=\count322
+\scratchdimen=\dimen284
 \scratchbox=\box66
-\nofMPsegments=\count321
-\nofMParguments=\count322
+\nofMPsegments=\count323
+\nofMParguments=\count324
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen286
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen285
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
 \everyMPtoPDFconversion=\toks47
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1096,20 +1088,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112
 .
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112
 .
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-0.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
+2.
 
 (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1134,8 +1126,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 ]
-\c@enumerate2i=\count326
-\enitdp@enumerate2=\count327
+\c@enumerate2i=\count328
+\enitdp@enumerate2=\count329
  [6] [7
 
 
@@ -1145,42 +1137,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.2})
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.227 \end{equation*}
+l.233 \end{equation*}
                      ] [8
 
 
 
 
-
-] [9
-
-
-
-
-
-
-
-] [10
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.
-10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.423 \end{equation}
-                    
-
-
-
-
 ]
-Overfull \hbox (3.45428pt too wide) in paragraph at lines 427--499
+Overfull \vbox (1.08989pt too high) has occurred while \output is active []
+
+
+[9
+
+
+
+
+
+
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2
+.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.1.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.1.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.1.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 \begin{equation}
+                      
+Overfull \hbox (3.27614pt too wide) in paragraph at lines 374--375
+[]\T2A/cmr/m/n/12 Предположим, что [] вер-но при $\OMS/cmsy/m/n/12 8\OML/cmm/m/
+it/12 ^^Q$ \T2A/cmr/m/n/12 и при неко-то-рой функ-
+ []
+
+
+Overfull \hbox (3.45428pt too wide) in paragraph at lines 433--505
 []
  []
 
-[11
+[10
 
 
+
+
+
+
+] [11
 
 
 ]) (./lection2.tex [12]
@@ -1222,7 +1237,7 @@ m/m/it/12 v \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/
 
 ]
 Overfull \hbox (1.47517pt too wide) detected at line 102
-$\OMS/cmsy/m/n/12 K \OT1/cmr/m/n/12 = [][]$ 
+\OMS/cmsy/m/n/12 K \OT1/cmr/m/n/12 = [][]
  []
 
 
@@ -1318,7 +1333,9 @@ l.101 \begin{multline*}
 ] [23
 
 
+
 ] [24
+
 
 
 
@@ -1330,14 +1347,9 @@ l.101 \begin{multline*}
 
 
 
+] [26
 
-
-]
-Underfull \vbox (badness 2237) has occurred while \output is active []
-
- [26])
-(./lection4.tex [27
-
+]) (./lection4.tex [27
 
 
 
@@ -1361,14 +1373,12 @@ Underfull \vbox (badness 2237) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (6.92802pt too wide) detected at line 122
- []$[]  [][] \OT1/cmr/m/n/12 = [][] = [][] =$ 
+Overfull \hbox (16.92802pt too wide) detected at line 122
+ []$[]   [][] \OT1/cmr/m/n/12 = [][] = [][] =$ 
  []
 
+[30
 
-Underfull \vbox (badness 4913) has occurred while \output is active []
-
- [30
 
 
 
@@ -1376,22 +1386,17 @@ Underfull \vbox (badness 4913) has occurred while \output is active []
 
 
 ]
-[31
+Overfull \hbox (27.13197pt too wide) detected at line 186
+\OMS/cmsy/m/n/12 J\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ] = [] \OM
+L/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; y[]\OT1/cmr/m/n/12 ) \OM
+L/cmm/m/it/12 dx;  \OMS/cmsy/m/n/12 K \OT1/cmr/m/n/12 = [][]
+ []
 
+[31
 
 
 ] [32
 
-] [33
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1.
-16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.314 \end{gather*}
-                   
 
 ]
 Overfull \hbox (12.18707pt too wide) in paragraph at lines 316--316
@@ -1399,16 +1404,25 @@ Overfull \hbox (12.18707pt too wide) in paragraph at lines 316--316
 | 
  []
 
-[34
+[33
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.331 \end{equation*}
+                     
+
+
+
+] [34
 
 
 
 
-] [35
+]) (./lection5.tex [35
 
-
-
-]) (./lection5.tex [36
 
 ]
 Р›РµРєС†РёСЏ 5.
@@ -1417,7 +1431,7 @@ Overfull \hbox (7.00832pt too wide) in paragraph at lines 3--3
 |[]\T2A/cmr/bx/n/17.28 Квадратичный функ-ци-о-нал. Опе-ра-тор Штурма--Лиувилля
  []
 
-[37
+[36
 
 
 
@@ -1432,19 +1446,30 @@ Overfull \hbox (5.8106pt too wide) in paragraph at lines 96--96
 []$[]$ 
  []
 
-[38] [39
+
+Overfull \hbox (0.67383pt too wide) in paragraph at lines 131--140
+[]\T2A/cmr/m/n/12 Пусть [] $\OMS/cmsy/m/n/12 )$ [] \T2A/cmr/m/n/12 и $[]$. 
+ []
+
+[37] [38
 
 
 
 
 
 ]
-Overfull \hbox (8.17758pt too wide) in paragraph at lines 289--289
+Overfull \hbox (8.17758pt too wide) in paragraph at lines 290--290
 |[]\T2A/cmr/bx/n/17.28 Экстремальные свой-ства соб-ствен-ных зна-че-ний и соб-с
 твен-
  []
 
-[40
+[39
+
+
+
+
+
+] [40
 
 
 
@@ -1453,38 +1478,42 @@ Overfull \hbox (8.17758pt too wide) in paragraph at lines 289--289
 ] [41
 
 
-
-
-
 ] [42
 
 
-] [43
 
 
 
 
 
-
-
-]) (./lection6.tex [44
+]) (./lection6.tex [43
 
 
 ]
 Р›РµРєС†РёСЏ 6.
 
-Overfull \hbox (3.07034pt too wide) in paragraph at lines 18--19
+Overfull \hbox (3.07034pt too wide) in paragraph at lines 19--20
 []\T2A/cmr/m/n/12 Пусть $\OML/cmm/m/it/12 '[]; [] ; '[]$ \T2A/cmr/m/n/12 --- пр
 о-из-воль-ный на-бор функ-ций из $\U/rsfs/m/n/12 L| [][][]$\T2A/cmr/m/n/12 , $\
 OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 2 K$\T2A/cmr/m/n/12 , $\OML/cmm/m/it/12 y \O
 MS/cmsy/m/n/12 ? \OML/cmm/m/it/12 '[]; [] ; '[]$\T2A/cmr/m/n/12 .
  []
 
-[45
+[44
 
 
 
 
+
+
+
+
+
+
+
+
+
+] [45
 
 
 
@@ -1498,31 +1527,16 @@ MS/cmsy/m/n/12 ? \OML/cmm/m/it/12 '[]; [] ; '[]$\T2A/cmr/m/n/12 .
 
 
 
-
-
-
-
-
-
 ] [47
 
 
 
-]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 182--184
-[]$[]$ 
- []
-
-[48
-
-
-
 
 
 ]
-Underfull \vbox (badness 1331) has occurred while \output is active []
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [49
+ [48
 
 
 
@@ -1532,37 +1546,44 @@ Underfull \vbox (badness 1331) has occurred while \output is active []
 
 
 ]
-[50
+[49
 
 
 
 
-] [51
+] [50
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.333 	\end{equation}
-                     
+l.334 	\begin{equation}
+                       
 
 
 
 
-]) (./lection7.tex [52
+]) (./lection7.tex [51
 
 
 
 
 ]
 Р›РµРєС†РёСЏ 7.
-[53
+[52
 
 
 
 
 
+
+
+
+
+
+
+] [53
 
 
 
@@ -1574,19 +1595,12 @@ l.333 	\end{equation}
 
 
 
-
-
-] [55
-
-
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 \end{equation*}
+l.154 \end{equation*}
                      
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
@@ -1594,7 +1608,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 \end{equation*}
+l.154 \end{equation*}
                      
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
@@ -1602,36 +1616,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 \end{equation*}
+l.154 \end{equation*}
                      
 
 
 ]
-<picture1.png, id=1043, 412.16484pt x 213.04594pt>
+<picture1.png, id=1114, 412.16484pt x 213.04594pt>
 File: picture1.png Graphic file (type png)
 <use picture1.png>
 Package pdftex.def Info: picture1.png  used on input line 173.
 (pdftex.def)             Requested size: 366.46977pt x 189.42824pt.
-<picture2.png, id=1045, 412.91766pt x 209.65828pt>
+<picture2.png, id=1116, 412.91766pt x 209.65828pt>
 File: picture2.png Graphic file (type png)
 <use picture2.png>
 Package pdftex.def Info: picture2.png  used on input line 187.
 (pdftex.def)             Requested size: 366.46977pt x 186.077pt.
- [56
+ [55
 
  <./picture1.png>]pdfTeX warning (ext4): destination with the same identifier (
 name{equation.7.1.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.216 \end{multline}
-                     [57
+                     [56
 
 
- <./picture2.png>] [58
+ <./picture2.png>] [57
 
-]) (./lection8.tex [59]
+]) (./lection8.tex [58]
 Р›РµРєС†РёСЏ 8.
-[60
+[59
 
 
 
@@ -1643,79 +1657,134 @@ l.216 \end{multline}
 
 
 
-]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 76.
+] [60] [61
 
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 76.
-
-[61
 
 
 ] [62
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.233 \end{equation*}
+                     
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.233 \end{equation*}
+                     
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.233 \end{equation*}
+                     
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.233 \end{equation*}
+                     
 
 
-] [63
+]pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1
+.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l8:eq:8}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.8.1.8}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l8:eq:8}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.8.1.8}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l8:eq:8}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.8.1.8}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l8:eq:8}
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 260.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+
+LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4.2> not available
+(Font)              size <5> substituted on input line 260.
+
+[63
+
+
 
 ] [64
 
-] [65
+]
 
+LaTeX Warning: Reference `l8:eq:1.7b' on page 65 undefined on input line 369.
 
+[65
 
 ] [66
 
 
 
+] [67
 
 
-]) (./lection9.tex [67]
+
+
+
+]) (./lection9.tex [68]
 Р›РµРєС†РёСЏ 9.
-[68
+[69
 
 
 
 
 
-
-
-
-
-
-
-
-] [69
 
 
 
@@ -1726,24 +1795,32 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4.2> not available
 ] [70
 
 
+
+
+
+
+
 ] [71
 
 
-] [72] [73
+] [72
 
 
-
-] [74
-
+] [73] [74
 
 
 
 ] [75
 
 
-]) (./lection10.tex [76]
+
+
+] [76
+
+
+]) (./lection10.tex [77]
 Р›РµРєС†РёСЏ 10.
-[77
+[78
 
 
 
@@ -1763,13 +1840,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
 l.36 \begin{equation}
                      \label{l10:eq:2}
 
-] [78pdfTeX warning (ext4): destination with the same identifier (name{equation
-.10.1.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.97 \end{tikzpicture}
-                      
+]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
+1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     \label{l10:eq:2}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.10.1.3}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     \label{l10:eq:2}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.10.1.3}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     \label{l10:eq:2}pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.10.1.3}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     \label{l10:eq:2} [79
 
 
 
@@ -1787,19 +1881,12 @@ Overfull \hbox (1.99521pt too wide) in paragraph at lines 124--125
 m/it/12 u\OT1/cmr/m/n/12 ]$\T2A/cmr/m/n/12 ,
  []
 
-[79] [80
+[80
+
+] [81
 
 
 
-
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.189 \begin{equation}
-                      \label{l10:eq:12b} [81
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
@@ -1812,6 +1899,51 @@ h the same identifier (name{equation.10.1.14}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
+l.254 	\begin{equation}
+                       \label{l10:eq:13a}pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.10.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.254 	\begin{equation}
+                       \label{l10:eq:13a}pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.10.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.254 	\begin{equation}
+                       \label{l10:eq:13a} [82pdfTeX warning (ext4): destination
+ with the same identifier (name{equation.10.1.14}) has been already used, dupli
+cate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.260 	\end{equation}
+                     
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
+1.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.262 	\begin{equation}
+                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.10.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.262 	\begin{equation}
+                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.10.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.262 	\begin{equation}
+                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.10.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
 l.262 	\begin{equation}
                        \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
 h the same identifier (name{equation.10.1.14}) has been already used, duplicate
@@ -1819,14 +1951,25 @@ h the same identifier (name{equation.10.1.14}) has been already used, duplicate
 <to be read again> 
                    \relax 
 l.270 	\begin{equation}
-                       \label{l10:eq:14} [82
-
-
-
-
-
-
-]
+                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.10.1.14}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.270 	\begin{equation}
+                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.10.1.14}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.270 	\begin{equation}
+                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.10.1.14}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.270 	\begin{equation}
+                       \label{l10:eq:14}
 Overfull \hbox (15.58736pt too wide) in paragraph at lines 303--305
 \T2A/cmr/m/n/12 Поэтому в си-лу [] $[]$ и [] $[]$ мы по-лу-ча-ем, ис-поль-зуя [
 ], [] 
@@ -1849,10 +1992,18 @@ Overfull \hbox (15.58736pt too wide) in paragraph at lines 303--305
 
 
 
+
 ] [85
 
 
-]) [86] [87
+
+
+
+
+]) [86
+
+
+] [87
 
 
 ] (./lection11.tex
@@ -1878,7 +2029,7 @@ Overfull \hbox (12.25089pt too wide) detected at line 314
  []
 
 
-Underfull \vbox (badness 2478) has occurred while \output is active []
+Underfull \vbox (badness 1412) has occurred while \output is active []
 
  [91
 
@@ -1913,12 +2064,42 @@ l.371 	\end{equation}
 1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.414 	\begin{equation}
+l.415 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 	\begin{equation}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.11.1.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 	\begin{equation}
+l.421 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.421 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.421 	\begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.11.1.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.421 	\begin{equation}
                        ) (./lection12.tex [93
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
@@ -1991,10 +2172,9 @@ l.67 \begin{subequations}
 
 
 
-]) (./lection13.tex [100
 
 
-]
+]) (./lection13.tex [100]
 Р›РµРєС†РёСЏ 13.
 [101
 
@@ -2021,20 +2201,38 @@ l.67 \begin{subequations}
 
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.2
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.89 \end{equation}
+                   
+
 ]pdfTeX warning (ext4): destination with the same identifier (name{equation.13.
 2.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
-                     \label{l13:eq:10A} [103pdfTeX warning (ext4): destination 
-with the same identifier (name{equation.13.2.4}) has been already used, duplica
-te ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.137 \end{equation*}
-                     
-
+                     \label{l13:eq:10A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.13.2.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     \label{l13:eq:10A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.13.2.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     \label{l13:eq:10A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.13.2.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     \label{l13:eq:10A} [103
 
 
 
@@ -2043,8 +2241,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.13.2
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.137 \end{equation*}
-                     
+l.146 \begin{equation*}
+                       
 
 
 
@@ -2056,20 +2254,21 @@ l.137 \end{equation*}
 ] [105
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.13.
-2.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.234 \begin{equation}
-                      \label{l13:eq:19} [106
+] [106pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.13.2.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.283 
+      
+
+
 
 
 
 
 
 ]) (./lection14.tex [107
-
-
 
 ]
 Р›РµРєС†РёСЏ 14.
@@ -2098,8 +2297,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.14.1
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 РЈ
-        СЂР°РІРЅРµРЅРёРµ~\eqref{l14:eq:13} РјРѕР¶РµС‚ Р±С‹С‚СЊ СЂРµС€РµРЅРѕ ...
+l.106 
+      
+
 
 
 
@@ -2110,11 +2310,10 @@ l.105 РЈ
 
 
 
-] [111
+]) (./lection15.tex [111
 
 
-
-]) (./lection15.tex [112]
+] [112]
 Р›РµРєС†РёСЏ 15.
 [113
 
@@ -2145,6 +2344,7 @@ l.105 РЈ
 
 
 
+
 ] [117
 
 
@@ -2160,11 +2360,10 @@ l.105 РЈ
 
 
 
-]) (./lection16.tex [119
-
-]
+]) (./lection16.tex [119]
 Р›РµРєС†РёСЏ 16.
 [120
+
 
 
 
@@ -2185,8 +2384,9 @@ l.105 РЈ
 
 
 
-
 ] [122
+
+
 
 
 
@@ -2204,36 +2404,443 @@ l.105 РЈ
 
 
 
-
 ] [124
 
 
 
 
 
-]) [125
+]) (./lection17.tex [125
+
+
+
+
+]
+Р›РµРєС†РёСЏ 17.
+[126
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [127
+
+
+
+
+
+
+
+
+] [128
+
+
+
+
+] [129
+
 
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
+Overfull \hbox (4.2759pt too wide) in paragraph at lines 245--246
+[]\T2A/cmr/m/n/12 Рассмотрим вкрат-це за-да-чу о \T2A/cmr/m/it/12 ко-ле-ба-ни-я
+х мем-бра-ны со сво-бод-ной гра-ни-цей\T2A/cmr/m/n/12 . Вме-сто усло-вия []
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.17.1
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 \begin{equation}
+                      \label{l17:eq:2A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.3}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.246 \begin{equation}
+                      \label{l17:eq:2A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.3}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.246 \begin{equation}
+                      \label{l17:eq:2A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.3}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.246 \begin{equation}
+                      \label{l17:eq:2A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.250 \begin{equation}
+                      \label{l17:eq:6A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.250 \begin{equation}
+                      \label{l17:eq:6A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.250 \begin{equation}
+                      \label{l17:eq:6A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.250 \begin{equation}
+                      \label{l17:eq:6A}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.17.1.11}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l17:eq:10A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.11}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l17:eq:10A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.11}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l17:eq:10A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.11}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{l17:eq:10A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.16}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.256 \begin{equation}
+                      \label{l17:eq:15A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.16}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.256 \begin{equation}
+                      \label{l17:eq:15A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.16}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.256 \begin{equation}
+                      \label{l17:eq:15A}pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.17.1.16}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.256 \begin{equation}
+                      \label{l17:eq:15A}
+Overfull \hbox (4.27588pt too wide) in paragraph at lines 265--266
+\T2A/cmr/m/n/12 ства, бу-дет по-вто-рјн вы-вод фор-мул для соб-ствен-ных зна-че
+-ний и соб-ствен-ных функ-ций за-дач [],
+ []
+
+[130
+
+
+
+
+
+
+]) (./lection18.tex [131]
+Р›РµРєС†РёСЏ 18.
+[132
+
+
+
+
+
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.52 \end{equation}
+                   
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.52 \end{equation}
+                   
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.52 \end{equation}
+                   
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.52 \end{equation}
+                   
+
+] [133
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.101 \begin{equation}
+                      \label{l18:eq:10}
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.101 \begin{equation}
+                      \label{l18:eq:10}
+
+
+
+]
+Overfull \hbox (2.66592pt too wide) in paragraph at lines 126--127
+\T2A/cmr/m/n/12 В си-лу [] функ-ция $\OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 ^^Z\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 не яв-ля-ет-ся вто-рым ли-ней
+-но неза-ви-си-мым ре-ше-ни-ем урав-не-ния [],
+ []
+
+[134
+
+
+
+] [135
+
+
+
+
+
+] [136
+
+
+
+
+
+
+
+]) (./lection19.tex [137
+
+
+
+
+]
+Р›РµРєС†РёСЏ 19.
+[138
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Overfull \hbox (7.12454pt too wide) in paragraph at lines 62--63
+[]\T2A/cmr/m/n/12 утверждения сле-ду-ет из нера-вен-ства [], ко-то-рое по-ка-зы
+-ва-ет, что нор-ма $\OML/cmm/m/it/12 v[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; t\
+OT1/cmr/m/n/12 )$
+ []
+
+[139
+
+]
+Overfull \hbox (23.23541pt too wide) in paragraph at lines 87--89
+\T2A/cmr/m/n/12 Решаем за-да-чу []--[] ме-то-дом Фу-рье. Ищем сна-ча-ла ре-ше-н
+ие $\OML/cmm/m/it/12 u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 )
+$\T2A/cmr/m/n/12 , удо-вле-тво-ря-ю-щее [], []
+ []
+
+[140
+
+
+
+
+
+
+
+
+
+] [141
+
+
+
+
+
+
+]
+Overfull \hbox (5.05774pt too wide) in paragraph at lines 240--241
+[]\T2A/cmr/m/n/12 Используем те-перь прин-цип мак-си-му-ма для \T2A/cmr/m/it/12
+ до-ка-за-тель-ства един-ствен-но-сти ре-ше-ния и непре-
+ []
+
+[142
+
+
+
+
+] [143
+
+
+
+
+
+
+
+
+] [144
+
+
+
+
+
+
+]
+Overfull \hbox (8.43303pt too wide) in paragraph at lines 351--352
+[]
+ []
+
+) (./lection20.tex [145
+
+
+
+
+]
+Р›РµРєС†РёСЏ 20.
+[146
+
+
+
+
+
+
+
+
+
+
+
+] [147
+
+
+
+
+] [148
+
+
+
+
+
+
+] [149
+
+
+
+
+
+
+
+
+]
+Overfull \hbox (9.54213pt too wide) in paragraph at lines 300--302
+\T2A/cmr/m/n/12 то есть для по-сле-до-ва-тель-но-сти $[]\OT1/cmr/m/n/12 (\OML/c
+mm/m/it/12 x; x[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 вы-пол-ня-ет-ся [] зна-чит,
+ $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; x[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 
+--- $\OML/cmm/m/it/12 ^^N$\T2A/cmr/m/n/12 -последовательность. 
+ []
+
+[150
+
+
+
+
+]
+Overfull \hbox (5.50539pt too wide) detected at line 348
+ []$[]  \OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/1
+2 ^^@ \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) = [] + [] \OMS/cmsy/m/n/12 ^^A [] [
+] \OT1/cmr/m/n/12 =$ 
+ []
+
+[151
+
+
+
+
+] [152
+
+
+
+]) [153]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 25391 strings out of 480682
- 438715 string characters out of 5908554
- 732004 words of memory out of 5000000
- 39851 multiletter control sequences out of 15000+600000
+ 25787 strings out of 480682
+ 443640 string characters out of 5908554
+ 745890 words of memory out of 5000000
+ 40049 multiletter control sequences out of 15000+600000
  571323 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,72p,2042b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2278,11 +2885,11 @@ blic/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-su
 per/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl12
 00.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.pdf" (125 pages, 1163082 bytes).
+Output written on "Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.pdf" (153 pages, 1306473 bytes).
 
 PDF statistics:
- 2397 PDF objects out of 2487 (max. 8388607)
- 2170 compressed objects within 22 object streams
- 695 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3096 PDF objects out of 3580 (max. 8388607)
+ 2763 compressed objects within 28 object streams
+ 884 named destinations out of 1000 (max. 500000)
+ 611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

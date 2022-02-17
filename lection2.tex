@@ -32,7 +32,7 @@
 	
 	\item $F=F(y')$. Уравнение $\der{}{x}F_{y'}=0\rightarrow F_{y'}=const$ и при $F_{y'y'}\neq0$ мы получаем, что $y(x)=c_1\cdot x+c_2$, где константы $c_1$ и $c_2$ находятся из граничных условий.
 	
-	\item $F=F(y,y')$ --- нет явной зависимости от аргумента $x$, только через $y(x)$, $y'(x)$. Это наиболее часто встречающийся частный случай. Покажем, что в этом случае уравнение Эйлера имеет первый интеграл
+	\item $F=F(y,y')$ --- нет явной зависимости от аргумента $x$, зависимость только через $y(x)$, $y'(x)$. Это наиболее часто встречающийся частный случай. Покажем, что в этом случае уравнение Эйлера имеет первый интеграл
 	\begin{equation}
 		\label{l2:eq:4}
 		\hfill F-y'\cdot F_{y'}=const.\hfill
@@ -92,15 +92,15 @@
 Для нахождения траектории света от $A$ к $B$ надо найти $\min\limits_{\Gamma}\,T[\Gamma]$ по гладким кривым $\Gamma$, соединяющим $A$ и $B$.
 \vspace{0.2cm}
 
-Рассмотрим теперь общий случай. Пусть $\bm{y}(x)=\{y_1,\ldots,y_n\}$ --- вектор--функция в $(n+1)$--мерном пространстве, $a\leqslant x\leqslant b$. Или по-другому $\Gamma=\{y_1,\ldots,y_n\}$ --- кривая в $(n+1)$--мерном пространстве. Пусть 
+Рассмотрим теперь общий случай. Пусть $\bm{y}(x)=\{y_1,\ldots,y_n\}$ --- вектор--функция в $(n+1)$--мерном пространстве, где $y_i=y_i(x)$ $a\leqslant x\leqslant b$. Или по-другому $\Gamma=\{y_1,\ldots,y_n\}$ --- кривая в $(n+1)$--мерном пространстве. Пусть 
 \begin{equation*}
 	\hfill\J[\Gamma]=\J[\bm{y}]=\int\limits_a^b F(x,y_1,\ldots y_n,y'_1,\ldots,y'_n)\,dx\text{ --- функционал на вектор--функциях } \bm{y}(x),\hfill
 \end{equation*}
-$F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое. Будем говорить, что $\bm{y}(x)\in\Cfn[{[a,b]}]{k}$, если $y_j(x)\in\Cfn[{[a,b]}]{k},\ j=\overline{1,n}$. Пусть $A=(a,y_1^0,\ldots,y_n^0)$, $B=(b,y_1^1,\ldots,y_n^1)$ --- произвольные точки в $\mathbb{R}^{n+1}$. Будем говорить, что кривая $\Gamma=\bm{y}(x)$ проходит через точку $A\{B\}$, если $y_i(a)=y_i^0,\ i=\overline{1,n}$ $\left\{y_i(b)=y_i^1,\ i=\overline{1,n}\right\}$. Пусть
+$F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое. Будем говорить, что $\bm{y}(x)\in\Cfn[{[a,b]}]{k}$, если $y_j(x)\in\Cfn[{[a,b]}]{k},\ j=\overline{1,n}$. Пусть $A=(a,y_1^0,\ldots,y_n^0)$, $B=(b,y_1^1,\ldots,y_n^1)$ --- произвольные фиксированные точки в $\mathbb{R}^{n+1}$. Будем говорить, что кривая $\Gamma=\bm{y}(x)$ проходит через точку $A\{B\}$, если $y_i(a)=y_i^0,\ i=\overline{1,n}$ $\left\{y_i(b)=y_i^1,\ i=\overline{1,n}\right\}$. Пусть
 \begin{equation*}
-	\K=\left\{\bm{y}(x)|\bm{y}=(y_1,\ldots,y_n),\bm{y}\in\Cfn[{[a,b]}]{1},\ A=(a,\bm{y}(a)),\,B=(b,\bm{y}(b));\ |y_j(x)|<M,\ j=\overline{1,n},\ x\in[a,b]\right\}_{\displaystyle.}
+	\K=\left\{\bm{y}(x)|\bm{y}=(y_1,\ldots,y_n),\bm{y}\in\Cfn[{[a,b]}]{1},\ (a,\bm{y}(a))=A,\,(b,\bm{y}(b))=B;\ |y_j(x)|<M,\ j=\overline{1,n},\ x\in[a,b]\right\}_{\displaystyle.}
 \end{equation*}
-Мы будем рассматривать задачу на $\displaystyle\min\limits_{\bm{y}\in\K}\,\J[\bm{y}]$, вектор $\bm{\eta}=(\eta_1(x),\ldots,\eta_n(x))$ назовём допустимым изменением, если вектор $\bm{\tilde{y}}\eqdef\bm{y}+t\cdot\bm{\eta}\in\K$\footnote{То есть кривая $\widetilde{\Gamma}$, определяется вектором $\bm{\tilde{y}}(x)=(\tilde{y}_1(x),\ldots,\tilde{y}_n(x))$.} при $|t|\ll1$. Как и в случае простейшей задачи, рассмотренной на прошлой лекции. Можно убедиться, что $\bm{\eta}(x)$ допустимое изменение, если $\bm{\eta}(x)\in\Cfn[{[a,b]}]{1}$ и $\eta_j(a)=\eta_j(b)=0,\ j=\overline{1,n}$.
+Мы будем рассматривать задачу на $\displaystyle\min\limits_{\bm{y}\in\K}\,\J[\bm{y}]$; вектор $\bm{\eta}=(\eta_1(x),\ldots,\eta_n(x))$ назовём допустимым изменением, если вектор $\bm{\tilde{y}}\eqdef\bm{y}+t\cdot\bm{\eta}\in\K$\footnote{То есть кривая $\widetilde{\Gamma}$, определяется вектором $\bm{\tilde{y}}(x)=(\tilde{y}_1(x),\ldots,\tilde{y}_n(x))$.} при $|t|\ll1$. Как и в случае простейшей задачи, рассмотренной на прошлой лекции, можно убедиться, что $\bm{\eta}(x)$ допустимое изменение, если $\bm{\eta}(x)\in\Cfn[{[a,b]}]{1}$ и $\eta_j(a)=\eta_j(b)=0,\ j=\overline{1,n}$.
 
 \begin{_rem}
 	Иногда вместо требования $|y_j|<M,\ j=\overline{1,n}$, для $\bm{y}\in\K$ накладывается требование: кривые $\Gamma$ из \K\ должны лежать в некоторой \emph{открытой} области $\Omega\subset\mathbb{R}^{n+1}$. В определении допустимого изменения в этом случае появляется требование: кривая $\widetilde{\Gamma}$, определяемая функциями $y_1+t\cdot\eta_1,\ldots,y_n+t\cdot\eta_n$, лежит в $\Omega$. Ограничения на $\bm{\eta}$ --- те же, что при условии $|y_j|<M$, но малость $|t|$ зависит от расстояния между кривой $\Gamma$ и границей области $\Omega$.
@@ -131,12 +131,12 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 	\label{l2:eq:7}
 	\hfill\delta\J=0.\hfill
 \end{equation} 
-Таким образом, необходимое условие экстремума --- равенство нулю первой вариации. \eqref{l2:eq:7} означает, что полагая $\bm{\tilde{y}}\eqdef\bm{y}+t\cdot\bm{\eta}=(\underbrace{y_1+t\cdot\eta_1}_{\tilde{y}_1}\ldots,\underbrace{y_i+t\cdot\eta_i}_{\tilde{y}_i}\ldots,\underbrace{y_n+t\cdot\eta_n}_{\tilde{y}_n})$ получим:
+Таким образом, необходимое условие экстремума --- равенство нулю первой вариации. Уравнение~\eqref{l2:eq:7} означает, что полагая $\bm{\tilde{y}}\eqdef\bm{y}+t\cdot\bm{\eta}=(\underbrace{y_1+t\cdot\eta_1}_{\tilde{y}_1}\ldots,\underbrace{y_i+t\cdot\eta_i}_{\tilde{y}_i}\ldots,\underbrace{y_n+t\cdot\eta_n}_{\tilde{y}_n})$ получим:
 \setlength{\abovedisplayskip}{5pt}
 \begin{multline}
 	\label{l2:eq:8}
-	t\cdot\left.\der{}{t}\J[\bm{y}+t\cdot\bm{\eta}]\right|_{t=0}= t\left.\der{}{t}\int\limits_a^b \underbrace{F(x,y_1+t\cdot\eta_1,\ldots,y_n+t\cdot\eta_n,y'_1+t\cdot\eta'_1,\ldots,y'_n+t\cdot\eta'_n)}_{\widetilde{F}}\,dx\right|_{t=0}=\\
-	=t \left.\int\limits_a^b\left(\sum\limits_{i=1}^{n}\widetilde{F}_{\tilde{y}_i}\cdot\eta_i+\sum\limits_{i=1}^{n}\widetilde{F}_{\tilde{y}'_i}\cdot\eta'_i\right)\,dx\right|_{t=0}=\int\limits_a^b\left(\sum\limits_{i=1}^{n}{F}_{{y}_i}\cdot\eta_i+\sum\limits_{i=1}^{n}{F}_{{y}'_i}\cdot\eta'_i\right)\,dx=0.
+	t\cdot\left.\der{}{t}\J[\bm{y}+t\cdot\bm{\eta}]\right|_{t=0}= t\cdot\left.\der{}{t}\int\limits_a^b \underbrace{F(x,y_1+t\cdot\eta_1,\ldots,y_n+t\cdot\eta_n,y'_1+t\cdot\eta'_1,\ldots,y'_n+t\cdot\eta'_n)}_{\widetilde{F}}\,dx\right|_{t=0}=\\
+	=t\cdot \left.\int\limits_a^b\left(\sum\limits_{i=1}^{n}\widetilde{F}_{\tilde{y}_i}\cdot\eta_i+\sum\limits_{i=1}^{n}\widetilde{F}_{\tilde{y}'_i}\cdot\eta'_i\right)\,dx\right|_{t=0}=t\cdot\int\limits_a^b\left(\sum\limits_{i=1}^{n}{F}_{{y}_i}\cdot\eta_i+\sum\limits_{i=1}^{n}{F}_{{y}'_i}\cdot\eta'_i\right)\,dx=0.
 \end{multline}
 Как было сказано на первой лекции, если под интегралом стоят производные от допустимого изменения, надо их истребить. Имеем 
 \begin{equation}
@@ -148,7 +148,7 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 Подставляя \eqref{l2:eq:9} в \eqref{l2:eq:8} получим
 \begin{equation}
 	\label{l2:eq:10}
-	\hfill\delta\J=t\int\limits_a^b\sum\limits_{i=1}^{n}\left(F_{y_i}-\der{}{x}F_{y'_i}\right)\cdot\eta_i\,dx=0.\hfill
+	\hfill\delta\J=t\cdot\int\limits_a^b\sum\limits_{i=1}^{n}\left(F_{y_i}-\der{}{x}F_{y'_i}\right)\cdot\eta_i\,dx=0.\hfill
 \end{equation}
 Пусть теперь $j\in[1,2,\ldots,n]$. Выберем допустимое изменение $\bm{\eta}(x)$ так, что $\eta_i\equiv0$, $i=\overline{1,j-1},\overline{j+1,n}$, а $\eta_j$ --- произвольно. Тогда в силу \eqref{l2:eq:10}
 \begin{equation}
@@ -198,7 +198,7 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 	
 	\item $F=F(x,y',z')$ --- разобрать самостоятельно.
 	
-	\item $F=F(y_1,\ldots,y_n, y'_1,\ldots,y'_n)$ --- нет зависимости от аргумента $x$. Докажем, что в этом случае система уравнений Эйлера--Лагранжа \eqref{l2:eq:13} имеет первый интеграл 
+	\item $F=F(y_1,\ldots,y_n, y'_1,\ldots,y'_n)$ --- нет явной зависимости от аргумента $x$. Докажем, что в этом случае система уравнений Эйлера--Лагранжа \eqref{l2:eq:13} имеет первый интеграл 
 	\begin{equation}
 		\label{l2:eq:17}
 		\hfill F-\sum\limits_{i=1}^{n}y'_i\cdot F_{y'_i}=C.\hfill
@@ -212,7 +212,7 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 
 \section{Принцип Гамильтона.}
 \label{lecture2section4}
-Рассмотрим механическую систему. Она может состоять из конечного числа материальных точек или быть распределённой (например, струна или мембрана). Предположим, что под действием потенциальных сил система из какого-то состояния в момент $t_0$ переходит в другое состояние в момент $t=t_1$. Для нас состояние --- это совокупность координат точек. Принцип Гамильтона даёт ответ на вопрос: по какой траектории система придёт (переместится) из начального состояния в конечное. Пусть $T(t)$ и $V(t)$ --- кинетическая и потенциальная энергия системы в момент $t$ и 
+Рассмотрим механическую систему. Она может состоять из конечного числа материальных точек или быть распределённой (например, струна или мембрана). Предположим, что под действием потенциальных сил система из какого-то состояния в момент $t_0$ переходит в другое состояние в момент $t=t_1$. Для нас состояние --- это совокупность координат точек. Принцип Гамильтона даёт ответ на вопрос: по какой траектории система перейдёт (переместится) из начального состояния в конечное. Пусть $T(t)$ и $V(t)$ --- кинетическая и потенциальная энергия системы в момент $t$ и 
 \begin{equation*}
 	\hfill\J\eqdef\int\limits_{t_0}^{t_1}\left(T(t)-V(t)\right)\,dt.\hfill
 \end{equation*}  
@@ -297,10 +297,10 @@ $F\in\Cfn{2}$, $x\in[a,b]$; $|y_j|<M$, $j=\overline{1,n}$, $y'_j$ --- любое
 	
 \end{tikzpicture} 
 
-Балка жёстко закреплена на концах, поэтому кроме условия обычного закрепления $y(-l)=y(l)=0$ должно выполняться условие $y'(-l)=y'(l)=0$. В положении равновесия у балки будет минимальное значение потенциальной энергии. Когда происходит прогиб балки, то потенциальная энергия за счёт силы тяжести уменьшается, так как уменьшается ордината центра тяжести и увеличивается за счёт появления изгибающего момента. Запишем полное выражение потенциальной энергии балки без вывода
+Балка жёстко закреплена на концах, поэтому кроме условия обычного закрепления $y(-l)=y(l)=0$ должно выполняться условие $y'(-l)=y'(l)=0$. В положении равновесия у балки будет минимальное значение потенциальной энергии. Когда происходит прогиб балки, то потенциальная энергия за счёт силы тяжести уменьшается, так как уменьшается ордината центра тяжести, и увеличивается за счёт появления изгибающего момента. Запишем полное выражение потенциальной энергии балки без вывода
 \begin{equation}
 	\label{l2:eq:19}
-	\hfill E[y]=g\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx.\hfill
+	\hfill E[y]=g\cdot\int\limits_{-l}^{+l}\rho\cdot\sqrt{1+y^{\prime2}}\cdot y\,dx+\frac12\cdot\int\limits_{-l}^{+l}\frac{\mu\cdot y''}{\left(1+y^{\prime2}\right)^{3/2}}\,dx.\hfill
 \end{equation}
 Здесь $g$ --- ускорение силы тяжести, $\rho$ --- плотность на единицу длины балки, $\mu$ --- коэффициент, описывающий упругие свойства балки. Так как её прогиб, очевидно, не большой, то $|y'|\ll1$. Поэтому в \eqref{l2:eq:19} можно пренебречь членом $y^{\prime2}$ и таким образом окончательно мы приходим к задаче:
 \begin{multline*}

@@ -15,30 +15,30 @@
 \contentsline {section}{\numberline {3}Задачи с <<подвижными концами>>.}{25}{section.3.3}%
 \contentsline {chapter}{Лекция~\numberline {4}}{28}{chapter.4}%
 \contentsline {section}{\numberline {1}Изопериметрические задачи.}{28}{section.4.1}%
-\contentsline {section}{\numberline {2}Квадратичный функционал. Оператор Штурма.}{34}{section.4.2}%
-\contentsline {chapter}{Лекция~\numberline {5}}{37}{chapter.5}%
-\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Штурма (Продолжение). }{37}{section.5.1}%
-\contentsline {section}{\numberline {2}Экстремальные свойства собственных значений оператора Штурма.}{40}{section.5.2}%
-\contentsline {chapter}{Лекция~\numberline {6}}{45}{chapter.6}%
-\contentsline {section}{\numberline {1}Теорема сравнения.}{45}{section.6.1}%
-\contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{46}{section.6.2}%
-\contentsline {chapter}{Лекция~\numberline {7}}{53}{chapter.7}%
-\contentsline {section}{\numberline {1}Оператор Штурма с другими граничными условиями.}{53}{section.7.1}%
-\contentsline {chapter}{Лекция~\numberline {8}}{60}{chapter.8}%
-\contentsline {section}{\numberline {1}Обобщённая задача Штурма.}{60}{section.8.1}%
-\contentsline {section}{\numberline {2}Функционал Бесселя. Уравнение Бесселя.}{65}{section.8.2}%
-\contentsline {chapter}{Лекция~\numberline {9}}{68}{chapter.9}%
-\contentsline {section}{\numberline {1}Функционал Бесселя. Уравнение Бесселя. (Продолжение.)}{68}{section.9.1}%
-\contentsline {section}{\numberline {2}Функционалы, зависящие от функций двух переменных.}{71}{section.9.2}%
-\contentsline {section}{\numberline {3}Вариационные задачи со свободной границей.}{74}{section.9.3}%
-\contentsline {chapter}{Лекция~\numberline {10}}{77}{chapter.10}%
-\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Шредингера.}{77}{section.10.1}%
-\contentsline {section}{\numberline {2}Различные обобщения.}{83}{section.10.2}%
-\contentsline {subsection}{\numberline {I}Оператор Штурма. Случай периодических граничных условий.}{83}{subsection.10.2.1}%
+\contentsline {section}{\numberline {2}Квадратичный функционал. Оператор Штурма.}{33}{section.4.2}%
+\contentsline {chapter}{Лекция~\numberline {5}}{36}{chapter.5}%
+\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Штурма (Продолжение). }{36}{section.5.1}%
+\contentsline {section}{\numberline {2}Экстремальные свойства собственных значений оператора Штурма.}{39}{section.5.2}%
+\contentsline {chapter}{Лекция~\numberline {6}}{44}{chapter.6}%
+\contentsline {section}{\numberline {1}Теорема сравнения.}{44}{section.6.1}%
+\contentsline {section}{\numberline {2}Разложение по собственным функциям оператора Штурма.}{45}{section.6.2}%
+\contentsline {chapter}{Лекция~\numberline {7}}{52}{chapter.7}%
+\contentsline {section}{\numberline {1}Оператор Штурма с другими граничными условиями.}{52}{section.7.1}%
+\contentsline {chapter}{Лекция~\numberline {8}}{59}{chapter.8}%
+\contentsline {section}{\numberline {1}Обобщённая задача Штурма.}{59}{section.8.1}%
+\contentsline {section}{\numberline {2}Функционал Бесселя. Уравнение Бесселя.}{66}{section.8.2}%
+\contentsline {chapter}{Лекция~\numberline {9}}{69}{chapter.9}%
+\contentsline {section}{\numberline {1}Функционал Бесселя. Уравнение Бесселя. (Продолжение.)}{69}{section.9.1}%
+\contentsline {section}{\numberline {2}Функционалы, зависящие от функций двух переменных.}{72}{section.9.2}%
+\contentsline {section}{\numberline {3}Вариационные задачи со свободной границей.}{75}{section.9.3}%
+\contentsline {chapter}{Лекция~\numberline {10}}{78}{chapter.10}%
+\contentsline {section}{\numberline {1}Квадратичный функционал. Оператор Шредингера.}{78}{section.10.1}%
+\contentsline {section}{\numberline {2}Различные обобщения.}{84}{section.10.2}%
+\contentsline {subsection}{\numberline {I}Оператор Штурма. Случай периодических граничных условий.}{84}{subsection.10.2.1}%
 \contentsline {subsection}{\numberline {II}Случай неограниченной области.}{84}{subsection.10.2.2}%
-\contentsline {section}{\numberline {3}Оператор Шредингера во всём пространстве.}{84}{section.10.3}%
-\contentsline {subsection}{\numberline {I}Одночастичный случай.}{84}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {II}Многоэллектронный атом с неподвижным ядром.}{85}{subsection.10.3.2}%
+\contentsline {section}{\numberline {3}Оператор Шредингера во всём пространстве.}{85}{section.10.3}%
+\contentsline {subsection}{\numberline {I}Одночастичный случай.}{85}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {II}Многоэлектронный атом с неподвижным ядром.}{86}{subsection.10.3.2}%
 \contentsline {part}{Часть~\CYRB \hspace {1em}Уравнения математической физики.}{87}{part.2}%
 \contentsline {chapter}{Лекция~\numberline {11}}{88}{chapter.11}%
 \contentsline {section}{\numberline {1}Уравнение малых колебаний струны.}{88}{section.11.1}%
@@ -46,9 +46,9 @@
 \contentsline {section}{\numberline {1}Уравнение малых колебаний струны (продолжение).}{94}{section.12.1}%
 \contentsline {section}{\numberline {2}Свободные колебания однородной струны.}{96}{section.12.2}%
 \contentsline {section}{\numberline {3}Понятие о функции Грина.}{99}{section.12.3}%
-\contentsline {section}{\numberline {4}Свободные колебания однородной струны с другими г. у.}{100}{section.12.4}%
+\contentsline {section}{\numberline {4}Свободные колебания однородной струны с другими г. у.}{99}{section.12.4}%
 \contentsline {chapter}{Лекция~\numberline {13}}{101}{chapter.13}%
-\contentsline {section}{\numberline {1}Свободные колебания не однородной струны.}{101}{section.13.1}%
+\contentsline {section}{\numberline {1}Свободные колебания неоднородной струны.}{101}{section.13.1}%
 \contentsline {section}{\numberline {2}Вынужденные колебания однородной струны.}{102}{section.13.2}%
 \contentsline {chapter}{Лекция~\numberline {14}}{108}{chapter.14}%
 \contentsline {section}{\numberline {1}Телеграфные уравнения.}{108}{section.14.1}%
@@ -59,3 +59,18 @@
 \contentsline {chapter}{Лекция~\numberline {16}}{120}{chapter.16}%
 \contentsline {section}{\numberline {1}Случай прямоугольной мембраны.}{120}{section.16.1}%
 \contentsline {section}{\numberline {2}Вынужденные колебания прямоугольной мембраны.}{122}{section.16.2}%
+\contentsline {chapter}{Лекция~\numberline {17}}{126}{chapter.17}%
+\contentsline {section}{\numberline {1}Колебания круглой мембраны.}{126}{section.17.1}%
+\contentsline {chapter}{Лекция~\numberline {18}}{132}{chapter.18}%
+\contentsline {section}{\numberline {1}Функции Бесселя.}{132}{section.18.1}%
+\contentsline {section}{\numberline {2}Модифицированные функции Бесселя.}{135}{section.18.2}%
+\contentsline {section}{\numberline {3}Распространение тепла.}{136}{section.18.3}%
+\contentsline {chapter}{Лекция~\numberline {19}}{138}{chapter.19}%
+\contentsline {section}{\numberline {1}Единственность решения задач теплового распространения.}{138}{section.19.1}%
+\contentsline {section}{\numberline {2}Распространение тепла в однородном стержне без источников.}{140}{section.19.2}%
+\contentsline {section}{\numberline {3}Принцип максимума для решений задач теплопроводности.}{141}{section.19.3}%
+\contentsline {section}{\numberline {4}Решение неоднородного уравнения теплопроводности.}{143}{section.19.4}%
+\contentsline {chapter}{Лекция~\numberline {20}}{146}{chapter.20}%
+\contentsline {section}{\numberline {1}Свойства функции Грина.}{146}{section.20.1}%
+\contentsline {section}{\numberline {2}Распространение тепла в тонкой пластинке.}{148}{section.20.2}%
+\contentsline {section}{\numberline {3}Дельта-функция.}{150}{section.20.3}%

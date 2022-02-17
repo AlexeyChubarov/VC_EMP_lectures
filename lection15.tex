@@ -3,7 +3,7 @@
 \section{Колебания мембраны.}
 \label{lecture15section1}
 \begin{_def}
-	\textbf{Мембрана} --- двумерный аналог струны. Это тонкая плёна не сопротивляется изгибу, а сопротивляется растяжению.
+	\textbf{Мембрана} --- двумерный аналог струны. Это тонкая плёнка не сопротивляющаяся изгибу, а сопротивляющаяся растяжению.
 \end{_def}
 Мы считаем, что эта плёнка натянута на некоторую плоскую кривую, ограничивающую область $G$. Выберем систему координат так, чтобы область $G$ лежала в плоскости $x0y$. Обозначим через $u(x,y,t)$ смещение точки $x,y$ в момент $t$ и будем предполагать,
 \begin{enumerate1}
@@ -47,11 +47,12 @@
 
 Вывод уравнения колебаний мембраны мы проведём с помощью принципа Гамильтона так же, как выводили уравнение колебаний струны. Составим интеграл действия
 \begin{equation*}
-	\hfill\J[u]=\int\limits_{t_0}^{t_1}(T-V)\,dt\hfill
+	\hfill\J[u]=\int\limits_{t_0}^{t_1}(T-V)\,dt,\hfill
 \end{equation*}
+где $T(t)$ и $V(t)$ суть кинетическая и потенциальная энергия мембраны в момент $t$,
 и затем из условия $\delta\J=0$ получим уравнение колебаний и граничные условия. Пусть $\rho(x,y,t)$ --- плотность мембраны. Тогда очевидно, что кинетическая энергия мембраны 
 \begin{equation}\label{l15:eq:1}
-	\hfill T=\frac{1}{2}\cdot\iint\limits_{G}\rho\cdot u_t^2\,dxdy,\hfill
+	\hfill T=\frac{1}{2}\cdot\iint\limits_{G}\rho\cdot u_t^2\,dxdy;\hfill
 \end{equation} 
 потенциальная энергия
 \begin{equation}\label{l15:eq:2}
@@ -128,9 +129,11 @@
 \begin{enumerateD}
 	\item cвободная граница: $\displaystyle \left.\pder{u}{n}\right|_{\partial G}=0$,
 	\item наличие на границе распределённой силы с линейной плотностью $g(x,y,t)$: $\displaystyle \left.\pder{u}{n}\right|_{\partial G}=\frac{g}{\mu}$,
-	\item упругое закрепление границы: $\displaystyle\left.\pder{u}{n}+\sigma\cdot u\right|_{\partial G}=0$, $\sigma>0$. 
+	\item упругое закрепление границы: $\displaystyle\left.\pder{u}{n}+\sigma\cdot u\right|_{\partial G}=0$, $\sigma>0$, 
 \end{enumerateD}
-Отметим, что аналогично тому, что на концах струны могут быть различные граничные условия, так и на разных участках границы $\partial G$ возможно задание различных условий. Например, если $\Gamma=\partial G$, то на части $\Gamma_1$ кривой $\Gamma$ может быть закрепление, а другая часть $\Gamma_2$ может быть свободной.
+нормаль везде внешняя.
+
+ Отметим, что аналогично тому, что на концах струны могут быть различные граничные условия, так и на разных участках границы $\partial G$ возможно задание различных условий. Например, если $\Gamma=\partial G$, то на части $\Gamma_1$ кривой $\Gamma$ может быть закрепление, а другая часть $\Gamma_2$ может быть свободной.
 \vspace{0.2cm}
 
 
@@ -177,7 +180,7 @@
 \begin{equation*}
 	\hfill u_{\text{ч}}(P,t)=v(P)\cdot T(t).\hfill
 \end{equation*}
-Подставив в~\eqref{l15:eq:7} и поделив потом на произведение $v\cdot T\cdot a^2$ получим аналогично задаче о колебаниях струны 
+Подставив это выражение в~\eqref{l15:eq:7} и поделив потом на произведение $v\cdot T\cdot a^2$,  получим аналогично задаче о колебаниях струны 
 \begin{equation*}
 	\hfill \frac{T''}{a^2\cdot T}=\frac{\Delta v}{v}=-\lambda,\hfill
 \end{equation*} 
@@ -188,7 +191,7 @@
 \begin{equation}\label{l15:eq:12}
 	\hfill -\Delta v=\lambda\cdot v.\hfill
 \end{equation}
-Из~\eqref{l15:eq:9} и~\eqref{l15:eq:10} получаем, что 
+Из~\eqref{l15:eq:9} и~\eqref{l15:eq:10} следует, что 
 \begin{equation}\label{l15:eq:13}
 	\hfill v\Big|_{\partial G}=0\hfill
 \end{equation}
@@ -214,7 +217,7 @@
 \begin{equation}\label{l15:eq:15}
 	\hfill u\eqdef\sum\limits_{n=1}^{\infty}v_n(P)\cdot T_n(t).\hfill
 \end{equation}
-Если ряд~\eqref{l15:eq:15} сходится равномерно при выбранных $A_n$, $B_n$ и допускает двукратное почленное дифференцирование по $x$, $y$, $t$, то~\eqref{l15:eq:15} есть решение~\eqref{l15:eq:7} (при $f=0$) и функция $u$ удовлетворяем граничному условию (\eqref{l15:eq:13} или~\eqref{l15:eq:14}). Далее пытаемся подобрать числа $A_n$ и $B_n$ в выражении $T_n(t)$ так, чтобы выполнялись начальные условия~\eqref{l15:eq:8}. Имеем
+Если ряд~\eqref{l15:eq:15} сходится равномерно при выбранных $A_n$, $B_n$ и допускает двукратное почленное дифференцирование по $x$, $y$, $t$, то~\eqref{l15:eq:15} есть решение~\eqref{l15:eq:7} (при $f=0$) и функция $u$ удовлетворяет граничному условию (\eqref{l15:eq:13} или~\eqref{l15:eq:14}). Далее пытаемся подобрать числа $A_n$ и $B_n$ в выражении $T_n(t)$ так, чтобы выполнялись начальные условия~\eqref{l15:eq:8}. Имеем
 \begin{equation}\label{l15:eq:16}
 	u(P,0)=\sum\limits_{n=1}^{\infty}T_n(0)\cdot v_n(P)=\sum\limits_{n=1}^{\infty}A_n\cdot v_n(P)=\phi(P),
 \end{equation}
@@ -227,7 +230,7 @@
 	\Rightarrow\quad B_n=\big(\psi(P),v_n(P)\big)\cdot\omega_n^{-1}.
 \end{multline*}
 
-Таким образом мы можем решить поставленную задачу, если знать собственные значения и собственные функции оператора Лапласа --- $\lambda_n$ и $v_n$. Увы, их аналитическое нахождение возможно лишь для области $G$ специального вида, а в общем случае они могут быть найдены только численно.
+Таким образом мы можем решить поставленную задачу, если знаем собственные значения и собственные функции оператора Лапласа --- $\lambda_n$ и $v_n$. Увы, их аналитическое нахождение возможно лишь для областей $G$ специального вида, а в общем случае они могут быть найдены только численно.
 
 Заметим, что в рассмотренных позже случаях, когда нахождение $\lambda_n$ и $v_n$ возможно, индекс $n$ будет векторным (мультииндексом) скажем $\bm{n}=(k,m)$ или $\bm{n}=(k,m,i)$ однако все проведённые выше рассуждения сохраняются и в этом случае.
 \section{Вынужденные колебания однородной мембраны.}
@@ -245,15 +248,15 @@
 \end{equation} 
 или
 \begin{equation}\label{l15:eq:21}
-	\hfill \left. \pdder{u}{n}\right|_{\partial G}=0.\hfill
+	\hfill \left. \pder{u}{n}\right|_{\partial G}=0.\hfill
 \end{equation} 
 Как и в задаче о колебаниях струны, надо найти решение уравнения~\eqref{l15:eq:18} с граничными условиями~\eqref{l15:eq:20} или~\eqref{l15:eq:21}, а потом добавить к нему решение~\eqref{l15:eq:18} с $\widetilde{f}=0$ и подходящими начальными условиями.
 
-Рассмотрим сначала случай стационарной силы: $\widetilde{f}=\widetilde{f}(P)$. Разложим функцию $\widetilde{f}(P)$ по собственным функциям $v_n(P)$ оператора Лапласа и будем искать стационарное решение~\eqref{l15:eq:18}, то есть решение уравнения
+Рассмотрим сначала случай стационарной силы: $\widetilde{f}=\widetilde{f}(P)$. Разложим функцию $\widetilde{f}(P)$ по нормированным собственным функциям $v_n(P)$ оператора Лапласа с граничными условиями задачи $\left(\sum\limits_{n=1}^{\infty}\widetilde{f}_n\cdot v_n\right)$ и будем искать стационарное решение~\eqref{l15:eq:18}, то есть решение уравнения
 \begin{equation}\label{l15:eq:22}
 	\hfill-a^2\cdot\Delta u=\widetilde{f}(P),\hfill
 \end{equation}
-в виде ряда $\displaystyle u=\sum\limits_{n=1}^{\infty}C_n\cdot v_n$ с неизвестными коэффициентами $C_n$. Подставляя в~\eqref{l15:eq:22} разложение для $u$ и $\widetilde{f}$ и учитывая, что $-\Delta v_n=\lambda_n\cdot v_n$ получим
+в виде ряда $\displaystyle u=\sum\limits_{n=1}^{\infty}C_n\cdot v_n$ с неизвестными коэффициентами $C_n$. Подставляя в~\eqref{l15:eq:22} разложение для $u$ и $\widetilde{f}$ и учитывая, что $-\Delta v_n=\lambda_n\cdot v_n$, получим
 \begin{equation}\label{l15:eq:23}
 	\hfill\sum\limits_{n=1}^{\infty}a^2\cdot C_n\cdot v_n\cdot\lambda_n=\sum\limits_{n=1}^{\infty}\widetilde{f}_n\cdot v_n,\hfill
 \end{equation}
@@ -310,7 +313,7 @@
 		b'_n(0)&=&\big(w_t(P,0),v_n\big)&=&\displaystyle\iint\limits_{G}w_t(P,0)\cdot v_n(P)dG.
 	\end{array}\hfill
 \end{equation*}
-Если взять $w(P,0)=w'(P,0)=0$, то $b_n(0)=b_n'(0)=0$ и аналогияно случаю вынужденных колебаний струны (лекция~13) мы получим 
+Если взять $w(P,0)=w_t(P,0)=0$, то $b_n(0)=b_n'(0)=0$ и аналогияно случаю вынужденных колебаний струны (лекция~\ref{lecture13}) мы получим 
 \begin{equation*}
 	\hfill b_n(t)=\frac{1}{\omega_n}\cdot\int\limits_0^t\sin\left(\omega_n\cdot(t-\tau)\right)\cdot\widetilde{f}_n(\tau)\,d\tau=\frac{1}{\omega_n}\cdot\int\limits_0^t\iint\limits_{G}\sin\left(\omega_n\cdot(t-\tau)\right)\cdot\widetilde{f}(P,\tau)\cdot v_n(P)\,dGd\tau.\hfill
 \end{equation*}

@@ -11,7 +11,7 @@
 \begin{equation*}
 	\hfill\mc{D}_{\LL}=\left\{y(x)|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}_{\displaystyle.}\hfill
 \end{equation*}
-Оператор $\LL$ будем рассматривать в пространстве $\fL[{(a,b]}]$.
+Оператор $\LL$ будем рассматривать в пространстве $\fL[{[a,b]}]$.
 \begin{equation*}
 	\hfill \fL\eqdef\left\{y(x)\middle|\int\limits_a^b|y(x)|^2\,dx<+\infty\right\}_{\displaystyle.}\hfill
 \end{equation*}
@@ -72,7 +72,7 @@
 
 Зачем нужно пространство \fL[(a,b)]? В курсе линейной алгебры мы изучали линейные операторы в пространствах со скалярным произведением и выделили некоторые классы операторов, обладающих важными свойствами. Для нас будут важны симметричные (эрмитовы) операторы $A$, для которых
 \begin{equation*}
-	\hfill (Ay,z)=(y,Az),\quad\text{при }y,\,z\in\mc{D}_{\!A}\text{ --- область определения }A.\hfill 
+	\hfill (Ay,z)=(y,Az)\quad\text{при }y,\,z\in\mc{D}_{\!A}\text{ --- область определения }A.\hfill 
 \end{equation*} 
 Мы покажем далее, что оператор Штурма --- эрмитов.
 
@@ -94,7 +94,7 @@
 		z=1&x\in[0,1]\\
 		z_m=0&x\in[0,1]
 	\end{array}$} тогда 
-\parbox[c]{0,25\textwidth}{\fbox{$\sup\limits_{x\in[0,1]}|z_m(x)-z(x)|=1$}},
+\parbox[c]{0,25\textwidth}{\fbox{$\sup\limits_{x\in[0,1]}|z_m(x)-z(x)|=1$}}.
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -128,7 +128,7 @@
 	
 \end{tikzpicture}
 
-пусть \parbox[t]{0,26\textwidth}{
+Пусть \parbox[t]{0,26\textwidth}{
 	$\displaystyle \tilde{z}_m=\begin{cases}
 		m\cdot x&0\leqslant x\leqslant \frac{1}{m}\\
 		1&\!\frac{1}{m}\leqslant x\leqslant 1
@@ -185,11 +185,11 @@
 \end{equation*}					
 то есть метрика в \fL\ <<чувствует>> ситуацию и описывает её более точно.
 
-\noindent Вернёмся теперь к оператору $\LL$. Докажем, что оператор \LL\ --- эрмитов в $\mc{D}_{\LL}$. Пусть $y(x),\,z(x)\in\mc{D}_{\LL}$, тогда
+\noindent Вернёмся теперь к оператору $\LL$. Докажем, что оператор \LL\ --- эрмитов в $\mc{D}_{\LL}$. Пусть $y(x),\,z(x)\in\mc{D}_{\LL}$. Тогда
 \begin{equation*}
-	\big(\LL y,z\big)=\int\limits_a^b \underbrace{\overline{z}}_{v}\cdot\underbrace{\left(-\der{}{x}\Big(Q\cdot y'\Big)\right)\,dx}_{du}+\int\limits_a^b P\cdot y\cdot\overline{z}\,dx=-Q\cdot y'\cdot\overline{z}\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx,
+	\big(\LL y,z\big)=\int\limits_a^b \underbrace{\overline{z}}_{v}\cdot\underbrace{\left(-\der{}{x}\Big(Q\cdot y'\Big)\right)\,dx}_{du}+\int\limits_a^b P\cdot y\cdot\overline{z}\,dx=-Q\cdot y'\cdot\overline{z}\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx.
 \end{equation*}
-так как $z(a)=z(b)=0$, то в итоге 
+Так как $z(a)=z(b)=0$, то в итоге 
 \begin{equation}
 	\label{l5:eq:2}
 	\hfill\big(\LL y,z\big)=\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx.\hfill
@@ -231,13 +231,15 @@
 \begin{equation*}
 	\hfill\big(\LL y,z\big)=\lambda\cdot\big(y,z\big),\hfill
 \end{equation*}
+но
 \begin{equation*}
-	\text{но}\quad\big(\LL y,z\big)=\big(y,\LL z\big)=\big(y,\nu\cdot z\big)=\nu\cdot\big(y,\,z\big)\quad\text{(напомним, что $\nu$ --- вещественно).}
+	\quad\big(\LL y,z\big)=\big(y,\LL z\big)=\big(y,\nu\cdot z\big)=\nu\cdot\big(y,\,z\big)\quad\text{(напомним, что $\nu$ --- вещественно).}
 \end{equation*}
+Таким образом
 \begin{equation*}
-	\text{Таким образом}\quad\big(\LL y,z\big)=\nu\cdot\big(y,z\big)=\lambda\cdot\big(y,z\big)\quad\Rightarrow\quad \big(\nu-\lambda\big)\cdot \big(y,z\big)=0\quad\Rightarrow\quad\big(y,z\big)=0.
+	\big(\LL y,z\big)=\nu\cdot\big(y,z\big)=\lambda\cdot\big(y,z\big)\quad\Rightarrow\quad \big(\nu-\lambda\big)\cdot \big(y,z\big)=0\quad\Rightarrow\quad\big(y,z\big)=0.
 \end{equation*}
-То есть~\eqref{l4:eq:4} --- доказано.
+То есть~\eqref{l5:eq:4} --- доказано.
 
 Докажем теперь, что собственные подпространства оператора Штурма одномерны (эквивалентная формулировка: собственные значения не вырождены\footnote{Напомним, что мы называем собственное значение $\lambda$ \textbf{вырожденным}, если для собственного подпространства \Ul,\ $\dim\Ul\geqslant2$}.)
 
@@ -251,12 +253,11 @@
 	\hfill\Ul=\left\{y(x)|y\in\mc{D}_{\LL},\ Ly=\lambda\cdot y\right\}_{\displaystyle.}\hfill
 \end{equation*}
 Докажем, что $\dim\Ul=1$. Перепишем равенство~\eqref{l5:eq:5} в виде
-%\addtocounter{equation}{-1}
 \begin{multline}
 	\label{l5:eq:5a}
-	-\der{}{x}\big(Q\cdot y'\big)+P\cdot y=\lambda\cdot y\quad\Rightarrow\quad-Q\cdot y''-Q'\cdot y'+P\cdot y=\lambda\cdot y\quad\Rightarrow\\\Rightarrow\quad y''+\frac{Q'(x)}{Q(x)}\cdot y'+\frac{\lambda-P}{Q(x)}\cdot y=0.\tag{\theequation a}	
+	-\der{}{x}\big(Q\cdot y'\big)+P\cdot y=\lambda\cdot y\quad\Rightarrow\quad-Q\cdot y''-Q'\cdot y'+P\cdot y=\lambda\cdot y\quad\Rightarrow\\\Rightarrow\quad y''+\frac{Q'(x)}{Q(x)}\cdot y'+\frac{\lambda-P}{Q(x)}\cdot y=0,\quad\text{так как $\Ul\subset\mc{D}_{L}$}.
 \end{multline}
-\addtocounter{equation}{1} Таким образом все собственные функции из собственного подпространства есть решения уравнения~\eqref{l5:eq:5a} с граничными условиями (так как $\Ul\in\mc{D}_{L}$) $y(a)=y(b)=0$.
+ Таким образом все собственные функции из собственного подпространства есть решения уравнения~\eqref{l5:eq:5a} с граничными условиями  $y(a)=y(b)=0$.
 
 Пусть $y_1,\,y_2\in\Ul$. Так как оператор \LL\ --- линейный, то любая линейная комбинация
 \begin{equation*}
@@ -363,11 +364,11 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 	\begin{equation*}
 		\hfill Lz=\nu\cdot z.\hfill
 	\end{equation*}
-	Откуда $\big(Lz,z\big)=\J[z]=\nu$. Так как $z\in\mc{D}_{L}$, то $z\in\Cfn[{[a,b]}]{2}$, $z(a)=z(b)=0$. Кроме того, поскольку $\nu\neq1$, то в силу взаимной ортогональности собственных функций отвечающих \emph{различным} собственным значениям оператора $L$ выполняется $\big(z,y_1\big)=0$. Из вышесказанного вытекает, что $z\in\K_2$ и, следовательно,
+	Откуда $\big(Lz,z\big)=\J[z]=\nu$. Так как $z\in\mc{D}_{L}$, то $z\in\Cfn[{[a,b]}]{2}$, $z(a)=z(b)=0$. Кроме того, поскольку $\nu\neq\lambda_1$, то в силу взаимной ортогональности собственных функций отвечающих \emph{различным} собственным значениям оператора $L$ выполняется $\big(z,y_1\big)=0$. Из вышесказанного вытекает, что $z\in\K_2$ и, следовательно,
 	\begin{equation*}
 		\hfill\nu=\J[z]\geqslant\J[y_2]=\lambda.\hfill
 	\end{equation*} 
-	Следовательно $\lambda$ является вторым по величине собственным значением $\lambda_2$ оператора Штурма и в силу~\eqref{l5:eq:8} \emph{теорема~\ref{l5:s2:teor:2} доказана}. 
+	Следовательно $\lambda$ является вторым по величине собственным значением $\lambda_2$ оператора Штурма. \emph{Теорема~\ref{l5:s2:teor:2} доказана}. 
 \end{proof}
 \begin{proof}[Доказательство теоремы~\ref{l5:s2:teor:3}.]
 	Пусть $\lambda_1<\lambda_2<\ldots<\lambda_{p-1}$ --- первые $(p-1)$ собственные значения оператора Штурма и $y_1,\ y_2,\ldots,y_{p-1}$ --- соответствующие нормированные собственные функции,
@@ -394,7 +395,7 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 	\end{equation*}
 	при $i\leqslant p-1$ по определению класса $\K_p$. Учитывая сказанное, получим в~\eqref{l5:eq:11}
 	\begin{equation*}
-		\hfill0=0+\frac12\cdot\sum\limits_{j=1}^{p-1}\mu_j\cdot\delta_{ij}=\mu_i,\quad\forall i, 1\leqslant i\leqslant p-1.\hfill
+		\hfill0=0+\frac12\cdot\sum\limits_{j=1}^{p-1}\mu_j\cdot\delta_{ij}=\frac{\mu_i}{2},\quad\forall i, 1\leqslant i\leqslant p-1.\hfill
 	\end{equation*}
 	Поэтому уравнение~\eqref{l5:eq:10} примет вид $Ly_p=\lambda\cdot y_p$ и нам остаётся доказать, что $\lambda=\lambda_p$. 
 	
@@ -412,7 +413,7 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 Наряду с этими теоремами существует ещё одна, которая позволяет описать $p$-ое собственное значение оператора Штурма с помощью решения некоторых вариационных задач без знания собственных функций, отвечающих первым $p-1$ собственным значениям.
 \begin{_teor}[принцип минимакса]
 	\label{l5:s2:teor:4}
-	Пусть как и раньше $\lambda_1<\lambda_2<\ldots<\lambda_{p-1}$ первые $(p-1)$ собственные значения оператора Штурма и $y_1,\,y_2,\ldots,y_{p-1}$ --- соответствующие нормированные собственные функции. $\phi_1,\ldots,\phi_{p-1}$ --- произвольные функции из $\fL$. Теорема утверждает, что
+	Пусть как и раньше $\lambda_1<\lambda_2<\ldots<\lambda_{p-1}$ первые $(p-1)$ собственные значения оператора Штурма и $y_1,\,y_2,\ldots,y_{p-1}$ --- соответствующие нормированные собственные функции, а $\phi_1,\ldots,\phi_{p-1}$ --- произвольные функции из $\fL$. Теорема утверждает, что
 	\begin{equation}
 		\label{l5:eq:12}
 		\hfill\lambda_p=\max\limits_{\phi_1,\ldots,\phi_{p-1}}\quad\min\limits_{\substack{y\in\K,\\\lefteqn{\scriptstyle \hspace*{-0.8cm}y\perp\phi_1,\phi_2,\ldots,\phi_{p-1}}}}\,J[y].\hfill
@@ -434,7 +435,7 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 		\label{l5:eq:15}
 		\hfill\alpha\leqslant\lambda_p.\hfill
 	\end{equation} 
-	Для доказательства~\eqref{l5:eq:15} мы покажем, что при $\forall\phi_1,\ldots,\phi_{p-1}$  $\nu(\phi_1,\ldots,\phi_{p-1})\leqslant\lambda_p$. А так как $\alpha=\max\limits_{\phi_1,\ldots,\phi_{p-1}}\nu(\phi_1,\ldots,\phi_{p-1})$, то тогда $\alpha\leqslant\lambda_p$.
+	Для доказательства~\eqref{l5:eq:15} мы покажем, что $\nu(\phi_1,\ldots,\phi_{p-1})\leqslant\lambda_p$ при $\forall\phi_1,\ldots,\phi_{p-1}$. А так как $\alpha=\max\limits_{\phi_1,\ldots,\phi_{p-1}}\nu(\phi_1,\ldots,\phi_{p-1})$, то тогда $\alpha\leqslant\lambda_p$.
 	
 	Итак, пусть $\phi_1,\ldots,\phi_{p-1}$ --- любой набор из $\fL$ и мы докажем, что
 	\begin{equation}

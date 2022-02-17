@@ -1,11 +1,11 @@
-\chapter{}
+	\chapter{}
 \label{lecture4}
 \section{Изопериметрические задачи.}
 \label{lecture4section1}
 Переходим к изучению нового типа задач, в которых на допустимые функции накладывается требование типа $\int\limits_a^b G(x,y,y')\,dx=l$, где $l$ --- заданное число, а $G(x,y,y')$ --- некоторая известная функция. Рассмотрим пример.
 
 \noindent\emph{Задача о равновесии тяжёлой не растяжимой нити.}\\
-Пусть тяжёлая нить подвешена в точках $(a,y_0)$, $(b,y_1)$.
+Пусть тяжёлая нить плотности $\rho$ подвешена в точках $(a,y_0)$, $(b,y_1)$.
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -70,7 +70,7 @@
 	назовём \textbf{допустимым изменением}, если удаётся найти такую функцию $\alpha(t)$, $\alpha(0)=0$ и такую функцию $\eta_2(x)$, что $\tilde{y}\eqdef y+\eta(x)\in\K$, при $|t|\ll1$ и любых $\eta_1(x)$.
 \end{_def}
 
-Построим $\eta(x)$. Функции $\eta_1(x)$ и $\eta_2(x)$ берём из $\Cfn[{[a,b]}]{1}$, $\eta_i(a)=\eta_i(b)=0$, $i=1,2$. Попробуем обеспечить выполнение условия $\J[\tilde{y}]=l$. Положим
+Построим $\eta(x)$. Функции $\eta_1(x)$ и $\eta_2(x)$ берём из $\Cfn[{[a,b]}]{1}$, $\eta_i(a)=\eta_i(b)=0$, $i=1,2$. Попробуем обеспечить выполнение условия $\J_1[\tilde{y}]=l$. Положим
 \begin{equation*}
 	\hfill\Psi(t,\alpha)\eqdef\int\limits_a^b \overbrace{G\big(x,\underbrace{y+t\cdot\eta_1+\alpha(t)\cdot\eta_2}_{\tilde{y}},\underbrace{y'+t\cdot\eta'_1+\alpha(t)\cdot\eta'_2}_{\tilde{y}'}\big)}^{\widetilde{G}}\,dx.\hfill
 \end{equation*}
@@ -129,7 +129,7 @@
 \begin{equation*}
 	\hfill\Psi(t,\alpha(t))\equiv l,\quad|t|\ll1,\hfill
 \end{equation*}
-то дифференцируя это тождество по $t$ получим
+то, дифференцируя это тождество по $t$, получим
 \begin{equation*}
 	\hfill\left.\der{\Psi}{t}\right|_{t=0}=\Psi_t+\Psi_{\alpha}\cdot\alpha'(0)=0.\hfill
 \end{equation*}
@@ -167,7 +167,7 @@
 	\label{l4:eq:14}
 	\hfill F^{\ast}_y-\der{}{x}F^{\ast}_{y'}=0.\hfill
 \end{equation}
-Отсюда находим $y=y(x,c_1,c_2,\lambda)$. 
+Из~\eqref{l4:eq:14} находим $y=y(x,c_1,c_2,\lambda)$. 
 
 Для нахождения неизвестных $c_1$, $c_2$, $\lambda$ у нас есть граничные условия 
 \begin{equation*}
@@ -234,7 +234,7 @@
 		\begin{equation*}
 			\J[f_1,f_2,\ldots,f_m,y_{m+1},\ldots,y_n]=\widehat{\J}[y_{m+1},\ldots,y_n]=\int\limits_a^b \widehat{F}(x,y_{m+1},\ldots,y_n,y'_{m+1},\ldots,y'_n)\,dx,
 		\end{equation*}  
-		который минимизируется в классе $\K$, \emph{но без учёта} голономных связей. Мы получили обычную задачу, рассмотренную на $2^{\text{ой}}$ лекции и для экстремалей будем иметь уравнения
+		который минимизируется в классе $\K$, \emph{но без учёта} голономных связей. Мы получили обычную задачу, рассмотренную на $2^{\text{ой}}$  лекции, и для экстремалей будем иметь уравнения
 		\begin{equation*}
 			\hfill \widehat{F}_{y_j}-\der{}{x}\widehat{F}_{y'_j}=0,\quad j=\overline{m+1,n}.\hfill
 		\end{equation*} 
@@ -251,14 +251,14 @@
 		\end{equation}
 		то есть 
 		\begin{equation*}
-			\hfill F_{y_j}-\sum\limits_{i=1}^n\lambda_i(x)\cdot\pder{G_i}{y_j}-\der{}{x}F_{y_j}=0,\quad j=\overline{1,n}\hfill
+			\hfill F_{y_j}-\sum\limits_{i=1}^m\lambda_i(x)\cdot\pder{G_i}{y_j}-\der{}{x}F_{y_j}=0,\quad j=\overline{1,n}\hfill
 		\end{equation*}
 		и плюс $m$ уравнений~\eqref{l4:eq:20}.
 		В случае не голономных связей рецептура та же, то есть аналогично~\eqref{l4:eq:ast} составляется $	F^{\ast}$ и затем рассматриваем~\eqref{l4:eq:20} вместе с~\eqref{l4:eq:21}.
 	\end{enumerateD}
 \end{enumerateD}
 
-Приведём пример изопериметрической задачи. Среди кривых, соединяющих точки $A$ и $B$ и ограничивающих вместе с отрезками $aA$ и $bB$ заданную площадь $S$, найти кривую наименьшей длины.
+Приведём пример решения изопериметрической задачи. Среди кривых, соединяющих точки $A$ и $B$ и ограничивающих вместе с отрезками $aA$ и $bB$ заданную площадь $S$, найти кривую наименьшей длины.
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -344,7 +344,7 @@
 \end{equation}
 Решение~\eqref{l4:eq:22} ищем в классе $y(x)\in\Cfn[{[a,b]}]{2}$, $y(a)=y(b)=0$.
 
-\noindent Выражение в левой части~\eqref{l4:eq:22} называется оператором Штурма--Лиувилля $\LL y$, то есть~\eqref{l4:eq:22} запишется в виде 
+\noindent Оператор в левой части~\eqref{l4:eq:22} называется оператором Штурма--Лиувилля и обозначается через $\LL$, то есть~\eqref{l4:eq:22} запишется в виде 
 \begin{equation}
 	\label{l4:eq:23}
 	\hfill \LL y=\lambda\cdot y.\hfill
