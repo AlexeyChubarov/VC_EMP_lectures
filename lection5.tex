@@ -377,12 +377,13 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 	\end{equation*}
 	Докажем, что минимайзер $y_p$ задачи на $\min\limits_{y\in\K_p}\,\J[y]$ есть собственная функция оператора $L$, отвечающая его $p$-ому по величине собственному значению $\lambda_p$. Для доказательства запишем уравнение для $y_p$. Согласно теории изопериметрических задач составляем
 	\begin{gather*}
-		F^{\ast}=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2-\sum\limits_{j=1}^{p-1}\mu_j\cdot y_j\cdot y\quad\text{и пишем уравнение для }y_p\\
-		2\cdot P\cdot y_p-2\cdot\lambda_p=\sum\limits_{j=1}^{p-1}\mu_j\cdot y_j-2\cdot\der{}{x}\big(Q\cdot y'_p\big)=0,\quad\text{откуда}
+		F^{\ast}=Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2-\sum\limits_{j=1}^{p-1}\mu_j\cdot y_j\cdot y\intertext{и пишем уравнение для $y_p$}
+		2\cdot P\cdot y_p-2\cdot\lambda_p\cdot y_p=\sum\limits_{j=1}^{p-1}\mu_j\cdot y_j-2\cdot\der{}{x}\big(Q\cdot y'_p\big)=0,
 	\end{gather*}  
+	откуда
 	\begin{equation}
 		\label{l5:eq:10}
-		\hfill Ly_p=-\der{}{x}\big(Q\cdot y'_p\big)+P\cdot y_p=\lambda\cdot y_p+\sum\limits_{j=1}^{p-1}\frac{\mu_j\cdot y_j}{2}.\hfill
+		\hfill Ly_p=-\der{}{x}\big(Q\cdot y'_p\big)+P\cdot y_p=\lambda_p\cdot y_p+\sum\limits_{j=1}^{p-1}\frac{\mu_j\cdot y_j}{2}.\hfill
 	\end{equation}
 	Как и в теореме~\ref{l5:s2:teor:2} покажем, что $\mu_j=0,\,j=\overline{1,p-1}$. Для этого домножим обе части~\eqref{l5:eq:10} на $y_i$ скалярно. Тогда получим
 	\begin{equation}
@@ -446,7 +447,7 @@ $y'_1(a)\neq0$, ибо иначе $y_1\equiv0$, поскольку $y_1(a)=0$, �
 	\begin{equation*}
 		\hfill \tilde{y}_0=\sum\limits_{j=1}^{p}\tilde{c}_j\cdot y_j\hfill
 	\end{equation*}
-	и подберём коэффициенты $\tilde{c}_j$ так, чтобы $\big(\tilde{y},\phi_i\big)=0,\,i=\overline{1,p-1}$. Чтобы эти равенства выполнялись, очевидно, числа $\tilde{c}_j$ должны удовлетворять условиям
+	и подберём коэффициенты $\tilde{c}_j$ так, чтобы $\big(\tilde{y}_0,\phi_i\big)=0,\,i=\overline{1,p-1}$. Чтобы эти равенства выполнялись, очевидно, числа $\tilde{c}_j$ должны удовлетворять условиям
 	\begin{equation}
 		\label{l5:eq:17}
 		\hfill \sum\limits_{j=1}^{p}\tilde{c}_j\cdot \big(y_j,\phi_i\big)=0,\quad i=\overline{1,p-1}.\hfill
