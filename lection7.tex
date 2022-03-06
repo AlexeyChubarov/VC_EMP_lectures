@@ -104,11 +104,11 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\label{l7:eq:9}
 	\hfill\frac{\pi}{2}+\pi\cdot k=\sqrt{\gamma_1\cdot\gamma_2}\cdot l,\hfill
 \end{equation} 
-то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\bigm/\pi$ --- целое, то мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
+то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\bigm/\pi$ --- целое.  Тогда мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
 \begin{equation*}
 	\hfill\frac{\lambda-C_2}{C_1}=\gamma_1\cdot\gamma_2\quad\Rightarrow\quad\lambda_0=C_1\cdot\gamma_1\cdot\gamma_2+C_2\hfill
 \end{equation*}
-и затем из первого уравнения системы~\eqref{l7:eq:7} найдём $d_2=d_1\cdot\sqrt{\gamma_2\bigm/\gamma_1}$, подставляем в решение уравнения~\eqref{l7:eq:6} и получаем 
+и затем из первого уравнения системы~\eqref{l7:eq:7} находим $d_2=d_1\cdot\sqrt{\gamma_2\bigm/\gamma_1}$, подставляем в решение уравнения~\eqref{l7:eq:6} и получаем 
 \begin{equation*}
 	\hfill y_0=d_1\cdot\left(\sin(\omega\cdot x)+\sqrt{\frac{\gamma_2}{\gamma_1}}\cdot\cos(\omega\cdot x)\right).\hfill
 \end{equation*}
@@ -172,7 +172,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 \begin{center}
 	\includegraphics[width=0.7\linewidth]{picture1}
 \end{center}
-Рисуем графики мы видим, что точки пересечения графиков отвечают всё меньшим значениям $\Tang(z)$, то есть стремятся к $\pi\cdot k$, то есть очевидно, что $|z_k-\pi\cdot  k|\to0$, при $k\to\infty$. Откуда
+Рисуя графики, мы видим, что точки пересечения графиков отвечают всё меньшим значениям $\Tang(z)$, то есть стремятся к $\pi\cdot k$, то есть очевидно, что $|z_k-\pi\cdot  k|\to0$, при $k\to\infty$. Откуда
 \begin{equation*}
 	\hfill z_k^2=l^2\cdot\omega_k^2=\dfrac{l^2\cdot(\lambda_k-C_2)}{C_1}\geqslant C_0\cdot k^2,\hfill
 \end{equation*}	
@@ -180,7 +180,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 \begin{equation*}
 	\hfill\lambda_k\geqslant\frac{C_0\cdot C_1}{l^2}\cdot k^2+C_2.\hfill
 \end{equation*}
-Значит, собственные значения растут со скоростью $k^2$.
+Аналогичную оценку для $\lambda_k$ можно получить сверху с какой-то константой $C$ вместо $C_0$. Значит, собственные значения растут со скоростью $k^2$.
 
 Рассмотрим наконец общий случай $\gamma_1\cdot\gamma_2>0$. В этом случае функция $\Psi(z)$ имеет разрыв при $z=z_0=l\cdot\sqrt{\gamma_1\cdot\gamma_2}$, и $\Psi(z_0+0)=+\infty$, $\Psi(z_0-0)=-\infty$.
 \begin{center}
@@ -202,7 +202,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 \begin{equation*}
 	\hfill\lambda_s\geqslant\beta_1\cdot s^2,\quad s\gg1,\hfill
 \end{equation*} 
-$\beta_1$ --- некоторая константа. Это означает, что при произвольных $\gamma_1,\,\gamma_2$ собственные значения $\lambda_s$ оператора Штурма с новыми граничными условиями растут при $s\to\infty$ не медленнее (по порядку) чем $s^2$.
+$\beta_1$ --- некоторая константа. Аналогичную оценку получаем для $\lambda_s$ сверху с некоторой константой $\beta_2$ вместо $\beta_1$. Это означает, что при произвольных $\gamma_1,\,\gamma_2$ собственные значения $\lambda_s$ оператора Штурма с новыми граничными условиями растут при $s\to\infty$ со скоростью $s^2$.
 
 Рассмотрим теперь общий случай: оператор Штурма с переменными коэффициентами.
 \begin{equation*}
