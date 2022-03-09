@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  6 MAR 2022 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  9 MAR 2022 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,8 +972,6 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \c@enumerateAii=\count319
 \enitdp@enumerateAi=\count320
 
-No auxiliary output files.
-
 (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.aux
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
 1.
@@ -981,6 +979,8 @@ LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
 (c:/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
+\openout1 = `"Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.aux"'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
 LaTeX Font Info:    ... okay on input line 102.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
@@ -1065,6 +1065,10 @@ LaTeX Info: Redefining \pageref on input line 102.
 LaTeX Info: Redefining \nameref on input line 102.
 
 (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.out) (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.out)
+\@outlinefile=\write4
+\openout4 = `"Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.out"'.
+
+
 ABD: EveryShipout initializing macros
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1110,55 +1114,31 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Р’Р Рё РЈРњ
 Р¤ Р»РµРєС†РёРё.toc
-[2]) [3] [4
+[2])
+\tf@toc=\write5
+\openout5 = `"Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.toc"'.
 
+ [3] [4
 
 ] (./lection1.tex
 Р›РµРєС†РёСЏ 1.
 [5
 
-
-
-
-
-
-
-
-
 ]
 \c@enumerate2i=\count328
 \enitdp@enumerate2=\count329
- [6] [7
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.2})
- has been already used, duplicate ignored
+ [6] [7pdfTeX warning (ext4): destination with the same identifier (name{Hfootn
+ote.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.233 \end{equation*}
-                     ] [8
-
-
-
-
-]
+                     ] [8]
 Overfull \vbox (1.08989pt too high) has occurred while \output is active []
 
 
-[9
-
-
-
-
-
-
-
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2
-.10}) has been already used, duplicate ignored
+[9]pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+.2.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.353 \begin{equation}
@@ -1188,17 +1168,7 @@ Overfull \hbox (3.45428pt too wide) in paragraph at lines 433--505
 []
  []
 
-[10
-
-
-
-
-
-
-] [11
-
-
-]) (./lection2.tex [12]
+[10] [11]) (./lection2.tex [12]
 Р›РµРєС†РёСЏ 2.
 
 Overfull \hbox (4.84431pt too wide) in paragraph at lines 4--5
@@ -1211,17 +1181,6 @@ y; y[]\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 dx$
 
 [13
 
-
-
-
-
-
-
-
-
-
-
-
 ]
 Overfull \hbox (14.0436pt too wide) in paragraph at lines 89--91
 \T2A/cmr/m/n/12 где $\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; 
@@ -1231,11 +1190,7 @@ m/m/it/12 v \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/
 12 x; y; z; x[]; y[]; z[]\OT1/cmr/m/n/12 )$\T2A/cmr/m/n/12 . 
  []
 
-[14
-
-
-
-]
+[14]
 Overfull \hbox (1.47517pt too wide) detected at line 102
 \OMS/cmsy/m/n/12 K \OT1/cmr/m/n/12 = [][]
  []
@@ -1248,12 +1203,7 @@ mm/m/it/12 '[]\OT1/cmr/m/n/12 (0)$ \T2A/cmr/m/n/12 --- глав-ная часть при-ра-ще
 m/n/12 , а $\OML/cmm/m/it/12 t \OMS/cmsy/m/n/12 ^^A [][]$
  []
 
-[15
-
-
-
-
-]
+[15]
 Overfull \hbox (14.77315pt too wide) in paragraph at lines 152--154
 \T2A/cmr/m/n/12 Пусть те-перь $\OML/cmm/m/it/12 j \OMS/cmsy/m/n/12 2 \OT1/cmr/m
 /n/12 [1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OT1/cmr/m
@@ -1264,48 +1214,14 @@ n/12 , $\OML/cmm/m/it/12 i \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ; []$\T2A/cmr/m
 /n/12 ,
  []
 
-[16
-
-
-
-
-
-
-
-
-
-]
+[16]
 Overfull \hbox (6.57356pt too wide) in paragraph at lines 218--222
 [] 
  []
 
-[17
-
-
-
-
-
-] [18
-
-
-
-]) (./lection3.tex [19
-
-]
+[17] [18]) (./lection3.tex [19]
 Р›РµРєС†РёСЏ 3.
 [20
-
-
-
-
-
-
-
-
-
-
-
-
 
 ]
 Overfull \hbox (29.53152pt too wide) in paragraph at lines 92--94
@@ -1315,116 +1231,41 @@ Overfull \hbox (29.53152pt too wide) in paragraph at lines 92--94
 )$\T2A/cmr/m/n/12 . 
  []
 
-[21
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
-7}) has been already used, duplicate ignored
+[21pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.101 \begin{multline*}
-                       
-
-] [22
-
-
-
-] [23
-
-
-
-] [24
-
-
-
-
-
-
-] [25
-
-
-
-
-
-] [26
-
-]) (./lection4.tex [27
-
-
-
-
-
-]
+                       ] [22] [23] [24] [25] [26]) (./lection4.tex [27]
 Р›РµРєС†РёСЏ 4.
 [28
 
-
-
-
-
-
-
-
-] [29
-
-
-
-
-
-]
+] [29]
 Overfull \hbox (16.92802pt too wide) detected at line 122
  []$[]   [][] \OT1/cmr/m/n/12 = [][] = [][] =$ 
  []
 
-[30
-
-
-
-
-
-
-
-]
+[30]
 Overfull \hbox (27.13197pt too wide) detected at line 186
 \OMS/cmsy/m/n/12 J\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ] = [] \OM
 L/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; y[]\OT1/cmr/m/n/12 ) \OM
 L/cmm/m/it/12 dx;  \OMS/cmsy/m/n/12 K \OT1/cmr/m/n/12 = [][]
  []
 
-[31
-
-
-] [32
-
-
-]
+[31] [32]
 Overfull \hbox (12.18707pt too wide) in paragraph at lines 316--316
 |[]\T2A/cmr/bx/n/17.28 Квадратичный функ-ци-о-нал. Опе-ра-тор Штурма--Лиувилля.
 | 
  []
 
-[33
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1.
-16}) has been already used, duplicate ignored
+[33pdfTeX warning (ext4): destination with the same identifier (name{equation.4
+.1.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.331 \end{equation*}
-                     
-
-
-
-] [34
-
-
-
-
-]) (./lection5.tex [35
-
-
-]
+                     ] [34]) (./lection5.tex [35]
 Р›РµРєС†РёСЏ 5.
 
 Overfull \hbox (7.00832pt too wide) in paragraph at lines 3--3
@@ -1432,14 +1273,6 @@ Overfull \hbox (7.00832pt too wide) in paragraph at lines 3--3
  []
 
 [36
-
-
-
-
-
-
-
-
 
 ]
 Overfull \hbox (5.8106pt too wide) in paragraph at lines 96--96
@@ -1451,45 +1284,13 @@ Overfull \hbox (0.67383pt too wide) in paragraph at lines 131--140
 []\T2A/cmr/m/n/12 Пусть [] $\OMS/cmsy/m/n/12 )$ [] \T2A/cmr/m/n/12 и $[]$. 
  []
 
-[37] [38
-
-
-
-
-
-]
+[37] [38]
 Overfull \hbox (8.17758pt too wide) in paragraph at lines 290--290
 |[]\T2A/cmr/bx/n/17.28 Экстремальные свой-ства соб-ствен-ных зна-че-ний и соб-с
 твен-
  []
 
-[39
-
-
-
-
-
-] [40
-
-
-
-
-
-] [41
-
-
-] [42
-
-
-
-
-
-
-
-]) (./lection6.tex [43
-
-
-]
+[39] [40] [41] [42]) (./lection6.tex [43]
 Р›РµРєС†РёСЏ 6.
 
 Overfull \hbox (3.07034pt too wide) in paragraph at lines 19--20
@@ -1501,126 +1302,39 @@ MS/cmsy/m/n/12 ? \OML/cmm/m/it/12 '[]; [] ; '[]$\T2A/cmr/m/n/12 .
 
 [44
 
-
-
-
-
-
-
-
-
-
-
-
-
-] [45
-
-
-
-
-
-
-
-
-
-] [46
-
-
-
-] [47
-
-
-
-
-
-]
+] [45] [46] [47]
 Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [48
-
-
-
-
-
-
-
-
-]
-[49
-
-
-
-
-] [50
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
-17}) has been already used, duplicate ignored
+ [48]
+[49] [50pdfTeX warning (ext4): destination with the same identifier (name{equat
+ion.6.2.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.334 	\begin{equation}
-                       
-
-
-
-
-]) (./lection7.tex [51
-
-
-
-
-]
+                       ]) (./lection7.tex [51]
 Р›РµРєС†РёСЏ 7.
 [52
 
-
-
-
-
-
-
-
-
-
-
-] [53
-
-
-
-
-
-
-] [54
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
-11}) has been already used, duplicate ignored
+] [53] [54pdfTeX warning (ext4): destination with the same identifier (name{equ
+ation.7.1.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.154 \end{equation*}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
-11}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.7.1.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.154 \end{equation*}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.
-11}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.7.1.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.154 \end{equation*}
-                     
-
-
-]
+                     ]
 <picture1.png, id=1114, 412.16484pt x 213.04594pt>
 File: picture1.png Graphic file (type png)
 <use picture1.png>
@@ -1631,74 +1345,41 @@ File: picture2.png Graphic file (type png)
 <use picture2.png>
 Package pdftex.def Info: picture2.png  used on input line 187.
 (pdftex.def)             Requested size: 366.46977pt x 186.077pt.
- [55
-
- <./picture1.png>]pdfTeX warning (ext4): destination with the same identifier (
-name{equation.7.1.12}) has been already used, duplicate ignored
+ [55 <./picture1.png>]pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.7.1.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.216 \end{multline}
-                     [56
-
-
- <./picture2.png>] [57
-
-]) (./lection8.tex [58]
+                     [56 <./picture2.png>] [57]) (./lection8.tex [58]
 Р›РµРєС†РёСЏ 8.
 [59
 
-
-
-
-
-
-
-
-
-
-
-] [60] [61
-
-
-
-] [62
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
-7}) has been already used, duplicate ignored
+] [60] [61] [62pdfTeX warning (ext4): destination with the same identifier (nam
+e{equation.8.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.233 \end{equation*}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
-7}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.8.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.233 \end{equation*}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
-7}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.8.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.233 \end{equation*}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1.
-7}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.8.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.233 \end{equation*}
-                     
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1
-.8}) has been already used, duplicate ignored
+                     ]pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.8.1.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.253 \begin{equation}
@@ -1755,82 +1436,13 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.2> not available
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 260.
 
-[63
-
-
-
-] [64
-
-]
-
-LaTeX Warning: Reference `l8:eq:1.7b' on page 65 undefined on input line 369.
-
-[65
-
-] [66
-
-
-
-] [67
-
-
-
-
-
-]) (./lection9.tex [68]
+[63] [64] [65] [66] [67]) (./lection9.tex [68]
 Р›РµРєС†РёСЏ 9.
 [69
 
-
-
-
-
-
-
-
-
-
-
-
-] [70
-
-
-
-
-
-
-
-] [71
-
-
-] [72
-
-
-] [73] [74
-
-
-
-] [75
-
-
-
-
-] [76
-
-
-]) (./lection10.tex [77]
+] [70] [71] [72] [73] [74] [75] [76]) (./lection10.tex [77]
 Р›РµРєС†РёСЏ 10.
 [78
-
-
-
-
-
-
-
-
-
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
 .3}) has been already used, duplicate ignored
@@ -1838,10 +1450,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \begin{equation}
-                     \label{l10:eq:2}
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.3}) has been already used, duplicate ignored
+                     \label{l10:eq:2}]pdfTeX warning (ext4): destination with t
+he same identifier (name{equation.10.1.3}) has been already used, duplicate ign
+ored
 <to be read again> 
                    \relax 
 l.36 \begin{equation}
@@ -1863,17 +1474,7 @@ red
 <to be read again> 
                    \relax 
 l.36 \begin{equation}
-                     \label{l10:eq:2} [79
-
-
-
-
-
-
-
-
-
-]
+                     \label{l10:eq:2} [79]
 Overfull \hbox (1.99521pt too wide) in paragraph at lines 124--125
 [][]\T2A/cmr/bx/n/12 Теорема 1.3. []\T2A/cmr/m/n/12 Пусть $\OMS/cmsy/m/n/12 K[]
  \OT1/cmr/m/n/12 = []$ \T2A/cmr/m/n/12 и $\OML/cmm/m/it/12 u[]$ \T2A/cmr/m/n/12
@@ -1881,16 +1482,8 @@ Overfull \hbox (1.99521pt too wide) in paragraph at lines 124--125
 m/it/12 u\OT1/cmr/m/n/12 ]$\T2A/cmr/m/n/12 ,
  []
 
-[80
-
-] [81
-
-
-
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.14}) has been already used, duplicate ignored
+[80] [81]pdfTeX warning (ext4): destination with the same identifier (name{equa
+tion.10.1.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.254 	\begin{equation}
@@ -1919,11 +1512,8 @@ cate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.260 	\end{equation}
-                     
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.14}) has been already used, duplicate ignored
+                     ]pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.10.1.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.262 	\begin{equation}
@@ -1975,55 +1565,13 @@ Overfull \hbox (15.58736pt too wide) in paragraph at lines 303--305
 ], [] 
  []
 
-[83
-
-
-
-
-
-
-
-
-] [84
-
-
-
-
-
-
-
-
-] [85
-
-
-
-
-
-
-]) [86
-
-
-] [87
-
+[83] [84] [85]) [86] [87
 
 ] (./lection11.tex
 Р›РµРєС†РёСЏ 11.
 [88
 
-
-
-
-
-
-
-
-
-] [89
-
-
-] [90
-
-]
+] [89] [90]
 Overfull \hbox (12.25089pt too wide) detected at line 314
  []$[] \OT1/cmr/m/n/12 + [] []  \OML/cmm/m/it/12 dt  [][]$ []  
  []
@@ -2031,37 +1579,21 @@ Overfull \hbox (12.25089pt too wide) detected at line 314
 
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
- [91
-
-
-
-
-]
-[92
-
-
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
-.7}) has been already used, duplicate ignored
+ [91]
+[92pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+1.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.371 	\end{equation}
-                     
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
-.8}) has been already used, duplicate ignored
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.11.1.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.371 	\end{equation}
-                     
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.11.
-1.7}) has been already used, duplicate ignored
+                     ]pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.11.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.415 	\begin{equation}
@@ -2100,117 +1632,40 @@ ier (name{equation.11.1.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.421 	\begin{equation}
-                       ) (./lection12.tex [93
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
-.9}) has been already used, duplicate ignored
+                       ) (./lection12.tex [93pdfTeX warning (ext4): destination
+ with the same identifier (name{equation.11.1.9}) has been already used, duplic
+ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 	\chapter
-             {}
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
-.9}) has been already used, duplicate ignored
+             {}pdfTeX warning (ext4): destination with the same identifier (nam
+e{equation.11.1.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 	\chapter
-             {}
-
-]
+             {}]
 Р›РµРєС†РёСЏ 12.
 [94
-
-
-
-
-
-
-
-
-
-
-
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{equation.12.
 1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.67 \begin{subequations}
-                          [95
-
-
-
-
-
-
-] [96
-
-
-
-
-
-
-
-
-] [97
-
-
-
-
-] [98
-
-
-
-] [99
-
-
-
-
-
-
-
-]) (./lection13.tex [100]
+                          [95] [96] [97] [98] [99]) (./lection13.tex [100]
 Р›РµРєС†РёСЏ 13.
 [101
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [102
-
-
-
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.13.2
-.4}) has been already used, duplicate ignored
+] [102pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.13.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.89 \end{equation}
-                   
-
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.13.
-2.4}) has been already used, duplicate ignored
+                   ]pdfTeX warning (ext4): destination with the same identifier
+ (name{equation.13.2.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
@@ -2232,230 +1687,43 @@ nored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
-                     \label{l13:eq:10A} [103
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.13.2
-.5}) has been already used, duplicate ignored
+                     \label{l13:eq:10A} [103pdfTeX warning (ext4): destination 
+with the same identifier (name{equation.13.2.5}) has been already used, duplica
+te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.146 \begin{equation*}
-                       
-
-
-
-] [104
-
-
-
-
-] [105
-
-
-] [106pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.13.2.12}) has been already used, duplicate ignored
+                       ] [104] [105] [106pdfTeX warning (ext4): destination wit
+h the same identifier (name{equation.13.2.12}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.283 
-      
-
-
-
-
-
-
-
-]) (./lection14.tex [107
-
-]
+      ]) (./lection14.tex [107]
 Р›РµРєС†РёСЏ 14.
 [108
 
-
-
-
-
-
-
-
-
-
-
-] [109
-
-
-
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.14.1
-.10}) has been already used, duplicate ignored
+] [109pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.14.1.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.106 
-      
-
-
-
-
-] [110
-
-
-
-
-
-
-]) (./lection15.tex [111
-
-
-] [112]
+      ] [110]) (./lection15.tex [111] [112]
 Р›РµРєС†РёСЏ 15.
 [113
 
-
-
-
-
-
-
-
-
-
-] [114
-
-
-
-] [115
-
-
-
-
-] [116
-
-
-
-
-
-
-
-
-
-] [117
-
-
-
-
-
-
-
-
-
-] [118
-
-
-
-
-]) (./lection16.tex [119]
+] [114] [115] [116] [117] [118]) (./lection16.tex [119]
 Р›РµРєС†РёСЏ 16.
 [120
 
-
-
-
-
-
-
-
-
-
-
-
-
-] [121
-
-
-
-
-
-
-
-] [122
-
-
-
-
-
-
-
-
-
-] [123
-
-
-
-
-
-
-
-
-
-] [124
-
-
-
-
-
-]) (./lection17.tex [125
-
-
-
-
-]
+] [121] [122] [123] [124]) (./lection17.tex [125]
 Р›РµРєС†РёСЏ 17.
 [126
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [127
-
-
-
-
-
-
-
-
-] [128
-
-
-
-
-] [129
-
-
-
-
-
-
-]
+] [127] [128] [129]
 Overfull \hbox (4.2759pt too wide) in paragraph at lines 245--246
 []\T2A/cmr/m/n/12 Рассмотрим вкрат-це за-да-чу о \T2A/cmr/m/it/12 ко-ле-ба-ни-я
 х мем-бра-ны со сво-бод-ной гра-ни-цей\T2A/cmr/m/n/12 . Вме-сто усло-вия []
@@ -2562,130 +1830,57 @@ Overfull \hbox (4.27588pt too wide) in paragraph at lines 265--266
 -ний и соб-ствен-ных функ-ций за-дач [],
  []
 
-[130
-
-
-
-
-
-
-]) (./lection18.tex [131]
+[130]) (./lection18.tex [131]
 Р›РµРєС†РёСЏ 18.
 [132
 
-
-
-
-
-
-
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.52 \end{equation}
-                   
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
-.1}) has been already used, duplicate ignored
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.18.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.52 \end{equation}
-                   
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
-.4}) has been already used, duplicate ignored
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.18.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.52 \end{equation}
-                   
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
-.5}) has been already used, duplicate ignored
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.18.1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.52 \end{equation}
-                   
-
-] [133
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
-.6}) has been already used, duplicate ignored
+                   ] [133pdfTeX warning (ext4): destination with the same ident
+ifier (name{equation.18.1.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.101 \begin{equation}
-                      \label{l18:eq:10}
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
-.7}) has been already used, duplicate ignored
+                      \label{l18:eq:10}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.18.1.7}) has been already used, duplicate ig
+nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.101 \begin{equation}
-                      \label{l18:eq:10}
-
-
-
-]
+                      \label{l18:eq:10}]
 Overfull \hbox (2.66592pt too wide) in paragraph at lines 126--127
 \T2A/cmr/m/n/12 В си-лу [] функ-ция $\OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/
 cmm/m/it/12 ^^Z\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 не яв-ля-ет-ся вто-рым ли-ней
 -но неза-ви-си-мым ре-ше-ни-ем урав-не-ния [],
  []
 
-[134
-
-
-
-] [135
-
-
-
-
-
-] [136
-
-
-
-
-
-
-
-]) (./lection19.tex [137
-
-
-
-
-]
+[134] [135] [136]) (./lection19.tex [137]
 Р›РµРєС†РёСЏ 19.
 [138
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ]
 Overfull \hbox (7.12454pt too wide) in paragraph at lines 62--63
@@ -2694,105 +1889,29 @@ Overfull \hbox (7.12454pt too wide) in paragraph at lines 62--63
 OT1/cmr/m/n/12 )$
  []
 
-[139
-
-]
+[139]
 Overfull \hbox (23.23541pt too wide) in paragraph at lines 87--89
 \T2A/cmr/m/n/12 Решаем за-да-чу []--[] ме-то-дом Фу-рье. Ищем сна-ча-ла ре-ше-н
 ие $\OML/cmm/m/it/12 u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 )
 $\T2A/cmr/m/n/12 , удо-вле-тво-ря-ю-щее [], []
  []
 
-[140
-
-
-
-
-
-
-
-
-
-] [141
-
-
-
-
-
-
-]
+[140] [141]
 Overfull \hbox (5.05774pt too wide) in paragraph at lines 240--241
 []\T2A/cmr/m/n/12 Используем те-перь прин-цип мак-си-му-ма для \T2A/cmr/m/it/12
  до-ка-за-тель-ства един-ствен-но-сти ре-ше-ния и непре-
  []
 
-[142
-
-
-
-
-] [143
-
-
-
-
-
-
-
-
-] [144
-
-
-
-
-
-
-]
+[142] [143] [144]
 Overfull \hbox (8.43303pt too wide) in paragraph at lines 351--352
 []
  []
 
-) (./lection20.tex [145
-
-
-
-
-]
+) (./lection20.tex [145]
 Р›РµРєС†РёСЏ 20.
 [146
 
-
-
-
-
-
-
-
-
-
-
-] [147
-
-
-
-
-] [148
-
-
-
-
-
-
-] [149
-
-
-
-
-
-
-
-
-]
+] [147] [148] [149]
 Overfull \hbox (9.54213pt too wide) in paragraph at lines 300--302
 \T2A/cmr/m/n/12 то есть для по-сле-до-ва-тель-но-сти $[]\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 x; x[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 вы-пол-ня-ет-ся [] зна-чит,
@@ -2800,47 +1919,34 @@ mm/m/it/12 x; x[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 вы-пол-ня-ет-ся [] зна-чит,
 --- $\OML/cmm/m/it/12 ^^N$\T2A/cmr/m/n/12 -последовательность. 
  []
 
-[150
-
-
-
-
-]
+[150]
 Overfull \hbox (5.50539pt too wide) detected at line 348
  []$[]  \OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/1
 2 ^^@ \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) = [] + [] \OMS/cmsy/m/n/12 ^^A [] [
 ] \OT1/cmr/m/n/12 =$ 
  []
 
-[151
-
-
-
-
-] [152
-
-
-
-]) [153]
+[151] [152]) [153]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+ (./Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package rerunfilecheck Info: File `"Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё".out' has not c
+hanged.
+(rerunfilecheck)             Checksum: F8418EE8FE8DE1715E437BCBA81223EF;19148.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 25787 strings out of 480682
- 443640 string characters out of 5908554
- 745890 words of memory out of 5000000
- 40049 multiletter control sequences out of 15000+600000
+ 25792 strings out of 480682
+ 443739 string characters out of 5908554
+ 746421 words of memory out of 5000000
+ 40052 multiletter control sequences out of 15000+600000
  571323 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,72p,2042b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2885,11 +1991,11 @@ blic/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-su
 per/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl12
 00.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.pdf" (153 pages, 1306695 bytes).
+Output written on "Р’Р Рё РЈРњР¤ Р»РµРєС†РёРё.pdf" (153 pages, 1306076 bytes).
 
 PDF statistics:
- 3096 PDF objects out of 3580 (max. 8388607)
- 2763 compressed objects within 28 object streams
+ 3097 PDF objects out of 3580 (max. 8388607)
+ 2764 compressed objects within 28 object streams
  884 named destinations out of 1000 (max. 500000)
  611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

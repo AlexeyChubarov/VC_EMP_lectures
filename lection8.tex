@@ -299,7 +299,7 @@
 	\end{equation*}
 	Если $\sup\limits_{n}\,\J[R_n]<+\infty$, то из неравенства (верного при $n\gg1\ \Rightarrow\ \lambda_{n+1}>0$)
 	\begin{equation*}
-		\hfill\frac{\J[R_n]}{\lambda_{n+1}}\geqslant\norm{R_n}_1\quad\Rightarrow\quad\norm{R_n}_1\to0,\text{ при }n\to\infty.\hfill
+		\hfill\frac{\J[R_n]}{\lambda_{n+1}}\geqslant\norm{R_n}_1^2\quad\Rightarrow\quad\norm{R_n}_1\to0,\text{ при }n\to\infty.\hfill
 	\end{equation*}
 	Оценим 
 	\begin{equation*}
@@ -366,7 +366,7 @@
 	\begin{equation*}
 		\hfill|y_k(x)|\leqslant\beta_4\cdot|\lambda_k|^{\sfrac{1}{4}}.\hfill
 	\end{equation*}
-	Подставим эту оценку и оценку $|C_k|\leqslant d_k\!\bigm/\!|\lambda_k|$ в оценку общего члена обобщённого ряда Фурье в силу~\eqref{l8:eq:1.7b}
+	Подставим эту оценку и оценку $|C_k|\leqslant d_k\!\bigm/\!|\lambda_k|$ в оценку общего члена обобщённого ряда Фурье в силу~\eqref{l8:eq:1.7a}
 	\begin{equation*}
 		\hfill|C_k\cdot y_k|\leqslant\frac{d_k}{|\lambda_k|}\cdot\beta_4\cdot|\lambda_k|^{\sfrac{1}{4}}\leqslant\beta_5\cdot\frac{1}{|\lambda_k|^{\sfrac{3}{4}}}\leqslant\beta_6\cdot\frac{1}{k^{\sfrac{3}{2}}}\hfill
 	\end{equation*}
@@ -444,7 +444,7 @@
 	
 	Действительно, так как $\lim\limits_{\eps\to0}\eps\cdot f'(\eps)\cdot\overline{g}(\eps)=\alpha$, то $\lim\limits_{\eps\to0}\eps\cdot |f'(\eps)\cdot\overline{g}(\eps)|=|\alpha|$, и поэтому при $|\alpha|>0$ для малых $\eps$ выполняется: $\eps\cdot|f'(\eps)|\cdot|\overline{g}(\eps)|\geqslant|\alpha|/2$, откуда 
 	\begin{equation*}
-		\hfill\sqrt{\eps}\cdot|f'(\eps)|\cdot\frac{|\overline{g}'(\eps)|}{\sqrt{\eps}}\geqslant\frac{|\alpha|}{2\cdot\eps}\quad\Rightarrow\quad\eps\cdot|f'(\eps)|^2+\frac{|\overline{g}'(\eps)|^2}{\eps}\geqslant\frac{|\alpha|}{2\cdot\eps}.\hfill
+		\hfill\sqrt{\eps}\cdot|f'(\eps)|\cdot\frac{|\overline{g}(\eps)|}{\sqrt{\eps}}\geqslant\frac{|\alpha|}{2\cdot\eps}\quad\Rightarrow\quad\eps\cdot|f'(\eps)|^2+\frac{|\overline{g}(\eps)|^2}{\eps}\geqslant\frac{|\alpha|}{2\cdot\eps}.\hfill
 	\end{equation*}
 	Интегрируя по $\eps$ от нуля до $\eps_0>0$ получим справа $+\infty$, а слева --- конечное число, так как $\J[f]<+\infty$, $\J[g]<+\infty$. Значит $\alpha=0$ и в силу~\eqref{l8:eq:13} 
 	\begin{equation}\label{l8:eq:14}
