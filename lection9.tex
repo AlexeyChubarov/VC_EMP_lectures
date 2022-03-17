@@ -67,14 +67,14 @@
 \end{equation}\footnotetext{Теперь, когда $y_{\nu k}(x)=z$ найдены, надо проверить неравенства $\J[y_{\nu k}]<+\infty$, $\norm{Ly_{\nu k}}_1<+\infty$, которые должны выполняться в $\mc{D}_L$. Мы это сделаем позже.}
 
 Мы получили явный вид собственных функций $y_{\nu k}$ и собственных значений $\lambda_{\nu k}$ обобщённой задачи Штурма. Так как в выражения~\eqref{l9:eq:7},~\eqref{l9:eq:8} входят нули функции Бесселя $J_{\nu}(\rho)$, то проведём небольшое исследование тех точек $\mu_{\nu k}$, в которых $J_{\nu}\left(\mu_{\nu k}\right)=0$, то есть изучим --- хотя бы поверхностно ---  свойствва нулей функции Бесселя. Для этого воспользуемся известной асимптотикой функции Бесселя при больших $\rho$
-\begin{equation*}
+\begin{equation}\label{l9:eq:1.9}
 	\hfill\sqrt{\rho}\cdot J_{\nu}(\rho)=a_{\nu}\cdot\cos(\rho-b_\nu)+O\left(\frac{1}{\rho}\right),\hfill
-\end{equation*}
+\end{equation}
 где $a_{\nu}>0$ --- некоторое число, $\displaystyle b_{\nu}=\frac{\pi}{4}+\frac{\pi\cdot\nu}{2}$. Отсюда видно, что при $\rho=\rho_k=\pi\cdot k+b_{\nu}$ выполняется
 \begin{equation}\label{l9:eq:9}
 	\hfill\sqrt{\rho_k}\cdot J_{\nu}(\rho_k)=(-1)^k\cdot a_{\nu}+O\left(\frac{1}{\rho_k}\right).\hfill
 \end{equation}
-Величины $J_{\nu}(\rho_k)$ и $J_{\nu}(\rho_{k+1})$ при больших $\rho$ имеют в силу~\eqref{l9:eq:9} разные знаки. И так как функция $J_{\nu}(\rho)$ непрерывна на отрезке $[\rho_k,\rho_{k+1}]$, на этом отрезке обязательно найдётся (и возможно не одна) точка, в которой $J_{\nu}(\rho)$ обращается в ноль. В тоже время, так как функция $J_{\nu}(\rho)$ --- аналитична на отрезке $[\rho_k,\rho_{k+1}]$ при $\rho_k>0$, то на этом отрезке \emph{не может быть бесконечного числа нулей}. Это относится вообще к любому отрезку $[\alpha,\beta]$ при $\alpha>0$. Что касается отрезка $[0,\alpha]$, то в силу~\eqref{l9:eq:6} при $0<\alpha<1$
+Величины $J_{\nu}(\rho_k)$ и $J_{\nu}(\rho_{k+1})$ при больших $\rho$ имеют в силу~\eqref{l9:eq:9} разные знаки. И так как функция $J_{\nu}(\rho)$ непрерывна на отрезке $[\rho_k,\rho_{k+1}]$, на этом отрезке обязательно найдётся нечётное число точек, в которой $J_{\nu}(\rho)$ обращается в ноль. В тоже время, так как функция $J_{\nu}(\rho)$ --- аналитична на отрезке $[\rho_k,\rho_{k+1}]$ при $\rho_k>0$, то на этом отрезке \emph{не может быть бесконечного числа нулей\footnote{Можно доказать, что для больших значений $k$ на отрезке $[\rho_k,\rho_{k+1}]$ находится всего один нуль функции Бесселя. Идея доказательства состоит в следующем. Обозначим через $\Phi(\rho)$ левую часть~\eqref{l9:eq:1.9}. В силу~\eqref{l9:eq:1.9} функция $\Phi(\rho)$ --- а значит и функция Бесселя --- на этом отрезке может обращаться в ноль только там, где модуль синуса мал, то есть в малой окрестности точки $d_k=\pi\cdot(k+1/2)+b_{\nu}$. Из формул~\eqref{l9:eq:1.9} и~\eqref{l9:eq:1.11} следует, что асимптотика для производной $\displaystyle\der{\Phi}{\rho}$ даётся правой частью формулы~\eqref{l9:eq:1.11}. Значит, в окрестности точки $d_k$ модуль $\displaystyle\der{\Phi}{\rho}$ близок к $a_{\nu-1}>0$ не зависимо от $k$. Поэтому в окрестности $d_k$ может быть только один ноль функции $\Phi(\rho)$ --- а значит и функции Бесселя, так как в противном случае в окрестности этой точки должны были бы существовать нули $\displaystyle\der{\Phi}{\rho}$, а их --- нет.}}. Это относится вообще к любому отрезку $[\alpha,\beta]$ при $\alpha>0$. Что касается отрезка $[0,\alpha]$, то в силу~\eqref{l9:eq:6} при $0<\alpha<1$
 \begin{equation*}
 	\hfill J_{\nu}(\rho)=\rho^{\nu}\cdot\Big(C_0^{(\nu)}+O(\rho)\Big)\quad\text{при}\quad\rho\ll1.\hfill
 \end{equation*}
@@ -108,9 +108,9 @@
 	\hfill\tilde{\lambda}_{\nu k}=\left(\frac{\tilde{\mu}_{\nu k}}{R}\right)^2,\quad \tilde{y}_{\nu k}(x)=J_{\nu}\left(\frac{\tilde{\mu}_{\nu k}}{R}\cdot x\right).\hfill
 \end{equation*}
 Чтобы убедится в существовании бесконечного числа нулей $\tilde{\mu}_{\nu k}$ функции $J_{\nu}'(\rho)$ рассмотрим её асимптотику при $\rho\gg1$
-\begin{equation*}
-	\hfill\sqrt{\rho}\cdot J_{\nu}'(\rho)=a_{\nu-1}\cdot\sin(\rho-b_{\nu})+O\left(\frac{1}{\rho}\right)\hfill
-\end{equation*}
+\begin{equation}\label{l9:eq:1.11}
+	\sqrt{\rho}\cdot J_{\nu}'(\rho)=a_{\nu-1}\cdot\sin(\rho-b_{\nu})+O\left(\frac{1}{\rho}\right)
+\end{equation}
 и действуем аналогично предыдущему. Дальнейшее рассмотрение обобщённой задачи Штурма с изменённым граничным условием не отличается от рассмотрения задачи с граничным условием $y(R)=0$.
 
 Теперь проверим, что функции $y_{\nu k}\in\mc{D}_L$. Нам осталось проверить два утверждения: $\J[y_{\nu k}]\?<+\infty$ и $\norm{Ly_{\nu k}}_1<+\infty$ ($\nu>0$). В силу~\eqref{l9:eq:6} и~\eqref{l9:eq:8} можно записать
@@ -119,7 +119,7 @@
 \end{equation*}
 где, конечно, $\Phi(x)=\Phi_{\nu k}(x)$, но у нас $\nu$ и $k$ --- фиксированы и мы опускаем эти индексы. $\Phi(x)$ --- бесконечно дифференцируема на $[0,+\infty)$. Найдём $y_{\nu k}'$ и $y_{\nu k}''$
 \begin{equation*}
-	\hfill y_{\nu k}'=\nu\cdot x^{\nu-1}\cdot\Phi(x)+x^{\nu}\cdot\Phi'(x),\quad y_{\nu k}''=\nu\cdot(\nu-1)\cdot\Phi(x)+2\cdot\nu\cdot x^{\nu-1}\cdot\Phi'(x)+x^{\nu}\cdot\Phi''(x).\hfill
+	 y_{\nu k}'=\nu\cdot x^{\nu-1}\cdot\Phi(x)+x^{\nu}\cdot\Phi'(x),\quad y_{\nu k}''=\nu\cdot(\nu-1)\cdot x^{\nu-2}\cdot\Phi(x)+2\cdot\nu\cdot x^{\nu-1}\cdot\Phi'(x)+x^{\nu}\cdot\Phi''(x).
 \end{equation*}
 Очевидно,
 \begin{equation*}
@@ -127,7 +127,7 @@
 \end{equation*}
 Так как $\nu>0$, то
 \begin{equation*}
-	\hfill\int\limits_0^R\left(x\cdot y_{\nu k}^{\prime2}+\frac{\nu^2}{x}\cdot y_{\nu k}\right)\,dx<+\infty\hfill
+	\hfill\int\limits_0^R\left(x\cdot y_{\nu k}^{\prime2}+\frac{\nu^2}{x}\cdot y_{\nu k}^2\right)\,dx<+\infty\hfill
 \end{equation*}
 и 
 \begin{equation*}
@@ -137,7 +137,7 @@
 
 Но можно было проще: $Ly_{\nu k}=x\cdot\lambda_{\nu k}\cdot y_{\nu k}$ и значит
 \begin{equation*}
-	\hfill\norm{Ly_{\nu k}}_1^2=\lambda_{\nu k}^2\cdot\norm{x\cdot y_{\nu k}}_1^2=\lambda_{\nu k}^2\cdot\int\limits_0^R x^3 y_{\nu k}^2<+\infty.\hfill
+	\hfill\norm{Ly_{\nu k}}_1^2=\lambda_{\nu k}^2\cdot\norm{x\cdot y_{\nu k}}_1^2=\lambda_{\nu k}^2\cdot\int\limits_0^R x^3 y_{\nu k}^2\,dx<+\infty.\hfill
 \end{equation*} 
 \section[Функционалы, зависящие от функций двух переменных.]{Вариационные задачи для функционалов, зависящих от функций двух переменных.}
 \label{lecture9section2}
