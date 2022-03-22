@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  17 MAR 2022 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  22 MAR 2022 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1888,94 +1888,25 @@ m/it/12 u\OT1/cmr/m/n/12 ]$\T2A/cmr/m/n/12 ,
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.254 	\begin{equation}
-                       \label{l10:eq:13a}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.254 	\begin{equation}
-                       \label{l10:eq:13a}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.254 	\begin{equation}
-                       \label{l10:eq:13a}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.254 	\begin{equation}
-                       \label{l10:eq:13a} [82pdfTeX warning (ext4): destination
- with the same identifier (name{equation.10.1.14}) has been already used, dupli
-cate ignored
+
+
+] [82
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.260 	\end{equation}
+l.275 	\end{equation}
                      
 
+] [83pdfTeX warning (ext4): destination with the same identifier (name{equation
+.10.1.14}) has been already used, duplicate ignored
 
-]pdfTeX warning (ext4): destination with the same identifier (name{equation.10.
-1.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 	\begin{equation}
-                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.262 	\begin{equation}
-                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.262 	\begin{equation}
-                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.262 	\begin{equation}
-                       \label{l10:eq:13b}pdfTeX warning (ext4): destination wit
-h the same identifier (name{equation.10.1.14}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.270 	\begin{equation}
-                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
- the same identifier (name{equation.10.1.14}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.270 	\begin{equation}
-                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
- the same identifier (name{equation.10.1.14}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.270 	\begin{equation}
-                       \label{l10:eq:14}pdfTeX warning (ext4): destination with
- the same identifier (name{equation.10.1.14}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.270 	\begin{equation}
-                       \label{l10:eq:14}
-Overfull \hbox (15.58736pt too wide) in paragraph at lines 303--305
-\T2A/cmr/m/n/12 œÓ˝ÚÓÏÛ ‚ ÒË-ÎÛ [] $[]$ Ë [] $[]$ Ï˚ ÔÓ-ÎÛ-˜‡-ÂÏ, ËÒ-ÔÓÎ¸-ÁÛˇ [
-], [] 
- []
-
-[83
-
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{equation*}
+                     
 
 
 
@@ -1991,9 +1922,7 @@ Overfull \hbox (15.58736pt too wide) in paragraph at lines 303--305
 
 
 
-
 ] [85
-
 
 
 
@@ -2833,10 +2762,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 25792 strings out of 480682
- 443709 string characters out of 5908554
- 746811 words of memory out of 5000000
- 40051 multiletter control sequences out of 15000+600000
+ 25789 strings out of 480682
+ 443690 string characters out of 5908554
+ 745616 words of memory out of 5000000
+ 40050 multiletter control sequences out of 15000+600000
  571323 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,72p,2505b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2881,11 +2810,11 @@ blic/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-su
 per/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl12
 00.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "–í–ò –∏ –£–ú–§ –ª–µ–∫—Ü–∏–∏.pdf" (153 pages, 1308669 bytes).
+Output written on "–í–ò –∏ –£–ú–§ –ª–µ–∫—Ü–∏–∏.pdf" (153 pages, 1308048 bytes).
 
 PDF statistics:
- 3106 PDF objects out of 3580 (max. 8388607)
- 2773 compressed objects within 28 object streams
- 887 named destinations out of 1000 (max. 500000)
+ 3102 PDF objects out of 3580 (max. 8388607)
+ 2769 compressed objects within 28 object streams
+ 885 named destinations out of 1000 (max. 500000)
  611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

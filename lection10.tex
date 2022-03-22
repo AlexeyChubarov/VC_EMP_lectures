@@ -152,9 +152,9 @@
 \end{equation*}
 Обозначим через $\lambda_j$ и $\widetilde{\lambda}_j$ собственные значения этих операторов с областью 
 \begin{equation*}
-	\hfill\mc{D}_{H}=\mc{D}_{\widetilde{H}}=\left\{u|u\in\Cfn{2}(\Omega)\cup\Cfn{1}(\overline{\Omega}),\ u\Big|_{\partial G}=0\right\}_{\displaystyle.}\hfill
+	\hfill\mc{D}_{H}=\mc{D}_{\widetilde{H}}=\left\{u|u\in\Cfn{2}(\Omega)\cup\Cfn{1}(\overline{\Omega}),\ u\Big|_{\partial \Omega}=0\right\}_{\displaystyle.}\hfill
 \end{equation*}
-\begin{_teor}(сравнения 1)
+\begin{_teor}(сравнения 1)\label{l10:teor:sr1}
 	Пусть $\widetilde{P}\leqslant P$. Тогда 
 	\begin{equation}\label{l10:eq:11}
 		\hfill\widetilde{\lambda}_j\leqslant\lambda_j,\quad j=1,2,\ldots,n,\ldots.\hfill
@@ -168,36 +168,36 @@
 \end{equation*}
 Отсюда в частности (с учётом сноски~\ref{l10:fn:1} стр.~\pageref{l10:fn:1}) будет следовать невозможность того, что размерность какого-то собственного подпространства бесконечна, ибо тогда $\exists j_0$ так, что $\lambda_{j_0}=\lambda_s$, $s>j$.
 
-Пусть $\displaystyle P_{-}\eqdef\min\limits_{x,y,z\in\overline{\Omega}}P(x,y,z)$, $\displaystyle P_{+}\eqdef\max\limits_{x,y,z\in\overline{\Omega}}P(x,y,z)$, $\displaystyle H_{\pm}=-\Delta+ P_{\pm}$  и $\lambda_k^{\pm}$ --- собственные значения операторов $H_{\pm}$. Тогда, поскольку $P_{-}\leqslant P\leqslant P_{+}$, то из теоремы сравнения следует, что%
-\addtocounter{equation}{1} 
+Пусть $\displaystyle P_{-}\eqdef\min\limits_{x,y,z\in\overline{\Omega}}P(x,y,z)$, $\displaystyle P_{+}\eqdef\max\limits_{x,y,z\in\overline{\Omega}}P(x,y,z)$, $\displaystyle H_{\pm}=-\Delta+ P_{\pm}$  и $\lambda_k^{\pm}$ --- собственные значения операторов $H_{\pm}$. Тогда, поскольку $P_{-}\leqslant P\leqslant P_{+}$, то из теоремы сравнения следует, что
 \begin{equation}\label{l10:eq:12a}
-	\hfill\lambda_k^{-}\leqslant\lambda_k\leqslant\lambda_k^{+},\quad k=1,2,\ldots.\tag{\theequation a}\hfill
+	\lambda_k^{-}\leqslant\lambda_k\leqslant\lambda_k^{+},\quad k=1,2,\ldots.
 \end{equation} 
-Далее, если $u_k^{\pm}$ --- собственная функция оператора $H_{\pm}$, отвечающая его собственному значению $\lambda_k^{\pm}$, то есть
+%Далее, если $u_k^{\pm}$ --- собственная функция оператора $H_{\pm}$, отвечающая его собственному значению $\lambda_k^{\pm}$, то есть
+%\begin{equation*}
+%	\hfill H_{\pm}u_k^{\pm}=-\Delta u_k^{\pm}+P_{\pm}\cdot u_k^{\pm}=\lambda_k^{\pm}\cdot u_k^{\pm},\hfill
+%\end{equation*}
+%то
+%\begin{equation*}
+%	\hfill-\Delta u_k^{\pm}=\left(\lambda_k^{\pm}-P_{\pm}\right)\cdot u_k^{\pm}.\hfill
+%\end{equation*}
+%Таким образом $k$-ое собственное значение $\lambda_k^0$ оператора $H_0=-\Delta$ связанно с собственным значением $\lambda_k^{\pm}$ операторов $H_{\pm}$ равенствами
+%\begin{equation*}
+%	\hfill\lambda_k^0=\lambda_k^{\pm}-P_{\pm}\hfill
+%\end{equation*}
+%откуда
+%\begin{equation}\label{l10:eq:12b}
+%	\hfill\lambda_k^{\pm}=\lambda_k^0+P_{\pm}.\tag{\theequation b}\hfill
+%\end{equation}
+%Таким образом нам надо оценить (или найти) собственные значения $\lambda_k^0$ оператора $H=-\Delta+P$ в $\mc{D}_H$. 
+Однако при произвольной форме области $\Omega$ найти $\lambda_k$ в явном виде не удаётся, поэтому нам понадобится ещё одна теорема сравнения --- по области. То есть мы будем сравнивать собственные значения $\lambda_k\big(\Omega\big)$ и $\lambda_k\big(\widehat{\Omega}\big)$ одного и того же оператора $H=-\Delta+P$ в областях $\Omega$ и $\widehat{\Omega}$ с одним и тем же граничным условием на $\partial\Omega$ и $\partial\widehat{\Omega}$ при $\widehat{\Omega}\supseteq\Omega$. Итак, пусть
 \begin{equation*}
-	\hfill H_{\pm}u_k^{\pm}=-\Delta u_k^{\pm}+P_{\pm}\cdot u_k^{\pm}=\lambda_k^{\pm}\cdot u_k^{\pm},\hfill
-\end{equation*}
-то
-\begin{equation*}
-	\hfill-\Delta u_k^{\pm}=\left(\lambda_k^{\pm}-P_{\pm}\right)\cdot u_k^{\pm}.\hfill
-\end{equation*}
-Таким образом $k$-ое собственное значение $\lambda_k^0$ оператора $H_0=-\Delta$ связанно с собственным значением $\lambda_k^{\pm}$ операторов $H_{\pm}$ равенствами
-\begin{equation*}
-	\hfill\lambda_k^0=\lambda_k^{\pm}-P_{\pm}\hfill
-\end{equation*}
-откуда
-\begin{equation}\label{l10:eq:12b}
-	\hfill\lambda_k^{\pm}=\lambda_k^0+P_{\pm}.\tag{\theequation b}\hfill
-\end{equation}
-Таким образом нам надо оценить (или найти) собственные значения $\lambda_k^0$ оператора $H_0=-\Delta$ в $\mc{D}_{H_0}=\mc{D}_H$. Однако при произвольной форме области $\Omega$ найти $\lambda_k^0$ в явном виде не удаётся, поэтому нам понадобится ещё одна теорема сравнения --- по области. То есть мы будем сравнивать собственные значения $\lambda_k^0\big(\Omega\big)$ и $\lambda_k^0\big(\widehat{\Omega}\big)$ одного и того же оператора $H_0=-\Delta$ в областях $\Omega$ и $\widehat{\Omega}$ с одним и тем же граничным условием на $\partial\Omega$ и $\partial\widehat{\Omega}$ при $\widehat{\Omega}\supseteq\Omega$. Итак, пусть
-\begin{equation*}
-	\hfill\mc{D}_{H_0}=\left\{u(x,y,z)|u\in\Cfn{2}\big(\Omega\big)\cup\Cfn{1}\big(\overline{\Omega}\big),\ u\Big|_{\partial\Omega}=0\right\},\quad\widehat{\mc{D}}_{H_0}=\left\{u(x,y,z)|u\in\Cfn{2}\big(\widehat{\Omega}\big)\cup\Cfn{1}\big(\overline{\widehat{\Omega}}\big),\ u\Big|_{\partial\widehat{\Omega}}=0\right\}
+	\hfill\mc{D}_{H}=\left\{u(x,y,z)|u\in\Cfn{2}\big(\Omega\big)\cup\Cfn{1}\big(\overline{\Omega}\big),\ u\Big|_{\partial\Omega}=0\right\},\quad\widehat{\mc{D}}_{H}=\left\{u(x,y,z)|u\in\Cfn{2}\big(\widehat{\Omega}\big)\cup\Cfn{1}\big(\overline{\widehat{\Omega}}\big),\ u\Big|_{\partial\widehat{\Omega}}=0\right\}
 \end{equation*}  
-и $\lambda_k^0\big(\Omega\big)$, $\lambda_k^0\big(\widehat{\Omega}\big)$ --- собственные значения оператора $H_0=-\Delta$ в этих областях.
+и $\lambda_k\big(\Omega\big)$, $\lambda_k\big(\widehat{\Omega}\big)$ --- собственные значения оператора $H=-\Delta+P$ в этих областях.
 \begin{_teor}[сравнения 2]\label{l10:teor:sr2}
 	Если $\widehat{\Omega}\supseteq\Omega$, то 
 	\begin{equation*}
-		\hfill\lambda_k^{0}(\Omega)\geqslant\lambda_k^{0}(\widehat{\Omega}),\hfill
+		\hfill\lambda_k(\Omega)\geqslant\lambda_k(\widehat{\Omega}),\hfill
 	\end{equation*}
 	то есть расширение области не увеличивает собственные значения.
 \end{_teor}
@@ -236,12 +236,11 @@
 		\hfill\K_1(\widehat{\Omega})=\left\{u|u\in\Cfn{1}\big(\widehat{\Omega}\big)\text{ --- кусочно},\ u\Big|_{\partial\Omega}=0,\ \iiint\limits_{\widehat{\Omega}}u^2\,d\Omega=1\right\}_{\displaystyle.}\hfill
 	\end{equation*}
 	\begin{gather*}
-		\text{При }u\in\K_1\big(\widehat{\Omega}\big)\text{ положим }\widehat{B}[u]=\iiint\limits_{\widehat{\Omega}}\left|\nabla u\right|^2\,d\Omega.\\
-		\text{При }u\in\K_1\big(\Omega\big)\text{ и } u\in{\mathop{\K}\limits^0}_1\big(\widehat{\Omega}\big)\quad\widehat{B}[u]=\iiint\limits_{\Omega}\left|\nabla u\right|^2\,d\Omega.
+		\intertext{При $u\in\K_1\big(\widehat{\Omega}\big)$  положим}\widehat{B}[u]=\iiint\limits_{\widehat{\Omega}}\Big(\left|\nabla u\right|^2+P\cdot\left|u\right|^2\Big)\,d\Omega.
 	\end{gather*}
 	Из определения класса $\displaystyle{\mathop{\K}\limits^0}_1\big(\widehat{\Omega}\big)$ следует, что при $u\in{\mathop{\K}\limits^0}_1\big(\widehat{\Omega}\big)$
 	\begin{equation*}
-		\hfill\widehat{B}[u]=B[u].\hfill
+		\widehat{B}[u]=B[u]=\iiint\limits_{{\Omega}}\Big(\left|\nabla u\right|^2+P\cdot\left|u\right|^2\Big)\,d\Omega.
 	\end{equation*}
 	Далее, для $\forall\phi\in\fLr[\widehat{\Omega}]$ положим 
 	\begin{equation*}
@@ -258,7 +257,7 @@
 			\big(u,\phi_j\big)_{\widehat{\Omega}}=0,\ j=\overline{1,k}&  &\big(u,\check{\phi}_j\big)_{\Omega}=0,\ j=\overline{1,k}.
 		\end{array}\tag{\theequation a}\hfill
 	\end{equation} 
-	Оставляя справа в~\eqref{l10:eq:13a} функцию $u$ фиксированной, слева возьмём минимум по $v\in\K_1\big(\widehat{\Omega}\big)\supseteq{\mathop{\K}\limits^0}_1(\widehat{\Omega})$. Получим
+	Оставляя справа в~\eqref{l10:eq:13a} функцию $u$ фиксированной, слева возьмём минимум по $v\in\K_1\big(\widehat{\Omega}\big)\?\supseteq{\mathop{\K}\limits^0}_1(\widehat{\Omega})$. Получим
 	\begin{equation}\label{l10:eq:13b}
 		\hfill\begin{array}{rcl}
 			\min\widehat{B}[v]&\leqslant&B[u],\\
@@ -293,20 +292,33 @@
 	Согласно принципу минимакса слева в~\eqref{l10:eq:16} $\lambda_{k+1}^0\big(\widetilde{\Omega}\big)$, справа $\lambda_{k+1}^0\big(\Omega\big)$ и таким образом теорема~\ref{l10:teor:sr2} доказана, так как в~\eqref{l10:eq:16}: $\lambda_{k+1}^0\big(\widetilde{\Omega}\big)\leqslant\lambda_{k+1}^0\big(\Omega\big)$.  
 \end{proof}
 
-Возьмём теперь два произвольных куба $A_1$, $A_2$, один из которых $A_2$ содержит $\Omega$ (можно считать в теореме~\ref{l10:teor:sr2} $A_2=\widehat{\Omega}$), а другой $A_1\subset\Omega$. Пусть $\nu_k^{(2)}$ и $\nu_k^{(1)}$ --- собственные значения оператора $H_0=-\Delta$ в $A_2$ и $A_1$ с нулевым граничным условием на $\partial A_2$ и $\partial A_1$ соответственно. В силу теоремы~\ref{l10:teor:sr2} 
-\begin{equation}\label{l10:eq:17}
-	\hfill\nu_k^{(1)}\geqslant\lambda_k\geqslant\nu_k^{(2)}.\hfill	
+Возьмём теперь два произвольных куба $A_1$, $A_2$, один из которых $A_2$ содержит $\Omega$ (можно считать в теореме~\ref{l10:teor:sr2} $A_2=\widehat{\Omega}$), а другой $A_1\subset\Omega$. Пусть $\lambda_k(A_3)$ собственные значения оператора $H(A_3)$, то есть оператора $H$в кубе $A_3$ с нулевым граничным условием на $\partial A_3$, $s=1,2$. В силу теоремы~\ref{l10:teor:sr2}
+\begin{equation}\label{l10:eq:1.17}
+	\lambda_k(A_1)\geqslant\lambda_k\geqslant\lambda_k(A_2).
 \end{equation}
-Но для кубов собственные значения находятся в явном виде\footnote{Мы покажем, что для куба $A$ со стороной $l$ собственные значения оператора $H_0=-\Delta$ при нулевом граничном условии на $\partial A$ суть $\displaystyle\nu_{k_1 k_2 k_3}=\left(\frac{\pi}{l}\right)^2\cdot\left(k_1^2+k_2^2+k_3^2\right)$, где $k_1,\ k_2\ k_3=1,2,3,\ldots$. Мы упорядочиваем их по величине $\left(k_1^2+k_2^2+k_3^2\right)$ и обозначаем $\nu_k$.} и для некоторых $\alpha_j>0$, $j=1,2$
-\begin{equation}\label{l10:eq:18}
-	\hfill\nu_k^{(1)}\leqslant\alpha_1\cdot k^2,\quad\nu_k^{(2)}\geqslant\alpha_2\cdot k^2.\hfill
-\end{equation}
-Поэтому в силу~\eqref{l10:eq:12a} $\displaystyle\left(\lambda_k^{-}\leqslant\lambda_k\leqslant\lambda_k^{+}\right)$  и~\eqref{l10:eq:12b} $\displaystyle\left(\lambda_k^{\pm}=\lambda_k^0+P_{\pm}\right)$ мы получаем, используя~\eqref{l10:eq:17},~\eqref{l10:eq:18} 
+Пусть $P_{+}^{(1)}=\max\limits_{r\in A_1}P(r)$, $P_{-}^{(2)}=\min\limits_{r\in A_2}P(r)$ $r=(x,y,z)$ и $\lambda_k^{+}(A_1)$, $\lambda_k^{-}(A_2)$ --- собственные значения операторов $H_{+}(A_1)=-\Delta+P_{+}^{(1)}$ и $H_{-}(A_2)=-\Delta+P_{-}^{(2)}$ в кубах $A_1$, $A_2$ с нулевым условием на $\partial A_1$, $\partial A_2$. Тогда в силу теоремы~\ref{l10:teor:sr1}
 \begin{equation*}
-	\hfill\alpha_2\cdot k^2+P_{-}\leqslant\lambda_k^{0}+P_{-}\leqslant\lambda_k\leqslant\lambda_k^{0}+P_{+}\leqslant\alpha_1\cdot k^2+P_{+}.\hfill
-\end{equation*}
-
-Таким образом мы получили, что собственные значения $\lambda_k$ оператора Шредингера $H=-\Delta+P$ в $\Omega$ растут со скоростью $k^2$. 
+	\lambda_k^{+}(A_1)\geqslant\lambda_k(A_1),\quad\lambda_k^{-}(A_2)\leqslant\lambda_k(A_2)
+\end{equation*} 
+и в силу~\eqref{l10:eq:1.17}
+\begin{equation*}
+	\lambda_k^{+}(A_1)\geqslant\lambda_k\geqslant\lambda_k^{-}(A_2),
+\end{equation*} 
+но для любого куба $A$ собственные значения $\lambda_k^0(A)$ оператора $H_0(A)=-\Delta+P_0$, где $P_0$ произвольная константа, известны\footnote{Мы покажем далее в курсе, что для куба $A$ со стороной $l$ собственные значения оператора $H_0(A)=-\Delta+P_0$ при нулевом граничном условии на $\partial A$ суть $\displaystyle\nu_{k_1 k_2 k_3}=\left(\frac{\pi}{l}\right)^2\cdot\left(k_1^2+k_2^2+k_3^2\right)+P_0$, где $k_1,\ k_2\ k_3=1,2,3,\ldots$. Мы упорядочиваем их по величине $\left(k_1^2+k_2^2+k_3^2\right)$ и обозначаем $\lambda_k^0(A)$.}  и $\lambda_k^0\to+\infty$ при $k\to\infty$. Значит $\lambda_k\to+\infty$ при $k\to\infty$, что мы и хотели доказать.
+%Пусть $\nu_k^{(2)}$ и $\nu_k^{(1)}$ --- собственные значения оператора $H_0=-\Delta$ в $A_2$ и $A_1$ с нулевым граничным условием на $\partial A_2$ и $\partial A_1$ соответственно. В силу теоремы~\ref{l10:teor:sr2} 
+%\begin{equation}\label{l10:eq:17}
+%	\hfill\nu_k^{(1)}\geqslant\lambda_k\geqslant\nu_k^{(2)}.\hfill	
+%\end{equation}
+%Но для кубов собственные значения находятся в явном виде\footnote{Мы покажем далее в курсе, что для куба $A$ со стороной $l$ собственные значения оператора $H_0(A)=-\Delta+P_0$ при нулевом граничном условии на $\partial A$ суть $\displaystyle\nu_{k_1 k_2 k_3}=\left(\frac{\pi}{l}\right)^2\cdot\left(k_1^2+k_2^2+k_3^2\right)+P_0$, где $k_1,\ k_2\ k_3=1,2,3,\ldots$. Мы упорядочиваем их по величине $\left(k_1^2+k_2^2+k_3^2\right)$ и обозначаем $\lambda_k^0(A)$.} и для некоторых $\alpha_j>0$, $j=1,2$
+%\begin{equation}\label{l10:eq:18}
+%	\hfill\nu_k^{(1)}\leqslant\alpha_1\cdot k^2,\quad\nu_k^{(2)}\geqslant\alpha_2\cdot k^2.\hfill
+%\end{equation}
+%Поэтому в силу~\eqref{l10:eq:12a} $\displaystyle\left(\lambda_k^{-}\leqslant\lambda_k\leqslant\lambda_k^{+}\right)$  и~\eqref{l10:eq:12b} $\displaystyle\left(\lambda_k^{\pm}=\lambda_k^0+P_{\pm}\right)$ мы получаем, используя~\eqref{l10:eq:17},~\eqref{l10:eq:18} 
+%\begin{equation*}
+%	\hfill\alpha_2\cdot k^2+P_{-}\leqslant\lambda_k^{0}+P_{-}\leqslant\lambda_k\leqslant\lambda_k^{0}+P_{+}\leqslant\alpha_1\cdot k^2+P_{+}.\hfill
+%\end{equation*}
+%
+%Таким образом мы получили, что собственные значения $\lambda_k$ оператора Шредингера $H=-\Delta+P$ в $\Omega$ растут со скоростью $k^2$. 
 
 Теперь переходим к теореме Стеклова. Пусть $u_1,\ u_2,\ldots,u_k,\ldots$ --- ортонормированные собственные функции оператора Шредингера в области $\Omega$ с нулевыми условиями на $\partial\Omega$ и пусть $\lambda_1<\lambda_2\leqslant\ldots\leqslant\lambda_k\leqslant\ldots$ соответствующие собственныые значения, $C_k=\big(u,u_k\big)$, $u\in\fLr[\Omega]$. 
 \begin{_teor}[Стеклова]\hfill
