@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  24 MAR 2022 00:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  24 MAR 2022 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2764,7 +2764,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
 Here is how much of TeX's memory you used:
  25789 strings out of 480682
  443690 string characters out of 5908554
- 745614 words of memory out of 5000000
+ 745616 words of memory out of 5000000
  40050 multiletter control sequences out of 15000+600000
  571323 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2810,7 +2810,7 @@ blic/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-su
 per/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl12
 00.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "ВИ и УМФ лекции.pdf" (153 pages, 1308052 bytes).
+Output written on "ВИ и УМФ лекции.pdf" (153 pages, 1308092 bytes).
 
 PDF statistics:
  3102 PDF objects out of 3580 (max. 8388607)
