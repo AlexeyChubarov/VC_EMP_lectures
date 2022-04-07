@@ -112,7 +112,7 @@
 \noindent\textbf{Задание. }Рассмотреть случай упругого закрепления (в интеграле энергии появятся дополнительные члены).
 
 \section{Свободные колебания однородной струны.}
-\label{lecture11section2}
+\label{lecture12section2}
 Пусть струна однородна, то есть $\rho$ и $\mu$ --- константы. Поделим обе части уравнения~\eqref{l12:eq:1} на $\rho$ и положим, $a^2\eqdef{\mu}\bigm/{\rho}$. Тогда уравнение~\eqref{l12:eq:1} можно записать в виде
 \begin{equation}
 	\label{l12:eq:9}
@@ -220,7 +220,7 @@
 Функция $u_k$ называется \emph{стоячей волной} (отсюда одно из названий метода --- метод суперпозиции стоячих волн). Каждая точка $x_0$ стоячей волны $u_k$ колеблется с частотой $\omega_k$ и амплитудой \\$C_k\cdot X_k(x_0)$. Те точки волны $u_k(x,t)$, для которых амплитуда равна нулю для всех $t$, называются её узлами. Профиль стоячей волны определяется функцией $X_k(x)$; в данном случае это синусоида. Частота $\omega_k=\lambda_k\cdot\sqrt{{\mu}\!\bigm/\!{\rho}}$ стоячей волны обратно пропорциональна корню из плотности струны и прямо пропорциональна корню из жёсткости струны, что качественно естественно из физических соображений. 
 
 \section{Понятие о функции Грина.}
-\label{lecture11section3}
+\label{lecture12section3}
 Если в выражение $u_k(x,t)$ подставить найденные значения коэффициентов $A_k$ и  $B_k$, то мы получим
 \begin{equation}
 	\label{l12:eq:19}
@@ -229,9 +229,9 @@
 Введём в рассмотрение функцию
 \begin{equation}
 	\label{l12:eq:20}
-	\hfill G(x,\xi,t)=\sum\limits_{k=1}^{\infty}\frac{1}{\omega_k}\cdot\sin(\omega_k\cdot t)\cdot X_k(x)\cdot X_k(\xi),\hfill
+	 G(x,\xi,t)=\sum\limits_{k=1}^{\infty}\frac{1}{\omega_k}\cdot\sin(\omega_k\cdot t)\cdot X_k(x)\cdot X_k(\xi),
 \end{equation}
-которая называется функцией Грина для задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12}. Так как частоты $\omega_k$ растут со скоростью $k$, то ряд для функции $G(x,\xi,t)$ сходится в среднем по $\xi$ при любых фиксированных $x$ и $t$ (доказать самостоятельно). Поэтому первую сумму в~\eqref{l12:eq:19} можно записать в виде 
+которая называется функцией Грина для задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12}. Так как частоты $\omega_k$ растут со скоростью $k$, то ряд для функции $G(x,\xi,t)$ сходится в среднем по $\xi$ при любых фиксированных $x$ и $t$ (докажем позже). Поэтому первую сумму в~\eqref{l12:eq:19} можно записать в виде 
 \begin{equation*}
 	\hfill\int\limits_0^l G(x,\xi,t)\cdot\psi(\xi)\,d\xi.\hfill
 \end{equation*}
@@ -250,8 +250,141 @@
 \end{equation}
 Отсюда видно, что для решения задачи~\eqref{l12:eq:10}--\eqref{l12:eq:12} с любыми начальными условиями достаточно найти функцию Грина, то есть собственные значения и собственные функции оператора $-\displaystyle\dder{}{x}$ с граничными условиями~\eqref{l12:eq:12}.
 
+\begin{proof}[Доказательство сходимости в среднем по $\xi$ ряда функции $G(x,\xi,t)$, $\forall x,\,t$ --- фиксированных.]\hfill\\
+
+Функция Грина определена равенством 
+\begin{equation*}
+	G(x,\xi,t)=\sum\limits_{k=1}^{\infty}\frac{1}{\omega_k}\cdot\sin(\omega_k\cdot t)\cdot X_k(x)\cdot X_k(\xi).
+\end{equation*}
+Пусть
+\begin{equation*}
+	S_n(x,\xi,t)=\sum\limits_{k=1}^{n}\frac{1}{\omega_k}\cdot\sin(\omega_k\cdot t)\cdot X_k(x)\cdot X_k(\xi).
+\end{equation*}
+
+Покажем, что последовательность $S_n(x,\xi,t)$ при любых фиксированных $x,\,t$ фундаментальна в $\fL[{[0,l]}]$, то есть в смысле сходимости в среднем на отрезке $[0,l]$. Отсюда будет следовать, что ряд для $G(x,\xi,t)$ --- сходится и, значит, функция $G(x,\xi,t)$ определена и 
+\begin{equation*}
+	\lim\limits_{n\to\infty}\int\limits_0^l S_n(x,\xi,t)\cdot v(\xi)\,d\xi=\int\limits_0^l G(x,\xi,t)\cdot v(\xi)\,d\xi,\quad\forall v(\xi)\in\fL[{[0,l]}].
+\end{equation*}
+
+Пусть $d_k=\sin(\omega_k\cdot t)\cdot X_k(x)$ ($x,\,t$ --- фиксированы). Тогда 
+\begin{equation*}
+	S_n(x,\xi,t)=\sum\limits_{k=1}^n\frac{d_k}{\omega_k}\cdot X_k(\xi)
+\end{equation*}
+и при $m>n$ имеем 
+\begin{equation*}
+	\norm{S_m-S_n}^2=\int\limits_0^l\left(\sum\limits_{k=n+1}^m\frac{d_k}{\omega_k}\cdot X_k(\xi)\right)^2\,d\xi=\sum\limits_{k=n+1}^m\frac{d_k^2}{\omega_k^2}\to0,\quad\text{при }n,m\to\infty,
+\end{equation*}
+так как $\omega_k\geqslant\alpha_0\cdot k$ для некоторого $\alpha_0>0$, $\displaystyle|d_k|\leqslant\sqrt{\frac{2}{l}}$ и $\displaystyle\int\limits_0^l X_k(\xi)\cdot X_p(\xi)\,d\xi=\delta_{kp}$. 
+
+\noindent Таким образом фундаментальность последовательности $S_n(x,\xi,t)$ --- доказана.
+\end{proof}
+\section{Физический смысл функции Грина.}
+\label{lecture12section4}
+Допустим, что в начальный момент времени по струне в точке $\xi_0$ ударяет острый молоточек, который сообщает струне импульс $\rho$ (безразмерная величина). Размажем этот импульс на малый интервал $\gamma_\delta=(\xi_0-\delta,\xi_0+\delta)$, вне $\gamma_\delta$ импульс нулевой. Обозначим через $\Psi_\delta(x)$ скорость точек струны, обеспечивающую струне суммарный импульс $\rho$. Выберем функцию $\Psi_\delta(x)$ так, что
+\begin{equation*}
+	\begin{cases}
+		\Psi_\delta(x)>0,& x\in\gamma_\delta;\\
+		\Psi_\delta(x)=0,& x\notin\gamma_\delta;
+	\end{cases}\quad\Psi_\delta(x)\in\Cfn[{[0,l]}]{2};
+\end{equation*} 
+то есть 
+\vspace*{0.2cm}
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+	%uncomment if require: \path (0,142); %set diagram left start at 0, and has height of 142
+	
+	%Shape: Axis 2D [id:dp28568967834010284] 
+	\draw  (57,105) -- (243.89,105)(75.69,15) -- (75.69,115) (236.89,100) -- (243.89,105) -- (236.89,110) (70.69,22) -- (75.69,15) -- (80.69,22)  ;
+	%Straight Lines [id:da6958476943035268] 
+	\draw    (92,105) -- (180,105) (115,101) -- (115,109)(138,101) -- (138,109)(161,101) -- (161,109) ;
+	%Curve Lines [id:da1534865928324396] 
+	\draw    (115,104.5) .. controls (134,105.5) and (119.4,82.01) .. (138.4,82.01) .. controls (157.4,82.01) and (145,105.5) .. (161,104.5) ;
+	%Straight Lines [id:da3525088238185259] 
+	\draw    (75.69,105) -- (223.89,105) (216.69,101) -- (216.69,109) ;
+	
+	% Text Node
+	\draw (239,108.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+	% Text Node
+	\draw (87,112.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$\xi _{0} -\delta $};
+	% Text Node
+	\draw (157,112.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$\xi _{0} +\delta $};
+	% Text Node
+	\draw (132,112.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$\xi _{0}$};
+	% Text Node
+	\draw (83,12.4) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize]  {$\Psi _{\delta }( x)$};
+	% Text Node
+	\draw (64,112.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$0$};
+	% Text Node
+	\draw (216,112.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$l$};
+	
+	
+\end{tikzpicture}\vspace*{0.2cm}
+
+\noindent При таком выборе $\Psi_{\delta}(x)$
+\begin{equation}\label{l12:eq:4.1}
+	\rho=\int\limits_{\xi_0-\delta}^{\xi_0+\delta}\rho\cdot\Psi_\delta(\xi)\,d\xi\quad\Longrightarrow\quad\int\limits_{\xi_0-\delta}^{\xi_0+\delta}\Psi_\delta(\xi)\,d\xi=1,\quad\forall\delta>0.
+\end{equation}
+
+Рассмотрим теперь задачу о свободных колебаниях струны с закреплёнными концами при
+\begin{equation*}
+	u(x,0)=0,\quad u_t(x,0)=\Psi_\delta(x).
+\end{equation*}
+Решение этой задачи обозначим через $u_\delta(x,t)$ и докажем, что $G(x,\xi_0,t)$ есть предел при $\delta\to0$ в смысле сходимости в среднем по $x$ на $[0,l]$ решений $u_\delta(x,t)$ при любом фиксированном $t$.
+\begin{proof}
+	В силу~\eqref{l12:eq:21} с учётом~\eqref{l12:eq:4.1}
+	\begin{multline*}
+		u_\delta(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\Psi_\delta(\xi)\,d\xi=\int\limits_0^l\sum\limits_{k=1}^{\infty}\dfrac{\sin(\omega_k\cdot t)\cdot X_k(x)\cdot X_k(\xi)}{\omega_k}\cdot\Psi_\delta(\xi)\,d\xi=\\
+		=\sum\limits_{k=1}^{\infty}\dfrac{\sin(\omega_k\cdot t)\cdot X_k(x)}{\omega_k}\cdot\int\limits_0^l X_k(\xi)\cdot\Psi_\delta(\xi)\,d\xi=\left|\parbox{0.12\textwidth}{\centering по теореме о среднем}\right|=\\=\sum\limits_{k=1}^{\infty}\dfrac{\sin(\omega_k\cdot t)}{\omega_k}\cdot X_k(x)\cdot X_k(\xi_{k\delta})\cdot\int\limits_{\xi_0-\delta}^{\xi_0+\delta}\Psi_{\delta}(\xi)\,d\xi=\sum\limits_{k=1}^{\infty}\dfrac{\sin(\omega_k\cdot t)}{\omega_k}\cdot X_k(x)\cdot X_k(\xi_{k\delta}),
+	\end{multline*} 
+	где $\xi_{k\delta}$ --- некоторая точка из интервала $(\xi_0-\delta,\xi_0+\delta)$.
+	
+	Положим $b_{k\delta}=\sin(\omega_k\cdot t)\cdot\big(X_k(\xi)-X_k(\xi_{k\delta})\big)$. Тогда, очевидно
+	\begin{equation}\label{l12:eq:4.2}
+		A_\delta\eqdef G(x,\xi,t)-u_\delta(x,t)=\sum\limits_{k=1}^{\infty}\dfrac{b_{k\delta}}{\omega_k}\cdot X_k(x).
+	\end{equation}
+	Пусть
+	\begin{equation*}
+		\widetilde{S}_n(x,t)\eqdef\sum\limits_{k=1}^{n}\dfrac{b_{k\delta}}{\omega_k}\cdot X_k(x).
+	\end{equation*}
+	Действуя также, как в конце пункта~\ref{lecture12section3} текущей лекции, можно показать, что последовательность $\widetilde{S}_n(x,t)$ фундаментальна в смысле сходимости в среднем по $x$ на $[0,l]$, при этом мы используем оценки $\omega_k\geqslant\alpha_0\cdot k$, $\alpha_0>0$ и $\displaystyle |b_{k\delta}|\leqslant2\cdot\sqrt{\frac{2}{l}}$. Следовательно, $\displaystyle\lim\limits_{n\to\infty}\widetilde{S}_n(x,t)$ существует при $\forall t$. Но $\widetilde{S}_n(x,t)$ --- последовательность частных сумм ряда~\eqref{l12:eq:4.2} и поэтому 
+	\begin{equation*}
+		\norm{A_{\delta}(x,t)-\widetilde{S}_n(x,t)}\to0,\quad\text{при }n\to\infty.
+	\end{equation*}
+	Отсюда в силу неравенства треугольника 
+	\begin{equation*}
+		\bigg|\norm{A_{\delta}(x,t)\vphantom{\widetilde{S}_n(x,t)}}-\norm{\widetilde{S}_n(x,t)}\bigg|\to0,\quad\text{при }n\to\infty.
+	\end{equation*}
+	Следовательно
+	\begin{equation}\label{l12:eq:4.3}
+		\norm{A_{\delta}(x,t)\vphantom{\widetilde{S}_n(x,t)}}^2=\lim\limits_{n\to\infty}\norm{\widetilde{S}_n(x,t)}^2=\sum\limits_{k=1}^{\infty}\dfrac{b_{k\delta}^2}{\omega_k^2}.
+	\end{equation}
+	Теперь по $\forall\eps>0$ $\exists N(\eps)\gg1$ так, что
+	\begin{equation}\label{l12:eq:4.4}
+		\sum\limits_{k=N+1}^{\infty}\dfrac{b_{k\delta}^2}{\omega_k^2}\leqslant\frac{\eps}{2},\quad\forall\delta,t.
+	\end{equation}
+	Далее при выбранном $N$ укажем $\delta_0>0$ столь малым, что при $\delta\leqslant\delta_0$
+	\begin{equation}\label{l12:eq:4.5}
+		b_{k\delta}^2\leqslant\dfrac{\omega_k^2\cdot\eps}{2\cdot N},\quad k=\overline{1,N}.
+	\end{equation}
+	Это можно сделать, так как $X_k(\xi)\in\Cfn[{[0,l]}]{}$ и $|\xi_0-\xi_{k\delta}|<\delta\leqslant\delta_0$. В силу~\eqref{l12:eq:4.5}
+	\begin{equation}\label{l12:eq:4.6}
+		\sum\limits_{k=1}^{N}\dfrac{b_{k\delta}^2}{\omega_k^2}\leqslant\dfrac{\eps}{2}.
+	\end{equation}
+	Из~\eqref{l12:eq:4.3},~\eqref{l12:eq:4.4} и~\eqref{l12:eq:4.6} вытекает, что 
+	\begin{equation*}
+		\norm{A_\delta(x,t)}^2\leqslant\eps\quad\text{при }\delta\leqslant\delta_0,\ \forall G.
+	\end{equation*}
+	Так как $\eps>0$ --- любое число, то тем самым доказано, что
+	\begin{equation*}
+		\lim\limits_{\delta\to0}\norm{G(x,\xi_0,t)-u_\delta(x,t)}=0.
+	\end{equation*}
+\end{proof}
 \section[Свободные колебания однородной струны с другими г. у.]{Свободные колебания однородной струны с другими граничными условиями.}
-\label{lecture11section4}
+\label{lecture12section5}
 Мы рассмотрели подробно решение задачи~\eqref{l12:eq:10},~\eqref{l12:eq:11} с граничными условиями~\eqref{l12:eq:12}, то есть колебания струны с закреплёнными концами. Совершенно аналогично решается задача~\eqref{l12:eq:10},~\eqref{l12:eq:11} при других однородных граничных условиях на одном или обоих концах. Укажем все возможные варианты.
 \vspace{0,4cm}
 
