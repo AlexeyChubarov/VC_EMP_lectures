@@ -212,7 +212,7 @@
 \noindent\textbf{Задание.} Проверить, существует ли стационарное решение при $g(x,t)=g(x)$, если закреплён один из концов струны.
 \vspace{0.2cm}
 
-Переходим к общему методу решения задачи~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). В первую очередь надо найти собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи (то есть~\eqref{l13:eq:14} или~\eqref{l13:eq:15}). Пусть эти собственные значения $\lambda_k$ и нормированные собственные функции $X_k(x)$\footnote{В условиях~\eqref{l13:eq:14} $\displaystyle X_k(x)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)$, $\displaystyle\lambda_k=\left(\frac{\pi\cdot k}{l}\cdot x\right)^2$.}. Будем искать функцию $v_1$ в виде ряда
+Переходим к общему методу решения задачи~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). В первую очередь надо найти собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи (то есть~\eqref{l13:eq:14} или~\eqref{l13:eq:15}). Пусть эти собственные значения $\lambda_k$ и нормированные собственные функции $X_k(x)$\footnote{В условиях~\eqref{l13:eq:14} $\displaystyle X_k(x)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)$, $\displaystyle\lambda_k=\left(\frac{\pi\cdot k}{l}\right)^2$.}. Будем искать функцию $v_1$ в виде ряда
 \begin{equation*}
 	\hfill v_1(x,t)=\sum\limits_{k=1}^{\infty}b_k(t)\cdot X_k(x).\hfill
 \end{equation*}
@@ -266,7 +266,7 @@
 \end{equation}
 Для того, чтобы получить решение $v=v_2+v_1$ исходной задачи вспомним, что $v_2(x,t)$ как решение однородного уравнения выражалось равенством
 \begin{equation}\label{l13:eq:23}
-	\hfill v_2(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\psi(\xi)\,d\xi+\int\limits_0^l\pder{G}{t}(x,\xi,t)\cdot\phi(\xi)\,d\xi,\hfill
+	v_2(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\widetilde{\psi}(\xi)\,d\xi+\int\limits_0^l\pder{G}{t}(x,\xi,t)\cdot\widetilde{\phi}(\xi)\,d\xi,
 \end{equation}
 где 
 \begin{equation}\label{l13:eq:24}
