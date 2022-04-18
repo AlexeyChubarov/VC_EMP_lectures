@@ -123,7 +123,7 @@
 \begin{equation*}
 	\int\limits_0^{2\cdot\pi}-\underbrace{\overline{h}(\alpha)}_{u}\cdot \underbrace{h''(\alpha)\,d\alpha}_{dv}=-h'(\alpha)\cdot\overline{h}(\alpha)\mathop{\Big|}\limits_{0}^{2\cdot\pi}+\int\limits_{0}^{2\cdot\pi}|h'(\alpha)|^2\,d\alpha=\gamma\cdot\int\limits_{0}^{2\cdot\pi}|h(\alpha)|^2\,d\alpha,
 \end{equation*}
-где $h'(2\cdot\pi)\cdot\overline{h}(2\cdot\pi)-h'(0)\cdot \overline{h}(0)=0$ в силу периодичности $h(\alpha)$. Следовательно, $\gamma\geqslant0$. Поэтому можно считать решения~\eqref{l17:eq:14} вещественными\footnote{Для комплексного $h(\alpha)=\widehat{h}(\alpha)+i\cdot\widetilde{h}(\alpha)$ вещественные функции $\widehat{h}(\alpha)$ и $\widetilde{h}(\alpha)$ были бы решениями~\eqref{l17:eq:14}.}. Далее, при $\gamma=0$ очевидное решение $h(\alpha)=C$, или после нормировки в $\fL[{[0,2\cdot\pi]}]$ $h=\displaystyle\frac{1}{\sqrt{2\cdot\pi}}$. Считая далее $\gamma>0$, из~\eqref{l17:eq:14} получаем 
+где $h'(2\cdot\pi)\cdot\overline{h}(2\cdot\pi)-h'(0)\cdot \overline{h}(0)=0$ в силу периодичности $h(\alpha)$. Следовательно, $\gamma\geqslant0$. Поэтому можно считать решения~\eqref{l17:eq:14} вещественными\footnote{Для комплексного $h(\alpha)=\widehat{h}(\alpha)+i\cdot\widetilde{h}(\alpha)$ вещественные функции $\widehat{h}(\alpha)$ и $\widetilde{h}(\alpha)$ были бы решениями~\eqref{l17:eq:14}.}. Далее, при $\gamma=0$ очевидное решение $h(\alpha)=C$. Считая далее $\gamma>0$, из~\eqref{l17:eq:14} получаем 
 \begin{equation*}
 	\hfill h(\alpha)=c\cdot\cos\left(\sqrt{\gamma}\cdot\alpha\right)+d\cdot\sin\left(\sqrt{\gamma}\cdot\alpha\right).\hfill
 \end{equation*} 
@@ -145,11 +145,11 @@
 \end{equation*} 
 Таким образом собственному значению $\gamma=n^2$ оператора $\displaystyle-\dder{}{\alpha}$ при условии~\eqref{l17:eq:16} отвечают при $n>0$ две собственных функции, которые после нормировки в $\displaystyle\fL[{[0,2\cdot\pi]}]$ мы обозначим 
 \begin{equation*}
-	\hfill h_{n1}=\frac{\sin\left(n\cdot \alpha\right)}{\sqrt{\pi}},\quad h_{n2}=\frac{\cos\left(n\cdot \alpha\right)}{\sqrt{\pi}},\hfill
+	\hfill h_{n1}=\sin\left(n\cdot \alpha\right),\quad h_{n2}=\cos\left(n\cdot \alpha\right),\hfill
 \end{equation*}
 при $n=0$
 \begin{equation*}
-	\hfill h_{01}=0,\quad h_{02}=\frac{1}{\sqrt{2\cdot\pi}}.\hfill
+	\hfill h_{01}=0,\quad h_{02}=1.\hfill
 \end{equation*}
 Подставим $\gamma=n^2$ в~\eqref{l17:eq:13} и перепишем~\eqref{l17:eq:13} в виде
 \begin{equation}\label{l17:eq:17}
@@ -229,7 +229,7 @@
 		\displaystyle F_{n1}(r)=\frac{1}{\pi}\cdot\int\limits_{0}^{2\cdot\pi}F(r,\alpha)\cdot\sin\left(n\cdot\alpha\right)\,d\alpha,&\displaystyle F_{n2}(r)=\frac{1}{\beta_n\cdot\pi}\cdot\int\limits_{0}^{2\cdot\pi}F(r,\alpha)\cdot\cos\left(n\cdot\alpha\right)\,d\alpha,&n\geqslant0;
 	\end{array}
 \end{equation}
-где $\beta_n=1$ при $n\geqslant1$, $\beta_0=2$, то есть $\Phi_{01}(r)=F_{01}(r)=0$, а в $\Phi_{02}(r)$ и $F_{02}(r)$ в знаменателе $2\cdot\pi$ вместо $\pi$.
+где $\beta_n=1$ при $n\geqslant1$, $\beta_0=2$, то есть $\Phi_{01}(r)=F_{01}(r)=0$, а в $\Phi_{02}(r)$ и $F_{02}(r)$ в знаменателе $2\cdot\pi$ вместо $\pi$\footnote{$\pi$ и $2\cdot\pi$ --- это соответственно квадраты норм $\sin(n\cdot\alpha)$ при $n>0$ и $\cos(n\cdot\alpha)$ при $n\geqslant0$}.
 
 Зная функции $\Phi_{ni}(r)$ и $F_{ni}(r)$ мы можем из~\eqref{l17:eq:24} найти неизвестные коэффициенты $A_{nki}$ и $B_{nki}$ на основании теоремы Стеклова. Как мы знаем из рассмотрения квадратичного функционала специального вида, функции $J_n\left(\dfrac{\mu_{nk}}{R}\cdot r\right)$ --- это собственные функции $y_{nk}(r)$ обобщённой задачи Штурма для оператора $L(n)$ из~\eqref{l17:eq:17} и по ним можно раскладывать функции из $\fLr[r;{[0,R]}]$; известно также, что они при разных $k$ ортогональны с весом $r$. Поэтому умножив равенства~\eqref{l17:eq:24} на $J_n\left(\dfrac{\mu_{nm}}{R}\cdot r\right)\cdot r$ и проинтегрировав по $r$ от $0$ до $R$, получим:
 \begin{equation*}
@@ -240,7 +240,7 @@
 \end{equation*} 
 Из этих формул легко находятся константы $A_{nmi}$ и $B_{nmi}$\footnote{Напоминаю, что здесь $\Phi_{ni}(r)$ и $F_{ni}(r)$ даются равенствами~\eqref{l17:eq:25}.}. Таким образом задача о свободных колебаниях однородной круглой мембраны, закреплённой на границе, решена полностью.
 
-Задача о вынужденных колебаниях под действием распределённой силы может быть решена по рецепту лекции 5 поскольку собственные функции $v_{nki}(r,\alpha)$ оператора Лапласа с нулевыми граничными условиями известны.
+Задача о вынужденных колебаниях под действием распределённой силы может быть решена по рецепту лекции~\ref{lecture15} поскольку собственные функции $v_{nki}(r,\alpha)$ оператора Лапласа с нулевыми граничными условиями известны.
 
 Рассмотрим вкратце задачу о \emph{колебаниях мембраны со свободной границей}. Вместо условия~\eqref{l17:eq:2} должно выполняться условие\setcounter{equation}{2}
 \begin{equation}\label{l17:eq:2A}

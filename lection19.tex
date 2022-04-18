@@ -348,7 +348,7 @@
 	\label{l19:eq:33_}
 	v(x,t)=\int\limits_0^t\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau+\int\limits_0^l G(x,\xi,t)\cdot \widetilde{\phi}(\xi)\,d\xi.	
 \end{equation}  
-\begin{proof}[Доказательство того, что в~\eqref{l19:eq:for_proof} суммирование можно внести под знак двойного интеграла.] Фиксируем $x,\ t$. Ряд для $G(x,\xi,t-\tau)$ при $\tau<t$ сходится равномерно за счёт множителя $\displaystyle e^{-\omega_k^2\cdot(t-\tau)}$ поэтому для $\forall\delta>0$ при $0\leqslant\tau\leqslant t-\delta$ функция $G(x,\xi,t-\tau)$ и можно написать
+\begin{proof}[Доказательство того, что в~\eqref{l19:eq:for_proof} суммирование можно внести под знак двойного интеграла.] Фиксируем $x,\ t$. Ряд для $G(x,\xi,t-\tau)$ при $\tau<t$ сходится равномерно за счёт множителя $\displaystyle e^{-\omega_k^2\cdot(t-\tau)}$ поэтому для $\forall\delta>0$ при $0\leqslant\tau\leqslant t-\delta$ функция $G(x,\xi,t-\tau)$ определена и можно написать
 	\begin{equation*}
 		h_{\delta}(x,t)\eqdef\sum\limits_{k=1}^{\infty}\int\limits_0^{t-\delta}\int\limits_0^l e^{-\omega_k^2\cdot(t-\tau)}\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau=\int\limits_0^{t-\delta}\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau.
 	\end{equation*}
