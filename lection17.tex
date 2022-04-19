@@ -48,7 +48,7 @@
 \end{equation} 
 и начальными условиями
 \begin{equation}\label{l17:eq:3}
-	\hfill u\Big|_{t=0}=\phi(x,y),\quad u_t\Big|_{t=0}\psi(x,y).\hfill
+	u\Big|_{t=0}=\phi(x,y),\quad u_t\Big|_{t=0}=\psi(x,y).
 \end{equation}
 Отыскивая частное решение $u_{\text{ч}}=T(t)\cdot Z(x,y)$ задачи~\eqref{l17:eq:1},~\eqref{l17:eq:2} мы после разделения переменных приходим к уравнениям
 \begin{equation}\label{l17:eq:4}
@@ -229,7 +229,7 @@
 		\displaystyle F_{n1}(r)=\frac{1}{\pi}\cdot\int\limits_{0}^{2\cdot\pi}F(r,\alpha)\cdot\sin\left(n\cdot\alpha\right)\,d\alpha,&\displaystyle F_{n2}(r)=\frac{1}{\beta_n\cdot\pi}\cdot\int\limits_{0}^{2\cdot\pi}F(r,\alpha)\cdot\cos\left(n\cdot\alpha\right)\,d\alpha,&n\geqslant0;
 	\end{array}
 \end{equation}
-где $\beta_n=1$ при $n\geqslant1$, $\beta_0=2$, то есть $\Phi_{01}(r)=F_{01}(r)=0$, а в $\Phi_{02}(r)$ и $F_{02}(r)$ в знаменателе $2\cdot\pi$ вместо $\pi$\footnote{$\pi$ и $2\cdot\pi$ --- это соответственно квадраты норм $\sin(n\cdot\alpha)$ при $n>0$ и $\cos(n\cdot\alpha)$ при $n\geqslant0$}.
+где $\beta_n=1$ при $n\geqslant1$, $\beta_0=2$, то есть $\Phi_{01}(r)=F_{01}(r)=0$, а в $\Phi_{02}(r)$ и $F_{02}(r)$ в знаменателе $2\cdot\pi$ вместо $\pi$\footnote{$\pi$ и $2\cdot\pi$ --- это соответственно квадраты норм $\sin(n\cdot\alpha),\ \cos(n\cdot\alpha)$ при $n>0$ и $\cos(n\cdot\alpha)$ при $n=0$}.
 
 Зная функции $\Phi_{ni}(r)$ и $F_{ni}(r)$ мы можем из~\eqref{l17:eq:24} найти неизвестные коэффициенты $A_{nki}$ и $B_{nki}$ на основании теоремы Стеклова. Как мы знаем из рассмотрения квадратичного функционала специального вида, функции $J_n\left(\dfrac{\mu_{nk}}{R}\cdot r\right)$ --- это собственные функции $y_{nk}(r)$ обобщённой задачи Штурма для оператора $L(n)$ из~\eqref{l17:eq:17} и по ним можно раскладывать функции из $\fLr[r;{[0,R]}]$; известно также, что они при разных $k$ ортогональны с весом $r$. Поэтому умножив равенства~\eqref{l17:eq:24} на $J_n\left(\dfrac{\mu_{nm}}{R}\cdot r\right)\cdot r$ и проинтегрировав по $r$ от $0$ до $R$, получим:
 \begin{equation*}
