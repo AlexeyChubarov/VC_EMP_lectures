@@ -1,0 +1,393 @@
+\chapter{}
+\label{lecture19}
+\section{Единственность решения задач теплового распространения.}
+\label{lecture19section1}
+Рассматриваем задачу о тепловом режиме в объёме $V$ с границей $S$. Пусть $u(P,t)$ --- температура в точке $P=(x,y,z)$ в момент $t$. Функция $u(P,t)$ удовлетворяет уравнению
+\begin{equation}\label{l19:eq:1}
+	 \pder{u}{t}=a^2\cdot\Delta u+\frac{f(P,t)}{c\cdot\rho}. 
+\end{equation}
+Пусть начальная температура 
+\begin{equation}\label{l19:eq:2}
+	 u(P,0)=\phi(P),
+\end{equation}
+а граничные условия на $S$ могут быть любые из приведённых ниже вариантов\footnote[1]{Везде $P\in S$.} $A)$, или $B)$, или $C)$:
+\begin{equation}\label{l19:eq:3}
+	 A)\ u(P,t)=g(P,t);\qquad B)\ \pder{u}{n}=h(P,t);\qquad C)\ \pder{u}{n}+\sigma\cdot(u-u_0(P,t))=0.
+\end{equation}  
+\begin{proof}[Доказательство единственности решения задачи~\eqref{l19:eq:1}--\eqref{l19:eq:3}.]
+	Пусть $u_1$ и $u_2$ два решения этой задачи. Положим $v_0= u_1-u_2$. Тогда, подставив в~\eqref{l19:eq:1}--\eqref{l19:eq:3} сначала $u_1$, получим равенства $\overline{\eqref{l19:eq:1}}$, $\overline{\eqref{l19:eq:2}}$, $\overline{\eqref{l19:eq:3}}$. Затем подставим $u_2$ и получим равенства $\widehat{\eqref{l19:eq:1}}$, $\widehat{\eqref{l19:eq:2}}$, $\widehat{\eqref{l19:eq:3}}$. После чего вычтем $\overline{\eqref{l19:eq:1}}-\widehat{\eqref{l19:eq:1}}$, $\overline{\eqref{l19:eq:2}}-\widehat{\eqref{l19:eq:2}}$, $\overline{\eqref{l19:eq:3}}-\widehat{\eqref{l19:eq:3}}$. Получим, что функция $v_0$ удовлетворяет уравнению
+	\begin{equation}\label{l19:eq:5}
+		\pder{v_0}{t}=a^2\cdot\Delta v_0,
+	\end{equation}
+	однородным граничным условиям на $S$:  ($A)$, или $B)$, или $C)$):
+	\begin{equation}\label{l19:eq:6}
+		 A)\ v_0(P,t)=0;\qquad B)\ \pder{v_0}{n}=0;\qquad C)\ \pder{v_0}{n}+\sigma\cdot v_0=0.
+	\end{equation} 
+	и нулевому начальному условию
+	\begin{equation}\label{l19:eq:7}
+		 v_0(P,0)=0.
+	\end{equation}
+	
+	Покажем, что $v_0(P,t)\equiv0$. Умножим~\eqref{l19:eq:5} на функцию $v_0$ и проинтегрируем по объёму $V$. Получим
+	\begin{multline}\label{l19:eq:8}
+		\iiint\limits_{V}\pder{v_0}{t}\cdot v_0\,dV=\pder{}{t}\iiint\limits_{V}\frac{v_0^2}{2}\,dV=\\=\pder{}{t}\norm{v_0(P,t)}^2\cdot\frac{1}{2}=a^2\cdot\iiiint\limits_{V} \Delta v_0\cdot v_0\,dV,
+	\end{multline}
+	где
+	\begin{multline}\label{l19:eq:9}
+		a^2\cdot\iiiint\limits_{V} \Delta v_0\cdot v_0\,dV=\\=a^2\cdot\iiiint\limits_{V} \left[\pder{}{x}(v_{0x}\cdot v_0)+\pder{}{y}(v_{0y}\cdot v_0)+\pder{}{z}(v_{0z}\cdot v_0)-\big|\nabla v_0\big|^2\right]\,dV=\\=\left|\parbox{0.24\textwidth}{\centering В силу теоремы\\ Остроградского--Гаусса}\right|=a^2\cdot\left\{\iint\limits_{S}\pder{v_0}{n}\cdot v_0\,dS-\iiint\limits_{V}\big|\nabla v_0\big|^2\,dV\right\}\leqslant0
+	\end{multline}
+	ибо поверхностный интеграл или равен нулю (при~\hyperref[l19:eq:6]{\eqref{l19:eq:6} п.~$A)$} или ~\hyperref[l19:eq:6]{\eqref{l19:eq:6} п.~$B)$}) или не положителен при~\hyperref[l19:eq:6]{\eqref{l19:eq:6} п.~$C)$}. В силу~\eqref{l19:eq:8},~\eqref{l19:eq:9} 
+	\begin{equation}\label{l19:eq:10}
+		\pder{}{t}\norm{v_0(P,t)}^2\leqslant0
+	\end{equation}
+	для любого $t\geqslant0$. Но $v_0(P,0)=0$ в силу~\eqref{l19:eq:7}. Значит 
+	\begin{equation*}
+		\norm{v_0(P,t)}\leqslant\norm{v_0(P,0)}=0
+	\end{equation*}
+	и, следовательно, $\norm{v_0(P,t)}=0$, то есть $v_0(P,t)=0$ $\forall t$.
+	
+	\noindent \emph{Единственность решения задачи~\eqref{l19:eq:1}--\eqref{l19:eq:3} доказана.}
+\end{proof}
+Этот же подход позволяет установить непрерывную зависимость от начальных условий, но в метрике $\fL[(V)]$. Покажем это.
+Пусть функции $u_1$ и $u_2$ то же, что и раньше, но вместо условия~\eqref{l19:eq:2} пусть они удовлетворяют условиям 
+\begin{equation*}
+	 u_1(P,0)=\phi_1(P),\qquad u_2(P,0)=\phi_2(P),
+\end{equation*}
+где $\phi_i(P)\in\fL[(V)]$ и $\norm{\phi_1-\phi_2}^2<\eps$. Утверждается, что для разности решений $v_0\eqdef v_1-v_2$ выполняется оценка 
+\begin{equation*}
+	\norm{v_0(P,t)}^2\leqslant\eps,\quad\forall t,
+\end{equation*}
+то есть эти решения $u_1$ и $u_2$ близки, если удовлетворяют близким начальным условиям в метрике $\fL[(V)]$.
+\begin{proof}[Доказательство] утверждения следует из неравенства~\eqref{l19:eq:10}, которое показывает, что норма $v_0(P,t)$ есть не возрастающая функция от $t$ и поэтому 
+	\begin{equation*}
+		 \norm{v_0(P,t)}^2\leqslant\norm{v_0(P,0)}^2=\norm{\phi_1-\phi_2}^2<\eps.
+	\end{equation*}
+\end{proof}
+
+\noindent\textbf{Замечание 1. }Таким же способом можно доказать единственность решения и непрерывную зависимость от начальных условий в метрике пространства $\fL[]$ для задачи о тепловом режиме пластины произвольной формы (двумерный случай) и для задачи о тепловом режиме стержня с теплоизолированной боковой поверхностью (одномерный случай).
+
+\noindent\textbf{Замечание 2. }Непрерывная зависимость от начальных условий в смысле равномерной близости будет доказана позже другим методом, но только для граничных условий~\hyperref[l19:eq:3]{\eqref{l19:eq:3} п.~$A)$}.
+
+\noindent\textbf{Замечание 3. }Мы предполагали в~\eqref{l19:eq:3}, что на всей границе $S$ выполняется одно из условий~\eqref{l19:eq:3} \hyperref[l19:eq:3]{$A)$}, или \hyperref[l19:eq:3]{$B)$}, или \hyperref[l19:eq:3]{$C)$}. Однако наши рассуждения остаются верными, если поверхность $S$ разбивается на <<куски>> $S_A$, $S_B$ и $S_C$ так, что $S=S_A\cup S_B\cup S_C$ и на каждой части выполняется соответствующее условие из~\eqref{l19:eq:3}: \hyperref[l19:eq:3]{$A)$}, \hyperref[l19:eq:3]{$B)$} и \hyperref[l19:eq:3]{$C)$}.
+
+\section{Распространение тепла в однородном стержне без источников.}
+\label{lecture19section2}
+Пусть однородный стержень длины $l$ расположен на отрезке $[0,l]$ оси $x$. Предполагаем, что боковая поверхность стержня теплоизолирована, на концах поддерживается нулевая температура, а начальная температура есть заданная функция $\phi(x)$. Таким образом мы имеем задачу: найти функцию $u(x,t)$, удовлетворяющую уравнению
+\begin{equation}\label{l19:eq:10_}
+	\pder{u}{t}=a^2\cdot\pdder{u}{x}
+\end{equation}
+и условиям
+\begin{equation}\label{l19:eq:11_}
+	 u(x,0)=\phi(x),
+\end{equation}
+\begin{equation}\label{l19:eq:12_}
+	 u(0,t)=u(l,t)=0.
+\end{equation}
+
+Решаем задачу~\eqref{l19:eq:10_}--\eqref{l19:eq:12_} методом Фурье. Ищем сначала решение $u_{\text{ч}}(x,t)$, удовлетворяющее~\eqref{l19:eq:10_},~\eqref{l19:eq:12_} в виде $u_{\text{ч}}(x,t)=X(x)\cdot T(t)$. Подставив это выражение в~\eqref{l19:eq:10_} и поделив на $a^2\cdot X\cdot T$ получим
+\begin{equation}\label{l19:eq:13_}
+	\frac{T'}{a^2\cdot T}=\frac{X''}{X}.
+\end{equation}
+Также как в \hyperref[lecture12]{лекции~\ref*{lecture12}} убеждаемся, что эти отношения равны константе, которую обозначим $-\lambda$ и, следовательно
+\begin{equation*}
+	 T'=-a^2\cdot\lambda\cdot T\quad\text{и}\quad -X''=\lambda\cdot X.
+\end{equation*} 
+Из~\eqref{l19:eq:12_} получим
+\begin{equation}\label{l19:eq:14_}
+	 X(0)=X(l)=0.
+\end{equation}
+Таким образом функция $X(x)$ --- это собственная функция оператора Штурма $\displaystyle-\dder{}{x}$ с граничными условиями~\eqref{l19:eq:14_}, а $\lambda$ --- собственное значение, которому она отвечает. Мы знаем, что существует бесконечная серия собственных значений $\lambda_k$ ($\lambda_k=(\pi\cdot k/l)^2$) и пусть $X_k(x)$ --- отвечающие им нормированные собственные функции $\left(X_k=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)\right)$. Подставляя $\lambda=\lambda_k$ в уравнение для $T(t)$ и обозначая $\omega_k^2=a^2\cdot\lambda_k$, имеем 
+\begin{equation*}
+	 T_k'+\omega_k^2\cdot T_k=0,
+\end{equation*}
+откуда
+\begin{equation*}
+	 T_k=c_k\cdot e^{-\omega_k^2\cdot t},
+\end{equation*}
+где $c_k$ --- произвольная константа.
+
+Теперь решение $u_{\text{ч}}=X(x)\cdot T(t)$ есть 
+\begin{equation*}
+	 u_k(x,t)=c_k\cdot e^{-\omega_k^2\cdot t}\cdot X_k(x).
+\end{equation*}
+Составим ряд
+\begin{equation}\label{l19:eq:15_}
+	 u(x,t)=\sum\limits_{k=1}^{\infty}c_k\cdot e^{-\omega_k^2\cdot t}\cdot X_k(x).
+\end{equation}
+Если $\sup\limits_k|c_k|<+\infty$, то ряд~\eqref{l19:eq:15_} сходится равномерно при $t>0$ как и ряды, полученные из~\eqref{l19:eq:15_} путём дифференцирования любое число раз по $x$ и по $t$. Поэтому функция~\eqref{l19:eq:15_} есть решение задачи~\eqref{l19:eq:10_}, \eqref{l19:eq:12_}. Найдём теперь коэффициенты $c_k$ так, чтобы выполнялось условие~\eqref{l19:eq:11_}
+\begin{equation}\label{l19:eq:16_}
+	 u(x,0)=\phi(x)=\sum\limits_{k=1}^{\infty}c_k\cdot X_k(x).
+\end{equation} 
+Соотношение~\eqref{l19:eq:16_} есть разложение функции $\phi(x)$ по собственным функциям оператора Штурма. По теореме Стеклова оно возможно и при $\phi\in\Cfn[[{[0,l]}]{2}$, $\phi(0)=\phi(l)=0$ сходимость ряда~\eqref{l19:eq:16_} равномерная при
+\begin{equation}\label{l19:eq:17_}
+	 c_k=\big(\phi, X_k\big)=\int\limits_0^l\phi(\xi)\cdot X_k(\xi)\,d\xi.
+\end{equation} 
+Ясно, что 
+\begin{equation*}
+	 |c_k|\leqslant\norm{\phi}\cdot\norm{X_k},\quad k=1,2,\ldots
+\end{equation*}
+Значит формула~\eqref{l19:eq:15_} со значениями $c_k$ из~\eqref{l19:eq:17_} даёт решение задачи~\eqref{l19:eq:10_}--\eqref{l19:eq:12_}. Найдём выражение для $u(x,t)$,  подставив в~\eqref{l19:eq:15_} числа~\eqref{l19:eq:17_}. Очевидно,
+\begin{multline}\label{l19:eq:18_}
+	u(x,t)=\sum\limits_{k=1}^{\infty}\int\limits_0^l\phi(\xi)\cdot X_k(\xi)\,d\xi\cdot X_k(x)\cdot e^{-\omega_k^2\cdot t}\,d\xi=\\
+	=\int\limits_0^l\sum\limits_{k=1}^{\infty}e^{-\omega_k^2\cdot t}\cdot X_k(x)\cdot X_k(\xi)\cdot\phi(\xi)\,d\xi=\int\limits_0^l G(x,\xi,t)\cdot\phi(\xi)\,d\xi,
+\end{multline}
+при $\forall t>0$, где 
+\begin{equation}\label{l19:eq:19_}
+	 G(x,\xi,t)=\sum\limits_{k=1}^{\infty}e^{-\omega_k^2\cdot t}\cdot X_k(x)\cdot X_k(\xi).
+\end{equation}
+Функция $G(x,\xi,t)$ называется функцией Грина. Если мы её знаем, то есть \emph{знаем собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи}, то по формуле~\eqref{l19:eq:18_} мы можем найти решение задачи~\eqref{l19:eq:10_}--\eqref{l19:eq:12_} с произвольными начальными условиями $u(x,0)=\phi(x)$. Физический смысл функции $G(x,\xi,t)$ мы обсудим позже. 
+
+\section{Принцип максимума для решений задач теплопроводности.}
+\label{lecture19section3}
+Пусть $u(x,t)$ --- решение уравнения~\eqref{l19:eq:10_} и
+\begin{equation*}
+	\mc{D}=\left\{x,t\middle|0\leqslant x\leqslant l,\; 0\leqslant t\leqslant T\right\},
+\end{equation*}
+здесь $T$ --- произвольное фиксированное число. Положим $\Gamma=PA\cup AB\?\cup BC$ и пусть $u\in\Cfn[(\mc{D}\backslash \Gamma)]{2}$.
+
+
+
+\begin{figure}[H]\centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+	%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+	
+	%Shape: Axis 2D [id:dp5265833135326385] 
+	\draw  (153.89,196.47) -- (356.89,196.47)(174.19,70) -- (174.19,210.52) (349.89,191.47) -- (356.89,196.47) -- (349.89,201.47) (169.19,77) -- (174.19,70) -- (179.19,77)  ;
+	%Straight Lines [id:da640403037572923] 
+	\draw    (173.89,127) -- (284.89,127) ;
+	%Straight Lines [id:da17357937186463945] 
+	\draw    (284.89,127) -- (284.89,196.52) ;
+	
+	% Text Node
+	\draw (183.89,65.4) node [anchor=north west][inner sep=0.75pt]    {$t$};
+	% Text Node
+	\draw (360.89,199.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+	% Text Node
+	\draw (176.89,105.4) node [anchor=north west][inner sep=0.75pt]    {$T$};
+	% Text Node
+	\draw (158.89,131.4) node [anchor=north west][inner sep=0.75pt]    {$P$};
+	% Text Node
+	\draw (288.9,131.4) node [anchor=north west][inner sep=0.75pt]    {$C$};
+	% Text Node
+	\draw (158.9,177.4) node [anchor=north west][inner sep=0.75pt]    {$A$};
+	% Text Node
+	\draw (288.9,177.4) node [anchor=north west][inner sep=0.75pt]    {$B$};
+	% Text Node
+	\draw (286.89,199.92) node [anchor=north west][inner sep=0.75pt]    {$l$};
+	% Text Node
+	\draw (196.89,164.4) node [anchor=north west][inner sep=0.75pt]    {$\mathcal{D}$};
+	
+	
+\end{tikzpicture}
+	\caption{~}
+\label{l19:fig:1}
+\end{figure}
+
+Принцип максимума утверждает, что максимальное значение функции $u(x,t)$ в области $\mc{D}$ принимается или в начальный момент или при $x=0$ или при $x=l$, то есть на кривой $\Gamma$. То же относится к минимальному значению  $u(x,t)$ в области $\mc{D}$.
+\begin{proof}
+	Пусть
+	\begin{equation*}
+		 M_{\Gamma}=\max\limits_{(x,t)\in\Gamma}u(x,t),\quad M=\max\limits_{(x,t)\in\mc{D}}u(x,t)
+	\end{equation*}
+	покажем, что предположение $M_{\Gamma}<M$ приводит к противоречию.
+	
+	Итак, пусть $M_{\Gamma}<M$. Тогда $\exists\delta>0$ так, что $M=M_{\Gamma}+\delta$. Пусть точка $(\bar{x},\bar{t}\,)$ такова, что $u(\bar{x},\bar{t}\,)=M$ при $0<\bar{x}<l$, $0<\bar{t}\leqslant T$. Положим
+	\begin{equation}\label{l19:eq:20_}
+		 v(x,t)=u(x,t)+\alpha\cdot(\bar{t}-t),\quad 0\leqslant t\leqslant T
+	\end{equation}
+	и выберем число $\alpha>0$ так, что $\big|\alpha\cdot(\bar{t}-t)\big|\leqslant\delta/2$. Очевидно $v(\bar{x},\bar{t}\,)\?=u(\bar{x},\bar{t}\,)=M$ и поэтому
+	\begin{equation*}
+		\max\limits_{(x,t)\in\mc{D}}v(x,t)\geqslant M,
+	\end{equation*}
+	а 
+	\begin{equation*}
+		\max\limits_{(x,t)\in\Gamma}v(x,t)\leqslant \max\limits_{(x,t)\in\Gamma}u(x,t)+\frac{\delta}{2}=M_{\Gamma}+\frac{\delta}{2}<M.
+	\end{equation*} 
+	Поэтому максимальное значение функции $v(x,t)$ в области $\mc{D}$ достигается в какой-то точке $(x_0,t_0)$ не лежащей на $\Gamma$. Пусть $t_0<T$. Тогда по необходимому условию экстремума 
+	\begin{equation}\label{l19:eq:21_}
+		\left.\pder{v}{x}\right|_{\substack{t=t_0,\\ x=x_0}}=\left.\pder{v}{t}\right|_{\substack{t=t_0,\\ x=x_0}}=0,\quad \left.\pdder{v}{x}\right|_{\substack{t=t_0,\\ x=x_0}}\leqslant0.
+	\end{equation}
+	Учитывая~\eqref{l19:eq:20_} и~\eqref{l19:eq:21_} имеем дифференцируя~\eqref{l19:eq:20_} в точке $(x_0,t_0)$
+	\begin{equation*}
+		\pder{v}{t}=0=\pder{u}{t}-\alpha,\quad\pdder{v}{x}=\pdder{u}{x}\leqslant0.
+	\end{equation*}
+	Таким образом $u_t=\alpha>0$, а $u_{xx}\leqslant0$, то есть в точке $(x_0,t_0)$ функция $u(x,t)$ не удовлетворяет~\eqref{l19:eq:10_}. Если $t_0=T$, то
+	\begin{equation*}
+		\displaystyle\left.\pder{v}{t}\right|_{\substack{t=T,\\ x=x_0}}\geqslant0,
+	\end{equation*}
+	ибо функция $v(x,t)$ при подходе к максимальному значению при $x=x_0$ не убывает. Кроме того при фиксированном $t=T$ как и раньше
+	\begin{equation*}
+		\displaystyle\left.\pdder{v}{x}\right|_{\substack{t=T,\\ x=x_0}}\leqslant0.
+	\end{equation*}
+	Поэтому 
+	\begin{equation*}
+		\pder{v}{t}=\pder{u}{t}-\alpha\geqslant0,
+	\end{equation*} 
+	то есть 
+	\begin{equation*}
+		\pder{u}{t}\geqslant\alpha>0,
+	\end{equation*}
+	а 
+	\begin{equation*}
+		\pdder{v}{x}=\pdder{u}{x}\leqslant0
+	\end{equation*}
+	и мы получим противоречие так же, как и раньше. \emph{Утверждение доказано.}
+\end{proof} 
+
+\noindent\textbf{Задания:}
+\begin{enumerateD}
+	\item Провести доказательство для минимального значения $u(x,t)$.
+	\item Провести доказательство для решений уравнения~\eqref{l19:eq:1} при $f\equiv0$ в двумерном и трёхмерном случае\footnote{Это для оценки отлично и превосходно.}.
+\end{enumerateD}
+\vspace{0.2cm}
+
+Используем теперь принцип максимума для \emph{доказательства единственности решения и непрерывной зависимости его от начального условия.}
+
+\begin{proof}
+	Пусть функции $u_1(x,t)$, $u_2(x,t)$ есть решения задач
+	\begin{enumerateAi}
+		\item\label{l19:eq:Ai} $\displaystyle \pder{u_i}{t}=a^2\cdot\pdder{u_i}{x}+g(x,t),\quad i=1,2;\vphantom{\int\limits_{a}}$
+		\item\label{l19:eq:Bi} $\displaystyle u_i\Big|_{x=0}=h_1(t),\quad u_i\Big|_{x=l}=h_2(t),\quad i=1,2;\vphantom{\int\limits_{a}}$ 
+		\item\label{l19:eq:Ci} $\displaystyle u_i(x,0)=\phi_i(x),\quad i=1,2.\vphantom{\int\limits_{a}}$
+	\end{enumerateAi}
+	
+	Составим функцию $u=u_1-u_2$. Тогда находя (\hyperref[l19:eq:Ai]{A$_1$})$-$(\hyperref[l19:eq:Ai]{A$_2$}), (\hyperref[l19:eq:Bi]{B$_1$})$-$(\hyperref[l19:eq:Bi]{B$_2$}) и (\hyperref[l19:eq:Ci]{C$_1$})$-$(\hyperref[l19:eq:Ci]{C$_2$}) видим, что
+	\begin{gather}
+		\pder{u}{t}=a^2\cdot\pdder{u}{x};\nonumber\\ 
+		u(0,t)=u(l,t)=0;\label{l19:eq:22_}\\ 
+		u(x,0)=\phi(x)\eqdef\phi_1(x)-\phi_2(x).\nonumber
+	\end{gather}
+	Если $\phi_1=\phi_2$, то функции $u_1$ и $u_2$ решения одной и той же задачи, но тогда, так как функция $u(x,t)$ есть решение уравнения~\eqref{l19:eq:22_}, то она принимает максимальное и минимальное значения при или $x=0$, или $x=l$, или $t=0$. Значит при $\phi_1=\phi_2$
+	\begin{equation*}
+		\max\limits_{(x,t)\in\mc{D}}u(x,t)=\min\limits_{(x,t)\in\mc{D}}u(x,t)=0,
+	\end{equation*}
+	то есть $u\equiv0$ и $u_1=u_2$, то есть \emph{решение единственное}.
+	
+	Пусть теперь $\phi_1\neq\phi_2$ и 
+	\begin{equation*}
+		\max\limits_{x\in[0,l]}|\phi(x)|\leqslant\eps\quad\Rightarrow\quad-\eps\leqslant\phi(x)\leqslant\eps.
+	\end{equation*}
+	Тогда 
+	\begin{equation*}
+		\max\limits_{(x,t)\in\mc{D}}u(x,t)\leqslant\eps;\quad\min\limits_{(x,t)\in\mc{D}}u(x,t)\geqslant-\eps.
+	\end{equation*}
+	Поэтому
+	\begin{equation*}
+		|u(x,t)|\leqslant\eps.
+	\end{equation*}
+	Значит, если начальные условия решений $u_1$ и $u_2$ отличаются по модулю   меньше чем на $\eps$, то и разность этих решений по модулю не превосходит $\eps$. Таким образом \emph{непрерывная зависимость от начальных условий в равномерной метрике доказана}.
+\end{proof}
+
+\vspace{0.2cm}
+\noindent\textbf{Замечание. }К сожалению, принцип максимума не помогает в решении вопроса о единственности решения и о непрерывной зависимости его от начального условия, если хотя бы на одном конце стержня задан тепловой поток или осуществляется теплообмен с окружающей средой по закону Ньютона.
+\vfill
+\newpage
+\section[Решение неоднородного уравнения теплопроводности.]{Тепловой режим стержня при наличии источников или теплообмена с окружающей средой не нулевой температуры.}
+\label{lecture19section4}
+Первое, что мы делаем --- это находим функцию $\tilde{u}(x,t)$, удовлетворяющую граничным условиям, если они не однородные --- это делается в точности так же, как в задаче о колебаниях струны, а потом решение задачи $u(x,t)$ отыскиваем в виде $u=v+\tilde{u}$, где $v$ --- новая неизвестная функция. Напишем сразу уравнение для $v$ вместе с начальными и граничными условиями
+\begin{gather}
+	\pder{v}{t}=a^2\cdot\pdder{v}{x}+g(x,t),\label{l19:eq:23_}\\
+	v(x,0)=\widetilde{\phi}(x),\label{l19:eq:24_}\\
+	\pder{v}{x}(0,t)=0,\quad v(l,t)=0.\label{l19:eq:25_}
+\end{gather}
+Граничные условия мы взяли для разнообразия~\eqref{l19:eq:25_}, а не~\eqref{l19:eq:12_}\dots
+
+Решение задачи~\eqref{l19:eq:23_}--\eqref{l19:eq:25_} будем искать в виде суммы 
+\begin{equation}\label{l19:eq:26_}
+	v=h(x,t)+w(x,t),
+\end{equation} 
+где $w(x,t)$ удовлетворяет однородному уравнению
+\begin{equation}\label{l19:eq:27_}
+	w_t=a^2\cdot w_{xx}
+\end{equation}
+начальному и граничному условию задачи, а функция $h(x,t)$ есть решение неоднородного уравнения
+\begin{equation}\label{l19:eq:28_}
+	h_t=a^2\cdot h_{xx}+g
+\end{equation}
+с нулевым начальным условием $h(x,0)=0$ и граничными условиями~\eqref{l19:eq:25_}.
+
+Для решения обеих задач нам понадобятся нормированные собственные функции $X(x)$ оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи:
+\begin{equation*}
+	X'(0)=0,\quad X(l)=0.
+\end{equation*}
+Обозначим эти собственные функции $X_k(x)$, а собственные значения, которым они отвечают через $\lambda_k$. Тогда в силу~\eqref{l19:eq:18_}
+\begin{equation}\label{l19:eq:29_}
+	w(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\widetilde{\phi}(\xi)\,d\xi,
+\end{equation}
+где $G(x,\xi,t)$ --- функция Грина, даваемая равенством~\eqref{l19:eq:19_} с найденными $X_k$ и $\lambda_k$.
+
+Функцию $h(x,t)$ будем искать в виде ряда по функциям $X_k(x)$ с неизвестными коэффициентами $b_k(t)$ (обоснование --- теорема Стеклова)
+\begin{equation*}
+	h(x,t)=\sum\limits_{k=1}^{\infty}b_k(t)\cdot X_k(x).
+\end{equation*}
+Разложим функцию $g(x,t)$ из~\eqref{l19:eq:28_} по функциям $X_k(x)$
+\begin{equation*}
+	g(x,t)=\sum\limits_{k=1}^{\infty}g_k(t)\cdot X_k(x),
+\end{equation*}
+где
+\begin{equation}\label{l19:eq:30_}
+	g_k(t)=\int\limits_0^l g(\xi,t)\cdot X_k(\xi)\,d\xi.	
+\end{equation}
+Подставив разложения для $h(x,t)$ и $g(x,t)$ в~\eqref{l19:eq:28_} получим
+\begin{equation*}
+	\sum\limits_{k=1}^{\infty}b'_k\cdot X_k=a^2\cdot\sum\limits_{k=1}^{\infty}b_k\cdot(-\lambda_k)\cdot X_k+\sum\limits_{k=1}^{\infty}g_k\cdot X_k,
+\end{equation*}
+откуда получаем уравнение для $b_k(t)$
+\begin{equation}\label{l19:eq:31_}
+	\der{b_k}{t}+a^2\cdot\lambda_k\cdot b_k=g_k.
+\end{equation}
+Так как $h(x,0)=0$, то $b_k(0)=0$. Из~\eqref{l19:eq:31_} получаем с $\omega_k^2=a^2\cdot\lambda_k$:
+\begin{equation*}
+	b_k(t)=\int\limits_0^t e^{-\omega_k^2\cdot(t-\tau)}\cdot g_k(\tau)\,d\tau.
+\end{equation*}
+Подставив сюда $g_k(\tau)$ из~\eqref{l19:eq:30_}, подставим найденные функции $b_k(t)$ в разложение для $h(x,t)$. Получим
+\begin{equation}\label{l19:eq:for_proof}
+	h(x,t)=\sum\limits_{k=1}^{\infty}\int\limits_0^t\int\limits_0^l e^{-\omega_k^2\cdot(t-\tau)}\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau.
+\end{equation}
+Можно доказать, что суммирование можно внести под знак двойного интеграла (см. ниже) и тогда в силу~\eqref{l19:eq:19_}
+\begin{equation}\label{l19:eq:32_}
+	h(x,t)=\int\limits_0^t\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau.
+\end{equation}
+Подставив~\eqref{l19:eq:29_},~\eqref{l19:eq:32_} в~\eqref{l19:eq:26_}, мы получим решение $v(x,t)$ задачи в виде:
+\begin{equation}
+	\label{l19:eq:33_}
+	v(x,t)=\int\limits_0^t\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau+\int\limits_0^l G(x,\xi,t)\cdot \widetilde{\phi}(\xi)\,d\xi.	
+\end{equation}  
+\begin{proof}[Доказательство того, что в~\eqref{l19:eq:for_proof} суммирование можно внести под знак двойного интеграла.] Фиксируем $x,\ t$. Ряд для $G(x,\xi,t-\tau)$ при $\tau<t$ сходится равномерно за счёт множителя $\displaystyle e^{-\omega_k^2\cdot(t-\tau)}$ поэтому для $\forall\delta>0$ при $0\leqslant\tau\leqslant t-\delta$ функция $G(x,\xi,t-\tau)$ определена и можно написать
+	\begin{multline*}
+		h_{\delta}(x,t)\eqdef\sum\limits_{k=1}^{\infty}\int\limits_0^{t-\delta}\int\limits_0^l e^{-\omega_k^2\cdot(t-\tau)}\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau=\\=\int\limits_0^{t-\delta}\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau.
+	\end{multline*}
+	Покажем, что $\displaystyle\lim\limits_{\delta\to0}h_{\delta}(x,t)$ существует и равен $h(x,t)$. Очевидно 
+	\begin{multline}\label{l19:eq:34_}
+		h(x,t)=	\sum\limits_{k=1}^{\infty}\int\limits_0^{t-\delta}\int\limits_0^l e^{-\omega_k^2\cdot(t-\tau)}\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau+\\
+		+\sum\limits_{k=1}^{\infty}\,\int\limits_{t-\delta}^t\int\limits_0^l e^{-\omega_k^2\cdot(t-\tau)}\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau=\\=h_{\delta}(x,t)+A_{\delta},
+	\end{multline}
+	где $A_{\delta}\eqdef h(x,t)-h_{\delta}(x,t)$. Покажем, что $A_{\delta}(x,t)\to0$, при $\delta\to0$. Имеем
+	\begin{multline}
+		\label{l19:eq:35_}
+		|A_{\delta}|\leqslant\sum\limits_{k=1}^{\infty}\,\int\limits_{t-\delta}^t e^{-\omega_k^2\cdot(t-\tau)}\,d\tau\cdot C=\sum\limits_{k=1}^{\infty}e^{-\omega_k^2\cdot t}\cdot\int\limits_{t-\delta}^t e^{\omega_k^2\cdot\tau}\,d\tau=\\
+		=C\cdot\sum\limits_{k=1}^{\infty}e^{-\omega_k^2\cdot t}\cdot\left(e^{\omega_k^2\cdot t}-e^{\omega_k^2\cdot(t-\delta)}\right)\Big/\omega_k^2=\\=C\cdot\sum\limits_{k=1}^{\infty}\left(1-e^{-\omega_k^2\cdot\delta}\right)\Big/\omega_k^2,
+	\end{multline}	
+	где 
+	\begin{equation*}
+		C=\sup\limits_{\lefteqn{\scriptstyle\substack{\xi,x\in[0,l],\\ k=1,2,\ldots,\\ \tau\in[0,t]}}}|g(\xi,\tau)|\cdot|X_k(x)|\cdot|X_k(\xi)|\cdot l.
+	\end{equation*}
+	Так как $\omega_k^2=a^2\cdot\lambda_k\geqslant d\cdot k^2$ при больших $k$, то ряд справа в~\eqref{l19:eq:35_} сходится. Пусть $N\gg1$ таково, что 
+	\begin{equation*}
+		C\cdot\sum\limits_{k=N+1}^{\infty}\left(1-e^{-\omega_k^2\cdot\delta}\right)\Big/\omega_k^2\leqslant\frac{\eps}{2},\quad\forall\delta.
+	\end{equation*}
+	Далее при фиксированном $N$ выберем $\delta$ столь малым, что
+	\begin{equation*}
+		C\cdot\sum\limits_{k=1}^{N}\left(1-e^{-\omega_k^2\cdot\delta}\right)\Big/\omega_k^2\leqslant\frac{\eps}{2}.
+	\end{equation*}
+	Из двух последних неравенств и~\eqref{l19:eq:35_} следует, что при малых $\delta$
+	\begin{equation*}
+		|A_{\delta}|=|h(x,t)-h_{\delta}|<\eps,
+	\end{equation*}
+	а это значит, что 
+	\begin{equation*}
+		h(x,t)=\lim\limits_{\delta\to0}h_{\delta}(x,t)=\int\limits_0^t\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau.
+	\end{equation*} 
+\end{proof}

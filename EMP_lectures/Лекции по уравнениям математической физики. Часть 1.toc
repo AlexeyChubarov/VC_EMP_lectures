@@ -1,0 +1,38 @@
+\babel@toc {russian}{}
+\contentsline {chapter}{Введение}{5}{section*.1}%
+\contentsline {chapter}{Лекция~\numberline {1}}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.}Уравнение малых колебаний струны.}{7}{section.1.1}%
+\contentsline {chapter}{Лекция~\numberline {2}}{17}{chapter.2}%
+\contentsline {section}{\numberline {1.}Уравнение малых колебаний струны (продолжение).}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.}Свободные колебания однородной струны.}{20}{section.2.2}%
+\contentsline {section}{\numberline {3.}Понятие о функции Грина.}{24}{section.2.3}%
+\contentsline {section}{\numberline {4.}Физический смысл функции Грина.}{26}{section.2.4}%
+\contentsline {section}{\numberline {5.}Свободные колебания однородной струны с другими г. у.}{29}{section.2.5}%
+\contentsline {chapter}{Лекция~\numberline {3}}{30}{chapter.3}%
+\contentsline {section}{\numberline {1.}Свободные колебания неоднородной струны.}{30}{section.3.1}%
+\contentsline {section}{\numberline {2.}Вынужденные колебания однородной струны.}{32}{section.3.2}%
+\contentsline {chapter}{Лекция~\numberline {4}}{40}{chapter.4}%
+\contentsline {section}{\numberline {1.}Телеграфные уравнения.}{40}{section.4.1}%
+\contentsline {section}{\numberline {2.}О начальных и граничных условиях.}{43}{section.4.2}%
+\contentsline {chapter}{Лекция~\numberline {5}}{46}{chapter.5}%
+\contentsline {section}{\numberline {1.}Колебания мембраны.}{46}{section.5.1}%
+\contentsline {section}{\numberline {2.}Вынужденные колебания однородной мембраны.}{52}{section.5.2}%
+\contentsline {chapter}{Лекция~\numberline {6}}{55}{chapter.6}%
+\contentsline {section}{\numberline {1.}Случай прямоугольной мембраны.}{55}{section.6.1}%
+\contentsline {section}{\numberline {2.}Вынужденные колебания прямоугольной мембраны.}{58}{section.6.2}%
+\contentsline {chapter}{Лекция~\numberline {7}}{64}{chapter.7}%
+\contentsline {section}{\numberline {1.}Колебания круглой мембраны.}{64}{section.7.1}%
+\contentsline {chapter}{Лекция~\numberline {8}}{72}{chapter.8}%
+\contentsline {section}{\numberline {1.}Функции Бесселя.}{72}{section.8.1}%
+\contentsline {section}{\numberline {2.}Модифицированные функции Бесселя.}{77}{section.8.2}%
+\contentsline {section}{\numberline {3.}Распространение тепла.}{78}{section.8.3}%
+\contentsline {chapter}{Лекция~\numberline {9}}{82}{chapter.9}%
+\contentsline {section}{\numberline {1.}Единственность решения задач теплового распространения.}{82}{section.9.1}%
+\contentsline {section}{\numberline {2.}Распространение тепла в однородном стержне без источников.}{84}{section.9.2}%
+\contentsline {section}{\numberline {3.}Принцип максимума для решений задач теплопроводности.}{86}{section.9.3}%
+\contentsline {section}{\numberline {4.}Решение неоднородного уравнения теплопроводности.}{90}{section.9.4}%
+\contentsline {chapter}{Лекция~\numberline {10}}{94}{chapter.10}%
+\contentsline {section}{\numberline {1.}Свойства функции Грина.}{94}{section.10.1}%
+\contentsline {section}{\numberline {2.}Распространение тепла в тонкой пластинке.}{98}{section.10.2}%
+\contentsline {section}{\numberline {3.}Дельта-функция.}{100}{section.10.3}%
+\contentsline {chapter}{Список литературы}{106}{equation.10.3.8}%

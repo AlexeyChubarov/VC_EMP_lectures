@@ -1,0 +1,291 @@
+	\chapter{}
+\label{lecture13}
+\section{Свободные колебания неоднородной струны.}
+\label{lecture13section1}
+На прошлой лекции мы изучали свободные колебания \emph{однородной} струны. А если она не однородна? В этом случае натяжение $\mu$ и плотность $\rho$ не являются константами. Для простоты будем предполагать, что $\mu=\mu(x)$, $\rho=\rho(x)$\footnote[1]{То есть нет зависимости от времени.}. Тогда уравнение свободных колебаний струны запишется в виде
+\begin{equation}\label{l13:eq:1}
+	\rho\cdot\pdder{u}{t}=\pder{}{x}\big(\mu\cdot u_x\big).
+\end{equation}
+Будем решать это уравнение при начальных условиях
+\begin{equation}\label{l13:eq:2}
+	 u(x,0)=\phi(x),\quad u_t(x,0)=\psi(x)
+\end{equation}
+и граничных условиях
+\begin{equation}\label{l13:eq:3}
+	 u(0,t)=0,\quad u(l,t)=0\footnotemark{}.
+\end{equation}\footnotetext{Мы как и ранее считаем, что струна в невозмущенном состоянии занимает отрезок $[0,l]$ оси $x$.}%
+\indent Для решения задачи~\eqref{l13:eq:1}--\eqref{l13:eq:3} применим метод Фурье. Как и раньше, отыскиваем сначала частное решение $u_{\text{ч}}(x,t)$, которое удовлетворяет~\eqref{l13:eq:1},~\eqref{l13:eq:3}. Пусть $u_{\text{ч}}=X(x)\cdot T(t)$. Подставляя в~\eqref{l13:eq:1} и деля потом обе части~\eqref{l13:eq:1} на произведение $\rho\cdot X\cdot T$, получим
+\begin{equation}\label{l13:eq:4}
+	\frac{T''}{T}=\frac{\displaystyle\pder{}{x}\big(\mu\cdot X'\big)}{\rho\cdot X}.
+\end{equation} 
+Как и в случае однородной струны, убеждаемся, что эти отношения не зависят ни от $x$, ни от $t$, то есть равны константе, которую мы обозначим через $-\lambda$. Тогда в силу~\eqref{l13:eq:4} 
+\begin{equation}\label{l13:eq:5}
+	 T''+\lambda\cdot T=0,
+\end{equation}
+\begin{equation}\label{l13:eq:6}
+	 -\der{}{x}\big(\mu\cdot X'\big)=\lambda\cdot\rho\cdot X.
+\end{equation}
+Из условия~\eqref{l13:eq:3} получаем
+\begin{equation}\label{l13:eq:7}
+	 X(0)=0,\quad X(l)=0.
+\end{equation}
+Таким образом видим, что $\lambda$ и $X(x)$ есть соответственно собственное значение и собственная функция обобщённой задачи Штурма для оператора $\displaystyle-\der{}{x}\big(\mu\cdot X'\big)$. А мы знаем, что для обобщённой задачи Штурма существует бесконечная серия собственных значений $\lambda_k$, $k=1,2,\ldots$ и соответствующих собственных функций $X_k(x)$, причём при $\lambda_k\neq\lambda_m$ функции $X_k,\ X_m$ будут ортогональны с весом $\rho$:
+\begin{equation*}
+	\int\limits_0^l X_k(x)\cdot X_m(x)\cdot\rho(x)\,dx=0,\quad k\neq m.
+\end{equation*}
+Подставив $\lambda_k$ в~\eqref{l13:eq:5}, получим
+\begin{equation*}
+	 T_k''+\lambda_k\cdot T_k=0,
+\end{equation*}
+откуда 
+\begin{equation*}
+	 T_k(t)=A_k\cdot\cos\left(\sqrt{\lambda_k}\cdot t\right)+B_k\cdot\sin\left(\sqrt{\lambda_k}\cdot t\right).
+\end{equation*}
+Теперь 
+\begin{equation*}
+	 u_{\text{ч}}(x,t)=u_k(x,t)=X_k(x)\cdot T_k(t).
+\end{equation*}
+Ищем решение задачи~\eqref{l13:eq:1}--\eqref{l13:eq:3} в виде ряда
+\begin{equation*}
+	 u(x,t)=\sum\limits_{k=1}^{\infty}X_k(x)\cdot T_k(t).
+\end{equation*}
+Если коэффициенты $A_k$, $B_k$ обеспечивают равномерную сходимость этого ряда и возможность его двукратного почленного дифференцирования по $x$ и по $t$, то функция $u(x,t)$ есть решение задачи~\eqref{l13:eq:1},~\eqref{l13:eq:3}. Чтобы обеспечить выполнение условий~\eqref{l13:eq:2} найдём коэффициенты $A_k$ и $B_k$ из соотношений 
+\begin{equation*}
+	 u(x,0)=\sum\limits_{k=1}^{\infty}A_k\cdot X_k(x)=\phi(x),\quad\!\! u_t(x,0)=\sum\limits_{k=1}^{\infty}\sqrt{\lambda_k}\cdot B_k\cdot X_k(x)=\psi(x). 
+\end{equation*}
+Эти соотношения суть разложения функций $\phi(x)$ и $\psi(x)$ по собственным функциям обобщённой задачи Штурма. В силу теоремы Стеклова такие разложения имеют место и коэффициенты $A_k$ и $B_k$ определяются равенствами
+\begin{equation*}
+	 A_k=\frac{\displaystyle\smallint\limits_0^l\phi(s)\cdot X_k(s)\cdot\rho(s)\,ds}{\displaystyle\smallint\limits_0^l X^2_k(s)\cdot\rho(s)\,ds},\quad B_k=\frac{\displaystyle\smallint\limits_0^l\psi(s)\cdot X_k(s)\cdot\rho(s)\,ds}{\displaystyle\sqrt{\lambda_k}\cdot\smallint\limits_0^l X^2_k(s)\cdot\rho(s)\,ds}.
+\end{equation*}
+\section{Вынужденные колебания однородной струны.}
+\label{lecture13section2}
+Как мы уже говорили на \hyperref[lecture12]{прошлой лекции}, если на однородную струну действует распределённая сила с линейной плотностью $\widetilde{f}(x,t)$, то в уравнение колебаний струны войдёт плотность $f(x,t)=\widetilde{f}\!\bigm/\!\rho$ на единицу массы. Таким образом, мы будем решать уравнение 
+\begin{equation}\label{l13:eq:8}
+	\pdder{u}{t}=a^2\cdot\pdder{u}{x}+f(x,t).
+\end{equation}
+Начальные условия:
+\begin{equation}\label{l13:eq:9}
+	 u(x,0)=\phi(x),\quad u_t(x,0)=\psi(x).
+\end{equation}
+Что касается граничных условий, то мы будем рассматривать или задание закона движения концов струны
+\begin{equation}\label{l13:eq:10}
+	 u(0,t)=\nu_1(t),\quad u(l,t)=\nu_2(t)
+\end{equation}
+или наличие на концах действующих сосредоточенных сил
+\begin{equation}\label{l13:eq:10a}
+	 u_x(0,t)=-f_1(t)\!\bigm/\!\mu,\quad u_x(l,t)=f_2(t)\!\bigm/\!\mu\footnotemark{}.\tag{\theequation a}
+\end{equation}\footnotetext{Заметим, кстати, что студенты часто делают ошибку, забывая при записи граничных условий~\eqref{l13:eq:10a} поделить правую часть на $\mu$.} Для краткости положим $\widetilde{f}_1\eqdef -f_1\!\bigm/\!\mu$, $\widetilde{f}_2\eqdef f_2\!\bigm/\!\mu$ и перепишем~\eqref{l13:eq:10a} в виде
+\begin{equation}\label{l13:eq:11}
+	 u_x(0,t)=\widetilde{f}_1(t),\quad u_x(l,t)=\widetilde{f}_2(t)
+\end{equation}
+При решении задачи~\eqref{l13:eq:8}--\eqref{l13:eq:10}, или~\eqref{l13:eq:8},~\eqref{l13:eq:9},~\eqref{l13:eq:11} в первую очередь надо перевести неоднородности из граничных условий в уравнение. Для этого мы отыскиваем функцию $v_0(x,t)$, удовлетворяющую граничным условиям~\eqref{l13:eq:10} или~\eqref{l13:eq:11}  и затем вводим новую неизвестную функцию $v(x,t)$ соотношением 
+\begin{equation*}
+	 v=u-v_0.
+\end{equation*}  
+Тогда $u=v+v_0$ и подставив это выражение в~\eqref{l13:eq:8} и~\eqref{l13:eq:9} мы получим для функции $v$ уравнение 
+\begin{equation}\label{l13:eq:12}
+	\pdder{v}{t}=a^2\cdot\pdder{v}{x}+g(x,t)
+\end{equation}
+и начальные условия
+\begin{equation}\label{l13:eq:13}
+	 v(x,0)=\widetilde{\phi},\quad v_t(x,0)=\widetilde{\psi},
+\end{equation}
+где 
+\begin{equation*}
+	g(x,t)=f-\pdder{v_0}{t}+a^2\cdot\pdder{v_0}{x},\quad \widetilde{\phi}=\phi(x)-v_0(x,0),\quad\widetilde{\psi}=\psi(x)-\pder{v_0}{t}(x,0).
+\end{equation*}
+Но главным является тот факт, что для функции $v$ граничные условия~--- однородны. Действительно, подставляя $u=v+v_0$ в~\eqref{l13:eq:10} и в~\eqref{l13:eq:11} имеем, если $v_0(x,t)$ удовлетворяет~\eqref{l13:eq:10}\addtocounter{equation}{-3}%
+\begin{equation}\label{l13:eq:10A}
+	 v(0,t)+v_0(0,t)=\nu_1(t),\quad v(l,t)+v_0(l,t)=\nu_2(t);\tag{\theequation A}
+\end{equation}\addtocounter{equation}{1}%
+или если $v_0(x,t)$ удовлетворяет~\eqref{l13:eq:11}
+\begin{equation}\label{l13:eq:11A}
+	 v_x(0,t)+v_{0x}(0,t)=\widetilde{f}_1(t),\quad v_x(l,t)+v_{0x}(l,t)=\widetilde{f}_2(t).\tag{\theequation A}
+\end{equation}\addtocounter{equation}{2}%
+Но поскольку функция $v_0$ удовлетворяет граничным условиям задачи, то если мы решали задачу с условием~\eqref{l13:eq:10}, тогда
+\begin{equation*}
+	 v_0(0,t)=\nu_1(t),\quad v_0(l,t)=\nu_2(t)
+\end{equation*} 
+и поэтому из~\eqref{l13:eq:10A} следует, что
+\begin{equation}\label{l13:eq:14}
+	 v(0,t)=0,\quad v(l,t)=0.
+\end{equation}
+Аналогично, если мы решали задачу с условиями~\eqref{l13:eq:11}, то 
+\begin{equation*}
+	 v_{0x}(0,t)=\widetilde{f}_1(t),\quad v_{0x}(l,t)=\widetilde{f}_2(t)
+\end{equation*} 
+и поэтому вследствие~\eqref{l13:eq:11A} 
+\begin{equation}\label{l13:eq:15}
+	 v_x(0,t)=0,\quad v_x(l,t)=0.
+\end{equation}
+Таким образом для функции $v(x,t)$ мы получили задачу с однородными граничными условиями. Прежде чем описывать метод решения задачи~\eqref{l13:eq:12}--\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:13},~\eqref{l13:eq:15}) дадим рецепт построения функции $v_0(x,t)$ на примере граничных условий~\eqref{l13:eq:10} (случай условий~\eqref{l13:eq:11} не имеет принципиальных отличий). Функцию $v_0(x,t)$ будем искать в виде
+\begin{equation*}
+	 v_0(x,t)=P_1(x)\cdot\nu_1(t)+P_2(x)\cdot\nu_2(t)\text{ --- в случае~\eqref{l13:eq:10}}
+\end{equation*}
+\begin{equation*}
+	 \left(\text{в случае~\eqref{l13:eq:11}: }v_0(x,t)=P_3(x)\cdot\widetilde{f}_1(t)+P_4(x)\cdot\widetilde{f}_2(t)\right),
+\end{equation*}
+где $P_i(x)$ --- полиномы (как правило первой степени). Требуем
+\begin{equation*}
+	 \begin{array}{rcccl}
+		v_0(0,t)&=&\nu_1(t)&=&P_1(0)\cdot\nu_1(t)+P_2(0)\cdot\nu_2(t),\\	v_0(l,t)&=&\nu_2(t)&=&P_1(l)\cdot\nu_1(t)+P_2(l)\cdot\nu_2(t).
+	\end{array}
+\end{equation*}
+Отсюда ясно, что достаточно выбрать полиномы $P_i(x)$ так, чтобы 
+\begin{equation*}
+	 P_1(0)=1,\quad P_2(0)=0,\quad P_1(l)=0,\quad P_2(l)=1.
+\end{equation*}
+Взяв $P_i(x)=\alpha_i\cdot x+\beta_i$, $i=1,2$ мы получаем
+\begin{equation*}
+	 P_1(x)=-\frac{x}{l}+1,\quad P_2(x)=\frac{x}{l}.
+\end{equation*}
+Таким образом функция $v_0(x,t)$, удовлетворяющая условиям~\eqref{l13:eq:10} построена.
+\vspace{0.2cm}
+
+\noindent\textbf{Задание.} Найти функцию $v_0(x,t)$, удовлетворяющую условиям~\eqref{l13:eq:11}.
+\vspace{0.2cm}
+
+Возвращаемся теперь к задаче~\eqref{l13:eq:12}--\eqref{l13:eq:14}\footnote{Задача~\eqref{l13:eq:12},~\eqref{l13:eq:13},~\eqref{l13:eq:15} решается аналогично. О некоторых отличиях скажем позднее.}. Самое главное здесь --- решить задачу~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}), то есть найти частное решение, удовлетворяющее уравнению и граничным условиям задачи, не заботясь о выполнении начальных условий~\eqref{l13:eq:13} или выбирая начальные условия любым образом. Действительно, пусть функция $v_1(x,t)$ удовлетворяет~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). Будем искать решение нашей задачи в виде
+\begin{equation*}
+	 v(x,t)=v_{2}(x,t)+v_1(x,t),
+\end{equation*}
+где $v_2(x,t)$ --- новая неизвестная функция. Подставляя в~\eqref{l13:eq:12} выражение для $v(x,t)$ получаем:
+\begin{equation*}
+	\pdder{v_2}{t}+\pdder{v_1}{t}=a^2\cdot\pdder{v_2}{x}+a^2\cdot\pdder{v_1}{x}+g(x,t),
+\end{equation*}
+но
+\begin{equation*}
+	\pdder{v_1}{t}=a^2\cdot\pdder{v_1}{x}+g(x,t),
+\end{equation*}
+поэтому на <<долю>> $v_2$ остаётся уравнение
+\begin{equation}\label{l13:eq:16}
+	\pdder{v_2}{t}=a^2\cdot\pdder{v_2}{x}.
+\end{equation}
+Что касается граничных условий, то имеем в силу~\eqref{l13:eq:14} (или~\eqref{l13:eq:15})
+\begin{gather*}
+	 v_2(0,t)+v_1(0,t)=0,\quad v_2(l,t)+v_1(l,t)=0
+\intertext{или} 
+ \pder{v_2}{x}(0,t)+\pder{v_1}{x}(0,t)=0,\quad \pder{v_2}{x}(l,t)+\pder{v_1}{x}(l,t)=0.
+\end{gather*} 
+Но так как функция $v_1$ удовлетворяет граничным условиям, то для $v_2(x,t)$ мы получим 
+\begin{equation}\label{l13:eq:17}
+	 v_2(0,t)=v_2(l,t)=0
+\end{equation}
+или
+\begin{equation}\label{l13:eq:18}
+	 \pder{v_2}{x}(0,t)=\pder{v_2}{x}(l,t)=0.
+\end{equation}
+Наконец из начальных условий~\eqref{l13:eq:13} для функции $v(x,t)$ 
+\begin{equation*}
+	 v_2(x,0)=\widetilde{\phi}(x)-v_1(x,0),\quad \pder{v_2}{t}(x,0)=\widetilde{\psi}(x)-\pder{v_1}{t}(x,0).
+\end{equation*}
+Таким образом для функции $v_2(x,t)$ мы получили задачу, решению которой была посвящена \hyperref[lecture12]{прошлая лекция}, и мы можем написать
+\begin{equation*}
+	 v_2(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\psihat(\xi)\,d\xi+\int\limits_0^l G_t(x,\xi,t)\cdot\widehat{\phi}(\xi)\,d\xi,
+\end{equation*}
+где $\displaystyle \psihat=\widetilde{\psi}-\pder{v_1}{t}(x,0)$, $\displaystyle\widehat{\phi}=\widetilde{\phi}-v_1(x,0)$, а функция Грина $G(x,\xi,t)$ построена для граничных условий~\eqref{l13:eq:17} или~\eqref{l13:eq:18}. 
+
+Заметим, что если нам удаётся найти $v_1(x,t)$ так, чтобы выполнялись условия~\eqref{l13:eq:13}, то $v_1(x,t)$ и есть решение поставленной задачи, а $v_2(x,t)\equiv0$.
+
+Теперь, наконец, о способах решения задачи~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}).
+
+Рассмотрим сначала частный, но важный случай, когда в~\eqref{l13:eq:12} $g(x,t)=g(x)$. В этом случае попробуем найти стационарное решение $v(x,t)=v_1(x)$. Тогда 
+\begin{equation*}
+	 a^2\dder{v_1}{x}+g(x)=0\quad\text{и }v_1(0)=v_1(l)=0\ \left(\text{или }\pder{v_1}{x}(0)=\pder{v_1}{x}(l)=0\right).
+\end{equation*} 
+Очевидно
+\begin{equation*}
+	 v_1(x)=-\int\limits_0^x ds\int\limits_0^s\frac{g(\alpha)}{a^2}\,d\alpha+C_1\cdot x+C_2.
+\end{equation*}
+При закреплённых концах
+\begin{equation*}
+	 C_2=0,\quad C_1=\frac{1}{a^2}\int\limits_0^l ds\int\limits_0^s g(\alpha)\,d\alpha\cdot\frac{1}{l}.
+\end{equation*}
+Однако если концы свободны (оба!), то найти стационарное решение как правило не удаётся. Действительно,
+\begin{equation*}
+	\pder{v_1}{x}=-\int\limits_0^x g(\alpha)\,d\alpha\cdot\frac{1}{a^2}+C_1.
+\end{equation*}
+При $x=0$ получаем $C_1=0$, а при $x=l$
+\begin{equation}\label{l13:eq:ast}
+	\int\limits_0^l g(\alpha)\,d\alpha=0.\tag{$\ast$}
+\end{equation}
+Если равенство~\eqref{l13:eq:ast} выполняется,то стационарное решение существует, если нет --- не существует. Условие~\eqref{l13:eq:ast} имеет простой физический смысл~--- это равенство нулю равнодействующей силы, действующей на струну. Ясно, что если эта равнодействующая сила не нулевая, то при свободных концах струна начнёт двигаться как целое и стационарного решения быть не может.
+\vspace{0.2cm}
+
+\noindent\textbf{Задание.} Проверить, существует ли стационарное решение при $g(x,t)=g(x)$, если закреплён один из концов струны.
+\vspace{0.2cm}
+
+Переходим к общему методу решения задачи~\eqref{l13:eq:12},~\eqref{l13:eq:14} (или~\eqref{l13:eq:12},~\eqref{l13:eq:15}). В первую очередь надо найти собственные значения и собственные функции оператора $\displaystyle-\dder{}{x}$ с граничными условиями задачи (то есть~\eqref{l13:eq:14} или~\eqref{l13:eq:15}). Пусть эти собственные значения $\lambda_k$ и нормированные собственные функции $X_k(x)$\footnote{В условиях~\eqref{l13:eq:14} $\displaystyle X_k(x)=\sqrt{\frac{2}{l}}\cdot\sin\left(\frac{\pi\cdot k}{l}\cdot x\right)$, $\displaystyle\lambda_k=\left(\frac{\pi\cdot k}{l}\right)^2$.}. Будем искать функцию $v_1$ в виде ряда
+\begin{equation*}
+	 v_1(x,t)=\sum\limits_{k=1}^{\infty}b_k(t)\cdot X_k(x).
+\end{equation*}
+При каждом фиксированном значении $t$ этот ряд есть разложение (по теореме Стеклова) функции $v_1(x,t)$, как функции от $x$ по собственным функциям оператора Штурма, где <<обобщённые коэффициенты Фурье>>~--- $b_k(t)$ --- естественно зависят от $t$. Наша цель --- найти $b_k(t)$. Далее разложим функцию $g(x,t)$ в~\eqref{l13:eq:12} аналогичным образом
+\begin{equation*}
+	 g(x,t)=\sum\limits_{k=1}^{\infty}g_k(t)\cdot X_k(x),
+\end{equation*}
+где $\displaystyle g_k(t)=\smallint\limits_0^l g(\xi,t)\cdot X_k(\xi)\,d\xi$ --- известные коэффициенты.
+
+Далее подставим разложения $v_1(x,t)$ и $g(x,t)$ в уравнение~\eqref{l13:eq:12} и считаем, что ряд для $v_1(x,t)$ допускает двукратное почленное дифференцирование. Получим, учитывая, что $X_k''=-\lambda_k\cdot X_k$
+\begin{equation*}
+	\sum\limits_{k=1}^{\infty}b_k''(t)\cdot X_k(x)=-a^2\cdot\sum\limits_{k=1}^{\infty} \lambda_k\cdot b_k(t)\cdot X_k(x)+\sum\limits_{k=1}^{\infty}g_k(t)\cdot X_k(x).
+\end{equation*}
+Умножая это соотношение на $X_n(x)$ скалярно, мы получим уравнение на $b_n(t)$:
+\begin{equation*}
+	 b_n''(t)=-a^2\cdot\lambda_n\cdot b_n(t)+g_n(t)
+\end{equation*}
+или, обозначая $a^2\cdot\lambda_n$ через $\omega_n^2$,
+\begin{equation}\label{l13:eq:19}
+	 b_n''(t)+\omega_n^2\cdot b_n(t)=g_n(t).
+\end{equation}
+Мы получили для неизвестной функции $b_n(t)$ дифференциальное уравнение второго порядка, для нахождения единственного решения которого нужны начальные условия. 
+
+Из разложения для функций $v_1(x,t)$ следует, что
+\begin{equation}\label{l13:eq:20}
+	 b_n(0)=\int\limits_0^l v_1(x,0)\cdot X_n(x)\,dx,\quad b'_n(0)=\int\limits_0^l \pder{v_1}{t}(x,0)\cdot X_n(x)\,dx.
+\end{equation}
+Далее есть два пути решения.
+\begin{enumerateD}
+	\item Если взять для $v_1(x,t)$ в качестве начальных условий условия~\eqref{l13:eq:13}
+	\begin{equation}\label{l13:eq:21}
+		 v_1(x,0)=\widetilde{\phi}(x),\quad\pder{v_1}{t}(x,0)=\widetilde{\psi}(x),
+	\end{equation}
+	то после нахождения решения~\eqref{l13:eq:19} с начальными условиями~\eqref{l13:eq:20} с учётом~\eqref{l13:eq:21} мы получим функции $b_n(t)$, которые после подстановки в ряд для $v_1(x,t)$ дадут функцию $v_1(x,t)$, являющуюся решением~\eqref{l13:eq:12}--\eqref{l13:eq:14} или~\eqref{l13:eq:12},~\eqref{l13:eq:13},~\eqref{l13:eq:15}. В этом случае в равенстве 
+	\begin{equation*}
+		 v(x,t)=v_1(x,t)+v_2(x,t)
+	\end{equation*} 
+	составляющей $v_2(x,t)$ не будет ($v_2(x,t)\equiv0$).
+	\item Если взять для $v_1(x,t)$ нулевые начальные условия, то это упрощает решение~\eqref{l13:eq:19}, но тогда к полученному в итоге ряду $v_1(x,t)$ надо будет добавить решение $v_2(x,t)$ однородного уравнения с начальными и граничными условиями задачи.   
+\end{enumerateD}
+
+\noindent Доведём до конца решение выбрав второй путь.  
+
+Итак берём $\displaystyle v_1(x,0)=\pder{v_1}{t}(x,0)=0$. Тогда из~\eqref{l13:eq:20} получаем, что $b_n(0)=0$, $b_n'(0)=0$ и решение~\eqref{l13:eq:19} с этими начальными условиями запишется в виде 
+\begin{equation*}
+	b_n(t)=\frac{1}{\omega_n}\cdot\int\limits_0^t\sin\left(\omega_n\cdot(t-\tau)\right)\cdot g_n(\tau)\,d\tau.
+\end{equation*}
+Подставляя это выражение в ряд для $v_1(x,t)$ и одновременно заменяя здесь $g_n(\tau)$ его выражением получим 
+\begin{equation}\label{l13:eq:22}
+	 v_1(x,t)=\sum\limits_{k=1}^{\infty}\int\limits_{0}^t\!\int\limits_0^{l}\frac{1}{\omega_k}\cdot\sin\left(\omega_k\cdot(t-\tau)\right)\cdot X_k(\xi)\cdot X_k(x)\cdot g(\xi,\tau)\,d\xi d\tau.
+\end{equation}
+Для того, чтобы получить решение $v=v_2+v_1$ исходной задачи вспомним, что $v_2(x,t)$ как решение однородного уравнения выражалось равенством
+\begin{equation}\label{l13:eq:23}
+	v_2(x,t)=\int\limits_0^l G(x,\xi,t)\cdot\widetilde{\psi}(\xi)\,d\xi+\int\limits_0^l\pder{G}{t}(x,\xi,t)\cdot\widetilde{\phi}(\xi)\,d\xi,
+\end{equation}
+где 
+\begin{equation}\label{l13:eq:24}
+	 G(x,\xi,t)=\sum\limits_{k=1}^{\infty}\frac{1}{\omega_k}\cdot\sin\left(\omega_k\cdot t\right)\cdot X_k(\xi)\cdot X_k(x),\quad\omega_k=a\cdot\sqrt{\lambda_k}.
+\end{equation}
+Если в~\eqref{l13:eq:22} можно внести суммирование под знак двойного интеграла, то~\eqref{l13:eq:22} можно записать в виде
+\begin{equation}\label{l13:eq:25}
+	 v_1(x,t)=\int\limits_0^t\!\int\limits_0^l G(x,\xi,t-\tau)\cdot g(\xi,\tau)\,d\xi d\tau.
+\end{equation} 
+Таким образом окончательно можно записать, что решение исходной задачи $v(x,t)$ есть сумма $v_1(x,t)$ и $v_2(x,t)$, где $v_1(x,t)$ даётся равенством~\eqref{l13:eq:25}, а $v_2(x,t)$ --- равенством~\eqref{l13:eq:23}\footnote{Напоминаю: интегралы от $G(x,\xi,t)\cdot\psi(\xi)$, $G_t(x,\xi,t)\cdot\phi(\xi)$, $G(x,\xi,t-\tau)\cdot g(\xi,\tau)$~--- это пределы при $n\to\infty$ интегралов от сумм $S_n(x,\xi,t)\cdot\psi(\xi)$, $\displaystyle\pder{S_n}{t}(x,\xi,t)\cdot\phi(\xi)$, $S_n(x,\xi,t-\tau)\cdot g(\xi,\tau)$, где
+	\begin{equation*}
+		 S_n(x,\xi,t)=\sum\limits_{k=1}^n\frac{1}{\omega_k}\cdot\sin\left(\omega_k\cdot t\right)\cdot X_k(x)\cdot X_k(\xi)\quad\text{(см.~\eqref{l13:eq:24})}.
+\end{equation*}}. Мы видим, что главное --- найти собственные значения и собственные функции оператора $-\displaystyle\dder{}{x}$ с граничными условиями задачи, ибо после этого можно построить функцию Грина. 
+
+Заканчивая изучение колебаний струны заметим, что вывод уравнения и граничных условий мы приводили с помощью принципа Гамильтона, который применим только когда силы --- потенциальны. Поэтому, например, уравнение колебаний струны в среде с сопротивлением пропорциональным скорости нельзя получить с помощью принципа Гамильтона и я привожу его без вывода
+\begin{equation*}
+	\pdder{u}{t}=a^2\cdot\pdder{u}{x}-q\cdot\pder{u}{t}+f(x,t),
+\end{equation*} 
+где $q>0$ --- некоторая константа. Решение этого уравнения может быть проведено методом Фурье и я советую это проделать.
