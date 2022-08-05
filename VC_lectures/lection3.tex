@@ -88,7 +88,7 @@
 \end{multline}
 Это главная часть приращения функционала $\J[y]$ при замене $y$ на $y\?+t\cdot\eta$. Мы её вывели при $y\in\Cfn{4}$. Для этой формулы введено обозначение \eqref{l3:eq:B}, так как формула \eqref{l1:eq:A} была на \hyperref[lecture1]{первой лекции}, но для $F=F(x,y,y')$. 
 
-Пусть $\eta$ --- допустимое изменение. Тогда в силу \eqref{l3:eq:6} приравнивая $\delta\J=0$, мы получаем уравнение, из которого с помощью леммы Лагранжа выведем уравнение для минимайзера. Так как $\eta$ --- допустимое изменение, то $\eta=\eta'=0$, при $x=a,b$ поэтому внеинтегральных членов в $\delta\J$ не будет и равенство $\delta\J=0$ влечёт соотношение 
+Пусть $\eta$ --- допустимое изменение. Тогда в силу \eqref{l3:eq:6} приравнивая $\delta\J=0$, мы получаем уравнение, из которого с помощью леммы Лагранжа выведем уравнение для минимайзера. Так как $\eta$ --- допустимое изменение, то $\eta=\eta'=0$, при $x=a,b$ и поэтому внеинтегральных членов в $\delta\J$ не будет и равенство $\delta\J=0$ влечёт соотношение 
 \begin{equation*}
 	\int\limits_a^b\left(F_{y}-\der{}{x}F_{y'}+\dder{}{x}F_{y''}\right)\cdot\eta\,dx=0,\quad\forall\eta\text{ --- допустимое.}
 \end{equation*}
@@ -264,7 +264,7 @@ $y\in\Cfn[{[a,b]}]{2n}$, $y^{(j)}(a)=y_0^{(j)}$,  $y^{(j)}(b)=y_1^{(j)}$, $j=\ov
 \end{equation*}
 Мы решали задачу на 
 \begin{gather*}
-\min\limits_{y\in\K}\,\J[y],\intertext{где}\K=\left\{y(x)\middle|y\in\Cfn[{[a,b]}]{2},\ y(a),\,y'(a),\,y(b),\,y'(b)\text{ --- заданы}\right\}.
+\min\limits_{y\in\K}\,\J[y],\intertext{где}\K=\left\{y(x)\middle|y\in\Cfn[{[a,b]}]{2},\ y(a),\,y'(a),\,y(b),\,y'(b)\text{ --- заданы},\ |y|<M\right\}.
 \end{gather*}
 
 Давайте рассмотрим теперь класс допустимых функций 
@@ -424,7 +424,7 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 	 y'(\alpha_0)\neq f'_1(\alpha_0),\quad y'(\beta_0)\neq f'_2(\beta_0).
 \end{equation*}
 
-Допустимое изменение $\eta(x)$ определяем как обычно $\tilde{y}\eqdef y+t\cdot\eta\in\K$, при $|t|\ll1$. Ясно, что единственное ограничение на $\eta$ --- требование $\eta(x)\in\Cfn[{[a,b]}]{1}$. Точки пересечения кривой $\tilde{y}=y+t\cdot\eta$ с граничными кривыми обозначим через $\alpha(t)$ и $\beta(t)$.
+Допустимое изменение $\eta(x)$ определяем как обычно условием $\tilde{y}\?\eqdef y+t\cdot\eta\in\K$, при $|t|\ll1$. Ясно, что единственное ограничение на $\eta$ --- требование $\eta(x)\in\Cfn[{[a,b]}]{1}$. Точки пересечения кривой $\tilde{y}=y+t\cdot\eta$ с граничными кривыми обозначим через $\alpha(t)$ и $\beta(t)$.
 
 \begin{figure}[H]\centering
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -466,7 +466,7 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 	% Text Node
 	\draw (150,48.6) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize]  {$y( x)$};
 	% Text Node
-	\draw (130,78.6) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize]  {$y+t\cdot \eta $};
+	\draw (130,79.6) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize]  {$y+t\cdot \eta $};
 	% Text Node
 	\draw (113,105.4) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize]  {$\alpha ( t)$};
 	% Text Node
@@ -489,13 +489,13 @@ a потом при $\eta'(a)=1$, $\eta(b)=0$ получим
 	\delta\J=t\cdot\left.\der{}{x}\J[y+t\cdot\eta]\right|_{t=0}\text{ --- первая вариация,}\\ \intertext{и что на минимайзере}
 	\delta\J=0.
 \end{gather*}
-Положим как обычно $\tilde{y}=y+t\cdot\eta$, $\widetilde{F}=F(x,\tilde{y},\tilde{y}')$ и найдём  выражение для $\delta\J$. Имеем 
-\begin{multline}
-	\label{l3:eq:20}
+Положим как обычно $\tilde{y}=y+t\cdot\eta$, $\widetilde{F}=F(x,\tilde{y},\tilde{y}')$ и найдём  выражение для $\delta\J$. Имеем
+\begin{multline}\label{l3:eq:20}
 	\delta\J=t\cdot\left.\der{}{t}\int\limits_{\alpha(t)}^{\beta(t)}F(x,\tilde{y},\tilde{y}')\,dx\right|_{t=0}=t\cdot\Bigg\{\left.\int\limits_{\alpha(t)}^{\beta(t)}\left(\widetilde{F}_{\tilde{y}}\cdot\eta+\widetilde{F}_{\tilde{y}'}\cdot\eta'\right)\,dx\right|_{t=0}+\\+
 	\Big[F\big(\beta(t),y(\beta(t))+t\cdot\eta(\beta(t)),y'(\beta(t))+t\cdot\eta'(\beta(t))\big)\cdot\beta'(t)-\\-F\big(\alpha(t),y(\alpha(t))+t\cdot\eta(\alpha(t)),y'(\alpha(t))+t\cdot\eta'(\alpha(t))\big)\cdot\alpha'(t)\Big]_{t=0}\Bigg\}=\\
-	=t\cdot\Bigg\{\int\limits_{\alpha_0}^{\beta_0}\left(F_{y}\cdot\eta+F_{y'}\cdot\eta'\right)\,dx+F\big(\beta_0,y(\beta_0),y'(\beta_0)\big)\cdot\beta'(0)-\\-F\big(\alpha_0,y(\alpha_0),y'(\alpha_0)\big)\cdot\alpha'(0)\Bigg\}.
-\end{multline}
+	=t\cdot\Bigg\{\int\limits_{\alpha_0}^{\beta_0}\left(F_{y}\cdot\eta+F_{y'}\cdot\eta'\right)\,dx+F\big(\beta_0,y(\beta_0),y'(\beta_0)\big)\cdot\beta'(0)-\\
+	-F\big(\alpha_0,y(\alpha_0),y'(\alpha_0)\big)\cdot\alpha'(0)\Bigg\}.
+\end{multline} 
 Производные $\beta'(0)$ и $\alpha'(0)$ находим из равенств
 \begin{gather*}
 	\tilde{y}(\alpha(t))=y(\alpha(t))+t\cdot\eta(\alpha(t))=f_1(\alpha(t));\\ \tilde{y}(\beta(t))=y(\beta(t))+t\cdot\eta(\beta(t))=f_2(\beta(t)).

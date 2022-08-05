@@ -374,7 +374,7 @@
 	\label{l4:eq:24}
 	-c_1\cdot y''+c_2\cdot y=\lambda\cdot y\quad\Rightarrow\quad y''+\frac{\lambda-c_2}{c_1}\cdot y=0,
 \end{equation}
-при $y(0)=y(l)=0$. Обозначим $\omega^2\eqdef(\lambda-c_2)\bigm/c_1$ и покажем, что $\omega^2>0$\footnote{Мы пока не знаем, может быть $\omega^2$ --- не вещественно.}. Умножим~\eqref{l4:eq:24} на $\overline{y}$ и проинтегрируем по $[0,l]$. Тогда так как
+при $y(0)=y(l)=0$. Обозначим $\omega^2\eqdef(\lambda-c_2)\bigm/c_1$ и покажем, что $\omega^2>0$\footnote{Мы пока не знаем, может быть $\omega^2$ --- отрицательно или не вещественно.}. Умножим~\eqref{l4:eq:24} на $\overline{y}$ и проинтегрируем по $[0,l]$. Тогда так как
 \begin{gather*}
 	\int\limits_0^l \underbrace{\overline{y}}_{u}\cdot \underbrace{y''\,dx}_{dv}=\underbrace{y'\cdot \overline{y}\mathop{\Big|}\limits_0^l}_{\lefteqn{\substack{\scriptstyle	=0, \text{ ибо }\\
 				y(0)=y(l)=0}}}-\int\limits_0^l|y'|^2\,dx=-\int\limits_0^l|y'|^2\,dx\intertext{то получим}
@@ -388,9 +388,9 @@
 \end{equation*}  
 и решение
 \begin{equation*}
-	 y(x)=d_1\cdot\sin\big(\omega\cdot x\big)+d_2\cdot\cos\big(\omega\cdot x\big).
+	 y(x)=d_1\cdot\sin\big(\omega\cdot x\big)+d_2\cdot\cos\big(\omega\cdot x\big),
 \end{equation*}
-Так как $y(0)=0$, то $d_2=0$. Так как $y(l)=0$, то
+где $d_1$, $d_2$ --- произвольные константы. Так как $y(0)=0$, то $d_2=0$. Так как $y(l)=0$, то
 \begin{equation*}
 	d_1\cdot\sin\big(\omega\cdot l\big)=0.
 \end{equation*}
