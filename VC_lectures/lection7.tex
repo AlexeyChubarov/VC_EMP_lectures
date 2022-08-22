@@ -1,8 +1,8 @@
 \chapter{}
 \label{lecture7}
-\section{Оператор Штурма с другими граничными условиями.}
+\section{Оператор Штурма с другими граничными условиями}
 \label{lecture7section1}
-В физических задачах, которые приводят к нахождению собственных значений оператора Штурма, кроме граничных условий $y(a)\?=y(b)=0$ встречаются и другие типы граничных условий\footnote[1]{Мы увидим это в <<Лекциях по уравнениям математической физики. Часть 1.>>~\cite{mathphys}.}. Поэтому возникает необходимость в изучении подобных задач.
+В физических задачах, которые приводят к нахождению собственных значений оператора Штурма, кроме граничных условий $y(a)\?=y(b)=0$ встречаются и другие типы граничных условий\footnote[1]{Мы увидим это в <<Лекциях по уравнениям математической физики. Часть 1>>~\cite{mathphys}.}. Поэтому возникает необходимость в изучении подобных задач.
 
 Общий вид граничных условий:
 \begin{equation*}
@@ -15,16 +15,16 @@
 \begin{equation*}
 	\alpha_2\cdot y(a)=0\quad\Rightarrow\quad y(a)=0\qquad(\text{или в }\beta_2\cdot y(b)=0\quad\Rightarrow\quad y(b)=0).
 \end{equation*}  
-Поэтому мы будем считать $\alpha_1\neq0$, $\beta_1\neq0$. Тогда поделив на $\alpha_1$ и $\beta_1$ мы получим
+Поэтому мы будем считать $\alpha_1\neq0$, $\beta_1\neq0$. Тогда{\mb,} поделив на $\alpha_1$ и $\beta_1${\mb,} мы получим
 \begin{equation*}
 	 y'(a)=-\frac{\alpha_2}{\alpha_1}\cdot y(a),\quad y'(b)=-\frac{\beta_2}{\beta_1}\cdot y(b).
 \end{equation*}
-Положим $\gamma_1\eqdef-\alpha_2/\alpha_1$, $\gamma_2\eqdef\beta_2/\beta_1$. В физических задачах $\gamma_1,\,\gamma_2\geqslant0$. Таким образом мы будем рассматривать граничные условия 
+Положим $\gamma_1\eqdef-\alpha_2/\alpha_1$, $\gamma_2\eqdef\beta_2/\beta_1$. В физических задачах $\gamma_1,\,\gamma_2\geqslant0$. Таким образом{\mb,} мы будем рассматривать граничные условия 
 \begin{equation}
 	\label{l7:eq:1}
 	 y'(a)=\gamma_1\cdot y(a),\  y'(b)=-\gamma_2\cdot y(b),\quad\gamma_1,\,\gamma_2\geqslant0.
 \end{equation} 
-Следовательно в качестве области определения оператора Штурма 
+Следовательно{\mb,} в качестве области определения оператора Штурма 
 \begin{equation*}
 	 Ly=-\der{}{x}\Big(Q\cdot y'\Big)+P\cdot y
 \end{equation*}
@@ -34,7 +34,7 @@
 \end{equation*}
 Как и при изучении оператора $L$ в $\mc{D}_L$\footnote{\begin{equation*}
 		\mc{D}_L=\left\{y(x)\middle|y\in\Cfn[{[a,b]}]{2},\ y(a)=y(b)=0\right\}.
-\end{equation*}}, мы в первую очередь рассмотрим оператор $L$ в $\mc{D}_{L}^0$ с постоянными коэффициентами $Q(x)=C_1$, $P(x)=C_2$, $[a,b]=[0,l]$. Как и раньше надо взять $C_1>0$; что касается отрезка $[0,l]$, то мы можем перейти к нему от произвольного отрезка $[a,b]$ заменой переменной: $x'=x-a$. Тогда $x'\in[0,l]$, где $l=b-a$. Чтобы не загромождать изложение мы штрих писать не будем.
+\end{equation*}}, мы в первую очередь рассмотрим оператор $L$ в $\mc{D}_{L}^0$ с постоянными коэффициентами $Q(x)=C_1$, $P(x)=C_2$, $[a,b]=[0,l]$. Как и раньше{\mb,} надо взять $C_1>0$; что касается отрезка $[0,l]$, то мы можем перейти к нему от произвольного отрезка $[a,b]$ заменой переменной: $x'=x-a$. Тогда $x'\in[0,l]$, где $l=b-a$. Чтобы не загромождать изложение{\mb,} мы штрих писать не будем.
 
 Итак, рассматриваем задачу на нахождение собственных значений и собственных функций оператора 
 \begin{equation}
@@ -46,7 +46,7 @@
 	\label{l7:eq:3}
 	 y''+\frac{\lambda-C_2}{C_1}\cdot y=0.
 \end{equation} 
-Положим $\omega^2\eqdef({\lambda-C_2})/{C_1}$ и попытаемся доказать, что $\omega^2$ --- вещественно и определить знак $\omega^2$ (мы пока не знаем, что $\omega^2$ --- вещественно). Умножим обе части~\eqref{l7:eq:3} на $y$ скалярно. Получим
+Положим $\omega^2\eqdef({\lambda-C_2})/{C_1}$ и попытаемся доказать, что $\omega^2$ --- вещественно{\mb,} и определить знак $\omega^2$ (мы пока не знаем, что $\omega^2$ --- вещественно). Умножим обе части~\eqref{l7:eq:3} на $y$ скалярно. Получим
 \begin{equation}
 	\label{l7:eq:4}
 	\int\limits_0^l y''\cdot\overline{y}\,dx+\omega^2\cdot\int\limits_0^l|y|^2\,dx=0.
@@ -61,7 +61,7 @@
 	\label{l7:eq:5}
 	-\gamma_2\cdot|y(l)|^2-\gamma_1\cdot|y(0)|^2-\int\limits_0^l|y'(x)|^2\,dx+\omega^2\cdot\int\limits_0^l|y|^2\,dx=0.
 \end{equation}
-Отсюда следует, что $\omega^2$ --- вещественно и $\omega^2\geqslant0$. Посмотрим, возможно ли равенство $\omega^2=0$. При $\omega^2=0$ из~\eqref{l7:eq:5} следует, что 
+Отсюда следует, что {\mb$\omega^2$} --- вещественно и $\omega^2\geqslant0$. Посмотрим, возможно ли равенство $\omega^2=0$. При $\omega^2=0$ из~\eqref{l7:eq:5} следует, что 
 \begin{equation*}
 	\int\limits_0^l|y'(x)|^2\,dx=0\quad\Rightarrow\quad y(x)=const.
 \end{equation*}  
@@ -70,11 +70,11 @@
 	\label{l7:eq:6}
 	 y''+\omega^2\cdot y=0.
 \end{equation}
-Общее решение
+Общее решение{\mb:}
 \begin{equation*}
 	 y=d_1\cdot\sin(\omega\cdot x)+d_2\cdot\cos(\omega\cdot x).
 \end{equation*}
-Находим $y'(0)$, $y'(l)$ и записываем граничные условия 
+Находим $y'(0)$, $y'(l)$ и записываем граничные условия{\mb:} 
 \begin{equation*}
 	 y'(0)=\gamma_1\cdot y(0),\quad y'(l)=-\gamma_2\cdot y(l).
 \end{equation*}
@@ -86,7 +86,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 		d_1\cdot\omega\cdot\cos(\omega\cdot l)-d_2\cdot\omega\cdot\sin(\omega\cdot l)=\\\hspace*{3cm}=-d_1\cdot\gamma_2\cdot\sin(\omega\cdot l)-d_2\cdot\gamma_2\cdot\cos(\omega\cdot l).
 	\end{cases}
 \end{equation}
-Получили систему двух однородных линейных уравнений с двумя неизвестными: $d_1,\,d_2$. Для существования не нулевого решения определитель системы должен равняться нулю\footnote{Конечно, можно из первого уравнения выразить $d_1$ через $d_2$, или $d_2$ через $d_1$ и подставить во второе уравнение. Ошибки не будет. Однако стандартный способ решения (приравнивание определителя к нулю) лучше и надо приучаться к нему.}. Выпишем определитель системы~\eqref{l7:eq:7}
+Получили систему двух однородных линейных уравнений с двумя неизвестными: $d_1,\,d_2$. Для существования {\mbненулевого} решения определитель системы должен равняться нулю\footnote{Конечно, можно из первого уравнения выразить $d_1$ через $d_2$, или $d_2$ через $d_1$ и подставить во второе уравнение. Ошибки не будет. Однако стандартный способ решения (приравнивание определителя к нулю) лучше и надо приучаться к нему.}. Выпишем определитель системы~\eqref{l7:eq:7}
 \begin{gather}
 	\begin{vmatrix}
 		\omega&-\gamma_1\\
@@ -95,16 +95,16 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\intertext{то есть}\omega\cdot\gamma_2\cdot\cos(\omega\cdot l)-\omega^2\cdot\sin(\omega\cdot l)+\gamma_1\cdot\omega\cdot\cos(\omega\cdot l)+\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=0.
 	\label{l7:eq:8}
 \end{gather}
-Легко видеть, что если $\omega$ есть решение~\eqref{l7:eq:8}, то $-\omega$ также удовлетворяет~\eqref{l7:eq:8}. Поэтому далее считаем $\omega>0$. Если $\cos(\omega\cdot l)=0$, то $\sin(\omega\cdot l)\neq0$ и сокращая в~\eqref{l7:eq:8} на $\sin(\omega\cdot l)$ (после зануления $\cos(\omega\cdot l)$) мы получим 
+Легко видеть, что если $\omega$ есть решение~\eqref{l7:eq:8}, то $-\omega$ также удовлетворяет~\eqref{l7:eq:8}. Поэтому далее считаем $\omega>0$. Если $\cos(\omega\cdot l)=0$, то $\sin(\omega\cdot l)\neq0${\mb,} и{\mb,} сокращая в~\eqref{l7:eq:8} на $\sin(\omega\cdot l)$ (после зануления $\cos(\omega\cdot l)$){\mb,} мы получим 
 \begin{equation*}
 	-\omega^2+\gamma_1\cdot\gamma_2=0,\quad\omega=\sqrt{\gamma_1\cdot\gamma_2},
 \end{equation*}
-но так как $\cos(\omega\cdot l)=0$, то $l\cdot\omega_k=\displaystyle\frac{\pi}{2}+\pi\cdot k$. Таким образом этот случай имеет место, если для какого-то $k$ ($k=0,1,2,\ldots$)
+но{\mb,} так как $\cos(\omega\cdot l)=0$, то $l\cdot\omega_k=\displaystyle\frac{\pi}{2}+\pi\cdot k$. Таким образом{\mb,} этот случай имеет место, если для какого-то $k$ ($k=0,1,2,\ldots$)
 \begin{equation}
 	\label{l7:eq:9}
 	\frac{\pi}{2}+\pi\cdot k=\sqrt{\gamma_1\cdot\gamma_2}\cdot l,
 \end{equation} 
-то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\bigm/\pi$ --- целое.  Тогда мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
+то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\!\bigm/\!\pi$ --- целое.  Тогда мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
 \begin{equation*}
 	\frac{\lambda-C_2}{C_1}=\gamma_1\cdot\gamma_2\quad\Rightarrow\quad\lambda_0=C_1\cdot\gamma_1\cdot\gamma_2+C_2
 \end{equation*}
@@ -120,7 +120,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\label{l7:eq:10c}
 	\omega\cdot\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=\omega^2\cdot\sin(\omega\cdot l)-\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=\\=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\sin(\omega\cdot l),\tag{\theequation c}
 \end{multline}
-где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\neq0\ \Rightarrow\ \gamma_1+\gamma_2=0$, так как $\gamma_1\geqslant0$, $\gamma_2\geqslant0$, то это возможно если $\gamma_1=\gamma_2=0\ \Rightarrow\ \omega=0$, а этот случай нами уже рассмотрен. Следовательно мы можем считать $\omega\neq0$, то есть  $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
+где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\?\neq0\ \Rightarrow\ \gamma_1+\gamma_2=0$, так как $\gamma_1\geqslant0$, $\gamma_2\geqslant0$, то это возможно{\mb,} если $\gamma_1=\gamma_2=0\ \Rightarrow\ \omega\?=0$, а этот случай нами уже рассмотрен. Следовательно{\mb,} мы можем считать $\omega\neq0$, то есть  $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
 \begin{equation}
 	\label{l7:eq:10a}
 	\omega\cdot(\gamma_1+\gamma_2)=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\Tang(\omega\cdot l),\tag{\theequation a}
@@ -135,12 +135,12 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\label{l7:eq:11}
 	\Tang(z)=\cfrac{(\gamma_1+\gamma_2)\cdot l}{z-\cfrac{\gamma_1\cdot\gamma_2\cdot l^2}{z}}.
 \end{equation}
-Это и есть уравнение для нахождения $z$, а значит $\omega$ и $\lambda$.
+Это и есть уравнение для нахождения $z$, а значит {\mbи} $\omega${\mb,} и $\lambda$.
 
 Рассмотрим в уравнении~\eqref{l7:eq:11} сначала частный случай, когда~\eqref{l7:eq:11} можно решить в явном виде. Пусть $\gamma_1=\gamma_2=0$, то есть граничные условия $y'(0)=0$, $y'(l)=0$. В этом случае решения уравнения~\eqref{l7:eq:11} получаем из условия
 \begin{equation*}
-	\Tang(z)=0\quad\Rightarrow\quad\sin(z)=0\quad\Rightarrow\quad z=\omega\cdot l=\pi\cdot k,\ k=1,2,\ldots\footnotemark{}
-\end{equation*} \footnotetext{$k=0$ --- рассматривали раньше.}Откуда
+	\Tang(z)=0\quad\Rightarrow\quad\sin(z)=0\quad\Rightarrow\quad z=\omega\cdot l=\pi\cdot k,\ k=1,2,\ldots\footnotemark{}{\mb,}
+\end{equation*} \footnotetext{$k=0$ --- рассматривали раньше.}откуда
 \begin{equation*}
 	\omega_k=\frac{\pi\cdot k}{l}\quad\Rightarrow\quad\frac{\lambda_k-C_2}{C_1}=\left(\frac{\pi\cdot k}{l}\right)^2\quad\Rightarrow\quad\lambda_k=C_1\cdot\left(\frac{\pi\cdot k}{l}\right)^2+C_2.
 \end{equation*}
@@ -152,26 +152,26 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 \begin{equation*}
 	\omega_k\cdot d_{1k}=\gamma_1\cdot d_{2k}\quad\Rightarrow\quad d_{1k}=0,\ d_{2k}\text{ --- произвольное число.}
 \end{equation*}
-Таким образом 
+Таким образом{\mb,}
 \begin{equation*}
 	 y_k=d_{2k}\cdot\cos\left(\frac{\pi\cdot k}{l}\cdot x\right),
 \end{equation*}
 где $d_{2k}$ выбирается из условия $\norm{y_k}=1$.
 
-Возвращаемся к решаемому уравнению~\eqref{l7:eq:11} и обозначим его правую часть через $\Psi(z)$:
+{\mbВернёмся} к решаемому уравнению~\eqref{l7:eq:11} и обозначим его правую часть через $\Psi(z)$:
 \begin{equation}
 	\label{l7:eq:11a}
 	\Tang(z)=\Psi(z),\tag{\theequation a}
 \end{equation}	
 где $\Psi(z)=\dfrac{(\gamma_1+\gamma_2)\cdot l}{z-\dfrac{\gamma_1\cdot\gamma_2\cdot l^2}{z}}.$
 
-\noindent При $\gamma_1+\gamma_2>0$ (а мы рассматриваем именно этот случай) мы не можем найти аналитически решения уравнения~\eqref{l7:eq:11a} и вынуждены искать их графически. Для этого на плоскости $y,\,z$ построим графики функций $y_1=\Tang(z)$, $y_2=\Psi(z)$ и  <<абсциссы>> (то есть точки $z_k$) отвечающие точкам пересечения графиков и дадут решения~\eqref{l7:eq:11a}. Рассмотрим сначала случай, когда одно (только одно!) из чисел $\gamma_1,\,\gamma_2$ равно нулю. Пусть для определённости $\gamma_2=0$. Уравнение~\eqref{l7:eq:11a} примет вид
+\noindent При $\gamma_1+\gamma_2>0$ (а мы рассматриваем именно этот случай) мы не можем найти аналитически решения уравнения~\eqref{l7:eq:11a} и вынуждены искать их графически. Для этого на плоскости $y,\,z$ построим графики функций $y_1=\Tang(z)$, $y_2=\Psi(z)${\mb,  тогда}  <<абсциссы>> (то есть точки $z_k$){\mb,} отвечающие точкам пересечения графиков{\mb,} и дадут решения~\eqref{l7:eq:11a}. Рассмотрим сначала случай, когда одно (только одно!) из чисел $\gamma_1,\,\gamma_2$ равно нулю. Пусть для определённости $\gamma_2=0$. Уравнение~\eqref{l7:eq:11a} примет вид
 \begin{equation*}
 	\Tang(z)=\dfrac{\gamma_1\cdot l}{z}.
 \end{equation*}
 \begin{figure}[H]\centering
-	\includegraphics[width=0.7\linewidth]{picture1}
-	\caption{~}
+	\includegraphics[width=0.65\linewidth]{picture1}
+	\caption{}
 	\label{l7:fig:1}
 \end{figure}
 Рисуя графики (см. рис.~\ref{l7:fig:1}), мы видим, что точки пересечения графиков отвечают всё меньшим значениям $\Tang(z)$, то есть стремятся к $\pi\cdot k$, то есть очевидно, что $|z_k-\pi\cdot  k|\to0$, при $k\to\infty$. Откуда
@@ -184,25 +184,25 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 \end{equation*}
 Аналогичную оценку для $\lambda_k$ можно получить сверху с какой-то константой $C$ вместо $C_0$. Значит, собственные значения растут со скоростью $k^2$.
 
-Рассмотрим наконец общий случай $\gamma_1\cdot\gamma_2>0$. В этом случае функция $\Psi(z)$ имеет разрыв при $z=z_0=l\cdot\sqrt{\gamma_1\cdot\gamma_2}$, и $\Psi(z_0+0)\?=+\infty$, $\Psi(z_0-0)\?=-\infty$.
+Рассмотрим{\mb,} наконец{\mb,} общий случай $\gamma_1\cdot\gamma_2>0$. В этом случае функция $\Psi(z)$ имеет разрыв при $z=z_0=l\cdot\sqrt{\gamma_1\cdot\gamma_2}$, и $\Psi(z_0+0)\?=+\infty$, $\Psi(z_0-0)\?=-\infty$.
 \begin{figure}[H]\centering
-	\includegraphics[width=0.7\linewidth]{picture2}
-	\caption{~}
+	\includegraphics[width=0.65\linewidth]{picture2}
+	\caption{}
 \label{l7:fig:2}
 \end{figure}
 На чертеже (см. рис.~\ref{l7:fig:2}) $\pi<z_0<\frac{3}{2}\cdot\pi$. Мы видим, что появилась новая точка пересечения графиков $\Psi(z)$ и $\Tang(z)$. В зависимости от положения $z_0$ таких точек или нет --- если $z_0\leqslant{\pi}/{2}$ --- или не меньше одной при $z>{\pi}/{2}$. Пусть слева от $z_0$ имеется $m_0$ решений уравнения~\eqref{l7:eq:11a}, $m_0\geqslant0$ и число $m_1$ таково, что $\pi\cdot m_1\leqslant z_0\leqslant\pi\cdot(m_1+1)$, $m_1\geqslant0$ (связь $m_0$ и $m_1$ нам не интересна). Тогда из графиков $\Tang(z)$ и $\Psi(z)$ видно, что решения $z_{m_0+k}$ будут асимптотически стремиться к $(m_1+k)\cdot\pi$, то есть
 \begin{equation*}
 	\displaystyle z_{m_0+k}-\pi\cdot(m_1+k)\to0,
 \end{equation*}
-откуда полагая $s=m_0+k$ получаем 
+откуда{\mb,} полагая $s=m_0+k${\mb,} получаем 
 \begin{equation*}
-	 z_s-\pi\cdot(m_1-m_0+s)\to0\quad\text{при}\quad s\to\infty
+	 z_s-\pi\cdot(m_1-m_0+s)\to0\quad\text{при}\quad s\to\infty{\mb,}
 \end{equation*}
 и, значит, 
 \begin{equation*}
 	 z_s^2=\omega_s^2\cdot l^2=\dfrac{\lambda_s-C_2}{C_1}\geqslant\beta_0\cdot s^2,\quad s\gg1,
 \end{equation*} 
-для некоторых $\beta_0>0$, $\beta_0$ не зависит от $s$. Отсюда как и раньше получим
+для некоторых $\beta_0>0$, $\beta_0$ не зависит от $s$. Отсюда{\mb,} как и раньше{\mb,} получим
 \begin{equation*}
 	\lambda_s\geqslant\beta_1\cdot s^2,\quad s\gg1,
 \end{equation*} 
@@ -220,12 +220,11 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 \begin{multline*}
 	%\label{l7:eq:12}
 	\big(Ly,z\big)=\int\limits_a^b\underbrace{\overline{z}}_{v}\underbrace{\left(-\der{}{x}\Big(Q\cdot y'\Big)\right)\,dx}_{du}+\int\limits_a^b P\cdot y\cdot\overline{z}\,dx=\\
-	=-Q\cdot y'\cdot \overline{z}\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx=\hfil	
+	=-Q\cdot y'\cdot \overline{z}\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx=Q(b)\cdot y(b)\cdot\overline{z}(b)\cdot\gamma_2+\hfil	
 \end{multline*}	
 \begin{multline}
 	\label{l7:eq:12}
-	\hfil=-Q\cdot y'\cdot \overline{z}\mathop{\Big|}\limits_a^b+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx
-	=Q(b)\cdot y(b)\cdot\overline{z}(b)\cdot\gamma_2+\\+Q(a)\cdot y(a)\cdot\overline{z}(a)\cdot\gamma_1+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx.
+	\hfill +Q(a)\cdot y(a)\cdot\overline{z}(a)\cdot\gamma_1+\int\limits_a^b\left(Q\cdot y'\cdot\overline{z}'+P\cdot y\cdot\overline{z}\right)\,dx.
 \end{multline}
 Для вычисления $\big(y,Lz\big)=\overline{\big(Lz,y\big)}$ используем~\eqref{l7:eq:12}, меняя там местами $y$ и $z$ и взяв комплексное сопряжение. Тогда получим, что $\big(Ly,z\big)\?=\big(y,Lz\big)$. Значит, оператор $L$ в $\mc{D}_{L}^{0}$ эрмитов\footnote{Заметим, кстати, что положительность $\gamma_1$, $\gamma_2$ не используется, а вот вещественность --- нужна.}.
 \vspace{0.2cm}
@@ -233,7 +232,7 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 \noindent\textbf{Задание.} Доказать, что если $\Im\,\gamma_1\neq0$ или $\Im\,\gamma_2\neq0$, то оператор $L$~--- не эрмитов.
 \vspace{0.2cm}
 
-Из эрмитовости оператора $L$ следует, что собственные значения его~--- вещественные и что собственные функции, отвечающие различным собственным значениям взаимно ортогональны.
+Из эрмитовости оператора $L$ следует, что собственные значения его~--- вещественные и что собственные функции, отвечающие различным собственным значениям{\mb,} взаимно ортогональны.
 
 Докажем теперь, что собственные подпространства оператора $L$ --- одномерны. Пусть
 \begin{equation*}
@@ -247,11 +246,11 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 \begin{multline*}
 	y(a)=0,\quad y'(a)=y'_1(a)\cdot y_2(a)-y'_2(a)\cdot y_1(a)=\\=\gamma_1\cdot\big(y_1(a)\cdot y_2(a)-y_2(a)\cdot y_1(a)\big)=0.
 \end{multline*} 
-Так как $Ly=\lambda\cdot y$, то при $Q(a)\neq0$ в силу теоремы единственности получаем $y\equiv0$, поскольку $y_2(a)\neq0$ (иначе $y_2'(a)=0$ и тогда $y_2(x)\equiv0$), то функции $y_1,\,y_2$ линейно зависимы. Значит $\dim\Ul=1$.
+Так как $Ly=\lambda\cdot y$, то при $Q(a)\neq0$ в силу теоремы единственности получаем $y\equiv0$, поскольку $y_2(a)\neq0$ (иначе $y_2'(a)=0$ и тогда $y_2(x)\equiv0$), то функции $y_1,\,y_2$ линейно зависимы. Значит{\mb,} $\dim\Ul=1$.
 
 Теперь поговорим об экстремальных свойствах собственных значений и собственных функций оператора $L$ в $\mc{D}_L^0$. Вспомним, что при $y(a)=y(b)=0$, то есть в $\mc{D}_L$ 
 \begin{equation*}
-	\J[y]=\int\limits_a^b\left(Q\cdot y^{\prime2}+P\cdot y^2\right)\,dx=\big(Ly,y\big)
+	\J[y]=\int\limits_a^b\left(Q\cdot y^{\prime2}+P\cdot y^2\right)\,dx=\big(Ly,y\big){\mb,}
 \end{equation*} 
 и в этом случае экстремальные свойства были связаны с функционалом $\J[y]$. Найдём $\big(Ly,y\big)$ при $y\in\mc{D}_L^0$.
 
@@ -266,13 +265,13 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 \end{equation*}
 Рассмотрим задачу на $\displaystyle\min\limits_{y\in\K}\,\J_0[y]$. 
 
-Функцию $\eta(x)$ назовём допустимым изменением, если $y+t\cdot\eta\in\K$ при $|t|\ll1$, откуда $\eta'(a)={\gamma_1\cdot\eta(a)}$, $\eta'(b)=-\gamma_2\cdot\eta(b)$. Можно взять $\eta'(a)=\eta'(b)=\eta(a)=\eta(b)=0$. Пусть $y$ --- минимайзер для $\J_0$ в $\K$. Тогда как и раньше убеждаемся, что $\displaystyle\left.\der{}{t}\J_0[y+t\cdot\eta]\right|_{\lefteqn{\scriptstyle t=0}}=0$. Проведём необходимые вычисления, считая что минимайзер обладает повышенной гладкостью, то есть $y\in\Cfn[{[a,b]}]{2}$, ${\eta(x)\in\Cfn[{[a,b]}]{1}}$ и $\eta$ --- не обязательно допустимое изменение. Имеем:
+Функцию $\eta(x)$ назовём допустимым изменением, если $y+t\cdot\eta\in\K$ при $|t|\ll1$, откуда $\eta'(a)={\gamma_1\cdot\eta(a)}$, $\eta'(b)=-\gamma_2\cdot\eta(b)$. Можно взять $\eta'(a)=\eta'(b)=\eta(a)=\eta(b)=0$. Пусть $y$ --- минимайзер для $\J_0$ в $\K$. Тогда{\mb,} как и раньше{\mb,} убеждаемся, что $\displaystyle\left.\der{}{t}\J_0[y+t\cdot\eta]\right|_{\lefteqn{\scriptstyle t=0}}=0$. Проведём необходимые вычисления, считая что минимайзер обладает повышенной гладкостью, то есть $y\in\Cfn[{[a,b]}]{2}$, ${\eta(x)\in\Cfn[{[a,b]}]{1}}$ и $\eta$ --- не обязательно допустимое изменение. Имеем:
 \begin{multline*}
 	\left.\der{}{t}\J_0[y+t\cdot\eta]\right|_{t=0}=\der{}{t}\left\{\int\limits_a^b\Big( Q\cdot(y'+t\cdot\eta')^2+P\cdot(y+t\cdot\eta)^2\Big)\,dx\right.+\\\left.\left.\vphantom{\int\limits_a^b}+\gamma_2\cdot Q(b)\cdot\Big(y(b)+t\cdot\eta(b)\Big)^2+\gamma_1\cdot Q(a)\cdot\Big(y(a)+t\cdot\eta(a)\Big)^2\right\}\right|_{t=0}=\\=2\cdot\int\limits_a^b\Big(Q\cdot y'\cdot\eta'+P\cdot y\cdot\eta\Big)\,dx+2\cdot\gamma_2\cdot Q(b)\cdot y(b)\cdot\eta(b)+\\
 	+2\cdot\gamma_1\cdot Q(a)\cdot y(a)\cdot\eta(a)=2\cdot\int\limits_a^b\left(-\der{}{x}\Big(Q\cdot y\Big)+P\cdot y\right)\cdot\eta\,dx+\\+2\cdot Q\cdot y'\cdot\eta\mathop{\Big|}\limits_a^b
 	+2\cdot\left[\left.\Big(\gamma_2\cdot Q\cdot y\cdot\eta\Big)\right|_{ x=b}+\left.\Big(\gamma_1\cdot Q\cdot y\cdot\eta\Big)\right|_{ x=a}\right].
 \end{multline*} 
-В силу граничных условий вне интегральные члены равны нулю так, что никаких дополнительных граничных условий не возникает, поэтому при допустимых $\eta(x)$
+В силу граничных условий {\mbвне} интегральные члены равны нулю, так что никаких дополнительных граничных условий не возникает, поэтому при допустимых $\eta(x)$
 \begin{equation*}
 	\left.\der{}{t}\J_0[y+t\cdot\eta]\right|_{t=0}=\int\limits_a^b\left(-\der{}{x}\Big(Q\cdot y\Big)+P\cdot y\right)\cdot\eta\,dx=0.
 \end{equation*} 
@@ -280,7 +279,7 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 \begin{equation*}
 	\K^0\!\eqdef\!\left\{y(x)\middle|y\in\Cfn[{[a,b]}]{1},\ y'(a)=\gamma_1\cdot y(a),\,y'(b)=-\gamma_2\cdot y(b),\int\limits_a^b y^2\,dx=1\right\}.
 \end{equation*}
-Так как задача на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ --- изопериметрическая, то надо повторить вывод, который мы делали раньше. Если $y$ --- минимайзер, то мы полагаем $\tilde{y}=y+\alpha\cdot\eta_1+\beta(\alpha)\cdot\eta_2$, где $\eta_i(a)=\eta_i'(a)=0$, $\eta_i'(b)=\eta_i(b)=0$. Тогда действуя так же, как в случае простейших граничных условий, мы получим, что минимайзер в задаче на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ удовлетворяет уравнению Эйлера для интегранта $Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2$ ($F^{\ast}=F-\lambda\cdot G$), то есть уравнению $Ly=\lambda\cdot y$. После этого доказываем экстремальные свойства собственных значений и собственных функций оператора $L$, а также принцип минимакса, беря всюду $\J_0[y]$ вместо $\J[y]$. После этого доказываем теорему сравнения и с её помощью устанавливаем рост собственных значений $\lambda_k\geqslant C\cdot k^2$ для оператора с переменными $Q(x)$, $P(x)$, после чего доказываем теорему Стеклова, следуя использованной ранее схеме. Советую вам попытаться это сделать. Теперь о практике. Необходимо уметь находить собственные значения и собственные функции с любыми граничными условиями как на левом, так и на правом конце. Приведём эти условия в таблице.
+Так как задача на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ --- изопериметрическая, то надо повторить вывод, который мы делали раньше. Если $y$ --- минимайзер, то мы полагаем $\tilde{y}=y+\alpha\cdot\eta_1+\beta(\alpha)\cdot\eta_2$, где $\eta_i(a)=\eta_i'(a)=0$, $\eta_i'(b)=\eta_i(b)=0$. Тогда{\mb,} действуя так же, как в случае простейших граничных условий, мы получим, что минимайзер в задаче на $\displaystyle\min\limits_{y\in\K^0}\,\J_0[y]$ удовлетворяет уравнению Эйлера для интегранта $Q\cdot y^{\prime2}+P\cdot y^2-\lambda\cdot y^2$ ($F^{\ast}=F-\lambda\cdot G$), то есть уравнению $Ly=\lambda\cdot y$. После этого доказываем экстремальные свойства собственных значений и собственных функций оператора $L$, а также принцип минимакса, беря всюду $\J_0[y]$ вместо $\J[y]$. После этого доказываем теорему сравнения и с её помощью устанавливаем рост собственных значений $\lambda_k\geqslant C\cdot k^2$ для оператора с переменными $Q(x)$, $P(x)$, после чего доказываем теорему Стеклова, следуя использованной ранее схеме. Советую вам попытаться это сделать. Теперь о практике. Необходимо уметь находить собственные значения и собственные функции с любыми граничными условиями как на левом, так и на правом конце. Приведём эти условия в таблице.
 \begin{center}
 	\begin{tabular}{|c|c|}
 		\hline

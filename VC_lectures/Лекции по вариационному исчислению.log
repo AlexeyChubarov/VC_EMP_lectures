@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  5 AUG 2022 23:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.6)  22 AUG 2022 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,10 +858,6 @@ Package hyperref Info: Option `unicode' set `true' on input line 4421.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4421
 .
-
-
-Package hyperref Warning: Option `pagecolor' is not available anymore.
-
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -870,6 +866,7 @@ Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count293
+
 (c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -954,37 +951,37 @@ Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
 \openout1 = `"Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЋ
 .aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 321.
-Package gensymb Info: Math companion symbols declared on input line 321.
-LaTeX Info: Redefining \degree on input line 321.
-LaTeX Info: Redefining \celsius on input line 321.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 358.
+Package gensymb Info: Math companion symbols declared on input line 358.
+LaTeX Info: Redefining \degree on input line 358.
+LaTeX Info: Redefining \celsius on input line 358.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 321.
-LaTeX Info: Redefining \ohm on input line 321.
-Package gensymb Info: Using \textohm for \ohm on input line 321.
-Package gensymb Info: Using \textmu for \micro on input line 321.
+erthousand on input line 358.
+LaTeX Info: Redefining \ohm on input line 358.
+Package gensymb Info: Using \textohm for \ohm on input line 358.
+Package gensymb Info: Using \textmu for \micro on input line 358.
 
 ABD: EveryShipout initializing macros
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1014,7 +1011,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring ON on input line 321.
+Package hyperref Info: Link coloring ON on input line 358.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1027,9 +1024,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 321.
-LaTeX Info: Redefining \pageref on input line 321.
-LaTeX Info: Redefining \nameref on input line 321.
+LaTeX Info: Redefining \ref on input line 358.
+LaTeX Info: Redefining \pageref on input line 358.
+LaTeX Info: Redefining \nameref on input line 358.
 
 (./Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЋ.out)
 (./Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЋ.out)
@@ -1041,12 +1038,12 @@ LaTeX Info: Redefining \nameref on input line 321.
 [1.1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 363--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 363--363
 
  []
 
@@ -1074,15 +1071,20 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout5 = `"Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЋ
 .toc"'.
 
- [4.4] [5.5
+ [4.4]
+Underfull \hbox (badness 6188) in paragraph at lines 396--397
+[]\T2A/cmr/m/n/10 Задачи ми-ни-ми-за-ции функ-ци-о-на-лов, за-ви-ся-щих от функ
+-ций
+ []
 
-]
-(./lection1.tex [6.6]
-Р›РµРєС†РёСЏ 1.
+[5.5
 
-Underfull \hbox (badness 1571) in paragraph at lines 10--11
-\T2A/cmr/m/n/10 смат-ри-вать опе-ра-тор диф-фе-рен-ци-ро-ва-ния на функ-ци-ях и
-ме-
+] (./lection1.tex [6.6]
+Р›РµРєС†РёСЏ 1
+
+Underfull \hbox (badness 1024) in paragraph at lines 10--11
+\T2A/cmr/m/n/10 смат-ри-вать опе-ра-тор диф-фе-рен-ци-ро-ва-ния на функ-ци-ях, 
+име-
  []
 
 
@@ -1111,14 +1113,14 @@ tination with the same identifier (name{equation.1.2.10}) has been already used
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.426 	\end{equation}
+l.428 	\end{equation}
                      ]
-Underfull \hbox (badness 1527) in paragraph at lines 432--433
+Underfull \hbox (badness 1527) in paragraph at lines 434--435
 []\T2A/cmr/m/n/10 Предположим, что [] вер-но
  []
 
 [16.16]
-Overfull \hbox (4.76839pt too wide) in paragraph at lines 495--569
+Overfull \hbox (4.76839pt too wide) in paragraph at lines 497--571
  [] 
  []
 
@@ -1131,7 +1133,7 @@ Underfull \vbox (badness 1701) has occurred while \output is active []
 
  [19.19])
 (./lection2.tex [20.20]
-Р›РµРєС†РёСЏ 2.
+Р›РµРєС†РёСЏ 2
 
 Underfull \hbox (badness 1038) in paragraph at lines 19--19
 |[]\T2A/cmr/bx/n/14.4 Примеры ре-ше-ния урав-не-ния Эйлера--
@@ -1145,22 +1147,18 @@ Underfull \hbox (badness 1960) in paragraph at lines 65--66
 и-мость
  []
 
-
-Underfull \vbox (badness 1502) has occurred while \output is active []
-
- [23.23]
-[24.24] [25.25] [26.26]
+[23.23] [24.24] [25.25] [26.26]
 Underfull \hbox (badness 7012) in paragraph at lines 197--197
 |[]\T2A/cmr/bx/n/14.4 Примеры ре-ше-ния си-сте-мы Эйлера--
  []
 
 [27.27] [28.28] [29.29] [30.30]) (./lection3.tex [31.31]
-Р›РµРєС†РёСЏ 3.
+Р›РµРєС†РёСЏ 3
 [32.32
 
 ] [33.33] [34.34] [35.35] [36.36] [37.37] [38.38] [39.39] [40.40]
 [41.41] [42.42] [43.43] [44.44]) (./lection4.tex [45.45]
-Р›РµРєС†РёСЏ 4.
+Р›РµРєС†РёСЏ 4
 [46.46
 
 ] [47.47] [48.48] [49.49] [50.50]
@@ -1190,7 +1188,7 @@ Underfull \hbox (badness 2837) in paragraph at lines 361--362
  []
 
 [56.56] [57.57]) (./lection5.tex [58.58]
-Р›РµРєС†РёСЏ 5.
+Р›РµРєС†РёСЏ 5
 
 Underfull \hbox (badness 4001) in paragraph at lines 3--3
 |[]\T2A/cmr/bx/n/14.4 Квадратичный функ-ци-о-нал. Опе-ра-тор
@@ -1199,18 +1197,18 @@ Underfull \hbox (badness 4001) in paragraph at lines 3--3
 [59.59
 
 ] [60.60] [61.61] [62.62]
-Underfull \hbox (badness 2990) in paragraph at lines 271--272
+Underfull \hbox (badness 2990) in paragraph at lines 274--275
 []\T2A/cmr/m/n/10 Докажем те-перь, что соб-ствен-ные под-про-стран-ства опе-ра-
 то-ра
  []
 
 [63.63] [64.64]
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 |[]\T2A/cmr/bx/n/14.4 Экстремальные свой-ства соб-ствен-ных
  []
 
 [65.65] [66.66] [67.67] [68.68] [69.69]) (./lection6.tex [70.70]
-Р›РµРєС†РёСЏ 6.
+Р›РµРєС†РёСЏ 6
 [71.71
 
 ] [72.72] [73.73] [74.74] [75.75] [76.76] [77.77] [78.78] [79.79]
@@ -1221,7 +1219,7 @@ n.6.2.17}) has been already used, duplicate ignored
                                                   
 l.350 	\end{equation*}
                       ]) (./lection7.tex [81.81]
-Р›РµРєС†РёСЏ 7.
+Р›РµРєС†РёСЏ 7
 [82.82
 
 ] [83.83] [84.84] [85.85pdfTeX warning (ext4): destination with the same identi
@@ -1241,20 +1239,24 @@ l.171 \end{equation*}
 File: picture1.png Graphic file (type png)
 <use picture1.png>
 Package pdftex.def Info: picture1.png  used on input line 173.
-(pdftex.def)             Requested size: 229.04367pt x 118.39142pt.
+(pdftex.def)             Requested size: 212.68234pt x 109.93605pt.
 <picture2.png, id=1169, 412.91766pt x 209.65828pt>
 File: picture2.png Graphic file (type png)
 <use picture2.png>
 Package pdftex.def Info: picture2.png  used on input line 189.
-(pdftex.def)             Requested size: 229.04367pt x 116.29773pt.
+(pdftex.def)             Requested size: 212.68234pt x 107.9896pt.
  [87.87 <./picture1.png> <./picture2.png>]pdfTeX warning (ext4): destination wi
 th the same identifier (name{equation.7.1.12}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.229 \end{multline}
-                     [88.88] [89.89] [90.90]) (./lection8.tex [91.91]
-Р›РµРєС†РёСЏ 8.
+l.228 \end{multline}
+                     [88.88] [89.89]
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [90.90])
+(./lection8.tex [91.91]
+Р›РµРєС†РёСЏ 8
 [92.92
 
 ] [93.93] [94.94] [95.95] [96.96]pdfTeX warning (ext4): destination with the sa
@@ -1378,7 +1380,7 @@ ed
 l.265 \begin{equation}
                       \label{l8:eq:8} [98.98] [99.99] [100.100] [101.101]
 [102.102] [103.103] [104.104] [105.105]) (./lection9.tex [106.106]
-Р›РµРєС†РёСЏ 9.
+Р›РµРєС†РёСЏ 9
 
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
@@ -1387,8 +1389,8 @@ Underfull \vbox (badness 1502) has occurred while \output is active []
 ]
 [108.108] [109.109] [110.110] [111.111] [112.112] [113.113] [114.114]
 Underfull \hbox (badness 1178) in paragraph at lines 243--244
-[]\T2A/cmr/m/n/10 Заметим, что это вы-ра-же-ние да-јт глав-ную ча-сто при-ра-ще
--ния
+[]\T2A/cmr/m/n/10 Заметим, что это вы-ра-же-ние да-јт глав-ную часть при-ра-ще-
+ния
  []
 
 [115.115] [116.116]
@@ -1399,7 +1401,7 @@ mm/m/it/10 z \OT1/cmr/m/n/10 =
  []
 
 [117.117] [118.118]) (./lection10.tex [119.119]
-Р›РµРєС†РёСЏ 10.
+Р›РµРєС†РёСЏ 10
 
 Underfull \hbox (badness 5446) in paragraph at lines 3--3
 |[]\T2A/cmr/bx/n/14.4 Квадратичный функ-ци-о-нал в слу-чае
@@ -1436,38 +1438,83 @@ l.302 	\end{equation}
 [133.133] [134.134
 
 ]
-<Zhislin.jpg, id=1615, 652.4375pt x 903.375pt>
+<Zhislin.jpg, id=1618, 652.4375pt x 903.375pt>
 File: Zhislin.jpg Graphic file (type jpg)
 <use Zhislin.jpg>
-Package pdftex.def Info: Zhislin.jpg  used on input line 384.
-(pdftex.def)             Requested size: 86.38503pt x 119.60701pt.
- [135.135 <./Zhislin.jpg>] [136.136
+Package pdftex.def Info: Zhislin.jpg  used on input line 423.
+(pdftex.def)             Requested size: 90.30936pt x 125.03806pt.
+ [135.135 <./Zhislin.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
+
+ []
+
+[136.136
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
 
 (./Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЋ.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
 Package rerunfilecheck Info: File `"Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјС
 ѓ РёСЃС‡РёСЃР»РµРЅРёСЋ".out' has not changed.
-(rerunfilecheck)             Checksum: 94B7AFCD96E00D7D419FD88F761E6D3B;11161.
+(rerunfilecheck)             Checksum: 6F954E25247EBF18750EE3B01AA003DD;11023.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 25666 strings out of 480682
- 450264 string characters out of 5908554
- 722550 words of memory out of 5000000
- 40329 multiletter control sequences out of 15000+600000
+ 25669 strings out of 480682
+ 450294 string characters out of 5908554
+ 722720 words of memory out of 5000000
+ 40331 multiletter control sequences out of 15000+600000
  564927 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,22n,72p,2547b,873s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,22n,72p,2549b,873s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1513,10 +1560,10 @@ exlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/202
 0/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2020/texmf-di
 st/fonts/type1/public/cm-super/sfti1000.pfb>
 Output written on "Р›РµРєС†РёРё РїРѕ РІР°СЂРёР°С†РёРѕРЅРЅРѕРјСѓ РёСЃС‡РёСЃР»РµР
-ЅРёСЋ.pdf" (136 pages, 1145740 bytes).
+ЅРёСЋ.pdf" (136 pages, 1143893 bytes).
 PDF statistics:
- 1879 PDF objects out of 2073 (max. 8388607)
- 1653 compressed objects within 17 object streams
- 534 named destinations out of 1000 (max. 500000)
+ 1883 PDF objects out of 2073 (max. 8388607)
+ 1657 compressed objects within 17 object streams
+ 535 named destinations out of 1000 (max. 500000)
  344 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,42 +1,42 @@
 \babel@toc {russian}{}
 \contentsline {chapter}{Введение}{5}{section*.1}%
 \contentsline {chapter}{Лекция~\numberline {1}}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.}Определение функционала. Примеры вариационных задач.}{7}{section.1.1}%
-\contentsline {section}{\numberline {2.}Задачи с неподвижными концами.}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.}Определение функционала. Примеры вариационных задач}{7}{section.1.1}%
+\contentsline {section}{\numberline {2.}Задачи с неподвижными концами}{12}{section.1.2}%
 \contentsline {chapter}{Лекция~\numberline {2}}{21}{chapter.2}%
-\contentsline {section}{\numberline {1.}Примеры решения уравнения Эйлера--Лагранжа.}{21}{section.2.1}%
-\contentsline {section}{\numberline {2.}Задачи для функционалов, зависящих от вектор-функций.}{23}{section.2.2}%
-\contentsline {section}{\numberline {3.}Примеры решения системы Эйлера--Лагранжа.}{27}{section.2.3}%
-\contentsline {section}{\numberline {4.}Принцип Гамильтона.}{28}{section.2.4}%
-\contentsline {section}{\numberline {5.}Функционалы, зависящие от старших производных.}{30}{section.2.5}%
+\contentsline {section}{\numberline {1.}Примеры решения уравнения Эйлера--Лагранжа}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.}Задачи для функционалов, зависящих от вектор-функций}{23}{section.2.2}%
+\contentsline {section}{\numberline {3.}Примеры решения системы Эйлера--Лагранжа}{27}{section.2.3}%
+\contentsline {section}{\numberline {4.}Принцип Гамильтона}{28}{section.2.4}%
+\contentsline {section}{\numberline {5.}Функционалы, зависящие от старших производных}{30}{section.2.5}%
 \contentsline {chapter}{Лекция~\numberline {3}}{32}{chapter.3}%
-\contentsline {section}{\numberline {1.}Функционалы, зависящие от старших производных (продолжение).}{32}{section.3.1}%
-\contentsline {section}{\numberline {2.}Задачи со свободными концами.}{36}{section.3.2}%
-\contentsline {section}{\numberline {3.}Задачи с <<подвижными концами>>.}{41}{section.3.3}%
+\contentsline {section}{\numberline {1.}Функционалы, зависящие от старших производных (продолжение)}{32}{section.3.1}%
+\contentsline {section}{\numberline {2.}Задачи со свободными концами}{36}{section.3.2}%
+\contentsline {section}{\numberline {3.}Задачи с <<подвижными концами>>}{41}{section.3.3}%
 \contentsline {chapter}{Лекция~\numberline {4}}{46}{chapter.4}%
-\contentsline {section}{\numberline {1.}Изопериметрические задачи.}{46}{section.4.1}%
-\contentsline {section}{\numberline {2.}Квадратичный функционал. Оператор Штурма.}{55}{section.4.2}%
+\contentsline {section}{\numberline {1.}Изопериметрические задачи}{46}{section.4.1}%
+\contentsline {section}{\numberline {2.}Квадратичный функционал. Оператор Штурма}{55}{section.4.2}%
 \contentsline {chapter}{Лекция~\numberline {5}}{59}{chapter.5}%
-\contentsline {section}{\numberline {1.}Квадратичный функционал. Оператор Штурма (Продолжение). }{59}{section.5.1}%
-\contentsline {section}{\numberline {2.}Cвойства собственных значений оператора Штурма.}{65}{section.5.2}%
+\contentsline {section}{\numberline {1.}Квадратичный функционал. Оператор Штурма (продолжение)}{59}{section.5.1}%
+\contentsline {section}{\numberline {2.}Cвойства собственных значений оператора Штурма}{65}{section.5.2}%
 \contentsline {chapter}{Лекция~\numberline {6}}{71}{chapter.6}%
-\contentsline {section}{\numberline {1.}Теорема сравнения.}{71}{section.6.1}%
-\contentsline {section}{\numberline {2.}Разложение по собственным функциям оператора Штурма.}{73}{section.6.2}%
+\contentsline {section}{\numberline {1.}Теорема сравнения}{71}{section.6.1}%
+\contentsline {section}{\numberline {2.}Разложение по собственным функциям оператора Штурма}{73}{section.6.2}%
 \contentsline {chapter}{Лекция~\numberline {7}}{82}{chapter.7}%
-\contentsline {section}{\numberline {1.}Оператор Штурма с другими граничными условиями.}{82}{section.7.1}%
+\contentsline {section}{\numberline {1.}Оператор Штурма с другими граничными условиями}{82}{section.7.1}%
 \contentsline {chapter}{Лекция~\numberline {8}}{92}{chapter.8}%
-\contentsline {section}{\numberline {1.}Обобщённая задача Штурма.}{92}{section.8.1}%
-\contentsline {section}{\numberline {2.}Функционал Бесселя. Уравнение Бесселя.}{103}{section.8.2}%
+\contentsline {section}{\numberline {1.}Обобщённая задача Штурма}{92}{section.8.1}%
+\contentsline {section}{\numberline {2.}Функционал Бесселя. Уравнение Бесселя}{103}{section.8.2}%
 \contentsline {chapter}{Лекция~\numberline {9}}{107}{chapter.9}%
-\contentsline {section}{\numberline {1.}Функционал Бесселя. Уравнение Бесселя. (Продолжение.)}{107}{section.9.1}%
-\contentsline {section}{\numberline {2.}Функционалы, зависящие от функций двух переменных.}{112}{section.9.2}%
-\contentsline {section}{\numberline {3.}Вариационные задачи со свободной границей.}{117}{section.9.3}%
+\contentsline {section}{\numberline {1.}Функционал Бесселя. Уравнение Бесселя (продолжение)}{107}{section.9.1}%
+\contentsline {section}{\numberline {2.}Функционалы, зависящие от функций двух переменных}{112}{section.9.2}%
+\contentsline {section}{\numberline {3.}Вариационные задачи со свободной границей}{117}{section.9.3}%
 \contentsline {chapter}{Лекция~\numberline {10}}{120}{chapter.10}%
-\contentsline {section}{\numberline {1.}Квадратичный функционал. Оператор Шредингера.}{120}{section.10.1}%
-\contentsline {section}{\numberline {2.}Различные обобщения.}{129}{section.10.2}%
-\contentsline {subsection}{\numberline {I}Оператор Штурма. Случай периодических граничных условий.}{129}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {II}Случай неограниченной области.}{130}{subsection.10.2.2}%
-\contentsline {section}{\numberline {3.}Оператор Шредингера во всём пространстве.}{131}{section.10.3}%
-\contentsline {subsection}{\numberline {I}Одночастичный случай.}{131}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {II}Многоэлектронный атом с неподвижным ядром.}{132}{subsection.10.3.2}%
+\contentsline {section}{\numberline {1.}Квадратичный функционал. Оператор Шрёдингера}{120}{section.10.1}%
+\contentsline {section}{\numberline {2.}Различные обобщения}{129}{section.10.2}%
+\contentsline {subsection}{\numberline {I}Оператор Штурма. Случай периодических граничных условий}{129}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {II}Случай неограниченной области}{130}{subsection.10.2.2}%
+\contentsline {section}{\numberline {3.}Оператор Шрёдингера во всём пространстве}{131}{section.10.3}%
+\contentsline {subsection}{\numberline {I}Одночастичный случай}{131}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {II}Многоэлектронный атом с неподвижным ядром}{132}{subsection.10.3.2}%
 \contentsline {chapter}{Список литературы}{134}{figure.caption.50}%
