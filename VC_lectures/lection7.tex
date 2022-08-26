@@ -2,7 +2,7 @@
 \label{lecture7}
 \section{Оператор Штурма с другими граничными условиями}
 \label{lecture7section1}
-В физических задачах, которые приводят к нахождению собственных значений оператора Штурма, кроме граничных условий $y(a)\?=y(b)=0$ встречаются и другие типы граничных условий\footnote[1]{Мы увидим это в <<Лекциях по уравнениям математической физики. Часть 1>>~\cite{mathphys}.}. Поэтому возникает необходимость в изучении подобных задач.
+В физических задачах, которые приводят к нахождению собственных значений оператора Штурма, кроме граничных условий $y(a)\?=y(b)=0$ встречаются и другие типы граничных условий\footnote[1]{Мы увидим это в <<Лекциях по уравнениям математической физики. Часть 1.>>~\cite{mathphys}.}. Поэтому возникает необходимость в изучении подобных задач.
 
 Общий вид граничных условий:
 \begin{equation*}
@@ -104,7 +104,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\label{l7:eq:9}
 	\frac{\pi}{2}+\pi\cdot k=\sqrt{\gamma_1\cdot\gamma_2}\cdot l,
 \end{equation} 
-то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\!\bigm/\!\pi$ --- целое.  Тогда мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
+то есть число $(l\cdot\sqrt{\gamma_1\cdot\gamma_2}-\pi/2)\bigm/\pi$ --- целое.  Тогда мы получаем из равенства $\omega=\sqrt{\gamma_1\cdot\gamma_2}$ собственное значение 
 \begin{equation*}
 	\frac{\lambda-C_2}{C_1}=\gamma_1\cdot\gamma_2\quad\Rightarrow\quad\lambda_0=C_1\cdot\gamma_1\cdot\gamma_2+C_2
 \end{equation*}
@@ -120,7 +120,7 @@ $y'(x)=\omega\cdot d_1\cdot\cos(\omega\cdot x)-\omega\cdot d_2\cdot\sin(\omega\c
 	\label{l7:eq:10c}
 	\omega\cdot\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=\omega^2\cdot\sin(\omega\cdot l)-\gamma_1\cdot\gamma_2\cdot\sin(\omega\cdot l)=\\=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\sin(\omega\cdot l),\tag{\theequation c}
 \end{multline}
-где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\?\neq0\ \Rightarrow\ \gamma_1+\gamma_2=0$, так как $\gamma_1\geqslant0$, $\gamma_2\geqslant0$, то это возможно{\mb,} если $\gamma_1=\gamma_2=0\ \Rightarrow\ \omega\?=0$, а этот случай нами уже рассмотрен. Следовательно{\mb,} мы можем считать $\omega\neq0$, то есть  $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
+где $\cos(\omega\cdot l)\neq0$ и $\omega^2-\gamma_1\cdot\gamma_2\neq0$\footnote{Если бы $\omega^2-\gamma_1\cdot\gamma_2=0$, то в силу~\eqref{l7:eq:10c} $\cos(\omega\cdot l)\cdot(\gamma_1+\gamma_2)=0$, но $\cos(\omega\cdot l)\neq0\ \Rightarrow\ \gamma_1+\gamma_2=0$, так как $\gamma_1\geqslant0$, $\gamma_2\geqslant0$, то это возможно{\mb,} если $\gamma_1=\gamma_2=0\ \Rightarrow\ \omega=0$, а этот случай нами уже рассмотрен. Следовательно{\mb,} мы можем считать $\omega\neq0$, то есть  $\omega^2-\gamma_1\cdot\gamma_2\neq0$.}. После деления~\eqref{l7:eq:10c} на $\cos(\omega\cdot l)$ имеем 
 \begin{equation}
 	\label{l7:eq:10a}
 	\omega\cdot(\gamma_1+\gamma_2)=(\omega^2-\gamma_1\cdot\gamma_2)\cdot\Tang(\omega\cdot l),\tag{\theequation a}
@@ -271,7 +271,7 @@ $\beta_1$ --- некоторая константа. Аналогичную оц
 	+2\cdot\gamma_1\cdot Q(a)\cdot y(a)\cdot\eta(a)=2\cdot\int\limits_a^b\left(-\der{}{x}\Big(Q\cdot y\Big)+P\cdot y\right)\cdot\eta\,dx+\\+2\cdot Q\cdot y'\cdot\eta\mathop{\Big|}\limits_a^b
 	+2\cdot\left[\left.\Big(\gamma_2\cdot Q\cdot y\cdot\eta\Big)\right|_{ x=b}+\left.\Big(\gamma_1\cdot Q\cdot y\cdot\eta\Big)\right|_{ x=a}\right].
 \end{multline*} 
-В силу граничных условий {\mbвне} интегральные члены равны нулю, так что никаких дополнительных граничных условий не возникает, поэтому при допустимых $\eta(x)$
+В силу граничных условий внеинтегральные члены равны нулю, так что никаких дополнительных граничных условий не возникает, поэтому при допустимых $\eta(x)$
 \begin{equation*}
 	\left.\der{}{t}\J_0[y+t\cdot\eta]\right|_{t=0}=\int\limits_a^b\left(-\der{}{x}\Big(Q\cdot y\Big)+P\cdot y\right)\cdot\eta\,dx=0.
 \end{equation*} 

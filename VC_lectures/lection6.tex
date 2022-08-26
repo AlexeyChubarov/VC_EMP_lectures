@@ -140,7 +140,7 @@
 то есть нет сходимости к $y(x)$ для системы $\tilde{y}_1,\ldots,\tilde{y}_k\ldots$
 
 \begin{Def}
-	Пусть задан некоторый класс функций $\mathscr{K}\subseteq\fL$. Будем говорить, что ортонормированная система $y_1,\ldots,y_n,\ldots$ \textbf{полна} в $\mathscr{K}$ в среднем \{в смысле равномерной сходимости\}, если для $\forall y\in\mathscr{K}$ её обобщённый ряд Фурье $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится к ней в среднем {\mb\{}равномерно{\mb\}}. Полная система играет роль базиса в $\mathscr{K}$.
+	Пусть задан некоторый класс функций $\mathscr{K}\subseteq\fL$. Будем говорить, что ортонормированная система $y_1,\ldots,y_n,\ldots$ \textbf{полна} в $\mathscr{K}$ в среднем \{в смысле равномерной сходимости\}, если для $\forall y\in\mathscr{K}$ её обобщённый ряд Фурье $\sum\limits_{k=1}^{\infty}C_k\cdot y_k$ сходится к ней в среднем \{равномерно\}. Полная система играет роль базиса в $\mathscr{K}$.
 \end{Def}
 
 К вопросу о полноте мы ещё вернёмся, а пока исследуем некоторые свойства $S_n(x)=\sum\limits_{k=1}^n C_k\cdot y_k$. Пусть $R_n\eqdef y-S_n$. Свойства $R_n$:
@@ -237,7 +237,7 @@
 		\label{l6:eq:18}
 		\norm{R_n}=\norm{y-S_n}\to0\quad\text{при}\quad n\to\infty.
 	\end{equation}
-	Рассмотрим функцию $\widetilde{R}_n\eqdef R_n\!\bigm/\!\norm{R_n}$, $\norm{\widetilde{R}_n}=1$\footnote{Если $\norm{R_n}=0$, то~\eqref{l6:eq:18} --- очевидно{\mb,} и тогда вводить $\widetilde{R}_n$ не надо, поэтому мы считаем $\norm{R_n}\neq0$.}, кроме того{\mb,} в силу свойств $R_n$ выполняются равенства $\big(\widetilde{R}_n,y_j\big)=0$, $j=\overline{1,n}$. Наконец{\mb,} $\widetilde{R}_n(a)\?=\widetilde{R}_n(b)=0$, так как $y_j(a)=y_j(b)=0$. Из этих рассуждений следует, что $\widetilde{R}_n(x)\in\K_{n+1}$ и{\mb,} значит{\mb,} 
+	Рассмотрим функцию $\widetilde{R}_n\eqdef R_n\bigm/\norm{R_n}$, $\norm{\widetilde{R}_n}=1$\footnote{Если $\norm{R_n}=0$, то~\eqref{l6:eq:18} --- очевидно{\mb,} и тогда вводить $\widetilde{R}_n$ не надо, поэтому мы считаем $\norm{R_n}\neq0$.}, кроме того{\mb,} в силу свойств $R_n$ выполняются равенства $\big(\widetilde{R}_n,y_j\big)=0$, $j=\overline{1,n}$. Наконец{\mb,} $\widetilde{R}_n(a)\?=\widetilde{R}_n(b)=0$, так как $y_j(a)=y_j(b)=0$. Из этих рассуждений следует, что $\widetilde{R}_n(x)\in\K_{n+1}$ и{\mb,} значит{\mb,} 
 	\begin{equation*}
 		\J[\widetilde{R}_n]\equiv\frac{\J[R_n]}{{\norm{R_n}}^2}\geqslant\lambda_{n+1},
 	\end{equation*} 
